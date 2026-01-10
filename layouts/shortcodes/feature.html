@@ -1,0 +1,19 @@
+<div class="feature">
+  {{ with .Get "icon" }}
+    <div class="feature-icon">
+      {{ partial "logo.html" (dict "icon" . "width" "32" "height" "32") }}
+    </div>
+  {{ end }}
+
+  <h3>{{ .Get "title" }}</h3>
+
+  <p class="feature-content">
+    {{ .Inner | markdownify }}
+  </p>
+
+  {{ if and (.Get "linkRef") (.Get "linkText") }}
+    <a href="{{ .Get "linkRef" }}" class="action-button">
+      {{ .Get "linkText" }}
+    </a>
+  {{ end }}
+</div>

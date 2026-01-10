@@ -1,0 +1,9 @@
+<div class="breadcrumbs" aria-label="breadcrumbs">
+  {{- range .Ancestors.Reverse }}
+  <a href="{{ .RelPermalink }}"
+    >{{ if .IsHome }}{{ partial "icon" "filled/home" }}{{ else }}{{ .Title }}{{ end }}</a
+  >
+  <span class="separator">&gt;</span>
+  {{- end }}
+  <span class="active"> {{ .Title }} </span>
+</div>

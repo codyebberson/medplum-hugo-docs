@@ -1,0 +1,74 @@
+<nav class="sidebar">
+  {{ range .Site.Data.sidebar.items }}
+    {{ template "render-item" (dict "item" . "context" $) }}
+  {{ end }}
+</nav>
+
+{{ define "render-item" }}
+  {{ $item := .item }}
+  {{ $context := .context }}
+
+  {{ if eq $item.type "header" }}
+    <div class="sidebar-title"><strong>{{ $item.value }}</strong></div>
+    
+  {{ else if eq $item.type "doc" }}
+    {{ with $context.Site.GetPage $item.id }}
+      <a href="{{ .RelPermalink }}" class="menu-link {{ if eq $context.RelPermalink .RelPermalink }}active{{ end }}">
+        {{ .Title }}
+      </a>
+    {{ end }}
+
+  {{ else if eq $item.type "category" }}
+    {{ $id := printf "menu-%s" ($item.label | anchorize) }}
+    
+    {{/* 1. Get the target page object safely */}}
+    {{ $targetPage := $context.Site.GetPage $item.id }}
+    
+    {{/* 2. Determine if this specific category page is the one we are viewing */}}
+    {{ $isCurrentPage := false }}
+    {{ if $targetPage }}
+      {{ $isCurrentPage = eq $context.RelPermalink $targetPage.RelPermalink }}
+    {{ end }}
+
+    {{/* 3. Determine if we are "inside" this section (for auto-expanding) */}}
+    {{ $isChildActive := in $context.RelPermalink $item.id }}
+    {{ $isOpen := or $isCurrentPage $isChildActive }}
+
+    <div class="menu-category">
+      <input type="checkbox" id="{{ $id }}" class="menu-toggle" {{ if $isOpen }}checked{{ end }}>
+      
+      <div class="menu-category-header-wrapper {{ if $isCurrentPage }}active-wrapper{{ end }}">
+        {{ if $targetPage }}
+          <a href="{{ $targetPage.RelPermalink }}" class="menu-link category-link {{ if $isCurrentPage }}active{{ end }}">
+            {{ $item.label }}
+          </a>
+        {{ else }}
+          {{/* Fallback if the page doesn't exist so the sidebar doesn't vanish */}}
+          <span class="menu-link category-link">{{ $item.label }}</span>
+        {{ end }}
+        
+        <label for="{{ $id }}" class="menu-caret-wrapper">
+          <span class="menu-caret"></span>
+        </label>
+      </div>
+
+      <ul class="menu-list-nested">
+        {{ range $item.items }}
+          <li>{{ template "render-item" (dict "item" . "context" $context) }}</li>
+        {{ end }}
+        
+        {{ if $item.autogenerate }}
+          {{ with $context.Site.GetPage $item.autogenerate }}
+            {{ range .RegularPages.ByWeight }}
+              <li>
+                <a href="{{ .RelPermalink }}" class="menu-link {{ if eq $context.RelPermalink .RelPermalink }}active{{ end }}">
+                  {{ .Title }}
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,66 @@
+.footer {
+  background-color: black;
+  margin-top: 48px;
+  color: rgb(173, 181, 189);
+  padding: 80px 32px;
+}
+
+.rightAligned {
+  text-align: right;
+}
+
+.link,
+.bottomLink {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover,
+.bottomLink:hover {
+  color: var(--oc-grape-6);
+  text-decoration: none;
+}
+
+.link {
+  line-height: 2.2;
+}
+
+.footer-separator {
+  height: 0.1px;
+  border: 0;
+  border-top: 1px solid var(--oc-gray-7);
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.footer-logo {
+  color: white;
+  display: block;
+}
+
+.footer-link {
+  line-height: 2.2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--oc-grape-6);
+  text-decoration: none;
+}
+
+.footer-bottom-link {
+  padding: 4px 12px;
+}
+
+.medplum-soc-compliance-image {
+  width: 45px;
+  height: 45px;
+  margin: 4px;
+}
+
+.medplum-hipaa-compliance-image {
+  width: 100px;
+  height: 45px;
+  margin: 4px;
+}

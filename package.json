@@ -1,0 +1,23 @@
+{
+  "name": "medplum-hugo-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "hugo --minify",
+    "dev": "hugo server --buildDrafts --buildFuture --noHTTPCache"
+  },
+  "hugo-bin": {
+    "buildTags": "extended",
+    "version": "0.154.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tabler/icons": "3.36.1",
+    "hugo-bin": "0.149.2",
+    "open-color": "1.9.1",
+    "swup": "4.8.2"
+  }
+}

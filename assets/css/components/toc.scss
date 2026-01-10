@@ -1,0 +1,31 @@
+/*
+ * Customize Hugo's Table of Contents styles
+ * See: https://gohugo.io/methods/page/tableofcontents/
+ */
+
+#TableOfContents {
+  max-height: calc(100vh - 84px);
+  top: 72px;
+  position: sticky;
+  overflow-y: auto;
+}
+
+#TableOfContents ul {
+  border-left: 1px solid rgb(218, 221, 225);
+  padding-left: 0;
+  list-style: none;
+}
+
+#TableOfContents a {
+  display: inline-block;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: rgb(82, 88, 96);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#TableOfContents a:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}

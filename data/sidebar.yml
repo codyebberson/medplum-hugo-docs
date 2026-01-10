@@ -1,0 +1,25 @@
+items:
+  - type: header
+    value: "Get Started"
+  - type: doc
+    id: "docs"
+  - type: category
+    label: "Tutorials"
+    id: "docs/tutorials"
+    autogenerate: "docs/tutorials"
+  - type: category
+    label: "Migrating to Medplum"
+    id: "docs/migration"
+    autogenerate: "docs/migration"
+  - type: category
+    label: "Medplum Provider"
+    id: "docs/provider"
+    autogenerate: "docs/provider"
+  - type: header
+    value: "Model"
+  - type: doc
+    id: "fhir-basics"
+  - type: category
+    label: "Charting"
+    id: "docs/charting"
+    autogenerate: "docs/charting"

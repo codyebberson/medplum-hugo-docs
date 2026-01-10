@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ .Title }} | Medplum</title>
+    {{ $js := resources.Get "js/main.mjs" | js.Build | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" defer></script>
+    {{ $opts := dict "transpiler" "libsass" "includePaths" (slice "open-color") }}
+    {{ $style := resources.Get "css/main.scss" | toCSS $opts | minify | fingerprint }}
+    <link
+      rel="stylesheet"
+      href="{{ $style.RelPermalink }}"
+      integrity="{{ $style.Data.Integrity }}"
+    />
+  </head>
+  <body
+    {{ if eq .Section "docs" }}
+      data-sidebar="open"
+    {{ else }}
+      data-sidebar="closed"
+    {{ end }}
+  >
+    {{ partial "navbar" . }}
+    <div class="doc-wrapper">
+      <div class="doc-root">
+        <aside>
+          <!--
+          <h4>Get Started</h4>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+          -->
+          {{ partial "sidebar" . }}
+        </aside>
+        <main id="swup" class="container">
+          <div class="main-content">
+            {{ partial "breadcrumbs" . }}
+            {{ block "main" . }}{{ end }}
+          </div>
+          <div class="main-toc">
+            {{ .TableOfContents }}
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            {{ partial "logo.html" (dict "width" "159" "height" "34" "class" "footer-logo") }}
+            <br />
+            <p>
+              Medplum's platform offers all you<br />need to build secure and
+              compliant<br />healthcare apps.
+            </p>
+            <a href="/security"
+              ><img
+                src="/img/compliance/soc.png"
+                class="medplum-soc-compliance-image"
+                loading="lazy"
+                alt="SOC" /></a
+            ><a href="/security"
+              ><img
+                src="/img/compliance/hipaa.png"
+                class="medplum-hipaa-compliance-image"
+                loading="lazy"
+                alt="HIPAA"
+            /></a>
+          </div>
+          <div class="column">
+            <div class="row">
+              <div class="column">
+                <div class="footer__title">Developers</div>
+                <ul class="footer__items clean-list">
+                  <li>
+                    <a class="footer-link" href="/docs/tutorials">Getting started</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="/docs">Documentation</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="/search">Search</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="column">
+                <div class="footer__title">Community</div>
+                <ul class="footer__items clean-list">
+                  <li>
+                    <a class="footer-link" href="/case-studies">Case Studies</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.gg/medplum"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer-link"
+                      >Discord</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://storybook.medplum.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer-link"
+                      >Storybook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/medplum/medplum"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer-link"
+                      >GitHub</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://linen.medplum.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer-link"
+                      >Knowledge Base</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-link" href="/docs/contributing">Contributing</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="column">
+                <div class="footer__title">Company</div>
+                <ul class="footer__items clean-list">
+                  <li>
+                    <a class="footer-link" href="/about">About us</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="/pricing">Pricing</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="/enterprise">Enterprise</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="/careers">Careers</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="/blog">Blog</a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="/brand">Brand</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-separator" />
+        <div class="row">
+          <div class="column">Copyright © 2026 Orangebot, Inc.</div>
+          <div class="column_LziZ rightAligned_oOt7">
+            <a class="footer-link footer-bottom-link" href="/security">Security</a
+            ><a class="footer-link footer-bottom-link" href="/terms">Terms of Service</a
+            ><a class="footer-link footer-bottom-link" href="/privacy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

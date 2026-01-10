@@ -1,0 +1,24 @@
+.feature-grid {
+  display: grid;
+  overflow: hidden;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: auto auto;
+  border: 1px solid var(--oc-gray-2);
+  border-radius: 32px;
+  background-color: var(--oc-gray-2);
+  transition: all 200ms ease;
+}
+
+[data-theme="dark"] .feature-grid {
+  background: var(--oc-gray-8);
+  border-color: var(--oc-gray-9);
+}
+
+@media screen and (max-width: 996px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
