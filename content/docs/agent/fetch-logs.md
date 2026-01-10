@@ -1,7 +1,7 @@
 ---
 id: fetch-logs
 title: Agent Fetch Logs
-sidebar_position: 12
+weight: 12
 ---
 
 # Agent Fetch Logs

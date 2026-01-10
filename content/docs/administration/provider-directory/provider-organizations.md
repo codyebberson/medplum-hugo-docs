@@ -1,7 +1,7 @@
 ---
 id: provider-organizations
 title: Modeling Provider Organizations
-sidebar_position: 0
+weight: 0
 ---
 
 # Modeling Provider Organizations

@@ -1,7 +1,7 @@
 ---
 id: aws
 title: AWS Textract/Comprehend
-sidebar_position: 20
+weight: 20
 ---
 
 # AWS Textract/Comprehend

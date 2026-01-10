@@ -1,7 +1,7 @@
 ---
 id: onc
 title: ONC Certification
-sidebar_position: 4
+weight: 4
 ---
 
 # ONC Certification

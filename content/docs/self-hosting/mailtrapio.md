@@ -1,7 +1,7 @@
 ---
 id: mailtrapio
 title: Testing emails with Mailtrap Email Sandbox
-sidebar_position: 1100
+weight: 1100
 ---
 
 # Testing emails with Mailtrap Email Sandbox

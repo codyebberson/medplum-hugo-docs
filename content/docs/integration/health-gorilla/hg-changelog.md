@@ -2,7 +2,7 @@
 id: hg-changelog
 title: HealthGorilla Integration Changelog
 sidebar_label: Changelog
-sidebar_position: 99
+weight: 99
 ---
 
 # HealthGorilla Integration Changelog

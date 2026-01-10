@@ -1,7 +1,7 @@
 ---
 id: publishing-npm-packages
 title: Publishing NPM Packages
-sidebar_position: 101
+weight: 101
 ---
 
 # Publishing NPM Packages

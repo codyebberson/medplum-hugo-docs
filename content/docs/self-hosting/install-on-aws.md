@@ -1,7 +1,7 @@
 ---
 id: install-on-aws
 title: Install on AWS
-sidebar_position: 2
+weight: 2
 ---
 
 # Install on AWS

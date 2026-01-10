@@ -2,7 +2,7 @@
 id: index
 title: Migrating to Medplum
 toc_max_heading_level: 3
-sidebar_position: 0
+weight: 0
 ---
 
 # Migrating to Medplum

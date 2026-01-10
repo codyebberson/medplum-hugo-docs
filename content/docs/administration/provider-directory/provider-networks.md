@@ -1,7 +1,7 @@
 ---
 id: provider-networks
 title: Modeling Provider Networks
-sidebar_position: 1
+weight: 1
 ---
 
 # Modeling Provider Networks

@@ -1,7 +1,7 @@
 ---
 id: run-the-stack
 title: Run the Stack
-sidebar_position: 20
+weight: 20
 toc_max_heading_level: 4
 ---
 

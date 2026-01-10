@@ -3,8 +3,8 @@ id: structured-data-capture
 title: Structured Data Capture
 ---
 
-import ExampleCode from '!!raw-loader!@site/..//examples/src/questionnaires/structured-data-capture.ts';
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
+
+
 
 # Structured Data Capture
 

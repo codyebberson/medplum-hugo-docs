@@ -1,7 +1,7 @@
 ---
 id: google-auth
 title: Google Authentication
-sidebar_position: 5
+weight: 5
 tags: [auth]
 ---
 

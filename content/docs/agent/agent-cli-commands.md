@@ -1,7 +1,7 @@
 ---
 id: agent-cli-commands
 title: Agent CLI Commands
-sidebar_position: 7
+weight: 7
 ---
 
 # Agent CLI Commands

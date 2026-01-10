@@ -1,7 +1,7 @@
 ---
 id: ordering-labs-imaging
 title: Order Labs and Imaging
-sidebar_position: 3
+weight: 3
 ---
 
 # Order Labs and Imaging

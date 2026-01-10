@@ -3,8 +3,8 @@ id: client
 title: Client Application Endpoint
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 # Client Application Endpoint
 

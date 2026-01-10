@@ -2,11 +2,8 @@
 id: convert-to-fhir
 title: Converting Data to FHIR
 toc_max_heading_level: 3
-sidebar_position: 3
+weight: 3
 ---
-
-import ExampleCode from '!!raw-loader!@site/../examples/src/migration/convert-to-fhir.ts';
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
 
 # Converting Data to FHIR
 

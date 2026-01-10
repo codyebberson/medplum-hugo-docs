@@ -1,7 +1,7 @@
 ---
 id: tree-shaking
 title: Tree Shaking
-sidebar_position: 10
+weight: 10
 ---
 
 # Tree Shaking

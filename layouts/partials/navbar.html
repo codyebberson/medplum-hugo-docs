@@ -1,13 +1,12 @@
 <nav class="navbar">
   <div class="navbar-left">
-    <a class="navbar-link navbar-logo-link" href="/">{{ partial "logo" (dict "width" "120" "height" "26" "class" "navbar-logo-image") }}</a>
+    <a class="navbar-link navbar-logo-link" href="/">
+      {{ partial "logo" (dict "width" "120" "height" "26" "class" "navbar-logo-image") }}
+    </a>
     <a class="navbar-link" href="/products">Products</a>
     <a class="navbar-link" href="/solutions">Solutions</a>
     <a class="navbar-link" href="/docs">Resources</a>
     <a class="navbar-link" href="/pricing">Pricing</a>
-    <input type="checkbox" id="toggle-left-nav" />
-    <input type="checkbox" id="toggle-breadcrumbs" />
-    <input type="checkbox" id="toggle-toc" />
   </div>
   <div class="navbar-right">
     <a class="navbar-link" href="https://app.medplum.com/" target="_blank">Sign In</a>

@@ -1,7 +1,7 @@
 ---
 id: search-architecture
 title: Search Architecture
-sidebar_position: 205
+weight: 205
 ---
 
 # Search Architecture

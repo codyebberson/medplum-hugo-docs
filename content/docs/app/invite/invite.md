@@ -1,14 +1,14 @@
 ---
 id: invite
 title: Invite a user
-sidebar_position: 3
+weight: 3
 ---
 
 # Invite a user
 
 This guide explains how to invite another user to your Medplum project.
 
-import adminUsersPage from './admin-users-page.png'
+
 
 <img alt="Admin Users Page" src={adminUsersPage} style={{maxWidth: "75%"}}/>
 
@@ -17,7 +17,7 @@ import adminUsersPage from './admin-users-page.png'
 3. Click on the "Users" tab.
 4. Click on the "Invite new user" link at the bottom of the screen.
 
-import inviteNewUser from './invite-new-user.png'
+
 
 <img alt="Invite New User" src={inviteNewUser} style={{maxWidth: "75%"}}/>
 

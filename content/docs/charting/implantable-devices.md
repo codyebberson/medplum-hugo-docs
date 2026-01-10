@@ -1,7 +1,7 @@
 ---
 id: implantable-devices
 title: Recording Implantable Devices
-sidebar_position: 4
+weight: 4
 ---
 
 # Recording Implantable Devices

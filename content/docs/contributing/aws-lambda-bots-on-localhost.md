@@ -1,7 +1,7 @@
 ---
 id: aws-lambda-bots-on-localhost
 title: Running AWS Lambda Bots with Localhost
-sidebar_position: 1000
+weight: 1000
 ---
 
 # Running AWS Lambda Bots with Localhost

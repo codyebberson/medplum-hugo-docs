@@ -1,7 +1,7 @@
 ---
 id: super-admin-cli
 title: Super Admin CLI
-sidebar_position: 80
+weight: 80
 ---
 
 # Super Admin CLI

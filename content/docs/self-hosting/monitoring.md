@@ -1,7 +1,7 @@
 ---
 id: monitoring
 title: Monitoring Your Self-Hosted Medplum Instance
-sidebar_position: 202
+weight: 202
 ---
 
 # Monitoring Your Self-Hosted Medplum Instance

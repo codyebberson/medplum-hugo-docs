@@ -1,7 +1,7 @@
 ---
 id: patient-demographics
 title: Patient Demographics
-sidebar_position: 1
+weight: 1
 ---
 
 # Patient Demographics

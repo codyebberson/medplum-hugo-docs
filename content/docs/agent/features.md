@@ -1,7 +1,7 @@
 ---
 id: features
 title: Agent Features
-sidebar_position: 2
+weight: 2
 ---
 
 # Agent Features

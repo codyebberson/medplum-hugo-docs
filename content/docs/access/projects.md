@@ -1,7 +1,7 @@
 ---
 id: projects
 title: Projects
-sidebar_position: 0
+weight: 0
 tags: [auth]
 ---
 

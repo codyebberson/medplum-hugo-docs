@@ -1,7 +1,7 @@
 ---
 id: clia-cap
 title: CLIA/CAP Certification
-sidebar_position: 5
+weight: 5
 ---
 
 # CLIA/CAP Certification

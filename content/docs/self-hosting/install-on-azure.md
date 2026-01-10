@@ -1,7 +1,7 @@
 ---
 id: install-on-azure
 title: Install on Azure
-sidebar_position: 7
+weight: 7
 ---
 
 # Install on Azure

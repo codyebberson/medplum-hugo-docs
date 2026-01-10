@@ -1,7 +1,7 @@
 ---
 id: install-on-gcp
 title: Install on GCP
-sidebar_position: 6
+weight: 6
 ---
 
 # Install on GCP

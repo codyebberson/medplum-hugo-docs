@@ -1,7 +1,7 @@
 ---
 id: opentelemetry
 title: OpenTelemetry
-sidebar_position: 900
+weight: 900
 ---
 
 # OpenTelemetry

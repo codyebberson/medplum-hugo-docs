@@ -1,12 +1,9 @@
 ---
 id: client-credentials
 title: Client Credentials
-sidebar_position: 3
+weight: 3
 tags: [auth]
 ---
-
-import BrowserOnlyTabs from '@site/src/components/BrowserOnlyTabs';
-import TabItem from '@theme/TabItem';
 
 # Client Credentials
 

@@ -1,7 +1,7 @@
 ---
 id: bot-cron-job
 title: Cron Jobs for Bots
-sidebar_position: 21
+weight: 21
 ---
 
 # Cron Jobs for Bots

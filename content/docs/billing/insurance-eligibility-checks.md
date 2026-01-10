@@ -1,11 +1,8 @@
 ---
 id: insurance-eligibility-checks
 title: Insurance Eligibility Checks
-sidebar_position: 3
+weight: 3
 ---
-
-import ExampleCode from '!!raw-loader!@site/..//examples/src/billing/insurance-eligibility-checks.ts';
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
 
 # Insurance Eligibility Checks
 

@@ -1,7 +1,7 @@
 ---
 id: upgrading-server
 title: Upgrading Medplum Server
-sidebar_position: 90
+weight: 90
 ---
 
 # Upgrading Medplum Server

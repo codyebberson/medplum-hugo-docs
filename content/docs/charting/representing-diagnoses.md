@@ -3,8 +3,8 @@ id: representing-diagnoses
 title: Representing Diagnoses
 ---
 
-import ExampleCode from '!!raw-loader!@site/../examples/src/charting/representing-diagnoses.ts';
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
+
+
 
 # Representing Diagnoses
 

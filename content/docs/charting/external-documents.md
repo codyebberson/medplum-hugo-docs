@@ -3,11 +3,11 @@ id: external-documents
 title: Handling External Files
 ---
 
-import ExampleCode from '!!raw-loader!@site/../examples/src/charting/external-documents.ts';
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
+
+
 
 # Handling External Files
 

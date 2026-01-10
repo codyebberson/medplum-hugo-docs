@@ -1,7 +1,7 @@
 ---
 id: patient-profile
 title: Patient Profile
-sidebar_position: 200
+weight: 200
 ---
 
 # Patient Profile

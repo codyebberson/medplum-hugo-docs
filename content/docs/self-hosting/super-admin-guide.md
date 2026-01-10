@@ -1,7 +1,7 @@
 ---
 id: super-admin-guide
 title: Super Admin Guide
-sidebar_position: 70
+weight: 70
 ---
 
 # Super Admin Guide

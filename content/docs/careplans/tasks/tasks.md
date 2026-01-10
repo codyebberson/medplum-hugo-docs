@@ -1,18 +1,12 @@
 ---
 id: tasks
 title: Using Tasks to Manage Clinical Workflow
-sidebar_position: 0
+weight: 0
 tags:
   - care plans
   - workflow
   - tasks
 ---
-
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-import ExampleCode from '!!raw-loader!@site/..//examples/src/careplans/tasks.ts';
 
 # Using `Tasks` to Manage Clinical Workflow
 

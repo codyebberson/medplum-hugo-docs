@@ -1,7 +1,7 @@
 ---
 id: query-limits
 title: Query Limits
-sidebar_position: 4
+weight: 4
 ---
 
 # Query Limits

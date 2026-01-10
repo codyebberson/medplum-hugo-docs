@@ -1,7 +1,7 @@
 ---
 id: external-function
 title: External Lambda Functions
-sidebar_position: 20
+weight: 20
 ---
 
 # External Lambda Functions

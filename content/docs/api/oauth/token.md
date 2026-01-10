@@ -1,7 +1,7 @@
 ---
 id: token
 title: Token endpoint
-sidebar_position: 2
+weight: 2
 ---
 
 # Token endpoint

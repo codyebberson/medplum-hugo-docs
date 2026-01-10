@@ -1,7 +1,7 @@
 ---
 id: subscription-extensions
 title: Subscription Extensions
-sidebar_position: 3
+weight: 3
 tags:
   - subscription
 ---

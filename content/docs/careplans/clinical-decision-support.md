@@ -3,7 +3,7 @@ id: clinical-decision-support
 title: Clinical Decision Support
 tags: ['compliance']
 keywords: ['clinical decision support', 'onc']
-sidebar_position: 6
+weight: 6
 ---
 
 # Clinical Decision Support

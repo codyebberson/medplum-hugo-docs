@@ -1,7 +1,7 @@
 ---
 id: on-behalf-of
 title: On-Behalf-Of
-sidebar_position: 30
+weight: 30
 tags: [auth]
 ---
 

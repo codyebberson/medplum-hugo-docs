@@ -3,8 +3,8 @@ id: bot
 title: Bot Endpoint
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 # Bot Endpoint
 

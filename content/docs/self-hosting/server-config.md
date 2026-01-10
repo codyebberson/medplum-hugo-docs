@@ -1,7 +1,7 @@
 ---
 id: server-config
 title: Server Config
-sidebar_position: 50
+weight: 50
 ---
 
 # Server Config

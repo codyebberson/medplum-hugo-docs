@@ -1,13 +1,10 @@
 ---
 id: publish-and-subscribe
 title: Publish and Subscribe
-sidebar_position: 2
+weight: 2
 tags:
   - subscription
 ---
-
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-import ExampleCode from '!!raw-loader!@site/../examples/src/tutorials/api-basics/publish-and-subscribe.ts';
 
 # Publish and Subscribe
 

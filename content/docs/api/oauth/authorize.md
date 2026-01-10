@@ -1,7 +1,7 @@
 ---
 id: authorize
 title: Authorize endpoint
-sidebar_position: 1
+weight: 1
 ---
 
 # Authorize endpoint

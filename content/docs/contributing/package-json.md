@@ -1,7 +1,7 @@
 ---
 id: package-json
 title: Working with package.json
-sidebar_position: 60
+weight: 60
 ---
 
 # Working with package.json

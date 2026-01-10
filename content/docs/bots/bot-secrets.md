@@ -1,7 +1,7 @@
 ---
 id: bot-secrets
 title: Bot Secrets
-sidebar_position: 5
+weight: 5
 toc_max_heading_level: 2
 ---
 

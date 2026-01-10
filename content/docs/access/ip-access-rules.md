@@ -1,7 +1,7 @@
 ---
 id: ip-access-rules
 title: IP Access Rules
-sidebar_position: 2
+weight: 2
 tags: [auth]
 ---
 

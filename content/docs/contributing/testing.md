@@ -1,7 +1,7 @@
 ---
 id: testing
 title: Testing
-sidebar_position: 50
+weight: 50
 ---
 
 # Testing

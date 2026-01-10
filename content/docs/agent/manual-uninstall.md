@@ -1,7 +1,7 @@
 ---
 id: manual-uninstall
 title: Manual Uninstall
-sidebar_position: 200
+weight: 200
 ---
 
 # Manual Uninstall

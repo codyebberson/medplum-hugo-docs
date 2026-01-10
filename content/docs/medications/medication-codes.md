@@ -12,9 +12,6 @@ tags:
   - rxnorm
 ---
 
-import ExampleCode from '!!raw-loader!@site/..//examples/src/medications/medication-codes.ts';
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-
 # Medication Code Systems
 
 <div className="responsive-iframe-wrapper">

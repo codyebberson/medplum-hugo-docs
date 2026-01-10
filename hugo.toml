@@ -11,5 +11,9 @@ title = 'Medplum'
   target = "assets/icons/tabler"
 
 [[module.mounts]]
+  source = "node_modules/mermaid/dist"
+  target = "assets/js/vendor/mermaid"
+
+[[module.mounts]]
   source = "node_modules/swup/dist"
   target = "assets/js/vendor/swup"

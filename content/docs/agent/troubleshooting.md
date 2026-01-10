@@ -1,7 +1,7 @@
 ---
 id: troubleshooting
 title: Troubleshooting
-sidebar_position: 100
+weight: 100
 ---
 
 # Troubleshooting

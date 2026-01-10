@@ -2,7 +2,7 @@
 id: migration-sequence
 title: Sequencing Your Migration
 toc_max_heading_level: 3
-sidebar_position: 2
+weight: 2
 ---
 
 # Sequencing Your Migration

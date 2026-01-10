@@ -1,7 +1,7 @@
 ---
 id: mcp
 title: Medplum MCP
-sidebar_position: 10
+weight: 10
 ---
 
 # Medplum MCP

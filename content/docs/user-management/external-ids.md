@@ -1,7 +1,7 @@
 ---
 id: external-ids
 title: Using External IDs
-sidebar_position: 8
+weight: 8
 tags: [auth]
 ---
 

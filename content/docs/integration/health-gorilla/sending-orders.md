@@ -1,7 +1,7 @@
 ---
 id: sending-orders
 title: Sending Orders
-sidebar_position: 1
+weight: 1
 ---
 
 # Sending Orders

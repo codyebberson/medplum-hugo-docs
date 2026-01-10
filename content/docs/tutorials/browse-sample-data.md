@@ -1,7 +1,7 @@
 ---
 id: browse-sample-data
 title: Browse Sample Data
-sidebar_position: 4
+weight: 4
 sidebar_label: Browse Sample Data
 ---
 

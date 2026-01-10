@@ -1,7 +1,7 @@
 ---
 id: bot-for-questionnaire-response
 title: Bot for QuestionnaireResponse
-sidebar_position: 4
+weight: 4
 ---
 
 # Bot for QuestionnaireResponse
@@ -32,7 +32,7 @@ Let's create a simple example Patient Registration form to see how this works. W
 
 ### 1. Create the Questionnaire
 
-import questionnaireSidebarURL from './questionnaire-sidebar.png'
+
 
 Our first step will be to create the questionnaire in the Medplum App
 
@@ -80,7 +80,7 @@ Click on your form, fill it out, and click “Submit”.
 
 Now we’ll inspect the data. Click on the “Review your Answers” link.
 
-import reviewAnswersUrl from './review-answers.png';
+
 
 <img src={reviewAnswersUrl} style={{maxHeight:'250px', width:'auto'}}/>
 
@@ -181,7 +181,7 @@ The last step is to have your Bot listen to your Questionnaire responses.
 3. Start typing the name of your Bot.
 4. When your Bot appears in the type ahead, select it and click "Connect"
 
-import connectBotUrl from './connect-bot.png';
+
 
 <img alt='Connect Bot to Questionnaire' src={connectBotUrl} style={{maxHeight:'500px', width:'auto'}}/>
 

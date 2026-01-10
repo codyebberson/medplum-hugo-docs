@@ -1,7 +1,7 @@
 ---
 id: register
 title: Register an Account
-sidebar_position: 2
+weight: 2
 ---
 
 # Register an Account

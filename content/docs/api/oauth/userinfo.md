@@ -1,7 +1,7 @@
 ---
 id: userinfo
 title: UserInfo endpoint
-sidebar_position: 3
+weight: 3
 ---
 
 # UserInfo endpoint

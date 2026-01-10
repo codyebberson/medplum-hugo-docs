@@ -3,8 +3,8 @@ id: questionnaires-and-responses
 title: Modeling Questionnaires and Responses
 ---
 
-import ExampleCode from '!!raw-loader!@site/..//examples/src/questionnaires/questionnaires-and-responses.ts';
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
+
+
 
 # Modeling Questionnaires and Responses
 

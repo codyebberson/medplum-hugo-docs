@@ -1,7 +1,7 @@
 ---
 id: bot-basics
 title: Bot Basics
-sidebar_position: 1
+weight: 1
 toc_max_heading_level: 2
 ---
 

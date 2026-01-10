@@ -1,7 +1,7 @@
 ---
 id: bot-run-as-user
 title: Run as User
-sidebar_position: 10
+weight: 10
 ---
 
 # Run as User

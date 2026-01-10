@@ -1,7 +1,7 @@
 ---
 id: server-profiling
 title: Server Profiling
-sidebar_position: 202
+weight: 202
 ---
 
 # Server Profiling

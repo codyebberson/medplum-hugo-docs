@@ -1,7 +1,7 @@
 ---
 id: consuming-webhooks
 title: Consuming Webhooks
-sidebar_position: 1000
+weight: 1000
 tags: [bots, subscriptions, auth, security]
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: patient-deduplication
 title: Patient Deduplication Architectures
-sidebar_position: 11
+weight: 11
 ---
 
 # Patient Deduplication Architectures

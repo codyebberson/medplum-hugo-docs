@@ -1,7 +1,7 @@
 ---
 id: considerations
 title: Self-Hosting vs Cloud
-sidebar_position: 1
+weight: 1
 ---
 
 # Self-Hosting vs Cloud

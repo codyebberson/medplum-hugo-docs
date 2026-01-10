@@ -1,7 +1,7 @@
 ---
 id: install-on-ubuntu
 title: Install on Ubuntu
-sidebar_position: 3
+weight: 3
 ---
 
 # Install on Ubuntu

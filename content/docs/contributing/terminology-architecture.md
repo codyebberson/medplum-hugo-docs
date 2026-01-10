@@ -1,7 +1,7 @@
 ---
 id: terminology-architecture
 title: Terminology Architecture
-sidebar_position: 206
+weight: 206
 ---
 
 # Terminology Architecture

@@ -2,7 +2,7 @@
 id: adoption-strategy
 title: Adoption Strategy
 toc_max_heading_level: 3
-sidebar_position: 5
+weight: 5
 pagination_next: null
 ---
 

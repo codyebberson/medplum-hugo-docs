@@ -17,6 +17,7 @@
   "devDependencies": {
     "@tabler/icons": "3.36.1",
     "hugo-bin": "0.149.2",
+    "mermaid": "11.12.2",
     "open-color": "1.9.1",
     "swup": "4.8.2"
   }

@@ -1,7 +1,7 @@
 ---
 id: setting-configuration
 title: Setting Medplum Server Configuration
-sidebar_position: 2
+weight: 2
 ---
 
 # Setting Medplum Server Configuration

@@ -2,14 +2,8 @@
 id: reading-data
 title: Reading Data
 toc_max_heading_level: 5
-sidebar_position: 2
+weight: 2
 ---
-
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-import ExampleCode from '!!raw-loader!@site/..//examples/src/fhir-datastore/reading-data.ts';
 
 # Reading Data
 

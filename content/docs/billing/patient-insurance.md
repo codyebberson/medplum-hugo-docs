@@ -1,7 +1,7 @@
 ---
 id: patient-insurance
 title: Representing Patient Insurance Coverage
-sidebar_position: 2
+weight: 2
 tags:
   - billing
   - insurance
@@ -11,9 +11,6 @@ keywords:
   - copay
   - fhir
 ---
-
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-import Example from '!!raw-loader!@site/../../examples/medplum-demo-bots/src/candid-health/send-to-candid.test.ts';
 
 # Representing Patient Insurance Coverage
 

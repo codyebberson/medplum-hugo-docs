@@ -1,7 +1,7 @@
 ---
 id: aws-cdk-settings
 title: AWS CDK Settings Reference
-sidebar_position: 2
+weight: 2
 ---
 
 # AWS CDK Settings Reference

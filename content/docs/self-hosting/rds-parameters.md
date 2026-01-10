@@ -1,7 +1,7 @@
 ---
 id: rds-parameters
 title: Update RDS Parameters
-sidebar_position: 100
+weight: 100
 ---
 
 # Update RDS Parameters

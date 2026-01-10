@@ -1,7 +1,7 @@
 ---
 id: soc2
 title: SOC2 Type II Certification
-sidebar_position: 5
+weight: 5
 ---
 
 # SOC2 Type II Certification

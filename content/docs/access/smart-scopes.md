@@ -1,7 +1,7 @@
 ---
 id: smart-scopes
 title: SMART Scopes
-sidebar_position: 8
+weight: 8
 tags: [auth]
 ---
 

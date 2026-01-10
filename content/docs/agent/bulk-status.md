@@ -1,7 +1,7 @@
 ---
 id: bulk-status
 title: Agent Bulk Status
-sidebar_position: 11
+weight: 11
 ---
 
 # Agent Bulk Status

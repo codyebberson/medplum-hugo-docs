@@ -1,7 +1,7 @@
 ---
 id: index
 title: Medplum Provider
-sidebar_position: 1
+weight: 1
 ---
 
 # Medplum Provider

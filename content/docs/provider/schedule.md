@@ -1,7 +1,7 @@
 ---
 id: schedule
 title: Schedule
-sidebar_position: 300
+weight: 300
 ---
 
 # Schedule

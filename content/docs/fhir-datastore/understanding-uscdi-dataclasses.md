@@ -1,7 +1,7 @@
 ---
 id: understanding-uscdi-dataclasses
 title: Understanding USCDI Data Classes
-sidebar_position: 10
+weight: 10
 ---
 
 # Understanding USCDI Data Classes

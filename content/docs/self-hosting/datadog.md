@@ -1,7 +1,7 @@
 ---
 id: datadog
 title: Datadog Integration
-sidebar_position: 1000
+weight: 1000
 ---
 
 # Datadog Integration

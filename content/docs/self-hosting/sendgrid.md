@@ -1,7 +1,7 @@
 ---
 id: sendgrid
 title: Send SMTP Emails with SendGrid
-sidebar_position: 1100
+weight: 1100
 ---
 
 # Send SMTP Emails with SendGrid

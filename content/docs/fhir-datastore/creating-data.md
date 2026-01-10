@@ -1,15 +1,9 @@
 ---
 id: creating-data
 title: Creating Data
-sidebar_position: 1
+weight: 1
 toc_max_heading_level: 4
 ---
-
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-import ExampleCode from '!!raw-loader!@site/..//examples/src/fhir-datastore/creating-data.ts';
 
 # Creating Data
 

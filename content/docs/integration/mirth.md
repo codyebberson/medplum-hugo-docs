@@ -1,7 +1,7 @@
 ---
 id: mirth
 title: Medplum vs Mirth
-sidebar_position: 100
+weight: 100
 slug: mirth
 ---
 

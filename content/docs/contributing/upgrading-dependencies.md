@@ -1,7 +1,7 @@
 ---
 id: upgrading-dependencies
 title: Upgrading Dependencies
-sidebar_position: 100
+weight: 100
 ---
 
 # Upgrading Dependencies

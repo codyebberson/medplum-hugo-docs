@@ -2,11 +2,8 @@
 id: profiles
 title: Profiles
 toc_max_heading_level: 5
-sidebar_position: 9
+weight: 9
 ---
-
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-import ExampleCode from '!!raw-loader!@site/..//examples/src/fhir-datastore/profiles.ts';
 
 # Profiles
 
@@ -171,7 +168,7 @@ To upload the generated profiles to Medplum:
 
 ```typescript
 import { MedplumClient } from '@medplum/core';
-import profileDefinition from './fsh-generated/resources/StructureDefinition-medplum-test-patient.json';
+
 
 const medplum = new MedplumClient();
 await medplum.createResource(profileDefinition);

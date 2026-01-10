@@ -2,7 +2,7 @@
 id: deleting-data
 title: Deleting Data
 toc_max_heading_level: 5
-sidebar_position: 4
+weight: 4
 ---
 
 # Deleting Data

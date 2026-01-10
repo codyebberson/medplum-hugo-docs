@@ -1,7 +1,7 @@
 ---
 id: requirements
 title: System Requirements
-sidebar_position: 4
+weight: 4
 ---
 
 # System Requirements

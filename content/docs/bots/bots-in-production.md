@@ -1,7 +1,7 @@
 ---
 id: bots-in-production
 title: Bots in Production
-sidebar_position: 2
+weight: 2
 toc_max_heading_level: 2
 ---
 

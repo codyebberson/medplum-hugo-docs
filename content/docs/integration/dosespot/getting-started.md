@@ -1,7 +1,7 @@
 ---
 id: getting-started
 title: Getting Started with DoseSpot
-sidebar_position: 1
+weight: 1
 ---
 
 # Getting Started with DoseSpot

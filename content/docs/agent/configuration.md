@@ -1,7 +1,7 @@
 ---
 id: configuration
 title: Agent-Side Configuration
-sidebar_position: 3
+weight: 3
 ---
 
 # Agent-Side Configuration

@@ -1,7 +1,7 @@
 ---
 id: disaster-recovery
 title: Disaster Recovery
-sidebar_position: 204
+weight: 204
 ---
 
 # Disaster Recovery

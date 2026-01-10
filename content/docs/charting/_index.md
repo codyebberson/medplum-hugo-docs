@@ -1,7 +1,7 @@
 ---
 id: index
 title: Charting
-sidebar_position: 0
+weight: 0
 ---
 
 # Charting

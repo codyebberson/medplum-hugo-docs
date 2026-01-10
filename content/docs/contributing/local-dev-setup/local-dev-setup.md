@@ -1,7 +1,7 @@
 ---
 id: local-dev-setup
 title: Local development setup
-sidebar_position: 10
+weight: 10
 ---
 
 # Local development setup
@@ -49,7 +49,7 @@ When you first open with workspace, Visual Studio will automatically prompt you 
 
 Alternatively, you can search for the "Recommended Extensions" in the Visual Studio extension manager and install from there.
 
-import videoUrl from './recommended-extensions.webm';
+
 
   <video width="100%"  playsInline autoPlay muted loop preload="auto" >
     <source src={videoUrl} type="video/webm"/>

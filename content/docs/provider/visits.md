@@ -1,7 +1,7 @@
 ---
 id: visits
 title: Visits
-sidebar_position: 400
+weight: 400
 ---
 
 # Visits

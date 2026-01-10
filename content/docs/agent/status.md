@@ -1,7 +1,7 @@
 ---
 id: status
 title: Agent Status
-sidebar_position: 10
+weight: 10
 ---
 
 # Agent Status

@@ -1,7 +1,7 @@
 ---
 id: acknowledgement-modes
 title: Acknowledgement Modes
-sidebar_position: 20
+weight: 20
 ---
 
 # Acknowledgement Modes

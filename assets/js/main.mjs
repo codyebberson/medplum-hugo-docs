@@ -1,5 +1,8 @@
+import mermaid from "mermaid";
 import Swup from "swup";
 import { initAnimatedCircles } from "./components/animated-circle.mjs";
+
+mermaid.initialize({ startOnLoad: true });
 
 function setBodyDataAttribute(key, value) {
   document.body.dataset[key] = value;
@@ -23,20 +26,3 @@ swup.hooks.on("content:replace", (visit) => {
 });
 
 initAnimatedCircles();
-
-document.getElementById("toggle-left-nav").addEventListener("change", (e) => {
-  setBodyDataAttribute("sidebar", e.target.checked ? "open" : "closed");
-});
-
-document
-  .getElementById("toggle-breadcrumbs")
-  .addEventListener("change", (e) => {
-    setBodyDataAttribute(
-      "breadcrumbs",
-      e.target.checked ? "visible" : "hidden"
-    );
-  });
-
-document.getElementById("toggle-toc").addEventListener("change", (e) => {
-  setBodyDataAttribute("toc", e.target.checked ? "visible" : "hidden");
-});

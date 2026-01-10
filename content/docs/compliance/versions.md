@@ -1,7 +1,7 @@
 ---
 id: versions
 title: Medplum Version Policy
-sidebar_position: 3
+weight: 3
 ---
 
 # Medplum Version Policy

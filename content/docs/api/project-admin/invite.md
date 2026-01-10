@@ -3,8 +3,8 @@ id: invite
 title: Invite User Endpoint
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 
 # Invite User Endpoint
 

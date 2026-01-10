@@ -1,7 +1,7 @@
 ---
 id: receiving-results
 title: Receiving Results
-sidebar_position: 2
+weight: 2
 ---
 
 # Receiving Results

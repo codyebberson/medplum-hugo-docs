@@ -1,7 +1,7 @@
 ---
 id: use-subscription
 title: useSubscription Hook
-sidebar_position: 3
+weight: 3
 tags:
   - subscription
 ---

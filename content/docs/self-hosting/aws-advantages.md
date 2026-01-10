@@ -1,7 +1,7 @@
 ---
 id: aws-advantages
 title: AWS Advantages
-sidebar_position: 10
+weight: 10
 ---
 
 # AWS Advantages

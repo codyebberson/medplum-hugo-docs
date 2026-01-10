@@ -1,14 +1,8 @@
 ---
 id: resource-history
 title: Resource History
-sidebar_position: 6
+weight: 6
 ---
-
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-import ExampleCode from '!!raw-loader!@site/..//examples/src/fhir-datastore/resource-history.ts';
 
 # Resource History
 

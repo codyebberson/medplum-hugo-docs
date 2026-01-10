@@ -1,7 +1,7 @@
 ---
 id: medplum-hello-world
 title: Medplum Hello World
-sidebar_position: 4
+weight: 4
 sidebar_label: Medplum Hello World
 ---
 

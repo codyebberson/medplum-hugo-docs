@@ -2,7 +2,7 @@
 id: fhir-basics
 title: FHIR Basics
 toc_max_heading_level: 2
-sidebar_position: 2.1
+weight: 2.1
 keywords:
   - getting started
   - fhir
@@ -14,8 +14,8 @@ keywords:
 
 # FHIR Basics
 
-import MedicationExample from '!!raw-loader!@site/..//examples/src/medications/medication-codes.ts';
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
+
+
 
 [patient]: /docs/api/fhir/resources/patient
 [practitioner]: /docs/api/fhir/resources/practitioner

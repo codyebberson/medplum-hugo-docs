@@ -1,11 +1,29 @@
 import fs from "node:fs";
-import path from "node:path";
+import path, { resolve } from "node:path";
+
+// const sourceRoot = 'c:/Users/Cody/dev/medplum/packages/docs/docs';
+// const destRoot = 'c:/Users/Cody/dev/medplum-hugo-docs/content/docs';
+
+const sourceRoot = resolve("../medplum/packages/docs/docs");
+const destRoot = resolve("./content/docs");
+const forceWrite = true;
 
 async function main() {
-  await crawlDir("content/docs");
+  console.log("Source root: " + sourceRoot);
+  console.log("Dest root: " + destRoot);
+  await crawlDir(sourceRoot);
 }
 
 async function crawlDir(sourceDir) {
+  if (
+    sourceDir.includes("docs\\sdk") ||
+    sourceDir.includes("docs/sdk") ||
+    sourceDir.includes("docs\\api\\fhir") ||
+    sourceDir.includes("docs/api/fhir")
+  ) {
+    return;
+  }
+
   const files = fs.readdirSync(sourceDir, { withFileTypes: true });
 
   for (const file of files) {
@@ -46,12 +64,35 @@ async function fixFile(sourceFilePath) {
     hasChanges = true;
   }
 
+  // Change "sidebar_position" to "weight"
+  for (let i = 0; i < frontMatter.length; i++) {
+    if (frontMatter[i].startsWith("sidebar_position:")) {
+      frontMatter[i] = frontMatter[i].replace("sidebar_position:", "weight:");
+      hasChanges = true;
+    }
+  }
+
   // Remove backticks from front matter titles
   for (let i = 0; i < frontMatter.length; i++) {
     if (frontMatter[i].startsWith("title:") && frontMatter[i].includes("`")) {
       frontMatter[i] = frontMatter[i].replace(/`/g, "");
       hasChanges = true;
     }
+  }
+
+  // Remove MDX style imports
+  // I.e., `^import (\w)+ from `
+  if (content.match(/^import (\w)+ from .+$/gm)) {
+    content = content.replace(/^import (\w)+ from .+$/gm, "");
+    hasChanges = true;
+  }
+
+  // Remove all imports from "@site/"
+  // import { Section } from '@site/src/components/landing/Section.tsx';
+  // import { Feature, FeatureGrid } from '@site/src/components/landing/FeatureGrid.tsx';
+  if (content.match(/^import .+ from ['"]@site\/.+['"];?$/gm)) {
+    content = content.replace(/^import .+ from ['"]@site\/.+['"];?$/gm, "");
+    hasChanges = true;
   }
 
   // Replace all "```cli" with "```bash"
@@ -78,19 +119,33 @@ async function fixFile(sourceFilePath) {
     hasChanges = true;
   }
 
-  if (hasChanges) {
+  if (hasChanges || forceWrite) {
     const newFrontMatterStr = frontMatter.join("\n");
     const contentWithoutFrontMatter = frontMatterStr
       ? content.replace(frontMatterStr, "").trimStart()
       : content;
+
     const newContent = newFrontMatterStr + "\n\n" + contentWithoutFrontMatter;
 
-    fs.writeFileSync(sourceFilePath, newContent, "utf8");
-    console.log("Fixed file: " + sourceFilePath);
+    const destPath = sourceFilePath
+      .replace(sourceRoot, destRoot)
+      .replace(".mdx", ".md")
+      .replace("index.md", "_index.md")
+      .replace("home.md", "_index.md");
+
+    // Ensure the destination directory exists
+    const destDir = path.dirname(destPath);
+    fs.mkdirSync(destDir, { recursive: true });
+    fs.writeFileSync(destPath, newContent, "utf8");
+    console.log(`Migrated file: ${sourceFilePath} to ${destPath}`);
   }
 }
 
 function getFrontMatter(sourceFilePath, content) {
+  if (!content.trim().startsWith("---")) {
+    return undefined;
+  }
+
   const frontMatterStart = content.indexOf("---\n");
   if (frontMatterStart < 0) {
     return undefined;

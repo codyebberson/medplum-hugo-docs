@@ -1,7 +1,7 @@
 ---
 id: creating-superbills
 title: Creating Superbills
-sidebar_position: 5
+weight: 5
 ---
 
 # Creating Superbills

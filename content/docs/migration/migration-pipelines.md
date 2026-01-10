@@ -2,14 +2,8 @@
 id: migration-pipelines
 title: Building Migration Pipelines
 toc_max_heading_level: 3
-sidebar_position: 4
+weight: 4
 ---
-
-import ExampleCode from '!!raw-loader!@site/../examples/src/migration/migration-pipelines.ts';
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 # Building Migration Pipelines
 

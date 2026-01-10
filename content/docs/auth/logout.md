@@ -1,7 +1,7 @@
 ---
 id: logout
 title: Logout
-sidebar_position: 9
+weight: 9
 tags: [auth]
 ---
 

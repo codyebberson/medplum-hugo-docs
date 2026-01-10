@@ -1,7 +1,7 @@
 ---
 id: hipaa
 title: HIPAA Compliance
-sidebar_position: 6
+weight: 6
 ---
 
 # HIPAA Compliance

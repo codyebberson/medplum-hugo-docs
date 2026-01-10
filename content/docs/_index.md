@@ -1,11 +1,13 @@
 ---
-id: _index
-title: "Welcome to Medplum"
-description: "Documentation for Medplum, the headless EHR platform for building healthcare applications."
+id: home
+title: Welcome to Medplum
+slug: /
+weight: 1
 ---
 
 # Welcome to Medplum
 
+{{< section >}}
 {{< feature-grid columns="2" >}}
 {{< feature title="Get Started" linkText="Read more" linkRef="./docs#get-started" >}}
 Set up and run your medical application in 5 minutes
@@ -20,6 +22,7 @@ Medplum tools for full-stack apps with authentication
 Use HL7, FHIRcast, labs/prescribing, and beyond
 {{< /feature >}}
 {{< /feature-grid >}}
+{{< /section >}}
 
 ## What is Medplum?
 

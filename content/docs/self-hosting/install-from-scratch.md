@@ -1,7 +1,7 @@
 ---
 id: install-from-scratch
 title: Install from scratch
-sidebar_position: 8
+weight: 8
 ---
 
 # Install from scratch

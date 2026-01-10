@@ -1,7 +1,7 @@
 ---
 id: access-policies
 title: Access Policies
-sidebar_position: 1
+weight: 1
 tags: [auth]
 ---
 

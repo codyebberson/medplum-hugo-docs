@@ -1,7 +1,7 @@
 ---
 id: project-settings
 title: Project Settings
-sidebar_position: 60
+weight: 60
 ---
 
 # Project Settings

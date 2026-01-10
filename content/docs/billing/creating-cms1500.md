@@ -1,7 +1,7 @@
 ---
 id: creating-cms1500
 title: Creating CMS 1500
-sidebar_position: 4
+weight: 4
 ---
 
 # Creating CMS 1500

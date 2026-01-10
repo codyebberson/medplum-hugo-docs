@@ -1,7 +1,7 @@
 ---
 id: upgrade-rds-database
 title: Upgrade RDS Database
-sidebar_position: 101
+weight: 101
 ---
 
 # Upgrade RDS Database

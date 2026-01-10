@@ -1,7 +1,7 @@
 ---
 id: clinic-favorite-medications
 title: Clinic Favorite Medications
-sidebar_position: 3
+weight: 3
 ---
 
 # Clinic Favorite Medications

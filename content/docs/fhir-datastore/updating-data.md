@@ -2,14 +2,8 @@
 id: updating-data
 title: Updating Data
 toc_max_heading_level: 5
-sidebar_position: 3
+weight: 3
 ---
-
-import MedplumCodeBlock from '@site/src/components/MedplumCodeBlock';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-import ExampleCode from '!!raw-loader!@site/..//examples/src/fhir-datastore/updating-data.ts';
 
 # Updating Data
 

@@ -1,12 +1,9 @@
 ---
 id: mfa
 title: Multi-Factor Authentication (MFA)
-sidebar_position: 6
+weight: 6
 tags: [auth, security]
 ---
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 # Multi-Factor Authentication (MFA)
 

@@ -1,7 +1,7 @@
 ---
 id: push
 title: Push to Agent
-sidebar_position: 3
+weight: 3
 ---
 
 # Push to Agent
