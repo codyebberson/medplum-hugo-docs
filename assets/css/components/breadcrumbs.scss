@@ -1,5 +1,5 @@
 .breadcrumbs {
-  display: flex;
+  display: none; /* Hidden by default */
   align-items: center;
   padding-left: 0;
   list-style: none;
@@ -17,9 +17,11 @@
 }
 
 .breadcrumbs svg {
-  width: 14px;
-  height: 14px;
-  margin: 2px;
+  width: 24px;
+  height: 24px;
+  padding: 8px 0 2px 0;
+  line-height: 32px;
+  margin: 0;
 }
 
 .breadcrumbs a {

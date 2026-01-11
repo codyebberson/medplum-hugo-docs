@@ -1,4 +1,9 @@
 export function initAnimatedCircles() {
+  const circles = document.querySelectorAll(".animated-circle-container");
+  if (circles.length === 0) {
+    return;
+  }
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -34,7 +39,5 @@ export function initAnimatedCircles() {
     { threshold: 0.1 }
   );
 
-  document
-    .querySelectorAll(".animated-circle-container")
-    .forEach((el) => observer.observe(el));
+  circles.forEach((el) => observer.observe(el));
 }

@@ -2,6 +2,11 @@ baseURL = 'https://www.medplum.com/'
 languageCode = 'en-us'
 title = 'Medplum'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [[module.mounts]]
   source = "assets"
   target = "assets"

@@ -9,6 +9,7 @@
 @import "./components/feature.scss";
 @import "./components/feature-grid.scss";
 @import "./components/footer.scss";
+@import "./components/jumbotron.scss";
 @import "./components/navbar.scss";
 @import "./components/section.scss";
 @import "./components/sidebar.scss";
@@ -103,6 +104,7 @@ a:hover {
 .doc-wrapper {
   flex: 1 0 auto;
   display: flex;
+  min-height: calc(100vh - 60px);
 }
 
 .doc-root {
@@ -131,12 +133,12 @@ body[data-sidebar="open"] aside {
   display: block;
 }
 
-body[data-breadcrumbs="hidden"] .breadcrumbs {
-  display: none;
+body[data-breadcrumbs="visible"] .breadcrumbs {
+  display: flex;
 }
 
-body[data-toc="hidden"] .main-toc {
-  display: none;
+body[data-toc="visible"] .main-toc {
+  display: block;
 }
 
 main {
@@ -152,6 +154,7 @@ main {
 }
 
 .main-toc {
+  display: none; /* Hidden by default */
   flex: 25%;
   padding: 0 16px;
 }
@@ -219,7 +222,7 @@ code {
   // display: flow-root;
   // max-width: var(--ifm-container-width);
   // max-width: 72rem;
-  max-width: 1320px;
+  max-width: 1120px;
   padding-left: var(--ifm-spacing-horizontal);
   padding-right: var(--ifm-spacing-horizontal);
   width: 100%;

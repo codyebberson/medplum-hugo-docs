@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <div class="jumbotron-content">{{ .Inner | markdownify }}</div>  
+  {{ with .Get "src" }}
+    <div class="jumbotron-image">
+      <img
+        src="{{ . | relURL }}"
+        alt="{{ $.Get "alt" | default "Illustration" }}"
+        width="{{ $.Get "width" | default "450" }}"
+        height="{{ $.Get "height" | default "450" }}"
+        {{ with $.Get "class" }}class="{{ . }}"{{ end }}
+        loading="lazy"
+      />
+    </div>
+  {{ end }}
+</div>
