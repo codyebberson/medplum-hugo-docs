@@ -1,4 +1,5 @@
 .hugo_build.lock
+assets/jsconfig.json
 node_modules/
 package-lock.json
 public/
