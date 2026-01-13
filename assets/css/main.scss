@@ -1,10 +1,10 @@
-/* Import Open Color for standard color definitions. */
 @import "./open-color.scss";
 @import "./fonts.scss";
 @import "./components/animated-circle.scss";
 @import "./components/breadcrumbs.scss";
 @import "./components/card.scss";
 @import "./components/card-container.scss";
+@import "./components/doc-footer.scss";
 @import "./components/hero.scss";
 @import "./components/feature.scss";
 @import "./components/feature-grid.scss";
@@ -141,6 +141,10 @@ body[data-toc="visible"] .main-toc {
   display: block;
 }
 
+body[data-doc-footer="visible"] .doc-footer {
+  display: block;
+}
+
 main {
   display: flex;
   flex-grow: 1;
@@ -203,7 +207,6 @@ h6 {
 
 h1 {
   font-style: normal;
-  // font-weight: 600;
   font-size: 44px;
   line-height: 130%;
 }
@@ -219,14 +222,17 @@ code {
 }
 
 .container {
-  // display: flow-root;
-  // max-width: var(--ifm-container-width);
-  // max-width: 72rem;
-  max-width: 1120px;
+  max-width: 1140px;
   padding-left: var(--ifm-spacing-horizontal);
   padding-right: var(--ifm-spacing-horizontal);
   width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
 }
 
 .clean-list {
@@ -252,4 +258,12 @@ code {
   .column {
     margin-bottom: 32px;
   }
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
 }

@@ -8,8 +8,7 @@
     "dev": "hugo server --buildDrafts --buildFuture --noHTTPCache"
   },
   "hugo-bin": {
-    "buildTags": "extended",
-    "version": "0.154.3"
+    "buildTags": "extended"
   },
   "keywords": [],
   "author": "",

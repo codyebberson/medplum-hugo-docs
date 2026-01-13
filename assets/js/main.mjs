@@ -13,6 +13,7 @@ function updateAttributes(newUrl) {
   setAttribute("breadcrumbs", onDocsPage ? "visible" : "hidden");
   setAttribute("sidebar", onDocsPage ? "open" : "closed");
   setAttribute("toc", onDocsPage ? "visible" : "hidden");
+  setAttribute("docFooter", onDocsPage ? "visible" : "hidden");
 }
 
 export const swup = new Swup({

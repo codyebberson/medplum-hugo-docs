@@ -1,0 +1,39 @@
+<div class="doc-footer">
+  <div class="doc-footer-edit-row row">
+    <div class="column align-left">
+      <a href="#">{{ partial "icon" "outline/pencil" }} Edit this page</a>
+    </div>
+    <div class="column align-right">
+      <small
+        ><em>Last updated on <strong>Jan 7, 2026</strong></em></small
+      >
+    </div>
+  </div>
+  <div class="doc-footer-pagination-row row">
+    <div class="column align-left">
+      {{ if .NextInSection }}
+      <a
+        class="doc-footer-pagination-link"
+        href="{{ .NextInSection.Permalink }}"
+      >
+        <div class="doc-footer-pagination-sublabel">Previous</div>
+        <div class="doc-footer-pagination-label">
+          ← {{ .NextInSection.Title }}
+        </div></a
+      >
+      {{ end }}
+    </div>
+    <div class="column align-right">
+      {{ if .PrevInSection }}
+      <a
+        class="doc-footer-pagination-link"
+        href="{{ .PrevInSection.Permalink }}"
+        ><div class="doc-footer-pagination-sublabel">Next</div>
+        <div class="doc-footer-pagination-label">
+          {{ .PrevInSection.Title }} →
+        </div></a
+      >
+      {{ end }}
+    </div>
+  </div>
+</div>

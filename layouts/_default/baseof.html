@@ -31,6 +31,7 @@
           <div class="main-content">
             {{ partial "breadcrumbs" . }}
             {{ block "main" . }}{{ end }}
+            {{ partial "doc-footer" . }}
           </div>
           <div class="main-toc">
             {{ .TableOfContents }}
