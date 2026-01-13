@@ -4,6 +4,7 @@
  */
 
 #TableOfContents {
+  border-left: 1px solid rgb(218, 221, 225);
   max-height: calc(100vh - 84px);
   top: 72px;
   position: sticky;
@@ -11,7 +12,6 @@
 }
 
 #TableOfContents ul {
-  border-left: 1px solid rgb(218, 221, 225);
   padding-left: 0;
   list-style: none;
 }
