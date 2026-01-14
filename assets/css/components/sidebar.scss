@@ -45,7 +45,7 @@
   color: rgb(96, 103, 112);
   cursor: pointer;
   padding: 4px 4px 4px 16px;
-  border-radius: 8px;
+  border-radius: 4px;
   font-weight: 500;
 }
 
@@ -80,7 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 8px;
+  border-radius: 4px;
   transition: background-color 0.1s;
 
   &:hover {
@@ -98,7 +98,7 @@
     align-items: center;
     justify-content: center;
     padding: 4px 8px;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 4px 4px 0;
 
     &:hover {
       background-color: rgba(
