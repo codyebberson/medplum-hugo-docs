@@ -1,6 +1,6 @@
 ---
-title: "Medplum"
-description: "The best docs on the web."
+title: 'Medplum'
+description: 'The best docs on the web.'
 ---
 
 {{< hero title="Build and run modern healthcare apps" >}}
@@ -9,16 +9,23 @@ Medplum is the open source healthcare developer platform.
 
 Start with production-ready apps. Customize, extend, and integrate without rebuilding an EHR from scratch.
 
-[Explore the Provider App](https://www.medplum.com/docs/provider)[Build on the Platform](https://www.medplum.com/docs)
+<p class="hero-buttons">
+<a href="/docs/provider" class="hero-getting-started-button hero-purple-button">
+  Explore the Provider App
+</a>
+<a href="/docs" class="hero-getting-started-button hero-default-button">
+  Build on the Platform
+</a>
+</p>
 
 Built for teams shipping clinical software in production. Hosted or self-managed.
 
-<img src="/img/provider/medplum-provider-app-cover-image.webp" alt="Medplum Provider App screenshot" width="1108" height="484">
+<img src="/img/provider/medplum-provider-app-cover-image.webp" alt="Medplum Provider App screenshot" width="2608" height="1139">
 
 {{< /hero >}}
 
 {{< card-container >}}
-{{< card >}}
+{{< card class="align-center" >}}
 
 {{< animated-circle value="20" suffix="m" >}}
 
@@ -27,7 +34,7 @@ Built for teams shipping clinical software in production. Hosted or self-managed
 From startups to enterprises, Medplum facilitates care for over 20 million patients with hundreds of practices.
 
 {{< /card >}}
-{{< card >}}
+{{< card class="align-center" >}}
 
 {{< animated-circle value="120" suffix="m" >}}
 
@@ -36,7 +43,7 @@ From startups to enterprises, Medplum facilitates care for over 20 million patie
 Powering over 120 million custom workflow actions designed uniquely for your requirements.
 
 {{< /card >}}
-{{< card >}}
+{{< card class="align-center" >}}
 
 {{< animated-circle value="158" suffix="" >}}
 
@@ -47,14 +54,17 @@ Our robust ecosystem of community and documentation keeps you in the company of 
 {{< /card >}}
 {{< /card-container >}}
 
-## Trusted by
+{{< section-header title="Trusted by" >}}{{</ section-header >}}
 
-KitMiga HealthRoHuman FirstCDCThirty MadisonSummer HealthAlley CorpHelpfulFlexpaImagineTiaKitMiga HealthRoHuman FirstCDCThirty MadisonSummer HealthAlley CorpHelpfulFlexpaImagineTia
+{{< logo-scroller >}}
 
-## Connect to the healthcare ecosystem
+{{< section-header title="Connect to the healthcare ecosystem" >}}
 
 Healthcare teams rely on a complex network of external systems.
+
 Medplum supports integrations across common surfaces, and can be extended through plugins and custom modules.
+
+{{</ section-header >}}
 
 {{< feature-grid columns="3" >}}
 {{< feature icon="outline/flask" title="Labs" >}}
@@ -77,10 +87,13 @@ Extend Medplum with reusable integration components.
 {{< /feature >}}
 {{< /feature-grid >}}
 
-## A platform built for healthcare complexity
+{{< section-header title="A platform built for healthcare complexity" >}}
 
 Build what you need—without rebuilding the foundation.
+
 Medplum provides the core primitives required to ship and operate healthcare software in production.
+
+{{</ section-header >}}
 
 {{< feature-grid columns="3" >}}
 {{< feature title="API-first" icon="outline/code" >}}
@@ -95,7 +108,7 @@ Streamline your operations and automate any workflow to activate, track, manage,
 {{< feature title="Open source" icon="outline/device-ipad-horizontal-code" >}}
 Medplum's core technology is open source (Apache 2.0 license) and freely available in GitHub, so there’s never a risk of vendor lock-in.
 {{< /feature >}}
-{{< feature title="Secure &amp; Compliant" icon="outline/shield-check" >}}
+{{< feature title="Secure & Compliant" icon="outline/shield-check" >}}
 Comes with HIPAA and SOC2 compliance out of the box, follows all OWASP security guidelines, and is verified by multiple penetration tests.
 {{< /feature >}}
 {{< feature title="Scalable" icon="outline/chart-bar-popular" >}}
@@ -103,67 +116,70 @@ From MVP to IPO - and every major milestone in between - Medplum’s technology 
 {{< /feature >}}
 {{< /feature-grid >}}
 
-## What will you build?
+{{< section-header title="What will you build?" >}}{{</ section-header >}}
 
-### Custom EHR
+{{< feature-grid columns="3" >}}
+{{< feature title="Custom EHR" icon="outline/heart-rate-monitor" >}}
+Build the exact custom EHR your organization needs, tailored precisely to your unique workflows and
+specifications. Gain complete control over your clinical data and operations.
+{{< /feature >}}
+{{< feature title="Patient Engagement" icon="outline/users" >}}
+Deepen your connection with patients by creating custom, modern experiences that truly resonate. Drive
+better health outcomes through seamless and engaging interactions.
+{{< /feature >}}
+{{< feature title="Scribe & Agents" icon="outline/microphone" >}}
+Go beyond simple transcription with agentic scribes that take action, not just notes. Elevate your AI
+capabilities to streamline operations and enhance decision-making.
+{{< /feature >}}
+{{< feature title="Population Health" icon="outline/chart-bar-popular" >}}
+Transform fragmented patient data into powerful insights for coordinated care delivery. Our platform
+empowers population health teams to improve outcomes and maximize shared savings.
+{{< /feature >}}
+{{< feature title="Care Management" icon="outline/heart" >}}
+Free your care managers to focus on providing truly compassionate and personalized support. Streamline
+administrative tasks so they can dedicate more time to what matters most: patient well-being.
+{{< /feature >}}
+{{< feature title="Revenue Cycle Management" icon="outline/receipt-2" >}}
+Design and automate custom routing and business rules that perfectly fit your financial operations.
+Optimize your revenue cycle for efficiency and maximum returns.
+{{< /feature >}}
+{{< /feature-grid >}}
 
-Build the exact custom EHR your organization needs, tailored precisely to your unique workflows and specifications. Gain complete control over your clinical data and operations.
-
-### Patient Engagement
-
-Deepen your connection with patients by creating custom, modern experiences that truly resonate. Drive better health outcomes through seamless and engaging interactions.
-
-### Scribe & Agents
-
-Go beyond simple transcription with agentic scribes that take action, not just notes. Elevate your AI capabilities to streamline operations and enhance decision-making.
-
-### Population Health
-
-Transform fragmented patient data into powerful insights for coordinated care delivery. Our platform empowers population health teams to improve outcomes and maximize shared savings.
-
-### Care Management
-
-Free your care managers to focus on providing truly compassionate and personalized support. Streamline administrative tasks so they can dedicate more time to what matters most: patient well-being.
-
-### Revenue Cycle Management
-
-Design and automate custom routing and business rules that perfectly fit your financial operations. Optimize your revenue cycle for efficiency and maximum returns.
-
-## Get started, fast
+{{< section-header title="Get started, fast " >}}{{</ section-header >}}
 
 `$ npm init medplum`
 
-## Solutions
+{{< section-header title="Solutions " >}}{{</ section-header >}}
+
+{{< card-container >}}
+{{< card >}}
 
 ### Custom EHR
 
 Save hundreds of hours of dev time with our headless EHR.
 
-[Learn more](https://www.medplum.com/solutions/custom-ehr)
+[Learn more](/solutions/custom-ehr)
 
-[Go arrow](https://www.medplum.com/solutions/custom-ehr)
-
-[Learn more about Medplum Custom EHR](https://www.medplum.com/solutions/custom-ehr)
+{{< /card >}}
+{{< card >}}
 
 ### Patient Portal
 
 Accelerate customizable, scalable patient-facing experiences.
 
-[Learn more](https://www.medplum.com/solutions/patient-portal)
+[Learn more](/solutions/patient-portal)
 
-[Go arrow](https://www.medplum.com/solutions/patient-portal)
-
-[Learn more about Medplum Patient Portal](https://www.medplum.com/solutions/patient-portal)
+{{< /card >}}
+{{< card >}}
 
 ### Provider Portal
 
 Accelerate customizable, scalable provider-facing experiences.
 
-[Learn more](https://www.medplum.com/solutions/provider-portal)
+[Learn more](/solutions/provider-portal)
 
-[Go arrow](https://www.medplum.com/solutions/provider-portal)
-
-[Learn more about Medplum Provider Portal](https://www.medplum.com/solutions/provider-portal)
+{{< /card >}}
+{{< /card-container >}}
 
 ### Infrastructure you can trust to meet any future you make.
 

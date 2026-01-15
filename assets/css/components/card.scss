@@ -10,7 +10,7 @@
   transition: all 200ms ease;
 }
 
-[data-theme='dark'] .card {
+[data-theme="dark"] .card {
   border-color: #333333;
   background: #000;
 }
@@ -19,12 +19,14 @@
   font-size: 2.375rem;
   line-height: 1.25;
   font-weight: 400;
+  margin: 0 auto;
 }
 
 .card h3 {
   font-size: 1.375rem;
   line-height: 1.2;
   font-weight: 400;
+  margin: 0 auto;
 }
 
 .card p {
