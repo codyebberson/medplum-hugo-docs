@@ -147,9 +147,9 @@ Optimize your revenue cycle for efficiency and maximum returns.
 
 {{< section-header title="Get started, fast " >}}{{</ section-header >}}
 
-`$ npm init medplum`
+{{< hero-code >}}$ npm init medplum{{< /hero-code >}}
 
-{{< section-header title="Solutions " >}}{{</ section-header >}}
+{{< section-header title="Solutions" >}}{{</ section-header >}}
 
 {{< card-container >}}
 {{< card >}}
@@ -227,78 +227,99 @@ Go arrow
 
 Learn more about FHIR Basics
 
-## User Testimonials
-
+{{< section-header title="User Testimonials" >}}
 Join thousands of developers across the world who use Medplum.
+{{</ section-header >}}
 
-Michael Caves
-
-**Michael Caves**
-
-Dir of Product, Thirty Madison
+{{< card-container >}}
+{{< testimonial
+  name="Michael Caves"
+  title="Dir of Product, Thirty Madison"
+  imgSrc="/img/avatars/michael-caves.webp"
+>}}
 
 Thanks to the expertise of the Medplum team, we were able to swiftly implement their product and get it up and running seamlessly. Their proactive approach in anticipating and mitigating any issues during our ramp-up was an example of first rate partnership. With their robust product, we've gained the agility to rapidly introduce new features, enabling Thirty Madison to maintain its commitment to putting patients first.
 
-Florencia Herra Vega
-
-**Florencia Herra Vega**
-
-CEO at AlleyCorp Nord
+{{< /testimonial >}}
+{{< testimonial
+  name="Florencia Herra Vega"
+  title="CEO at AlleyCorp Nord"
+  imgSrc="/img/avatars/florencia.webp"
+>}}
 
 We have been dreaming of a product that simplifies building custom EHRs and clinical tools for years. Medplum achieves this with an expert team, a fantastic developer experience, and standards compliance.
 
-Stuart Parmenter
-
-**Stuart Parmenter**
-
-Former CTO, One Medical
+{{< /testimonial >}}
+{{< testimonial
+  name="Stuart Parmenter"
+  title="Former CTO, One Medical"
+  imgSrc="/img/avatars/stuart.png"
+  twitter="https://twitter.com/stuartparmenter"
+>}}
 
 I’ve built healthcare at scale—the hard way. Skip the hidden complexity and start on Medplum’s infrastructure so you can ship care, not plumbing.
 
-Craig Collier
+{{< /testimonial >}}
+{{< /card-container >}}
 
-**Craig Collier**
-
-Senior Software Engineer, Ro
+{{< card-container >}}
+{{< testimonial
+  name="Craig Collier"
+  title="Senior Software Engineer, Ro"
+  imgSrc="/img/avatars/craig-collier.webp"
+>}}
 
 The Medplum GUI is very nice. There’s a lot of depth there.
 
-Hassy Veldstra
-
-**Hassy Veldstra**
-
-Artillery
+{{< /testimonial >}}
+{{< testimonial
+  name="Hassy Veldstra"
+  title="Artillery"
+  imgSrc="/img/avatars/hassy.webp"
+>}}
 
 Love seeing scalability & performance treated as a first-class feature. Always a sign of a project that takes quality seriously.
 
-Phil Fung
-
-**Phil Fung**
-
-Co-founder Kit.com, Facebook Engineer \#15
+{{< /testimonial >}}
+{{< testimonial
+  name="Phil Fung"
+  title="Co-founder Kit.com, Facebook Engineer #15"
+  imgSrc="/img/avatars/phil-fung.webp"
+  twitter="https://twitter.com/philfung"
+>}}
 
 Quality code base, open source and sets your data on the right path with FHIR. No-brainer for those who need to build for healthcare.
 
-![Joshua Kelly][image1]
+{{< /testimonial >}}
+{{< /card-container >}}
 
-**Joshua Kelly**
-
-CTO at Flexpa
+{{< card-container >}}
+{{< testimonial
+  name="Joshua Kelly"
+  title="CTO at Flexpa"
+  imgSrc="/img/avatars/joshuakelly.png"
+  twitter="https://twitter.com/jdjkelly"
+>}}
 
 Medplum is the best FHIR server implementation. Flexpa uses it to power our API and we wouldn't have nearly as good a product without it.
 
-Dima Goncharov
-
-**Dima Goncharov**
-
-CEO Metriport
+{{< /testimonial >}}
+{{< testimonial
+  name="Dima Goncharov"
+  title="CEO Metriport"
+  imgSrc="/img/avatars/dima.webp"
+>}}
 
 Open source will transform healthcare, and Medplum is a prime example.
 
-Jose Rodriguez
-
-**Jose Rodriguez**
-
-Head of Engineering Summer Health
+{{< /testimonial >}}
+{{< testimonial
+  name="Jose Rodriguez"
+  title="Head of Engineering Summer Health"
+  imgSrc="/img/avatars/jose-rodrigues.webp"
+>}}
 
 If you don’t want to reinvent everything, and want standards compliant data and well documented interfaces, Medplum is what you would choose.
+
+{{< /testimonial >}}
+{{< /card-container >}}
