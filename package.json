@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "hugo --minify",
-    "dev": "hugo server --buildDrafts --buildFuture --noHTTPCache"
+    "dev": "hugo server --buildDrafts --buildFuture --noHTTPCache",
+    "pxtorem": "postcss assets/**/*.scss --replace --no-map"
   },
   "hugo-bin": {
     "buildTags": "extended"

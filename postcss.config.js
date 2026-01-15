@@ -3,8 +3,8 @@ module.exports = {
   plugins: {
     'postcss-pxtorem': {
       rootValue: 16,
-      propList: ['*'],
-      replace: true
-    }
-  }
-}
+      propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
+      replace: true,
+    },
+  },
+};
