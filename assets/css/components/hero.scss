@@ -1,6 +1,14 @@
+.hero-section {
+  flex-direction: column;
+  justify-content: center;
+  min-height: 480px;
+  padding: 6rem 0.5rem 5rem;
+  transition: all 0.2s;
+  display: flex;
+}
+
 .hero {
   min-height: 300px;
-  padding: 60px 0;
 }
 
 .hero h1 {
@@ -12,6 +20,62 @@
 
 .hero p {
   color: #4d4d4d;
-  margin: 0;
+  margin: 0 0 20px 0;
   font-size: 1.125rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
+
+.hero-buttons a {
+  display: inline-flex;
+  height: 3.5rem;
+  max-height: none;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  grid-column-gap: 0.625rem;
+  transition: all 200ms ease;
+  font-size: 1rem;
+  text-decoration: none;
+  align-items: center;
+  border-style: none;
+  border-width: 0;
+  border-radius: 2.5rem;
+  text-align: center;
+  width: 15rem;
+  max-width: 15rem;
+  justify-content: center;
+}
+
+.hero-buttons a:hover {
+  text-decoration: none;
+}
+
+.hero-purple-button {
+  background-color: var(--oc-grape-8);
+  color: #fff;
+}
+
+.hero-purple-button:hover {
+  background-color: var(--oc-grape-9);
+}
+
+.hero-default-button {
+  background-color: var(--oc-gray-2);
+  color: var(--oc-gray-8);
+}
+
+.hero-default-button:hover {
+  background-color: var(--oc-gray-3);
 }
