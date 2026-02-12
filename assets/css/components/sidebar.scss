@@ -22,14 +22,14 @@
 }
 
 .sidebar-title {
-  padding: 12px 0 4px 0;
+  padding: 16px 0 0 0;
 }
 
-.menu-toggle {
+.sidebar-toggle {
   display: none;
 }
 
-.menu-list-nested {
+.sidebar-list-nested {
   display: none;
   list-style: none;
   padding: 0 0 0 16px;
@@ -37,83 +37,76 @@
   font-size: 90%;
 }
 
-.menu-toggle:checked ~ .menu-list-nested {
+.sidebar-category.expanded .sidebar-list-nested {
   display: block;
 }
 
-.menu-link {
+.sidebar-link {
   color: rgb(96, 103, 112);
   cursor: pointer;
-  padding: 4px 4px 4px 16px;
+  padding: 6px 4px 6px 12px;
+  margin-top: 4px;
   border-radius: 4px;
   font-weight: 500;
+  line-height: 20px;
 }
 
-.menu-caret {
+.sidebar-caret {
   width: 24px;
   height: 24px;
   border: 0;
   display: inline-block;
-  padding: 3px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+  padding: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>')
+    50% / 2rem 2rem;
   transform: rotate(90deg); /* Point right */
 }
 
-.menu-link:hover {
-  background-color: #f0f0f0;
-}
-
-.menu-toggle:checked ~ .menu-category-header-wrapper .menu-caret {
+.sidebar-category.expanded .sidebar-caret {
   transform: rotate(180deg); /* Point down */
 }
 
-.menu-link {
+.sidebar-link {
   color: rgb(96, 103, 112);
   display: block;
 }
 
-.menu-link:hover {
+.sidebar-link.active,
+.sidebar-link:hover {
+  background-color: #f0f0f0;
   text-decoration: none;
 }
 
-.menu-category-header-wrapper {
+.sidebar-category-header-wrapper {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   border-radius: 4px;
-  transition: background-color 0.1s;
 
-  &:hover {
-    background-color: #f0f0f0;
-  }
-
-  .category-link {
+  .sidebar-category-link {
     flex-grow: 1;
     padding-right: 0; /* Let the caret handle its own spacing */
   }
 
-  .menu-caret-wrapper {
+  .sidebar-caret-wrapper {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 4px 8px;
     border-radius: 0 4px 4px 0;
+  }
 
-    &:hover {
-      background-color: rgba(
-        0,
-        0,
-        0,
-        0.05
-      ); /* Subtle highlight for the chevron specifically */
-    }
+  .sidebar-caret-wrapper:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Keep the caret highlighted when the category is active */
+  }
+
+  &.active,
+  &:hover {
+    background-color: #f0f0f0;
   }
 }
 
-/* Ensure active state highlights the whole wrapper or just the link */
-.category-link.active,
-.menu-link.active {
+.sidebar-link.active {
   color: #9c36b5; /* Medplum Purple */
-  background-color: rgba(0, 0, 0, 0.05);
 }

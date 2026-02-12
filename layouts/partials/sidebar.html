@@ -15,13 +15,13 @@
 
       {{ else if eq $item.type "doc" }}
         {{ with $context.Site.GetPage $item.id }}
-          <a href="{{ .RelPermalink }}" class="menu-link {{ if eq $context.RelPermalink .RelPermalink }}active{{ end }}">
+          <a href="{{ .RelPermalink }}" class="sidebar-link {{ if eq $context.RelPermalink .RelPermalink }}active{{ end }}">
             {{ .Title }}
           </a>
         {{ end }}
 
       {{ else if eq $item.type "category" }}
-        {{ $id := printf "menu-%s" ($item.label | anchorize) }}
+        {{ $id := printf "sidebar-%s" ($item.label | anchorize) }}
 
         {{/* 1. Get the target page object safely */}}
         {{ $targetPage := $context.Site.GetPage $item.id }}
@@ -36,25 +36,23 @@
         {{ $isChildActive := in $context.RelPermalink $item.id }}
         {{ $isOpen := or $isCurrentPage $isChildActive }}
 
-        <div class="menu-category">
-          <input type="checkbox" id="{{ $id }}" class="menu-toggle" {{ if $isOpen }}checked{{ end }}>
-
-          <div class="menu-category-header-wrapper {{ if $isCurrentPage }}active-wrapper{{ end }}">
+        <div class="sidebar-category {{ if $isCurrentPage }}expanded{{ end }}">
+          <div class="sidebar-category-header-wrapper {{ if $isCurrentPage }}active{{ end }}">
             {{ if $targetPage }}
-              <a href="{{ $targetPage.RelPermalink }}" class="menu-link category-link {{ if $isCurrentPage }}active{{ end }}">
+              <a href="{{ $targetPage.RelPermalink }}" class="sidebar-link sidebar-category-link {{ if $isCurrentPage }}active{{ end }}">
                 {{ $item.label }}
               </a>
             {{ else }}
               {{/* Fallback if the page doesn't exist so the sidebar doesn't vanish */}}
-              <span class="menu-link category-link">{{ $item.label }}</span>
+              <span class="sidebar-link sidebar-category-link">{{ $item.label }}</span>
             {{ end }}
 
-            <label for="{{ $id }}" class="menu-caret-wrapper">
-              <span class="menu-caret"></span>
-            </label>
+            <div class="sidebar-caret-wrapper">
+              <span class="sidebar-caret"></span>
+            </div>
           </div>
 
-          <ul class="menu-list-nested">
+          <ul class="sidebar-list-nested">
             {{ range $item.items }}
               <li>{{ template "render-item" (dict "item" . "context" $context) }}</li>
             {{ end }}
@@ -63,7 +61,7 @@
               {{ with $context.Site.GetPage $item.id }}
                 {{ range .RegularPages.ByWeight }}
                   <li>
-                    <a href="{{ .RelPermalink }}" class="menu-link {{ if eq $context.RelPermalink .RelPermalink }}active{{ end }}">
+                    <a href="{{ .RelPermalink }}" class="sidebar-link {{ if eq $context.RelPermalink .RelPermalink }}active{{ end }}">
                       {{ .Title }}
                     </a>
                   </li>
