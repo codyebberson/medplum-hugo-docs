@@ -45,7 +45,6 @@
 
   /* Medplum overrides */
   --ifm-font-size-base: 16px;
-  --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Poppins', sans-serif;
   --ifm-color-primary: var(--oc-grape-8);
   --ifm-color-primary-dark: var(--oc-grape-8);
@@ -241,7 +240,7 @@ p {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   color: rgb(57, 58, 52);
   font-family: var(--ifm-font-family-monospace);
-  font-size: var(--ifm-code-font-size);
+  font-size: var(--ifm-font-size-base);
   padding: 16px;
 }
 
