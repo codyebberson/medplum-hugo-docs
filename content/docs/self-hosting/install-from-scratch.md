@@ -14,11 +14,11 @@ This installation method is particularly useful for development and testing envi
 
 ## Install PostgreSQL
 
-:::note
+{{< note >}}
 
 These Postgres installation steps can be skipped if you've already installed Postgres, or are using a database hosted elsewhere. Medplum server can be configured to connect to remote databases. We'll discuss how to connect to a remote Postgres server below.
 
-:::
+{{< /note >}}
 
 Add the PostgreSQL Apt Repository (see [PostgreSQL Apt Repository docs](https://www.postgresql.org/download/linux/ubuntu/))
 
@@ -136,11 +136,11 @@ npm run build:fast
 
 ## Start Medplum server
 
-:::info
+{{< info >}}
 
 These are abbreviated instructions. For full details, see [Run the stack](/docs/contributing/run-the-stack)
 
-:::
+{{< /info >}}
 
 Start the `server` in development mode:
 
@@ -153,7 +153,7 @@ You should now be able to access the Medplum server at [http://localhost:8103/he
 
 ## Start Medplum app
 
-:::warning[Important: Development Server vs Production Setup]
+{{< warning title="Important: Development Server vs Production Setup" >}}
 
 This command runs Medplum app using the Vite Dev server. While this is convenient for development and testing, it has two significant limitations:
 
@@ -162,7 +162,7 @@ This command runs Medplum app using the Vite Dev server. While this is convenien
 
 If you plan to access the app and API from other devices on your network, we recommend proceeding to the optional SSL/nginx setup instructions below. This will provide the secure context required for all Medplum features to function correctly.
 
-:::
+{{< /warning >}}
 
 In another terminal, start the `app` in development mode:
 
@@ -175,7 +175,7 @@ You should now be able to access the Medplum app at [http://localhost:3000](http
 
 ## Optional: Nginx
 
-:::info
+{{< info >}}
 
 This "Install from Scratch" guide is designed to help you understand how the different pieces of Medplum work. It's not our recommended approach for production deployments.
 
@@ -184,7 +184,7 @@ For production, we now have much better options that you should consider:
 - For a single-server deployment: Use our [Install on Ubuntu](./install-on-ubuntu) guide which uses our official APT repository. This automates the NGINX and SSL certificate setup for you.
 - For cloud deployments: Use our [Install on AWS](./install-on-aws) guide with AWS CDK, which is our recommended solution for scalable, production-ready environments.
 
-:::
+{{< /info >}}
 
 ### Overview
 

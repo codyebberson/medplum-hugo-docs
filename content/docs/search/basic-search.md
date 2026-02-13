@@ -141,7 +141,7 @@ FHIR defines two different types of "string" search parameters: `string` and `to
 
 A `string` search parameter is used when searching for a specific word or phrase within a resource. This type of search is more general and allows for partial matches, such as searching for patients whose names contain the word "Smith". Searches are **case insensitive**, and any result that **starts with** the query string will be returned.
 
-:::note Example
+{{< note title="Example" >}}
 
 For example, the following search will return patients with the names `"eve"`, `"Eve"`, `"Evelyn`", but _not_ `"Steve"`
 
@@ -149,7 +149,7 @@ For example, the following search will return patients with the names `"eve"`, `
 
 You can use the `:contains` modifier to search _anywhere_ inside the target string, and the `:exact` modifier to perform a case-sensitive, exact string match (see below)
 
-:::
+{{< /note >}}
 
 ### token
 
@@ -159,7 +159,7 @@ Additionally, many `token` elements are namespaced by a `system` string. This is
 
 You can restrict your `token` search to a specific system by using the syntax `<parameter>=<system>|<value>`
 
-:::tip Example
+{{< tip title="Example" >}}
 
 The following search would find all patients with _any_ identifier that equals `"12345"`
 
@@ -173,11 +173,11 @@ If we only wanted to search for patients whose social security number was `"1234
 medplum.searchResources('Patient', 'identifier=http://hl7.org/fhir/sid/us-ssn|12345');
 ```
 
-:::
+{{< /tip >}}
 
 We can also check for the _presence_ of a particular identifier by dropping the `<value>` and using the syntax `<parameter>=<system>|`.
 
-:::tip Example
+{{< tip title="Example" >}}
 
 To find all `Patients` that _have_ a social security number:
 
@@ -185,7 +185,7 @@ To find all `Patients` that _have_ a social security number:
 medplum.searchResources('Patient', 'identifier=http://hl7.org/fhir/sid/us-ssn|');
 ```
 
-:::
+{{< /tip >}}
 
 ## Search Modifiers {#search-modifiers}
 
@@ -295,11 +295,11 @@ You can search an inclusive range using an AND search
   </TabItem>
 </Tabs>
 
-:::caution Note
+{{< warning title="Note" >}}
 
 Because we are specifying the `value-quantity` parameter twice in this query, we must pass a `string[][]` as the second argument to `searchResources()`
 
-:::
+{{< /warning >}}
 
 <br />
 You can search an exclusive range using an OR search

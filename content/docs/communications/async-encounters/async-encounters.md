@@ -47,13 +47,13 @@ flowchart RL
 
 You should record the participating physicians using the `Encounter.participant` element. You can also record any family members who are part of the session here (see our [Family Relationships guide](/docs/fhir-datastore/family-relationships) ).
 
-:::tip Asynchronous Encounter Ontologies
+{{< tip title="Asynchronous Encounter Ontologies" >}}
 
 The `Encounter.class` is a required element in FHIR and should be taken from the [HL7 Act Encounter Code Valueset](https://terminology.hl7.org/3.1.0/ValueSet-v3-ActEncounterCode.html). Asynchronous care contexts will almost always use the code `VR` ("virtual").
 
 Also check our [USCDI guide](/docs/fhir-datastore/understanding-uscdi-dataclasses) for information on how to make your [`Encounter`](/docs/api/fhir/resources/encounter) compatible with the US Core standards.
 
-:::
+{{< /tip >}}
 
 If your session only involves providing care for a single patient, then you can set the `Encounter.subject` element to refer to the patient and you're all set! If, however, multiple patients are involved in the session, continue reading.
 

@@ -51,7 +51,7 @@ The user will then receive an email inviting them to sign up for this project.
 
 If the user is new to Medplum, a new user account will be created. Otherwise, the user's existing account will be added as a member of the current project.
 
-:::tip User Profiles
+{{< tip title="User Profiles" >}}
 
 When inviting a user, the "Role" dropdown specifies what kind of resource is used to represent the user. This is known as your **profile resource.**
 
@@ -63,4 +63,4 @@ Depending on your use case, different profile resources will be appropriate for 
 | [Patient](/docs/api/fhir/resources/patient)             | A person receiving healthcare                                                                                                                                        | Healthcare patient                                                          |
 | [RelatedPerson](/docs/api/fhir/resources/relatedperson) | A patient's family member. Most often used in pediatric or geriatric care scenarios (see our [family relationship guide](/docs/fhir-datastore/family-relationships)) | Patient's parent or adult child of patient                                  |
 
-:::
+{{< /tip >}}

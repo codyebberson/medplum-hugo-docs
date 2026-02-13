@@ -5,11 +5,11 @@ title: Candid Health
 
 # Candid Health
 
-:::danger
+{{< danger >}}
 
 This page is under construction and should not be used as reference material.
 
-:::
+{{< /danger >}}
 
 [Candid Health](https://www.joincandidhealth.com/) is a revenue cycle automation provider, and this is a [billing](/docs/billing) integration.  This guide walks through the components of the integration.  A successful implementation of the integration will enable the following scenarios:
 

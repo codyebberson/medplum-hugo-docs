@@ -129,10 +129,10 @@ The `PatchOperation` below sends an `add` operation to the `name` of the [`Patie
 </Tabs>
 </details>
 
-:::note Preventing Race Conditions
+{{< note title="Preventing Race Conditions" >}}
 In the TypeScript patch example, a second `PatchOperation` is included:
 
 `{ op: 'test', path: '/meta/versionId', value: patient.meta?.versionId }`
 
 This is a test to prevent race conditions. This will cause the `patch` to fail if the resource on the server has a different `versionId` than the one you are sending. **It is strongly recommended to include this test on all `patch` operations.**
-:::
+{{< /note >}}

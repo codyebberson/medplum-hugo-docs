@@ -8,13 +8,13 @@ weight: 1100
 
 This page describes how to use [SendGrid](https://app.sendgrid.com/) as an [SMTP Relay](https://sendgrid.com/blog/smtp-relay-service-basics/) to send emails from Medplum.
 
-:::note
+{{< note >}}
 
 SMTP email is only available when self-hosting Medplum.
 
 Medplum's hosted environment uses [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/). Amazon SES is the default Medplum email provider.
 
-:::
+{{< /note >}}
 
 ## Prerequisites
 
@@ -51,8 +51,8 @@ Add a new `smtp` section for the SendGrid SMTP settings. Use your API key as the
 
 Once your configuration settings are saved, restart the Medplum server. All subsequent emails will be sent via SendGrid SMTP Relay. For example, you can [invite a new user](/docs/app/invite) or reset your password to send a new email.
 
-:::tip
+{{< tip >}}
 
 If your SendGrid account is new, email delivery may be slow for the first 24 hours.
 
-:::
+{{< /tip >}}

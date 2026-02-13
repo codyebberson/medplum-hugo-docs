@@ -51,9 +51,9 @@ Content-Type: application/json;charset=UTF-8
 
 For a list of OIDC claims, see [Standard Claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims).
 
-:::note Contact Information
+{{< note title="Contact Information" >}}
 The `email` and `phone` values of the `/userinfo` endpoint are generated from the user's [Profile resource](/docs/fhir-datastore/profiles).
-:::
+{{< /note >}}
 
 ## Sample negative responses
 

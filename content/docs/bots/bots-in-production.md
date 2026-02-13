@@ -13,11 +13,11 @@ Editing bots in the web editor is good for getting started quickly, but as Bots 
 - Writing unit tests for your bots
 - Deploying your bots as part of your CI/CD pipeline.
 
-:::note Bots in Local Development
+{{< note title="Bots in Local Development" >}}
 
 If you want to run bots locally, you should use a VM Context. For more details see the [Running Bots Locally docs](/docs/bots/running-bots-locally).
 
-:::
+{{< /note >}}
 
 ## This Guide will show you
 
@@ -67,13 +67,13 @@ MEDPLUM_CLIENT_ID=<YOUR_CLIENT_ID>
 MEDPLUM_CLIENT_SECRET=<YOUR_CLIENT_SECRET>
 ```
 
-:::danger Warning
+{{< danger title="Warning" >}}
 
 **Your `.env` file should _never_ be checked into source control.**
 
 `MEDPLUM_CLIENT_ID` and `MEDPLUM_CLIENT_SECRET` should be considered sensitive security credentials and should never be shared in a publicly accessible store. The `medplum-demo-bots` repository adds `.env` to `.gitignore` by default.
 
-:::
+{{< /danger >}}
 
 If you are self-hosting Medplum, set `MEDPLUM_BASE_URL` to the base URL of your Medplum server as an environment variable or in your .env file.
 
@@ -169,9 +169,9 @@ Running this command does the following:
 3. Saves the bot to the associated project in the Medplum database
 4. Adds a bot entry to the `medplum.config.json` file in the `bots` array
 
-:::caution Note
+{{< warning title="Note" >}}
 If you see an error, try running the command again. If it fails after 3 tries, please [**submit a bug report**](https://github.com/medplum/medplum/issues/new) or [**contact us on Discord**](https://discord.gg/medplum)
-:::
+{{< /warning >}}
 
 After creating the bot, you should go to `medplum.config.json` and you should see the new bot added in the bottom of the file. It should look like this:
 
@@ -224,7 +224,7 @@ Running this command does two things:
 1. Save the TypeScript source to the `code` property of your [`Bot` resource](/docs/api/fhir/medplum/bot)
 2. Deploys your compiled Javascript code as an AWS Lambda function with your Medplum deployment.
 
-:::caution Note
+{{< warning title="Note" >}}
 There is a known timing issue with the `bot deploy` command. If you see the following error, try running the command again. If it fails after 3 tries, please [**submit a bug report**](https://github.com/medplum/medplum/issues/new) or [**contact us on Discord**](https://discord.gg/medplum)
 
 ```
@@ -234,7 +234,7 @@ issue: [ { severity: 'error', code: 'invalid', details: [Object] } ]
 }
 ```
 
-:::
+{{< /warning >}}
 
 ## Deploying to Staging vs. Production
 

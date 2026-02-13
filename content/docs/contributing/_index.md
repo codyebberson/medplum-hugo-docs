@@ -70,11 +70,11 @@ and implement it in your own version.
 
 **Ready to get started writing code?** First things first, you need to [clone the Medplum repository](./contributing/local-dev-setup).
 
-:::note Legal Note
+{{< note title="Legal Note" >}}
 
 By submitting content to this project, you agree to adopt the [Developer Certificate of Origin (DCO)](https://developercertificate.org/) for your contributions.
 
 All conversations and communities on Medplum are expected to follow GitHub's [Community Guidelines](https://help.github.com/en/github/site-policy/github-community-guidelines)
 and [Acceptable Use Policies](https://help.github.com/en/github/site-policy/github-acceptable-use-policies).
 
-:::
+{{< /note >}}

@@ -12,7 +12,7 @@ If you are new to Medplum Bots, we encourage you to read the intro material in t
 
 The following tutorials will walk through some of the use cases for Bots, to give you a sense of how they can work for you.
 
-:::warning Enabling Bots
+{{< warning title="Enabling Bots" >}}
 
 Bots are a [project level setting](/docs/access/projects#settings) that must be enabled by a Super Admin user.
 
@@ -24,7 +24,7 @@ Super administrators can enable bots via the Medplum App:
 - Click on the "Edit" tab
 - In the "Features" section, add an entry with the value "bots"
 
-:::
+{{< /warning >}}
 
 ## Getting Started
 Learn the fundamentals of building and testing bots before deploying them to production.

@@ -241,13 +241,13 @@ To satisfy the profile declared in `meta.profile`, values for the required field
 }
 ```
 
-:::tip
+{{< tip >}}
 
 The corresponding `StructureDefinition` resource for the profile (i.e. one with a `url` matching that in
 `meta.profile`) must be present in your Project: make sure to upload the resource JSON for any profiles you
 plan to use.
 
-:::
+{{< /tip >}}
 
 [us-core-patient]: http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
 
@@ -355,11 +355,11 @@ In the above example, we have a [`Patient`](/docs/api/fhir/resources/patient) wi
 
 We then define the new [`StructureDefinition`](/docs/api/fhir/resources/structuredefinition). Here you would add any changes to the profile you want. Note that the `url` field is the same, except we have updated the version to `2.0.0.`.
 
-:::note Semantic Versioning in Profiles
+{{< note title="Semantic Versioning in Profiles" >}}
 
 When updating FHIR profiles, you should use semantic versioning to assign values to your versions. In the above example, requiring a phone number is a breaking change as it may cause some resources to fail validation. Any backwards-incompatible changes should be considered major changes.
 
-:::
+{{< /note >}}
 
 Using versions allows resources to attest to different versions of the profile, so if a patient does not have a phone number they can still reference version `1.0.0` until they are updated. To check which resources need to be changed before updating their profile, you can use the [$validate operation](/docs/api/fhir/operations/validate-a-resource).
 

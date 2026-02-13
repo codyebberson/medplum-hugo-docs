@@ -30,32 +30,32 @@ card 3
 
 ## Admonitions Test
 
-:::note
+{{< note >}}
 
 Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
-:::
+{{< /note >}}
 
-:::tip
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::info
+{{< tip >}}
 
 Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
-:::
+{{< /tip >}}
 
-:::warning
-
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
-
-:::
-
-:::danger
+{{< info >}}
 
 Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
-:::
+{{< /info >}}
+
+{{< warning >}}
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+{{< /warning >}}
+
+{{< danger >}}
+
+Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+
+{{< /danger >}}

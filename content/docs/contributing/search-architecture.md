@@ -6,12 +6,12 @@ weight: 205
 
 # Search Architecture
 
-:::caution
+{{< warning >}}
 
 This page documents internal Medplum implementation details, and refers to point-in-time code snapshots that may be
 different from the current application code, and are subject to change at any time without prior notice.
 
-:::
+{{< /warning >}}
 
 ## Resource Table Schema
 

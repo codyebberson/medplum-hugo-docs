@@ -53,11 +53,11 @@ Here's how to modify token lifetimes:
   {ExampleCode}
 </MedplumCodeBlock>
 
-:::warning
+{{< warning >}}
 
 Consider your security requirements carefully when adjusting these values. Longer access token lifetimes increase convenience but also increase the window of vulnerability if a token is compromised.
 
-:::
+{{< /warning >}}
 
 ## Managing Token Refresh with Grace Periods
 
@@ -73,7 +73,7 @@ The Medplum client automatically handles token refresh in three scenarios:
 2. When receiving a 401 Unauthorized response from the server
 3. When your code explicitly requests a refresh
 
-:::warning Grace Period Limitations
+{{< warning title="Grace Period Limitations" >}}
 
 Note that the grace period mechanism only triggers in the above scenarios.
 
@@ -93,7 +93,7 @@ To handle this scenario, you should:
 - Refresh the token if needed before making requests
 - Consider increasing the access token lifetime to reduce the frequency of token refreshes
 
-:::
+{{< /warning >}}
 
 ### Customizing the Grace Period
 

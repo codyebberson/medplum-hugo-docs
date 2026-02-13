@@ -27,11 +27,11 @@ Project Admins have the following privileges:
   - [`User`](/docs/api/fhir/medplum/user) - only for [project scoped users](/docs/user-management/project-vs-server-scoped-users#project-scoped-users)
 - **Impersonate users** - Project Admins are allowed to make API calls [on behalf of other users](/docs/auth/on-behalf-of)
 
-:::note Applying Access Policies to Admins
+{{< note title="Applying Access Policies to Admins" >}}
 
 If you want to limit these privileges, you can apply Access Policies to your Admin users. See the [Access Policies docs](/docs/access/access-policies) for more details.
 
-:::
+{{< /note >}}
 
 ## Super Admin
 

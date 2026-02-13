@@ -30,11 +30,11 @@ Prepare JSON payload:
 }
 ```
 
-:::tip
+{{< tip >}}
 
 Auth0 can optionally prefix subject with the identity provider, such as "google-oauth2|110925489055200000000". Only use the portion after the "|" such as "110925489055200000000".
 
-:::
+{{< /tip >}}
 
 Then POST to the `/invite` endpoint:
 

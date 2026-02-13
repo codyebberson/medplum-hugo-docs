@@ -68,13 +68,13 @@ See the [Search documentation](/docs/search/basic-search) for more information o
 }
 ```
 
-:::warning Limitations
+{{< warning title="Limitations" >}}
 While Medplum `AccessPolicies` use the [FHIR search syntax](/docs/search), it does not implement the full search specification. Specifically, the `criteria` syntax has the following limitations:
 
 - Only `:not` and `:missing` [modifiers](/docs/search/basic-search#search-modifiers) are allowed.
 - [Chained searches](/docs/search/chained-search#forward-chained-search) are **not** allowed.
 
-:::
+{{< /warning >}}
 
 ### Read-only Access
 
@@ -146,7 +146,7 @@ The `interaction` array can contain any of the supported interaction types:
 - `history`: View the list of previous versions of a resource
 - `vread`: View a specific previous version of a resource
 
-:::tip Related interactions
+{{< tip title="Related interactions" >}}
 
 Some FHIR interactions are used in concert by the server, and so should be considered together:
 
@@ -155,7 +155,7 @@ Some FHIR interactions are used in concert by the server, and so should be consi
 - `read` access to referenced resource types is required in `create` and `update` interactions, if [`Project.checkReferencesOnWrite`](/docs/api/fhir/medplum/project) is set
 - `history` and `vread` are often specified together, to grant access to the entire [version history](/docs/fhir-datastore/resource-history) of resources
 
-:::
+{{< /tip >}}
 
 For example, this policy allows creating new resources and viewing any resources for which the ID is known, but will
 prevent searching for or modifying existing resources:
@@ -211,11 +211,11 @@ The following access policy grants read-only access to the "Patient" resource ty
 
 Constraints on writes to a resource can also be specified using [FHIRPath expressions][fhirpath] in the `AccessPolicy.resource.writeConstraint` field. These expressions may contain the special variable `%before` to refer to the resource as it existed before the write. Any property accesses will by default refer to the resource as it exists with updates applied, but the `%after` variable is also provided for convenience.
 
-:::tip
+{{< tip >}}
 
 In case of a resource being created, `%before` will be undefined, so any expressions that refer to `%before` must account for this case. To select only updates or only creates, prefix the criteria with `%before.exists() implies` or `%before.exists().not() implies` respectively.
 
-:::
+{{< /tip >}}
 
 For example, an access policy with write constraints could be used to manage state transitions by prohibiting changing the status once a resource is marked as `final`, and ensure that a `subject` is set when the resource is finalized:
 
@@ -448,17 +448,17 @@ Because the account-tagging is handled within the resource, project administrato
 
 If you are building a patient-facing application (such as [FooMedical](https://github.com/medplum/foomedical)), a common requirement is to restrict each patient's access to only their own data. In this case it is recommended to use templated access policies, that also implement compartments as shown below.
 
-:::caution Open Patient Registration
+{{< warning title="Open Patient Registration" >}}
 
 Patient Access is disabled by default. See our article on [enabling open patient registration](/docs/user-management/open-patient-registration) for instructions on enabling this functionality.
 
-:::
+{{< /warning >}}
 
-:::danger Binary Access
+{{< danger title="Binary Access" >}}
 
 Binary resources cannot use compartment-based access controls. They require explicit `securityContext` declaration. See the [Binary Security Context](/docs/access/binary-security-context) documentation for more information.
 
-:::
+{{< /danger >}}
 
 ```json
 {

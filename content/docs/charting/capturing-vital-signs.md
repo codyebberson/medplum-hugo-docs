@@ -154,11 +154,11 @@ To record the actual _value_ of a measurement, you can use one of the various `v
 
 </details>
 
-:::tip Note on units
+{{< tip title="Note on units" >}}
 
 The `valueQuantity` field is stored as a `Quantity` type, which contains a `value` field to represent the numerical value and a `unit` field, which is a human readable unit that defines what is measured. Whenever possible, the unit should be coded using [Unified Codes for Units of Measure (UCUM)](https://ucum.org/).
 
-:::
+{{< /tip >}}
 
 ## Observation Datatypes
 
@@ -184,11 +184,11 @@ In some cases it is possible for an `Observation` to have multiple "sub-observat
 
 The `component` element should only be used when there is one method, one observation, one performer, one device, and one time.
 
-:::caution
+{{< warning >}}
 
 While creating sub-observations can provide powerful functionality, it can be complex to maintain and operationalize. It is recommended to only use the `component` field when absolutely necessary.
 
-:::
+{{< /warning >}}
 
 A classic example of a multi-component `Observation` is systolic and diastolic blood pressure.
 

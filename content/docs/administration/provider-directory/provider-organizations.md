@@ -63,7 +63,7 @@ graph TD
 
 <br/>
 
-:::tip `Organization` vs. `CareTeam`
+{{< tip title="`Organization` vs. `CareTeam`" >}}
 
 `Organization` and `CareTeam` are both FHIR resources that are used to represent different aspects of healthcare providers and teams. While you could use an `Organization` to achieve similar goals, `CareTeam` is more fluid and easier to update.
 
@@ -94,7 +94,7 @@ Some of the other differences between the `Organization` and `CareTeam` resource
 - `Organization`: Useful for managing healthcare provider networks, credentialing, and facility management.
 - `CareTeam`: Useful for care coordination, case management, and tracking patient-specific care activities.
 
-:::
+{{< /tip >}}
 
 ## Modeling Service Lines
 

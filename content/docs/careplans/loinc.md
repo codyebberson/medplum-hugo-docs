@@ -65,7 +65,7 @@ This includes codes for vitals signs, hemodynamics, imaging, EKG, etc. as well a
 
 ###
 
-:::tip Deep Dive: LOINC code components
+{{< tip title="Deep Dive: LOINC code components" >}}
 
 Each LOINC code description follows a regular schema with six components <sup><a href="#ref2">2</a></sup>
 
@@ -88,7 +88,7 @@ These six parts care then translated into "LOINC names" to represent each concep
 
 You can find more information about LOINC code parts [here](https://loinc.org/kb/faq/structure/)
 
-:::
+{{< /tip >}}
 
 ## Collection Codes
 

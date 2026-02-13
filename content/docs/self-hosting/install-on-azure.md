@@ -8,7 +8,7 @@ weight: 7
 
 This document is intended to guide users through the deployment of Medplum on Azure using Terraform. It provides detailed instructions and configurations necessary to set up essential components such as a Virtual Network (Vnet), Azure Kubernetes Services (AKS) cluster, PostgreSQL database, Storage accounts, CDN, and Redis instances. The purpose is to ensure a smooth and efficient deployment process tailored to Medplum’s specific requirements, facilitating scalability, security, and high availability within their cloud environment.
 
-:::caution
+{{< warning >}}
 
 This deployment option has been validated for production use and offers a robust foundation for your implementation. However, it provides a less-automated setup and requires significant operational expertise.
 
@@ -18,7 +18,7 @@ Medplum strives to make this as easy as possible, but despite our best efforts, 
 
 If you have any questions, please [contact us](mailto:hello@medplum.com) or [join our Discord](https://discord.gg/medplum).
 
-:::
+{{< /warning >}}
 
 ## High-level overview {#high-level-overview}
 

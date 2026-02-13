@@ -26,13 +26,13 @@ This guide covers the basics of how to use the [`MedicationKnowledge`](/docs/api
 
 This guide is informed by the [DaVinci Payer Data Exchange (PDex) US Drug Formulary](https://build.fhir.org/ig/HL7/davinci-pdex-formulary/index.html) implementation guide, which was authored by industry leaders, including Humana, Cigna, and Optum.
 
-:::tip Sample Data
+{{< tip title="Sample Data" >}}
 You can download the examples in this guide [here](./formulary-examples.json), and upload them to your project using the [Medplum Batch Upload Tool](/docs/tutorials/importing-sample-data#batch-upload-tool)
-:::
+{{< /tip >}}
 
-:::caution A note on the Medication resource
+{{< warning title="A note on the Medication resource" >}}
 You might be asking yourself, what is the difference between the `Medication` and `MedicationKnowledge` resources? Both resources hold information like medication manufacturer and ingredients, but `MedicationKnowledge` holds potentially critical information beyond that, like regulatory information related to controlled substances, packaging descriptions used by pharmacists, and administrative guidelines for both clinicians and patients. In general, we encourage the use of `MedicationKnowledge` rather than `Medication`. 
-:::
+{{< /warning >}}
 
 ## Medication Code
 
@@ -77,13 +77,13 @@ RxNorm term types `SBD`, `BPCK`, and `SBDG` all refer to specific brand names fo
 
 In contrast, using generic term types (`SCD`, `GPCK`, `SCDG`) indicates that physicians may prescribe _any_ brand of the medication.
 
-:::tip Prescribable vs. Dispensable Medications
+{{< tip title="Prescribable vs. Dispensable Medications" >}}
 
 While most Medplum applications will include _either_ generic _or_ branded versions of a medication, some advanced implementations may include both. This is especially common with providers that own their own pharmacy.
 
 In these implementations, generic codes would be used by physicians to _prescribe_ the medication, whereas pharmacies branded medications would be used to _dispense_ the medication. See [Medication Relationships](#medication-relationships) for details on how to represent the link between branded and generic [`MedicationKnowledge`](/docs/api/fhir/resources/medicationknowledge) resources.
 
-:::
+{{< /tip >}}
 
 ## Medication Characteristics
 
@@ -194,11 +194,11 @@ The table below summarizes the most important medication metadata elements.
 
 </details>
 
-:::caution A note about units
+{{< warning title="A note about units" >}}
 
 All units for medication quantities are [UCUM units of measure](https://terminology.hl7.org/4.0.0/ValueSet-v3-UnitsOfMeasureCaseSensitive.html). This includes standard SI units, as well as non-standard healthcare units. A common unit for medications is `{tbl}`, which stands for "tablets", which is useful for quantifying the amount of medication in a package.
 
-:::
+{{< /warning >}}
 
 ## Classifications and Regulations
 
@@ -207,13 +207,13 @@ The `MedicationKnowledge.productType` field can be used to categorize the drug w
 - Whether a drug is generic or branded
 - Whether the drug requires a prescription (see: [Legal status of Supply](https://build.fhir.org/valueset-legal-status-of-supply.html))
 
-:::caution Representing Controlled Substance Schedules
+{{< warning title="Representing Controlled Substance Schedules" >}}
 
 Certain medications, including narcotics, are classified into schedules based on the U.S. Controlled Substances Act (CSA). `MedicationKnowledge.regulatory.schedule` is used for specifying the regulatory schedule for any medications subject to these restrictions.
 
 Refer to the [HL7 Controlled Substances Schedule](https://terminology.hl7.org/ValueSet-v2-0477.html) for an example valueset.
 
-:::
+{{< /warning >}}
 
 ## Compounded Medications
 

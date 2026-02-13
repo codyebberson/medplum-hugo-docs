@@ -67,9 +67,9 @@ Below are explanations of the different extensions Medplum Provides
 
 ## Interactions
 
-:::caution Note
+{{< warning title="Note" >}}
 By default, FHIR Subscriptions will execute on "create" and "update" operations.
-:::
+{{< /warning >}}
 
 You can use extensions as follows for more fine-grained control over when Subscriptions execute. To confirm if your Subscriptions are executing, navigate to `https://app.medplum.com/Subscription/<id>/event` to view related [AuditEvents](/docs/api/fhir/resources/auditevent).
 
@@ -119,9 +119,9 @@ You can also restrict the FHIR Subscription to only execute on "update", using t
 
 ### Subscriptions for "delete" events
 
-:::caution Note
+{{< warning title="Note" >}}
 The delete interaction will contain a different response where configuration will be needed on the incoming data.
-:::
+{{< /warning >}}
 
 Use the `https://medplum.com/fhir/StructureDefinition/subscription-supported-interaction` extension with `valueCode` of `delete`. For example:
 
@@ -249,9 +249,9 @@ HTTP status codes can be customized to determine the success of the subscription
 
 To add custom codes, use the `https://medplum.com/fhir/StructureDefinition/subscription-success-codes` extension with the valueString having a comma separated list of HTTP status codes for success (i.e., "200,201"). We also allow ranges (i.e., "200-399,404")
 
-:::caution Note
+{{< warning title="Note" >}}
 If you use custom success codes, you will need to implement ALL of the HTTP status codes that are determined to be successful
-:::
+{{< /warning >}}
 
 ```json
 {
@@ -302,13 +302,13 @@ Here is an example `Subscription` resource with a `fhir-path-criteria-expression
 }
 ```
 
-:::caution Note
+{{< warning title="Note" >}}
 Upon the creation of a resource, there won't be a previous version of the resource: `%previous` will be empty.
 
 FHIRPath generally [treats empty values as "null"](https://www.hl7.org/fhirpath/#null-and-empty) and most operators
 and functions — including `!=` — evaluate to be empty if any of their operands are empty. This means that when a
 resource is created, the above expression will always be falsy, and the subscription will not fire.
-:::
+{{< /warning >}}
 
 If resource creations should also be included, the FHIRPath expression must account for that case
 specifically: `%previous.exists() implies %previous.status != %current.status`. With this expression,

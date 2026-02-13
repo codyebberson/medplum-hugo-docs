@@ -7,9 +7,9 @@ title: Set Password Endpoint
 
 ## POST `/auth/setpassword`
 
-:::note
+{{< note >}}
 To see an example of the Medplum app's set password page, check out the code in [`SetPasswordPage.tsx`](https://github.com/medplum/medplum/blob/main/packages/app/src/SetPasswordPage.tsx). Notice that the page 
-:::
+{{< /note >}}
 
 Sets a new password for a user using a security request token. This endpoint is used to complete both password reset and user invitation flows. After redirect from the reset password or invite email, this endpoint can be called with the following parameters:
 

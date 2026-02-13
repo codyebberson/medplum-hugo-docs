@@ -6,12 +6,12 @@ weight: 206
 
 # Terminology Architecture
 
-:::caution
+{{< warning >}}
 
 This page documents internal Medplum implementation details, and refers to point-in-time code snapshots that may be
 different from the current application code, and are subject to change at any time without prior notice.
 
-:::
+{{< /warning >}}
 
 ## Table Schema
 
@@ -98,12 +98,12 @@ flowchart LR
   cp -->|target| c2
 ```
 
-:::note
+{{< note >}}
 
 While FHIR supports specifying hierarchical relationships with either `parent` or `child` properties, Medplum currently
 only supports `parent` for simplicity, since the two are inversely equivalent.
 
-:::
+{{< /note >}}
 
 ## Terminology Operations
 

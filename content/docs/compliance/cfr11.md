@@ -5,11 +5,11 @@ title: CFR Part 11 Certification
 
 # CFR Part 11 Certification
 
-:::caution Note
+{{< warning title="Note" >}}
 
 This section is under active development.
 
-:::
+{{< /warning >}}
 
 The following tutorial walks through CFR Part 11 certification requirements and documentation of Medplum's conformance, where appropriate.
 

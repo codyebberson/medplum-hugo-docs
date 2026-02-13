@@ -14,11 +14,11 @@ Chaining search parameters allows you to filter your searches based on the param
 
 Chained searches are similar to using [`_include` or `_revinclude` parameters](/docs/search/includes), but it will not return the referenced resources, only filter based on their parameters. The primary benefit of this is it allows for easy pagination since you know you will only receive results of one resource type. See the [paginated search docs](/docs/search/paginated-search) for more details.
 
-:::note Chained Search Availability
+{{< note title="Chained Search Availability" >}}
 
 Chained search is only available when using the FHIR Rest API as described here. If you are using GraphQL, chained search functionality is not supported.
 
-:::
+{{< /note >}}
 
 ## Forward Chained Search
 
@@ -105,9 +105,9 @@ Chained references can also be constructed in reverse, filtering on other resour
 
 For example, `Patient?_has:Observation:subject:status=preliminary` would select [`Patient`](/docs/api/fhir/resources/patient) resources that have an [`Observation`](/docs/api/fhir/resources/observation) pointing to them as the `subject` and are also in preliminary status.
 
-:::tip Resource Type Ambiguity
+{{< tip title="Resource Type Ambiguity" >}}
 For reverse chaining, the referenced type of the link parameter is never ambiguous: the previous resource type in the chain is used.
-:::
+{{< /tip >}}
 
 As another example, you may want to search for any [`Patient`](/docs/api/fhir/resources/patient) resources with a heart rate above 150 ([Loinc Code 8867-4](https://loinc.org/8867-4)) [`Observation`](/docs/api/fhir/resources/observation) made about them.
 

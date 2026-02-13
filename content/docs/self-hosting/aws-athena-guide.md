@@ -11,7 +11,7 @@ AWS Athena is an interactive query tool that makes it easy to analyze data store
 
 In this guide, we will describe how to setup AWS Athena for querying AWS log data.
 
-:::caution
+{{< warning >}}
 
 AWS Athena is a paid service, so each query can incur a cost.
 
@@ -21,7 +21,7 @@ For example, all of the queries in this guide scan less than the 10 MB minimum. 
 
 See [Athena Pricing](https://aws.amazon.com/athena/pricing/) for more details.
 
-:::
+{{< /warning >}}
 
 For more background reading, see [What is Amazon Athena?](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) and [Querying Application Load Balancer logs](https://docs.aws.amazon.com/athena/latest/ug/application-load-balancer-logs.html).
 
@@ -103,7 +103,7 @@ Now Athena is ready for querying.
 
 ### Querying ALB logs
 
-:::caution
+{{< warning >}}
 
 As mentioned above, AWS Athena is a paid service, so each query can incur a cost.
 
@@ -111,7 +111,7 @@ Most AWS log data is organized by date. If you follow the instructions in this d
 
 See [Athena Pricing](https://aws.amazon.com/athena/pricing/) for more details.
 
-:::
+{{< /warning >}}
 
 Count status codes by day:
 

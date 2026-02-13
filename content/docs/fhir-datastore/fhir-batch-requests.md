@@ -8,9 +8,9 @@ weight: 7
 
 FHIR allows users to create batch requests to bundle multiple API calls into a single HTTP request. Batch requests can improve speed and efficiency and can reduce HTTP traffic when working with many resources.
 
-:::tip Cloning a project
+{{< tip title="Cloning a project" >}}
 If you want to create a copy of a project, say for a new environment, this can be done using the `$clone` operation rather than by creating a batch request. For more details [see the Projects guide](/docs/access/projects#cloning-and-expunging-projects).
-:::
+{{< /tip >}}
 
 ## Batches vs Transactions
 
@@ -41,11 +41,11 @@ const transactionBundle = {
 };
 ```
 
-:::caution Transaction Support
+{{< warning title="Transaction Support" >}}
 Transaction support requires the `transaction-bundles` feature flag to be enabled on your project. Contact Medplum to enable this feature.
 
 The transaction feature is currently in beta. You may experience `409 conflict` errors when attempting transactions. If this occurs, implement retry logic in your client to handle these errors and retry the transaction until it succeeds.
-:::
+{{< /warning >}}
 
 ## How to Perform a Batch Request
 
@@ -265,7 +265,7 @@ Previously, performing an "upsert" (i.e. either creating or updating a resource 
 required using a batch operation. This functionality is now implemented directly as a [conditional update](/docs/fhir-datastore/working-with-fhir#upsert)
 to provide strong transactional guarantees around the operation in a single, simple `PUT` request.
 
-:::note Upsert URLs
+{{< note title="Upsert URLs" >}}
 
 Because resolving the search request in the upsert URL is a prerequisite to determine which ID should be assigned as
 part of handling [internal references](#internal-references), the `urn:uuid:` syntax for internal references **cannot**
@@ -348,7 +348,7 @@ resource itself, not its server-assigned ID.
 
 </details>
 
-:::
+{{< /note >}}
 
 ## PATCH actions in a Batch
 
@@ -375,7 +375,7 @@ and represent it as a [Binary](/docs/api/fhir/resources/binary) resource:
 Additionally, Medplum supports passing JSON Patch formatted as a [Parameters](/docs/api/fhir/resources/parameters)
 resource, making it easier to see what operations are happening in the batch.
 
-:::note Value Formatting
+{{< note title="Value Formatting" >}}
 
 To avoid parsing ambiguity and simplify the format of the `Parameters`, all values are passed as
 JSON strings, via the `valueString` field on each corresponding `Parameter.parameter.part` with `"name": "value"`.
@@ -383,7 +383,7 @@ JSON strings, via the `valueString` field on each corresponding `Parameter.param
 All types of values, including booleans, strings, objects, and arrays, should be passed to `JSON.stringify()`
 or equivalent rather than being included directly in the `Parameters`.
 
-:::
+{{< /note >}}
 
 ```js
 {

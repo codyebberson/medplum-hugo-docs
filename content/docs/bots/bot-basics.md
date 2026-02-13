@@ -14,11 +14,11 @@ You can apply an [AccessPolicy](/docs/access/access-policies) to the Bot if you 
 
 Bots are disabled by default for accounts. Contact info@medplum.com if you'd like to learn more.
 
-:::note Bots in Local Development
+{{< note title="Bots in Local Development" >}}
 
 If you want to run bots locally, you should use a VM Context. For more details see the [Running Bots Locally docs](/docs/bots/running-bots-locally).
 
-:::
+{{< /note >}}
 
 ## Example uses
 
@@ -36,17 +36,17 @@ By using Bots, the entire logic is self contained and managed in one place. Like
 
 ## Creating a Bot
 
-:::caution Note
+{{< warning title="Note" >}}
 
 Bots are disabled by default. Contact your info@medplum.com if you'd like to learn more.
 
-:::
+{{< /warning >}}
 
-:::caution Note
+{{< warning title="Note" >}}
 
 Bots are restricted to Project administrators. If you do not have access, contact your Project administrator.
 
-:::
+{{< /warning >}}
 
 To create a Bot, navigate to the [Project Admin panel](https://app.medplum.com/admin/project) and click "Create new Bot".
 
@@ -229,9 +229,9 @@ While using the `$execute` endpoint allows developers to trigger Bots from 3rd p
 
 Let's connect our bot to [`Patient`](/docs/api/fhir/resources/patient) resources. That means that the Bot code will run on any "create" or "update" operation to any [`Patient`](/docs/api/fhir/resources/patient).
 
-:::note
+{{< note >}}
 Bots can be run as a cron job. [Click Here](/docs/bots/bot-cron-job) to learn more.
-:::
+{{< /note >}}
 
 First, go to the [Subscription](https://app.medplum.com/Subscription) resources page.
 
@@ -251,11 +251,11 @@ Change "Criteria" field to `Patient`
 
 ![Subscription Criteria](/img/app/bots/subscription_criteria.png)
 
-:::warning Subscriptions on `AuditEvents`
+{{< warning title="Subscriptions on `AuditEvents`" >}}
 
 The criteria of a subscription cannot be set to an [`AuditEvent`](/docs/api/fhir/resources/auditevent) resource. When a subscription is triggered it creates an [`AuditEvent`](/docs/api/fhir/resources/auditevent), so using it as criteria would create a notification spiral.
 
-:::
+{{< /warning >}}
 
 Next, we specify action should be taken when the subscription is triggered, using the "Channel" field.
 

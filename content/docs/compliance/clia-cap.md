@@ -6,11 +6,11 @@ weight: 5
 
 # CLIA/CAP Certification
 
-:::caution Note
+{{< warning title="Note" >}}
 
 This section is under construction.
 
-:::
+{{< /warning >}}
 
 The following materials support a CLIA certified lab that is using Medplum for their primary LIS pass their CLIA/CAP Inspection.
 

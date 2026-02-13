@@ -28,11 +28,11 @@ However, the original content of the resource is not destroyed. It can still be 
 - Reading resource history: `GET Patient/123/_history`
 - Reading a resource version: `GET Patient/123/_history/1`
 
-:::caution Referential Integrity on Deletes
+{{< warning title="Referential Integrity on Deletes" >}}
 
 Referential integrity is **not** supported for deletes at this time.
 
-:::
+{{< /warning >}}
 
 ## Expunge Operation
 
@@ -54,11 +54,11 @@ The Medplum `$expunge` operation supports an optional `everything` flag to syste
 POST [base]/[resourceType]/[id]/$expunge?everything=true
 ```
 
-:::warning Expunging a Project
+{{< warning title="Expunging a Project" >}}
 
 If you expunge a [`Project`](/docs/api/fhir/medplum/project), it will be _permanently_ deleted and you will no longer be able to sign in or access it in any way.
 
-:::
+{{< /warning >}}
 
 ### Restoring Data
 

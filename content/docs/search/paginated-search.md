@@ -35,10 +35,10 @@ GET /Patient?_offset=20
 
 This request would return results starting from the 21st matching Patient resource.
 
-:::caution Limitations:
+{{< warning title="Limitations:" >}}
 - Our server supports `_offset` values up to 10,000.
 - Offset-based pagination can lead to performance issues with very large datasets.
-:::
+{{< /warning >}}
 
 #### Implementation Details:
 
@@ -68,11 +68,11 @@ Example:
 GET /Patient?_cursor=abc123xyz
 ```
 
-:::caution Limitations
+{{< warning title="Limitations" >}}
 - Currently only supported for searches that are sorted on `_lastUpdated` in ascending order.
 - The cursor values are opaque and should be treated as black boxes by clients.
 - Requires a minimum `_count` value of 20 
-:::
+{{< /warning >}}
 
 #### Advantages:
 
@@ -126,9 +126,9 @@ Here's an example query that sets the page size to 50:
 
 In this example, the search will return up to 50 Patient resources per page.
 
-:::caution Paginating with Included Resources
+{{< warning title="Paginating with Included Resources" >}}
 Pagination can be difficult when you are [including linked resources](/docs/search/includes), as you will not know how many of each resource will be returned. It may make sense to use [chained searches](/docs/search/chained-search) instead so that only resources of one type are returned.
-:::
+{{< /warning >}}
 
 ## Getting the total number of results with `_total`
 
@@ -142,7 +142,7 @@ The `_total` parameter can have three values: `accurate`, `estimate`, and `none`
 | `estimate`       | Tells the Medplum server that you are willing to accept an approximate count. This is usually faster than the accurate option as it may use database statistics or other methods for estimating the total number without scanning the entire dataset. This option is particularly useful when you need a rough idea of the number of resources without requiring precision. |
 | `accurate`       | The Medplum server will perform additional processing to calculate the exact number of resources that match the search criteria. This can be more time-consuming, especially for large datasets, but you will receive a precise count. Use this option when an exact number is crucial for your use case.                                                                   |
 
-:::warning
+{{< warning >}}
 
 Because computing counts is an expensive operation, Medplum **only produces estimated counts above a certain threshold**.
 
@@ -160,7 +160,7 @@ For self-hosted customers, this threshold is server-level configuration called `
 
 When returning an accurate count, the `meta.total` property will be present in the search result bundle, and `relation` will be set to `eq`.
 
-:::
+{{< /warning >}}
 
 By default, the search responses do not include totals. Choosing between `accurate` and `estimate` depends on your specific requirements. For large datasets, using `estimate` can significantly improve response times, but at the cost of precision.
 
@@ -186,9 +186,9 @@ This query will search for patients with the name "smith" and will return a Bund
   {ExampleCode}
 </MedplumCodeBlock>
 
-:::note Note
+{{< note title="Note" >}}
 The Medplum SDK provides the `searchResources` helper function. This function unwraps the response bundle of your search results and returns an array of the resources that match your parameters. If you want to get the count when using this function, the `.bundle` property is added to the array. You can access the total using `response.bundle.total`.
-:::
+{{< /note >}}
 
 ## Navigating pages with the `Bundle.link` element
 

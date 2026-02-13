@@ -207,9 +207,9 @@ The information related to fulfillment of a `MedicationRequest` should be stored
 | `whenHandedOver`         | The date on which the patient receives the dispense.                                                                                                                                                     |
 | `performer`              | The organization (i.e. Pharmacy) that dispenses the medication.                                                                                                                                          |
 
-:::note Preferred Pharmacies
+{{< note title="Preferred Pharmacies" >}}
 There is currently no community consensus on how to store a patient's preferred pharmacy in FHIR, but Medplum suggests one of two options:
 
 1. Add the information to a [`CareTeam`](/docs/api/fhir/resources/careteam) resource associated with the [`Patient`](/docs/api/fhir/resources/patient).
 2. Use a FHIR [`Extension`](/docs/api/fhir/datatypes/extension) to model a preferred pharmacy. The [Patient Preferred Pharmacy](https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-patient-preferredPharmacy.html) offers a way to do this.
-   :::
+{{< /note >}}

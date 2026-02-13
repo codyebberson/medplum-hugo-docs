@@ -9,13 +9,13 @@ sidebar_label: Import Sample Data
 
 When starting development, it can be really useful to have some sample data to work with, and to test your application. This tutorial will walk you through importing sample FHIR data into your Medplum project to aid in building a realistic application.
 
-:::tip The Medplum App
+{{< tip title="The Medplum App" >}}
 
 The Medplum app is an administrative console, where developers can view their Medplum data, audit resource changes, and configure project settings. Most Medplum users do not use the Medplum app for patient or physician workflows, but rather build customized experiences or build on Medplum's example applications.
 
 Read more about the Medplum App [here](/docs/app)
 
-:::
+{{< /tip >}}
 
 ## Download JSON Files
 
@@ -32,11 +32,11 @@ Download one or both of the following files:
 
 Log into Medplum and navigate to the [batch create](https://app.medplum.com/batch) tool. Upload the files you downloaded in the previous section.
 
-:::caution Note
+{{< warning title="Note" >}}
 
 **Do not upload files twice.** If you aren't sure whether the upload worked, go to the [Patient](https://app.medplum.com/Patient) page. If you see a patient there - it worked.
 
-:::
+{{< /warning >}}
 
 ![Batch create tool](/img/tutorials/batch-create.png)
 

@@ -52,11 +52,11 @@ flowchart LR
 
 ## Other Resources
 
-:::caution Note
+{{< warning title="Note" >}}
 
 Feel free to reach out to us at hello@medplum.com if you have questions about your care plan setup.
 
-:::
+{{< /warning >}}
 
 Care planning can range from very simple - for example, a single prescription, to very complex - like a surgery with post operative follow up, evaluations, medications and more. For basic use, we recommend looking at reference care plans and customizing them to your needs.
 

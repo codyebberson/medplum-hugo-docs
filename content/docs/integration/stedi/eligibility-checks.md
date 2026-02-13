@@ -60,7 +60,7 @@ flowchart TD
 | `servicedPeriod.start` | Service period start date | No (defaults to current date if not provided) |
 | `item` | Array of details about the eligibility being checked. This includes what procedure, product, or service is being provided as well as why it is being provided. | No |
 
-:::note
+{{< note >}}
 In the CoverageEligibilityRequest.item field, STEDI insurance eligibility check only supports **Plan Coverage and General Benefits**. If it is not provided, it will default to Plan Coverage and General Benefits. 
 
 Example:
@@ -79,7 +79,7 @@ item: [
     },
   ],
   ```
-:::
+{{< /note >}}
 
 ### Organization (Payer)
 
@@ -88,9 +88,9 @@ item: [
 | `identifier` | System must be `https://www.stedi.com/healthcare/network` | Yes |
 | `name` | Organization name | Yes |
 
-:::info
+{{< info >}}
 If you are using an Organization from the Medplum Payer Directory, it will have the correct Payer identifier, so you can just use that.
-:::
+{{< /info >}}
 
 ### Organization (Provider)
 

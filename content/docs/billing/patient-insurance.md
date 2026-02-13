@@ -35,11 +35,11 @@ The `Coverage.beneficiary` element, on the other hand, refers to the person who 
 
 The `Coverage.relationship` element describes how the subscriber and beneficiary are related. The US Core guidelines recommend that this code should be selected from the [HL7 subscriber relationship valueset](http://hl7.org/fhir/R4/valueset-subscriber-relationship.html).
 
-:::note Example
+{{< note title="Example" >}}
 
 Consider an example where Mr. John Doe, an employee at a company, has an insurance policy that covers his family, including his daughter, Jane Doe. When representing Jane's insurance coverage, she would be listed as the `Coverage.beneficiary`, John would be listed as the `Coverage.subscriber`, and the `Coverage.relationship` would be set to `'child'`.
 
-:::
+{{< /note >}}
 
 ## Insurance Member ID
 
@@ -55,7 +55,7 @@ The US Core guidelines strongly encourage the use of the [Source of Payment Typo
 
 Another required field is `Coverage.payor` , which indicates the company or institution who will reimburse the provider for care. This should a reference to an [`Organization`](/docs/api/fhir/resources/organization) resource, to allow for search queries of all patients insured by the same payor.
 
-:::tip Representing self-pay / cash-pay
+{{< tip title="Representing self-pay / cash-pay" >}}
 
 Many digital providers have a significant patient population that pay out-of-pocket. It is a best practice to create [`Coverage`](/docs/api/fhir/resources/coverage) resources for these patients as well, to allow flexible handling of their [coverage stack](#primary-vs-secondary-coverage) as their insurance situation evolves.
 
@@ -100,7 +100,7 @@ A self-pay patient's [`Coverage`](/docs/api/fhir/resources/coverage) should set 
 
 ```
 
-:::
+{{< /tip >}}
 
 ## Plan Classifications: Group, Plan Name, RXBIN, RXPCN
 
@@ -132,11 +132,11 @@ Healthcare in the U.S often involves cost-sharing measures with patients, common
 
 In FHIR, these cost-sharing measures can be represented using the `Coverage.costToBeneficiary` field, which is an array of such cost-sharing provisions. The [CARIN Digital Insurance Card guide](http://hl7.org/fhir/us/insurance-card/) (a superset of the US Core guidelines) recommends a set of standard codes for the `costToBeneficiary.type` field in the [C4DIC Extended Copay Type](http://hl7.org/fhir/us/insurance-card/CodeSystem-C4DICExtendedCopayTypeCS.html) value set. This value set provides a comprehensive list of codes to represent most common cost-sharing provisions in the U.S.
 
-:::tip Representing Cost Sharing Measures as Text
+{{< tip title="Representing Cost Sharing Measures as Text" >}}
 
 In certain scenarios, cost-sharing provisions may not be easily representable as numeric or monetary values. The CARIN guide offers the [Beneficiary Cost as String](http://hl7.org/fhir/us/insurance-card/StructureDefinition-C4DIC-BeneficiaryCostString-extension.html) extension to represent these these provisions as text strings. It is then up to the client's billing engine to interpret this string when adjudicating claims for reimbursement. The `rx` provision in our [example below](#example) below demonstrates how to use this extension.
 
-:::
+{{< /tip >}}
 
 See our [detailed example below](#example) for a comprehensive example representation of these cost-sharing provisions.
 
@@ -146,13 +146,13 @@ Some patients may have multiple forms of reimbursement, forming a "coverage stac
 
 It's crucial to correctly assign these numbers as they indicate to the billing system the sequence in which the coverages are to be applied.
 
-:::tip A note on Co-pay cards
+{{< tip title="A note on Co-pay cards" >}}
 
 Some manufacturers will offer [co-pay cards](https://www.goodrx.com/healthcare-access/drug-cost-and-savings/what-are-manufacturer-copay-cards) to reimburse patients for their out-of-pocket costs for certain drugs. These cards can be modeled as additional [`Coverage`](/docs/api/fhir/resources/coverage) resources, with higher / lower priority on the coverage stack, as appropriate.
 
 To date, the community has not yet aligned on a standard for modeling patient reimbursements (rather than costs). Medplum is working with the FHIR community to define a standard, and currently recommends using a negative value for `Coverage.costToBeneficiary.value[x]`.
 
-:::
+{{< /tip >}}
 
 ## Storing Insurance Card Photos
 

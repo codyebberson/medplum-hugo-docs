@@ -54,7 +54,7 @@ The Medplum `MockClient` class extends the `MedplumClient` class, but stores res
 
 We recommend creating a `MockClient` at the beginning of each test, to avoid any cross-talk between tests.
 
-:::warning Caution
+{{< warning title="Caution" >}}
 
 The MockClient does not yet perfectly replicate all functionality of the `MedplumClient` class. Here are the known differences:
 
@@ -73,7 +73,7 @@ The MockClient does not yet perfectly replicate all functionality of the `Medplu
 
 The Medplum team is working on bringing these features to parity as soon as possible. For related discussion, see [related GitHub issue](https://github.com/medplum/medplum/issues/6889). 
 
-:::
+{{< /warning >}}
 
 ### Create test data
 
@@ -151,7 +151,7 @@ The after running the Bot, the [finalize-report bot's tests](https://github.com/
   </MedplumCodeBlock>
 </details>
 
-:::note A note on idempotency
+{{< note title="A note on idempotency" >}}
 Many times, you'd like to make sure your Bot is [idempotent](https://en.wikipedia.org/wiki/Idempotence#Computer_science_meaning). This can be accomplished by calling your bot twice, and using your test framework's `spyOn` functions to ensure that no resources are created/updated in the second call.
 
 <details>
@@ -161,7 +161,7 @@ Many times, you'd like to make sure your Bot is [idempotent](https://en.wikipedi
   </MedplumCodeBlock>
 </details>
 
-:::
+{{< /note >}}
 
 ### Using the Medplum CLI
 

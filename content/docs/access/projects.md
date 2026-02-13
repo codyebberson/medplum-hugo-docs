@@ -65,18 +65,18 @@ The SuperAdmin has the following privileges:
 - Ability to overwrite the `id` of a resource, which is normally server generated
 - Ability to overwrite fields in the `meta` element of resources such as `author`, `lastUpdated`, etc.
 
-:::warning
+{{< warning >}}
 
 Logging into the Super Admin project allows for potentially dangerous operations and is only intended for server administrators
 
-:::
+{{< /warning >}}
 
-:::note Checking If You Are In The SuperAdmin Project
+{{< note title="Checking If You Are In The SuperAdmin Project" >}}
 
 To switch to the SuperAdmin project or check if you are already in it, you can use the [**profile selector**](/docs/app/app-introduction/index.md#profile-selector).
 
 ![project switcher](project-switcher.png)
-:::
+{{< /note >}}
 
 ## Creating a Project
 

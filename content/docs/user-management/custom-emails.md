@@ -18,11 +18,11 @@ Medplum fully supports creating a white-label experience where users do not see 
 
 This document describes the steps to send custom email messages.
 
-:::info
+{{< info >}}
 
 By default, this will work for Patient Users. If you want to process custom emails for Practitioner Users, the Practitioners must be [invited](/docs/api/project-admin/invite) as project scoped users. See [Project vs Server Scoped Users](/docs/user-management/project-vs-server-scoped-users) for more information.
 
-:::
+{{< /info >}}
 
 In short, here are the key steps:
 
@@ -34,11 +34,11 @@ In short, here are the key steps:
 
 ## Setup reCAPTCHA
 
-:::info
+{{< info >}}
 
 **Optional** reCAPTCHA is only required for Password Reset emails. reCAPTCHA is optional for Welcome emails.
 
-:::
+{{< /info >}}
 
 Medplum requires reCAPTCHA for all unauthenticated API requests. "Reset Password" is necessarily unauthenticated, so you will need to setup reCAPTCHA first.
 
@@ -48,11 +48,11 @@ Once you have your "Site Key" and "Secret Key", you will need to configure your 
 
 ## Reset Password Page
 
-:::info
+{{< info >}}
 
 **Optional** Reset Password Page is only required for Password Reset emails. Reset Password Page is optional for Welcome emails.
 
-:::
+{{< /info >}}
 
 In your custom application, you will need a "Reset Password" page. This will be the page where users go to initiate the reset password flow. For a full example of a "Reset Password" page, check out the source to [`ResetPasswordPage.tsx`](https://github.com/medplum/medplum/blob/main/packages/app/src/ResetPasswordPage.tsx) for the Medplum App.
 
@@ -81,19 +81,19 @@ Key functions of the page:
 
 Create a Medplum Bot to handle new `UserSecurityRequest` resources. The bot will send a custom email message to the user.
 
-:::tip
+{{< tip >}}
 
 If you are new to Medplum Bots, you may want to read the [Bots](/docs/bots) documentation first.
 
-:::
+{{< /tip >}}
 
 This Bot will use `ProjectMembership` and `UserSecurityRequest` resources, so the Bot must be a "Project Admin" to access these resources.
 
-:::note
+{{< note >}}
 
 You will also need the `email` project feature flag turned on to allow Bots to send emails. See [project feature flags](/docs/self-hosting/project-settings#project-feature-flags).
 
-:::
+{{< /note >}}
 
 Here is a full example of a Bot that sends a custom email message:
 

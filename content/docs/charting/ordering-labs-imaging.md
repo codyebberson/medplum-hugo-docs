@@ -25,9 +25,9 @@ This [questionnaire](https://storybook.medplum.com/?path=/story/medplum-question
 
 Medplum is provider agnostic and supports connecting to Lab and Imaging orders of all types, assuming an integration is in place. Common integrations can be found in the [integration](/docs/integration) section. Quest, Labcorp and [Health Gorilla](/docs/integration/health-gorilla) are the most frequently enabled.
 
-:::caution
+{{< warning >}}
 Lab and imaging ordering requires setup. Contact us at [info@medplum.com](mailto:info+diagnostics@medplum.com?subject=enabling%20diagnostic%20providers) to enable a provider.
-:::
+{{< /warning >}}
 
 ## Logistics
 
@@ -46,10 +46,10 @@ CPOE should be aware of the logistics workflow a provider wants to enable. Below
 - [Health Gorilla](/docs/integration/health-gorilla) in integration
 - [(a)(2) CPOE Laboratory](https://youtu.be/bb_ISvpcw6o) on Youtube
 
-:::caution
+{{< warning >}}
 
 ONC (a)(2),(a)(3) certification is under development.
 
-:::
+{{< /warning >}}
 
 Certification for (a)(2),(a)(3) is in progress, follow [Github issue](https://github.com/medplum/medplum/issues/3003) for updates.

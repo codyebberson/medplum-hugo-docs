@@ -14,9 +14,9 @@ Before enabling VM Context [Bots](/docs/api/fhir/medplum/bot), you must first en
 3. Go to the `Edit` tab.
 4. In the `Features` section, add the `bot` feature.
 
-:::note
+{{< note >}}
 The `defaultProjectFeatures` server config setting is used for default features when your project is being set up. Editing this config setting will not update your project to enable bots.
-:::
+{{< /note >}}
 
 Once this is done, you can enable VM Context bots. There are two steps to set up VM context bots:
 
@@ -29,10 +29,10 @@ All [`Bots`](/docs/api/fhir/medplum/bot) have a field for `runtimeVersion`, whic
 
 Using VM Context allows you to use resources more efficiently, however it can also have security and isolation concerns if used in an untrusted environment. For this reason, it is important to only use VM Context [`Bots`](/docs/api/fhir/medplum/bot) in trusted environments.
 
-:::danger
+{{< danger >}}
 
 **The `node:vm` module is not a security mechanism. Do not use it to run untrusted code.**
 
 The code for these bots runs in the server, so they can potentially have access to sensitive information when run in production environments without appropriate safety measures.
 
-:::
+{{< /danger >}}

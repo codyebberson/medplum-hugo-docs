@@ -75,9 +75,9 @@ Follow the guide step-by-step to build up the components shown:
 
 Our recommendations are informed by the [Order Catalog Implementation Guide](http://hl7.org/fhir/uv/order-catalog/2020Sep/) implementation guide, which developed with contributions from Labcorp, Quest Diagnostics, and other industry leaders.
 
-:::tip Sample Data
+{{< tip title="Sample Data" >}}
 You can download the examples in this guide as a FHIR bundle [here](./sample-diagnostic-catalog.json), and upload them to your project using the [Medplum Batch Upload Tool](/docs/tutorials/importing-sample-data#batch-upload-tool)
-:::
+{{< /tip >}}
 
 ## Define your clinical observations
 
@@ -124,11 +124,11 @@ The [`SpecimenDefinition`](/docs/api/fhir/resources/specimendefinition) allows y
 | `typeTested.handling`   | Duration of storage at different temperature ranges                   | [Handling Condition](https://hl7.org/fhir/R4/valueset-handling-condition.html)                                                                                    | Store refrigerated at 2-8°C for up to 48 hours                                                                                                               |
 | `typeTested.preference` | Whether this collection output is the preferred form, or an alternate | preferred \| alternate                                                                                                                                            | preferred                                                                                                                                                    |
 
-:::tip `typeCollected` vs `typeTested`
+{{< tip title="`typeCollected` vs `typeTested`" >}}
 
 Material that is collected from a patient may be split up, prepared, and handled different ways. The `typeTested` elements describe _all the potential outputs_ of the collection process, and contains a lot more information about the containment vessel, rejection criteria, and temperature restrictions for _each_ output.
 
-:::
+{{< /tip >}}
 
 <details>
   <summary>Example: Capillary Blood Sample </summary>
@@ -166,11 +166,11 @@ Now that you have represented your service menu as [`PlanDefinitions`](/docs/api
 
 While [`PlanDefinitions`](/docs/api/fhir/resources/plandefinition) are patient facing resources, [`ActivityDefinitions`](/docs/api/fhir/resources/activitydefinition) are primarily used by lab operators to aid them in fulfilling the order. To link the two, each entry in `PlanDefinition.action` references an individual lab procedure, with `PlanDefinition.action.definitionCanonical` referencing an [`ActivityDefinition`](/docs/api/fhir/resources/activitydefinition) resource for details.
 
-:::caution Note: Canonical References
+{{< warning title="Note: Canonical References" >}}
 
 [`PlanDefinitions`](/docs/api/fhir/resources/plandefinition) and [`ActivityDefinitions`](/docs/api/fhir/resources/activitydefinition) are linked via what is known as a _canonical_ reference, not a standard reference as with most other resources. `PlanDefinition.action.definitionCanonical` is a URL string, that must match the `url` field of the [`ActivityDefinition`](/docs/api/fhir/resources/activitydefinition) it references.
 
-:::
+{{< /warning >}}
 
 There is a bit of an art to determining divide the individual tests into procedures, and it requires an understanding of your lab operations. Some considerations to help guide you:
 
@@ -243,13 +243,13 @@ This allows you to reuse the data definition of your procedures, while allowing 
   </MedplumCodeBlock>
 </details>
 
-:::tip Sub actions
+{{< tip title="Sub actions" >}}
 
 Beyond flat lists of procedures, FHIR [`PlanDefinitions`](/docs/api/fhir/resources/plandefinition) can be used to represent sub-procedures, mutually exclusive groups of procedures, reflex tests, and other complicated arrangements.
 
 These advanced scenarios are out of scope for this guide, but you can check out the [this implementation guide](http://hl7.org/fhir/uv/order-catalog/2020Sep/exlabservices.html) for examples of how these might be implemented
 
-:::
+{{< /tip >}}
 
 ## Querying your catalog
 

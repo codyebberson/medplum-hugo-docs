@@ -56,9 +56,9 @@ The last step of this flow is for your application to trade in the `AUTHORIZATIO
    - `code=AUTHORIZATION_CODE`
 3. Use the `access_token` received in the [response](/docs/api/oauth/token#sample-response) to make future API calls (See the [**Client Credentials tutorial**](/docs/auth/client-credentials) for more details)
 
-:::note Using the Medplum Client
+{{< note title="Using the Medplum Client" >}}
 You can also use the Medplum SDK to initiate this process, using either the [`startLogin`](/docs/sdk/core.medplumclient.startlogin) or [`signInWithRedirect`](/docs/sdk/core.medplumclient.signinwithredirect) convenience method.
-:::
+{{< /note >}}
 
 ## See Also
 

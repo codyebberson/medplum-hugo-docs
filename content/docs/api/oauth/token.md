@@ -186,11 +186,11 @@ Content-Type: application/json
 }
 ```
 
-:::info Note
+{{< info title="Note" >}}
 
 The token endpoint returns `refresh_token` only when the `grant_type` is `authorization_code`.
 
-:::
+{{< /info >}}
 
 ## Examples of negative responses
 

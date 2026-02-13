@@ -8,11 +8,11 @@ title: Log Streaming
 
 # Log Streaming
 
-:::info
+{{< info >}}
 
 These instructions primarily apply to self-hosted users. To set up log streaming on the Medplum Hosted instance, please reach out to [info@medplum.com](mailto:info@medplum.com)
 
-:::
+{{< /info >}}
 
 Medplum can be configured to stream service logs to your existing log management tools, like [SumoLogic](https://www.sumologic.com/), [DataDog](https://www.datadoghq.com/), or [Splunk](https://www.splunk.com/). Centralizing log management allows for better observability and auditability, and offers real-time analytics capabilities.
 
@@ -24,10 +24,10 @@ Medplum server can stream the following to `STDOUT`
 - Other troubleshooting information
 - All RESTful interactions with FHIR resources, which are recorded as [FHIR AuditEvent resources](/docs/api/fhir/resources/auditevent)
 
-:::warning
+{{< warning >}}
 To capture [AuditEvent](/docs/api/fhir/resources/auditevent) resources for any RESTful interactions you **_must_** set the server configuration for [`logAuditEvents`](/docs/self-hosting/server-config#logauditevents)
 
-:::
+{{< /warning >}}
 
 For [batch requests](/docs/fhir-datastore/fhir-batch-requests) and [GraphQL queries](/docs/graphql), each individual read/search operation executed by the query generates its own log line. While these operations are logged separately, they all share the same [request ID / trace ID](/docs/integration/log-streaming#log-correlation) for easy correlation and tracing.
 

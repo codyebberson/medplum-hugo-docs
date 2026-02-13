@@ -115,9 +115,9 @@ Once uploaded, the `Binary` resource can be referenced in various FHIR resources
   {ExampleCode}
 </MedplumCodeBlock>
 
-:::caution Attachment Data
+{{< warning title="Attachment Data" >}}
 When creating an [`Attachment`](/docs/api/fhir/datatypes/attachment), we recommend that you _do not_ use the `data` field to provide the full binary data string. This can make the attachment very large and can cause issues when making HTTP requests. See the [Handling External Files guide](/docs/charting/external-documents#example-creating-a-documentreference-for-a-binary-file) for an example of how to upload and reference [`Binary`](/docs/api/fhir/resources/binary) resources.
-:::
+{{< /warning >}}
 
 ## Consuming a FHIR `Binary` in an Application
 

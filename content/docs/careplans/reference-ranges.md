@@ -99,13 +99,13 @@ The table below describes which patient attributes can be used to target referen
   </MedplumCodeBlock>
 </details>
 
-:::note
+{{< note >}}
 
 For any range, if these demographic qualifiers are left unspecified, the system interprets it as a universal range applicable to all patients.
 
-:::
+{{< /note >}}
 
-:::tip Matching [`Patients`](/docs/api/fhir/resources/patient) to reference ranges
+{{< tip title="Matching [`Patients`](/docs/api/fhir/resources/patient) to reference ranges" >}}
 
 The Medplum SDK provides helper functions,[ `findObservationInterval`](/docs/sdk/core.findobservationinterval), [`findObservationReferenceRange`](/docs/sdk/core.findobservationreferencerange), and [`matchesRange`](/docs/sdk/core.matchesrange) to find reference ranges that match a particular patient.
 
@@ -119,7 +119,7 @@ The Medplum SDK provides helper functions,[ `findObservationInterval`](/docs/sdk
 
 </details>
 
-:::
+{{< /tip >}}
 
 ## Types of reference ranges
 

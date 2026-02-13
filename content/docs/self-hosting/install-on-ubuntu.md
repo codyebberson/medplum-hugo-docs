@@ -23,11 +23,11 @@ This installation method is well-suited for production deployments where you wan
 
 ## Install PostgreSQL
 
-:::note
+{{< note >}}
 
 These Postgres installation steps can be skipped if you've already installed Postgres, or are using a database hosted elsewhere. Medplum server can be configured to connect to remote databases. We'll discuss how to connect to a remote Postgres server below.
 
-:::
+{{< /note >}}
 
 Add the PostgreSQL Apt Repository (see [PostgreSQL Apt Repository docs](https://www.postgresql.org/download/linux/ubuntu/))
 
@@ -230,12 +230,12 @@ sudo apt-get install --reinstall medplum
 
 Reconfigure Medplum:
 
-:::caution
+{{< warning >}}
 
 During the installation of Medplum, you will be asked for general configuration (app domain, api domain, database host). This is used to generate the correct nginx configurations and the medplum.config.json file.
 If you've missed these configuration you can reconfigure with the following command line
 
-:::
+{{< /warning >}}
 
 ```bash
 sudo dpkg-reconfigure medplum

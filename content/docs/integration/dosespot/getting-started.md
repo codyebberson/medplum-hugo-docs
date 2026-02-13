@@ -8,9 +8,9 @@ weight: 1
 
 This guide explains how to get the **DoseSpot eRx interface iframed into Medplum** and **sync the relevant resources between Medplum and DoseSpot**. It is all integrated into the [Provider App](https://provider.medplum.com) already, but these instructions will show you how to use the hooks and bots in your own application.
 
-:::info
+{{< info >}}
 This is a [premium](/pricing) tier 3rd party integration feature. Please contact us at [support@medplum.com](mailto:support@medplum.com) to get access.
-:::
+{{< /info >}}
 
 ## Authentication
 
@@ -45,9 +45,9 @@ To embed the DoseSpot eRx interface into Medplum and sync a patient's data to Do
 - date of birth
 - name (first and last)
 
-:::warning Pediatric Patients (Under 18)
+{{< warning title="Pediatric Patients (Under 18)" >}}
 For patients under 18 years of age, you **must** also sync Height and Weight as [Observations](/docs/api/fhir/resources/observation) using the correct LOINC codes. The sync will fail without these required vital signs. See the [Height and Weight for Pediatric Patients](#height-and-weight-for-pediatric-patients) section for more details.
-:::
+{{< /warning >}}
 
 <details>
   <summary>See this example of a valid Patient that will be synced to DoseSpot</summary>
@@ -184,12 +184,12 @@ For patients under 18 years of age, DoseSpot requires Height and Weight observat
 ```
 </details>
 
-:::tip Required LOINC Codes
+{{< tip title="Required LOINC Codes" >}}
 - **Height**: `8302-2` (Body height)
 - **Weight**: `29463-7` (Body weight)
 
 These specific LOINC codes are required for successful sync to DoseSpot.
-:::
+{{< /tip >}}
 
 
 **2. Syncs [AllergyIntolerance](/docs/api/fhir/resources/allergyintolerance) -> DoseSpot for DAI (Drug-Allergy-Interaction) checks**: You must have an [AllergyIntolerance](/docs/api/fhir/resources/allergyintolerance) resource with the patient reference set. **[RxNorm](/docs/medications/medication-codes#rxnorm)** is recommended for best results with DoseSpot.

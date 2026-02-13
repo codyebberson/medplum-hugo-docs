@@ -118,14 +118,14 @@ A corresponding `QuestionnaireResponse` shows how the data will be parsed:
 }
 ```
 
-:::info Value Extraction
+{{< info title="Value Extraction" >}}
 
 The template extraction extensions are expected to contain [FHIRPath][fhirpath] expressions that return the value(s) to
 be inserted into the template. If no values are returned, the field is removed from the template; more than one result
 is inserted as an array of values. Using functions like `first()` in the expression can help ensure the correct number
 of values are returned and ensure the resulting resource is well-formed.
 
-:::
+{{< /info >}}
 
 [fhir-primitive-ext]: https://hl7.org/fhir/R4/json.html#primitive
 

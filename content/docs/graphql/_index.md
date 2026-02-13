@@ -18,9 +18,9 @@ The GraphQL API also allows you to request specific elements, rather than full r
 
 To experiment with the API, you can use Medplum's interactive GraphQL environment at [graphiql.medplum.com](https://graphiql.medplum.com/). You can log in with your Medplum credentials, and run these example queries in the GraphiQL IDE.
 
-:::note Schema Introspection
+{{< note title="Schema Introspection" >}}
 Schema introspection is supported on Medplum, but for security and performance reasons, it is disabled by default. To enable it, you will need to enable the `introspectionEnabled` flag in your server config.
-:::
+{{< /note >}}
 
 ## How to perform basic GraphQL queries
 
@@ -55,9 +55,9 @@ For example, to request a `Patient` by ID:
 
 This query retrieves the `resourceType`, `id`, `name`, and `address` of the specified `Patient`.
 
-:::note Access Policies
+{{< note title="Access Policies" >}}
 When using GraphQL, [access policies](/docs/access/access-policies) are enforced, so users will not be able to read or edit any resources (or inner fields) they do not have access to.
-:::
+{{< /note >}}
 
 ## How to perform FHIR searches with GraphQL
 
@@ -65,11 +65,11 @@ To perform a FHIR search, append the word `"List"` to the FHIR resource type. Fo
 
 GraphQL also allows you to [alias returned fields](https://devinschulz.com/rename-fields-by-using-aliases-in-graphql/) to make the results more readable.
 
-:::warning Warning
+{{< warning title="Warning" >}}
 
 When using FHIR GraphQL, you must still use [FHIR search parameters](/docs/search/basic-search#search-parameters); however, the search parameter names use **snake_case** instead of the **kebab-case** commonly used in the FHIR REST API.
 
-:::
+{{< /warning >}}
 
 To search for a list of `Patient` resources with a specific name and city:
 
@@ -102,11 +102,11 @@ This query searches for Patient resources with the name `"Eve"` and a city of `"
 
 See the "[Searching Resources](https://hl7.org/fhir/r4/graphql.html#searching)" section of the FHIR GraphQL specification for more information.
 
-:::caution Search Modifiers
+{{< warning title="Search Modifiers" >}}
 
 The [official FHIR GraphQL specification](https://hl7.org/fhir/R4/graphql.html) currently does not support [search modifiers](/docs/search/basic-search#search-modifiers) such as `:not`, `:missing`, and `:contains`. If you'd like to participate or learn more, join the discussion [here](https://chat.fhir.org/#narrow/stream/192326-graphql/topic/Search.20Modifiers.20in.20GraphQL/near/340283410).
 
-:::
+{{< /warning >}}
 
 ## Resolving nested resources with the `resource` element
 
@@ -180,9 +180,9 @@ In the example below, we first search for a `Patient` by id, and then find all t
 
 See the "[Reverse References](https://hl7.org/fhir/r4/graphql.html#searching)" section of the FHIR GraphQL specification for more information.
 
-:::note Chained Search in GraphQL
+{{< note title="Chained Search in GraphQL" >}}
 When searching on references in GraphQL, you _cannot_ filter on the parameters of the referenced resources. This is called chained search and it is not supported by the FHIR GraphQL spec. However, it is supported in the FHIR Rest API. For more details see the [Chained Search docs](/docs/search/chained-search).
-:::
+{{< /note >}}
 
 ## Filtering lists with field arguments
 
@@ -262,11 +262,11 @@ If more powerful filtering capabilities are required, a FHIRPath expression can 
   </MedplumCodeBlock>
 </details>
 
-:::tip Query Performance
+{{< tip title="Query Performance" >}}
 
 Evaluating FHIRPath expressions can be relatively expensive; consider whether results could easily be filtered by the client instead.
 
-:::
+{{< /tip >}}
 
 See the "[List Navigation](https://hl7.org/fhir/r4/graphql.html#list)" section of the FHIR GraphQL specification for more information.
 

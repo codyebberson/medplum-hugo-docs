@@ -84,7 +84,7 @@ It is important to pay attention to underscores when converting camelCase config
 3. Convert the remaining string to lower case.
 4. Replace `_` followed by a letter with the uppercase version of that letter.
 
-:::warning Common Pitfall
+{{< warning title="Common Pitfall" >}}
 Missing underscores in the environment variable name will result in incorrect configuration keys.
 
 For example, the configuration setting `database.maxConnections` corresponds to `MEDPLUM_DATABASE_MAX_CONNECTIONS`.
@@ -93,7 +93,7 @@ For example, the configuration setting `database.maxConnections` corresponds to 
 - **Incorrect:** `MEDPLUM_DATABASE_MAXCONNECTIONS` -> `database.maxconnections` (Note the lowercase 'c')
 
 If you accidentally use `MEDPLUM_DATABASE_MAXCONNECTIONS`, the server will ignore the setting because it looks for `maxConnections`, not `maxconnections`.
-:::
+{{< /warning >}}
 
 When both a configuration file and environment variables are present, the environment variables will take precedence. This allows you to have a base configuration file and override specific settings for different environments.
 

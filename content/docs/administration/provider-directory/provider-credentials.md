@@ -60,7 +60,7 @@ A provider's specialty certifications can also be represented Unlike licensure, 
   </MedplumCodeBlock>
 </details>
 
-:::tip `Practitioner.qualification` vs. `PractitionerRole.specialty`
+{{< tip title="`Practitioner.qualification` vs. `PractitionerRole.specialty`" >}}
 
 Both the `Practitioner.qualification` and `PractitionerRole.specialty` elements can be used to represent a provider's specialization, but there are important differences between how they are used.
 
@@ -90,7 +90,7 @@ graph LR
 
 ```
 
-:::
+{{< /tip >}}
 
 ## Conclusion
 

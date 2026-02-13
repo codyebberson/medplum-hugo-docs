@@ -39,7 +39,7 @@ The FHIR [`Communication`](/docs/api/fhir/resources/communication) resource is a
 | `sent`/`received` | The time that the message was either sent or received.                                                                                                                                                                                                                                                                       |                                                                                                                | 2023-04-10T10:00:00Z                                                                                                                                                       |
 | `status`          | The status of transmission.                                                                                                                                                                                                                                                                                                  | [Event Status Codes](http://hl7.org/fhir/R4/valueset-event-status.html)                                        | in-progress                                                                                                                                                                |
 
-:::tip The `Communication` lifecycle
+{{< tip title="The `Communication` lifecycle" >}}
 
 Most messaging based workflows track messages through three stages: **sent**, **received**, and **read**.
 
@@ -51,13 +51,13 @@ While FHIR standard doesn't offer specific guidance on representing this lifecyc
 | received | `Communication.received` is populated   |
 | read     | `Communication.status` is `"completed"` |
 
-:::
+{{< /tip >}}
 
-:::note `category` vs. `reasonCode`
+{{< note title="`category` vs. `reasonCode`" >}}
 
 The `category` and `reasonCode` elements are similar, but offer different use cases. The `category` field is used to broadly classify messages, while the `reasonCode` is used to provide more granular detail about why a message was sent. For example, a `category` may be a notification while the `reasonCode` could be an appointment reminder.
 
-:::
+{{< /note >}}
 
 ## Building and Structuring Threads
 
@@ -111,13 +111,13 @@ Here are some common types of tags that can be used for grouping:
   </MedplumCodeBlock>
 </details>
 
-:::tip Designing category schemes
+{{< tip title="Designing category schemes" >}}
 
 There are different ways that you can categorize threads, each one with its own pros and cons. For example, you can have threads with multiple `category` fields, one for specialty and one for level of credentials, etc., where you would search for multiple categories at once. The pros to this are that the data model is more self-explanatory, since each `category` is explicitly represented, and better maintainability, since it is easier to update and add individual categories. However, this can also lead to more complex queries.
 
 Alternatively, you can have threads that have just one `category` that combines specialty, level of credentials, etc., and search for that specific category. This allows for simpler searching, needing only one `category` search parameter, and a simpler, more compact data model. The downside is that it may require more parsing and logic on the front-end to handle the combined categories and that as more combinations arise, maintaining the coding system may become difficult.
 
-:::
+{{< /tip >}}
 
 ## Searching for and Sorting `Communication` Resources
 

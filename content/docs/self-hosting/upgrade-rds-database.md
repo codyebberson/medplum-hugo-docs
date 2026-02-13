@@ -8,7 +8,7 @@ weight: 101
 
 As your project grows, you may need to upgrade your RDS database instance size. This document describes how to perform this operation with zero downtime.
 
-:::caution
+{{< warning >}}
 
 This is a complex, multi-step process, and requires high proficiency with AWS, Node.js, and command line tools.
 
@@ -16,13 +16,13 @@ Medplum strives to make this as easy as possible, but despite our best efforts, 
 
 If you have any questions, please [contact us](mailto:hello@medplum.com) or [join our Discord](https://discord.gg/medplum).
 
-:::
+{{< /warning >}}
 
-:::tip
+{{< tip >}}
 
 If you are new to AWS CDK, we strongly recommend reading [Getting started with the AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html).
 
-:::
+{{< /tip >}}
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ See [Upgrade AWS Infrastructure](/docs/self-hosting/install-on-aws#upgrade-aws-i
 
 The next step is to upgrade the reader instances.
 
-:::warning
+{{< warning >}}
 
 In previous versions of CDK (and therefore previous versions of Medplum), the reader and writer instances were automatically upgraded in sequence.
 
@@ -50,7 +50,7 @@ That is no longer the case. Reader and writer instances must be upgraded separat
 
 See [Migrating from instanceProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_rds-readme.html#migrating-from-instanceprops) for more details.
 
-:::
+{{< /warning >}}
 
 The Medplum CDK config file supports an optional `rdsReaderInstanceType` config setting. If this value is set, then the reader instances will be upgraded to this instance type.
 
