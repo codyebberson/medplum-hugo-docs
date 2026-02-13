@@ -1,6 +1,7 @@
 import mermaid from 'mermaid';
 import Swup from 'swup';
 import { initAnimatedCircles } from './components/animated-circle.mjs';
+import { initTabs } from './components/tabs.mjs';
 
 mermaid.initialize({ startOnLoad: true });
 
@@ -68,8 +69,10 @@ swup.hooks.before('content:replace', (visit) => {
 
 swup.hooks.on('content:replace', (visit) => {
   initAnimatedCircles();
+  initTabs();
   updateActiveLinks();
 });
 
 updateAttributes(window.location.href);
 initAnimatedCircles();
+initTabs();

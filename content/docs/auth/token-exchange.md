@@ -49,18 +49,18 @@ The client makes a token exchange request to the token endpoint with an extensio
 
 {{< tip title="Example" >}}
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="tokenExchange">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="tokenExchangeCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 {{< /tip >}}
 

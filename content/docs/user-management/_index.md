@@ -107,43 +107,43 @@ With is `ClientApplication`, you can create a `Project` resource and invite the 
 
 #### Create a New Project
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="createProjectTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="createProjectCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="createProjectCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 #### Invite a New User as an Admin
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="inviteNewAdminTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="inviteNewAdminCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="inviteNewAdminCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ## User Administration via Medplum App
 
@@ -176,85 +176,85 @@ You can search for all project members by performing a search for all `ProjectMe
 
 #### Example: Search for all project members
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchProjectMembershipTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchProjectMembershipCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchProjectMembershipCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 You can also use the `profile-type` search parameter to narrow your search
 
 #### Example: Search for all human members
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchExcludingClientBotTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchExcludingClientBotCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchExcludingClientBotCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 #### Example: Search for all project `Patients`
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchProfileTypePatientTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchProfileTypePatientCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchProfileTypePatientCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 #### Example: Search for all project `Practitioners`
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchProfileTypePractitionerTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchProfileTypePractitionerCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchProfileTypePractitionerCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 Refer to our [search documentation](/docs/search/basic-search) for more details on FHIR search
 
@@ -270,23 +270,23 @@ To _invite_ a user as an admin in the app, please see the [Invite a User docs](h
 
 Promoting a user to admin can also be done programmatically. To do so, you will need to update the user's `ProjectMembership`.
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="makeAdminTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="makeAdminCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="makeAdminCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 It is important to spread the original `ProjectMembership` to ensure that you are only updating the `admin` field.
 
@@ -302,23 +302,23 @@ Prepare JSON payload:
 
 Then POST to the [`/invite` endpoint](/docs/api/project-admin/invite):
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="inviteUserTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="inviteUserCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="inviteUserCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 The [`/invite` endpoint](/docs/api/project-admin/invite) creates a [`ProjectMembership`](/docs/api/fhir/medplum/projectmembership). The `ProjectMembership` resource includes additional properties to customize the user experience. The [`/invite` endpoint](/docs/api/project-admin/invite) accepts a partial `ProjectMembership` in the `membership` property where you can provide membership details.
 

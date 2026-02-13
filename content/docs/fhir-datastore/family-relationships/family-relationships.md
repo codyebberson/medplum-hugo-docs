@@ -87,14 +87,14 @@ After you've answered these questions about your use case, you're ready to make 
 
 
 
-<BrowserOnlyTabs>
-<TabItem value="diagram" label="Diagram" default>
+{{< tabs >}}
+{{< tab value="diagram" label="Diagram" >}}
 
 <img src={Approach1Diagram} alt="Approach #1" style={{ maxHeight: '400px', width: 'auto' }} />
 
-</TabItem>
+{{< /tab >}}
 
-<TabItem value="data" label="JSON" >
+{{< tab value="data" label="JSON" >}}
 
 <CodeBlock language="js" showLineNumbers metastring="{12-71}">
   {`${JSON.stringify(
@@ -107,8 +107,8 @@ After you've answered these questions about your use case, you're ready to make 
   `}
 </CodeBlock>
 
-</TabItem>
-</BrowserOnlyTabs>
+{{< /tab >}}
+{{< /tabs >}}
 
 If your family members do not participate in clinical/billing activities and patients rarely share family members, the simplest approach is just to store information about family members directly on the [Patient](/docs/api/fhir/resources/patient) resource.
 
@@ -135,13 +135,13 @@ The tradeoff is that if patients share family members (e.g. siblings share the s
 
 
 
-<BrowserOnlyTabs>
-<TabItem value="diagram" label="Diagram" default>
+{{< tabs >}}
+{{< tab value="diagram" label="Diagram" >}}
 
 <img src={Approach2Diagram} alt="Approach #2" style={{ maxHeight: '400px', width: 'auto' }} />
 
-</TabItem>
-<TabItem value="data" label="JSON" >
+{{< /tab >}}
+{{< tab value="data" label="JSON" >}}
 
 <CodeBlock language="js" showLineNumbers metastring="{6-15,17-20}">
   {'// RelatedPerson modeling Father -> Daughter relationship\n' +
@@ -163,8 +163,8 @@ The tradeoff is that if patients share family members (e.g. siblings share the s
   }
 </CodeBlock>
 
-</TabItem>
-</BrowserOnlyTabs>
+{{< /tab >}}
+{{< /tabs >}}
 
 If family members _do_ participate in clinical/billing activities, then it might make sense to model them explicitly as a separate resource.
 
@@ -192,13 +192,13 @@ Each [RelatedPerson](/docs/api/fhir/resources/relatedperson) can only have **one
 
 
 
-<BrowserOnlyTabs>
-<TabItem value="diagram" label="Diagram" default>
+{{< tabs >}}
+{{< tab value="diagram" label="Diagram" >}}
 
 <img alt="Approach #3" src={Approach3Diagram} style={{ maxHeight: '400px', width: 'auto' }} />
 
-</TabItem>
-<TabItem value="data" label="JSON" >
+{{< /tab >}}
+{{< tab value="data" label="JSON" >}}
 
 <CodeBlock language="js" showLineNumbers metastring="{6-17}">
   {'// Patient representing the parent\n' +
@@ -227,8 +227,8 @@ Each [RelatedPerson](/docs/api/fhir/resources/relatedperson) can only have **one
     )}
 </CodeBlock>
 
-</TabItem>
-</BrowserOnlyTabs>
+{{< /tab >}}
+{{< /tabs >}}
 
 If your practice begins to have patients who share family members, duplicating their contact information across multiple [RelatedPerson](/docs/api/fhir/resources/relatedperson) resources can quickly become error prone.
 
@@ -254,13 +254,13 @@ The FHIR spec also allows the use of the [Person](/docs/api/fhir/resources/perso
 
 
 
-<BrowserOnlyTabs>
-<TabItem value="diagram" label="Diagram" default>
+{{< tabs >}}
+{{< tab value="diagram" label="Diagram" >}}
 
 <img src={Approach4Diagram} alt="Approach #4" style={{ maxHeight: '400px', width: 'auto' }} />
 
-</TabItem>
-<TabItem value="data" label="JSON" >
+{{< /tab >}}
+{{< tab value="data" label="JSON" >}}
 
 <CodeBlock language="js">
   {JSON.stringify(
@@ -270,8 +270,8 @@ The FHIR spec also allows the use of the [Person](/docs/api/fhir/resources/perso
   )}
 </CodeBlock>
 
-</TabItem>
-</BrowserOnlyTabs>
+{{< /tab >}}
+{{< /tabs >}}
 
 For some use cases, it is useful to keep track of the family unit as a whole, rather than as a web of connected [Patients](/docs/api/fhir/resources/patient), [RelatedPersons](/docs/api/fhir/resources/relatedperson), and [Persons](/docs/api/fhir/resources/person).
 

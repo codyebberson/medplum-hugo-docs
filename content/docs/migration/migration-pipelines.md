@@ -20,23 +20,23 @@ Conditional updates are essential to create idempotent migration pipelines. This
 
 To perform a conditional update, use a `PUT` operation with a search query in the URL:
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="medplum-sdk-upsert">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="curl-upsert">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="medplum-cli-upsert">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 The semantics of this operation are:
 

@@ -63,13 +63,13 @@ In addition to `medplum.createBinary()`, the Medplum SDK also provides `medplum.
 
 For large files such as videos and images, it can be inconvenient to download contents to the client before uploading to Medplum. In these situations, you can create a [`Media`](../api/fhir/resources/media) resource with a `url` parameter pointing to the location of the content.
 
-<BrowserOnlyTabs groupId="language">
-  <TabItem value="typescript" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="typescript" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="mediaImport,externalUrl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="python" label="Python">
+  {{< /tab >}}
+  {{< tab value="python" label="Python" >}}
 
 ```py
 
@@ -94,8 +94,8 @@ requests.post(f'{API_URL}/Media', json=media, headers={
 
 ```
 
-  </TabItem>
-</BrowserOnlyTabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 See the [**Client Credentials tutorial**](/docs/auth/client-credentials) guide for how to obtain an access token
 

@@ -28,23 +28,23 @@ In the below example we search for all [`Observation`](/docs/api/fhir/resources/
 
 <details>
   <summary>Example: Search for any [`Observations`](/docs/api/fhir/resources/observation) about a [`Patient`](/docs/api/fhir/resources/patient) with the name 'homer'</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="simpleChainedSearchTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="simpleChainedSearchCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="simpleChainedSearchCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 The target resource for every link in the chain must be unambiguous. If a search parameter can reference multiple resource types, you must specify the resource type in your search.
@@ -57,46 +57,46 @@ The general syntax for a forward chained search is `<reference searchParam>:<ref
 
 <details>
   <summary>Example: Search for any [`Observations`](/docs/api/fhir/resources/observation) about a subject that is a [`Patient`](/docs/api/fhir/resources/patient) with the name 'homer'</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="chainedSearchTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="chainedSearchCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="chainedSearchCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 You can include more than one link in your chained search. In the below example, we search for [`Observation`](/docs/api/fhir/resources/observation) resources that are linked to an [`Encounter`](/docs/api/fhir/resources/encounter) done by a service-provider with the name of 'Kaiser'.
 
 <details>
   <summary>Example: A chained search that chains multiple parameters</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="multipleChainsTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="multipleChainsCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="multipleChainsCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## Reverse Chained Search
@@ -113,23 +113,23 @@ As another example, you may want to search for any [`Patient`](/docs/api/fhir/re
 
 <details>
   <summary>Example: Search for any [`Patients`](/docs/api/fhir/resources/patient) that have had an observed heart rate above 150</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="reverseChainedSearchTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="reverseChainedSearchCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="reverseChainedSearchCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 In the above example `_has:Observation` filters for [`Patient`](/docs/api/fhir/resources/patient) resources that have an [`Observation`](/docs/api/fhir/resources/observation). The `:subject` filters for [`Observation`](/docs/api/fhir/resources/observation) resources that reference a [`Patient`](/docs/api/fhir/resources/patient) in the subject field. This is based on our initial search for a [`Patient`](/docs/api/fhir/resources/patient). Finally, `:code=11557-6` filters for that specific code on the [`Observation`](/docs/api/fhir/resources/observation).
@@ -142,23 +142,23 @@ In this example we search for a [`Specimen`](/docs/api/fhir/resources/specimen) 
 
 <details>
   <summary>Example: Nested reversed chained search</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="nestedReverseChainTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="nestedReverseChainCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="nestedReverseChainCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ### Combining forward and reverse chained search
@@ -169,21 +169,21 @@ In the below example, we search for a [`Patient`](/docs/api/fhir/resources/patie
 
 <details>
   <summary>Example: Combining reverse and forward chained search</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="combinedChainTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="combinedChainCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="combinedChainCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>

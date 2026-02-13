@@ -49,18 +49,18 @@ To search for resources, you can simply add search parameters and values as quer
 
 The [Medplum Client SDK](/docs/sdk/core.medplumclient) also provides the `search` helper method, which accepts a `string` or `object`.
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchSingle">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchSingleCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 This request will return a [FHIR `Bundle`](/docs/api/fhir/resources/bundle) resource, which contains the query results as well as some metadata. The `Bundle.entry` element will contain an array with each `Bundle.entry[i].resource` being a search result.
 
@@ -80,33 +80,33 @@ The array returned by `searchResources` also includes a `bundle` property that c
 
 You can perform an AND search by specifying multiple query parameters
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchAnd">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchAndCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 Specifying comma separated values performs an OR operation for that search parameter
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchOr">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchOrCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ## Searching by Reference
 
@@ -116,18 +116,18 @@ The syntax for this kind of search is `[parameter]=[resourceType]/[id]`. You can
 
 For example, to search for all `Observation` resources that reference a `Patient` with the ID `"1234"`:
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchReference">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchReferenceCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ## Strings vs. Tokens
 
@@ -196,18 +196,18 @@ The FHIR spec includes a set of **modifiers** to change the way a specific searc
 `:not` excludes the specified values from results.
 For example, search for all `Tasks` where status _is not_ `completed`:
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchNot">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchNotCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ### `:missing`
 
@@ -215,18 +215,18 @@ For example, search for all `Tasks` where status _is not_ `completed`:
 
 For example, searching for all `Patients` with missing `birthDates`.
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchMissing">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchMissingCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ### `:contains`
 
@@ -234,18 +234,18 @@ For example, searching for all `Patients` with missing `birthDates`.
 
 For example, searching for `Patients` whose name includes the substring `"stein"`
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchContains">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchContainsCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ## Searching by Comparison
 
@@ -266,34 +266,34 @@ FHIR provides a mechanism to search for resources that have a value greater or l
 
 This example shows how to find all [`RiskAssessments`](/docs/api/fhir/resources/riskassessment) with a `probability` greater than 0.8.
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchGreaterThan">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchGreaterThanCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <br />
 You can search an inclusive range using an AND search
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchInclusiveRange">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchInclusiveRangeCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 {{< warning title="Note" >}}
 
@@ -304,18 +304,18 @@ Because we are specifying the `value-quantity` parameter twice in this query, we
 <br />
 You can search an exclusive range using an OR search
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchExclusiveRange">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchExclusiveRangeCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ## Sorting the Results
 
@@ -325,52 +325,52 @@ The `_sort` parameter allows you specify a list of [search parameters](#search-p
 
 The example below searches for all [`RiskAssessments`](/docs/api/fhir/resources/riskassessment), sorted by their `probability`, then by `date`.
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchSort">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchSortCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ### Reversing the sort order
 
 To sort in _descending_ order, prepend the search parameter with a minus sign `-`. The following example returns [`RiskAssessments`](/docs/api/fhir/resources/riskassessment), in _descending_ order of `probability`:
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchSortDescending">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchSortDescendingCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ### Sorting by updated time
 
 FHIR also provides the special search parameter, `_lastUpdated`, to search by the last updated time for a resource. The following example searches for the most recently updated [`RiskAssessments`](/docs/api/fhir/resources/riskassessment) resources:
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchSortByLastUpdated">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchSortByLastUpdatedCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ## Getting the total number of results
 

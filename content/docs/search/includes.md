@@ -29,23 +29,23 @@ each resource that you need. The major differences between the `_(rev)include` p
 
 For example, the search query described above for `Observation`, `Patient`, and `Provenance` resources would look like this:
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchIncludes">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchIncludesCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchIncludesCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example response</summary>
@@ -101,23 +101,23 @@ parameter. This will cause the inclusion to apply recursively, until no more res
 to search for `Observation` resources, plus the `Patient` resources they refer to, plus those patients' associated
 `Practitioner`, you might use a search API call like this:
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchIncludeIterate">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchIncludeIterateCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchIncludeIterateCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example response</summary>
@@ -210,23 +210,23 @@ flowchart TD
 
 <details>
   <summary>Example: Get a `Patient` and their `RelatedPerson`</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="TypeScript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="TypeScript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="relatedPersonTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="ts" selectBlocks="relatedPersonCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="relatedPersonCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 In this example we:
@@ -260,23 +260,23 @@ flowchart TD
 
 <details>
   <summary>Example: Get a `Patient` and their `RelatedPerson` modeled as a `Patient`</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="TypeScript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="TypeScript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="relatedPersonPatientTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="ts" selectBlocks="relatedPersonPatientCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="relatedPersonPatientCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 This example is similar to the first, but includes an additional step.
@@ -312,23 +312,23 @@ flowchart TD
 
 <details>
   <summary>Example: Find all practitioners and roles at a specific location</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="TypeScript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="TypeScript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="locationPractitionerRoleTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="ts" selectBlocks="locationPractitionerRoleCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="locationPractitionerRoleCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 In this example, we:
@@ -362,23 +362,23 @@ flowchart TD
 
 <details>
   <summary>Example: Search for all members of the `CareTeam` of a `Patient`</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="TypeScript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="TypeScript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="careTeamTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="ts" selectBlocks="careTeamCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="careTeamCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 In this example we:

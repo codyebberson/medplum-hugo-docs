@@ -43,23 +43,23 @@ it if it doesn't exist yet. This is accomplished via a combined "update" and "in
 
 Provide the current version of the resource and a search query, similar to `createResourceIfNoneExists()`.
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="upsertTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="ts" selectBlocks="upsertCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="ts" selectBlocks="upsertCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ### Create the ServiceRequest
 

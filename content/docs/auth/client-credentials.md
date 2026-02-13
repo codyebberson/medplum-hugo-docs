@@ -21,8 +21,8 @@ For this example you will need the `ID` and `Secret`.
 
 Execute an HTTP POST request to the OAuth2 Token endpoint:
 
-<BrowserOnlyTabs groupId="language">
-  <TabItem value="curl" label="cURL">
+{{< tabs groupId="language" >}}
+  {{< tab value="curl" label="cURL" >}}
 
 ```bash
 curl -X POST https://api.medplum.com/oauth2/token \
@@ -30,9 +30,9 @@ curl -X POST https://api.medplum.com/oauth2/token \
     -d "grant_type=client_credentials&client_id=$MY_CLIENT_ID&client_secret=$MY_CLIENT_SECRET"
 ```
 
-  </TabItem>
+  {{< /tab >}}
 
-  <TabItem value="python" label="Python">
+  {{< tab value="python" label="Python" >}}
 
 ```py
 def get_auth_token(url, client_id, client_secret):
@@ -51,8 +51,8 @@ def get_auth_token(url, client_id, client_secret):
   return response.json()['access_token']
 ```
 
-  </TabItem>
-</BrowserOnlyTabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 **Note:** If you are hosting this on localhost, without editing the configuration file, the URL will be `http://localhost:8103/oauth2/token`
 

@@ -6,6 +6,8 @@ title = 'Medplum'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    style = 'github'
 
 [[module.mounts]]
   source = "assets"

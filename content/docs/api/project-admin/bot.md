@@ -24,8 +24,8 @@ Creates a new [Medplum Bot](/docs/). Posting to this endpoint creates a [`Bot`](
 
 ### Example request
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
 
 ```ts
 await medplum.post('admin/projects/:projectId/bot', {
@@ -37,8 +37,8 @@ await medplum.post('admin/projects/:projectId/bot', {
 });
 ```
 
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
 
 ```bash
 medplum post admin/projects/:projectId/bot \
@@ -51,8 +51,8 @@ medplum post admin/projects/:projectId/bot \
 }'
 ```
 
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
 
 ```bash
 curl https://api.medplum.com/admin/projects/:projectId/bot \
@@ -66,8 +66,8 @@ curl https://api.medplum.com/admin/projects/:projectId/bot \
   }'
 ```
 
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ### Example Response
 

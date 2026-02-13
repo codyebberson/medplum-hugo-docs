@@ -33,8 +33,8 @@ Creates a new [ClientApplication](/docs/api/fhir/medplum/clientapplication). Pos
 
 ### Example request
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
 
 ```ts
 await medplum.post('admin/projects/:projectId/client', {
@@ -47,8 +47,8 @@ await medplum.post('admin/projects/:projectId/client', {
 });
 ```
 
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
 
 ```bash
 medplum post admin/projects/:projectId/client \
@@ -62,8 +62,8 @@ medplum post admin/projects/:projectId/client \
 }'
 ```
 
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
 
 ```bash
 curl https://api.medplum.com/admin/projects/:projectId/client \
@@ -78,8 +78,8 @@ curl https://api.medplum.com/admin/projects/:projectId/client \
   }'
 ```
 
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ### Example Response
 

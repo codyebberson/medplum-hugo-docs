@@ -25,23 +25,23 @@ This is a similar process to [creating a PDF file from a Bot ](/docs/bots/creati
 
 First, upload the binary file as a [`Binary`](/docs/api/fhir/resources/binary) resource. Then, create the corresponding `DocumentReference` as a pointer. For more details on using [`Binary`] resources see the [Binary Data guide](/docs/fhir-datastore/binary-data#referencing-a-binary-in-an-attachment).
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="imports,docReferenceBinaryTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="docReferenceBinaryCLI">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="docReferenceBinaryCURL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 {{< tip title="Note" >}}
 

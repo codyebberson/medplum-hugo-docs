@@ -42,8 +42,8 @@ When a user is invited with `mfaRequired: true`:
 
 ### Example: Inviting a User with MFA Required
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="TypeScript" >}}
 
 ```ts
 await medplum.invite(123, {
@@ -55,8 +55,8 @@ await medplum.invite(123, {
 });
 ```
 
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
 
 ```bash
 medplum post admin/projects/:projectId/invite \
@@ -69,8 +69,8 @@ medplum post admin/projects/:projectId/invite \
 }'
 ```
 
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
 
 ```bash
 curl https://api.medplum.com/admin/projects/:projectId/invite \
@@ -85,8 +85,8 @@ curl https://api.medplum.com/admin/projects/:projectId/invite \
 }'
 ```
 
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 For more details on the invite endpoint, see the [Invite User Endpoint](/docs/api/project-admin/invite) documentation.
 

@@ -18,6 +18,7 @@
 @import './components/section-header.scss';
 @import './components/sidebar.scss';
 @import './components/table.scss';
+@import './components/tabs.scss';
 @import './components/testimonial.scss';
 @import './components/toc.scss';
 
@@ -27,7 +28,7 @@
   --ifm-spacing-horizontal: 16px;
   --ifm-heading-margin-top: 0;
   --ifm-heading-margin-bottom: 24px;
-  --ifm-heading-font-weight: 400;
+  --ifm-heading-font-weight: 600;
   --ifm-h1-font-size: 3rem;
   --ifm-h2-font-size: 2rem;
   --ifm-h3-font-size: 1.5rem;
@@ -194,10 +195,16 @@ h1 {
 
 h2 {
   font-size: var(--ifm-h2-font-size);
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: var(--ifm-h3-font-size);
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -218,23 +225,36 @@ h1 {
   line-height: 130%;
 }
 
-pre {
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  margin-bottom: 50px;
+}
+
+.highlight pre {
+  background-color: rgb(246, 248, 250) !important;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  color: rgb(57, 58, 52);
   font-family: var(--ifm-font-family-monospace);
   font-size: var(--ifm-code-font-size);
+  padding: 16px;
+}
+
+.highlight pre code {
+  padding: 0;
 }
 
 code {
-  // background-color: var(--ifm-code-background);
   border-radius: var(--ifm-code-border-radius);
   font-family: var(--ifm-font-family-monospace);
   font-size: var(--ifm-code-font-size);
   padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
   vertical-align: middle;
-  // border: 0.1rem solid rgba(0, 0, 0, 0.1);
-}
-
-pre code {
-  padding: 1rem;
 }
 
 .container {

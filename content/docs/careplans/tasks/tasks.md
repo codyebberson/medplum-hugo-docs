@@ -94,23 +94,23 @@ While these terms might feel awkward in a digital health setting, Medplum recomm
 
 You can search for all unassigned tasks using the [`:missing`](/docs/search/basic-search#missing) search modifier.
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchMissingTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchMissingCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchMissingCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 {{< tip title="Assigning tasks to roles" >}}
 

@@ -28,23 +28,23 @@ GraphQL queries allow you to request specific resourced fields. In a FHIR GraphQ
 
 For example, to request a `Patient` by ID:
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="GetPatientByIdGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
+  {{< /tab >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="GetPatientByIdTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="GetPatientByIdCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -73,23 +73,23 @@ When using FHIR GraphQL, you must still use [FHIR search parameters](/docs/searc
 
 To search for a list of `Patient` resources with a specific name and city:
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="SearchPatientsByNameAndCityGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
+  {{< /tab >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="SearchPatientsByNameAndCityTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="SearchPatientsByNameAndCityCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -116,23 +116,23 @@ To resolve a reference, you need to use the GraphQL inline fragment syntax `(...
 
 For example, to retrieve a `DiagnosticReport` and all the `Observation` resources referenced by `DiagnosticReport.result`:
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="DiagnosticReportWithObservationsGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
+  {{< /tab >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="DiagnosticReportWithObservationsTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="DiagnosticReportWithObservationsCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -153,23 +153,23 @@ In a reverse-include search, you use a nested `<ResourceType>List` block to sear
 
 In the example below, we first search for a `Patient` by id, and then find all the `Encounter` resources whose `Encounter.patient` search parameter points to the current Patient.
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="PatientWithRelatedEncountersGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
+  {{< /tab >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="PatientWithRelatedEncountersTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="PatientWithRelatedEncountersCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -188,23 +188,23 @@ When searching on references in GraphQL, you _cannot_ filter on the parameters o
 
 FHIR GraphQL supports filtering array properties using field arguments. For example, you can filter the `Patient.name` array by the `use` field:
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="FilterPatientNameByUseGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
+  {{< /tab >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="FilterPatientNameByUseTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="FilterPatientNameByUseCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -215,23 +215,23 @@ FHIR GraphQL supports filtering array properties using field arguments. For exam
 
 Another common use is to filter an `extension` array by `url`:
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="FilterExtensionByUrlGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
+  {{< /tab >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="FilterExtensionByUrlTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="FilterExtensionByUrlCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -242,18 +242,18 @@ Another common use is to filter an `extension` array by `url`:
 
 If more powerful filtering capabilities are required, a FHIRPath expression can be evaluated to select which list items are included in the response. The expression should evaluate to `true` for an item to be included. This example selects all patient names without a family part:
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="FilterExtensionByFHIRPathGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
+  {{< /tab >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="FilterPatientNameByFHIRPathTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -276,23 +276,23 @@ The FHIR GraphQL syntax is a powerful way to query for multiple related resource
 
 This query searches for a list of `Patients` named `"Eve"`, living in `"Philadelphia"`, and then searches for all `DiagnosticReports` linked to each `Patient` along with their corresponding `Observations`.
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="PatientsWithReportsGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
+  {{< /tab >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="PatientsWithReportsTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="PatientsWithReportsCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>

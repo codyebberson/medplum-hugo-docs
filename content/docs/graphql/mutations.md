@@ -18,18 +18,18 @@ You can create a resource using the `[resourceType]Create` mutation.
 
 To create a [`Patient`](/docs/api/fhir/resources/patient):
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="MutationCreatePatientGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="Typescript">
+  {{< /tab >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="MutationCreatePatient">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -42,18 +42,18 @@ To create a [`Patient`](/docs/api/fhir/resources/patient):
 
 Just as with GraphQL queries, you can alias the newly created resource.
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="MutationCreatePatientGraphQLAliased">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="Typescript">
+  {{< /tab >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="MutationCreatePatientAliased">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -68,33 +68,33 @@ Medplum's graphQL schema provides type definitions for complex nested fields (ak
 
 This examples demonstrates how to create a mutation that creates a [`Communication`](/docs/api/fhir/resources/communication) resource and takes an array of `CommunicationPayload` types as a parameter:
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="MutationCreateCommunicationGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="Typescript">
+  {{< /tab >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="MutationCreateCommunication">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 ## Update Mutation
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="MutationPatientUpdateGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="Typescript">
+  {{< /tab >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="MutationPatientUpdateTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>
@@ -107,8 +107,8 @@ This examples demonstrates how to create a mutation that creates a [`Communicati
 
 You can partially update a resource using the `[resourceType]Patch` mutation. This mutation takes an `id` and a `patch` array of operations (see [RFC 6902](https://datatracker.ietf.org/doc/html/rfc6902)).
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql">
 {`
 mutation {
@@ -126,8 +126,8 @@ mutation {
 }
 `}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="Typescript">
+  {{< /tab >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts">
 {`
 const result = await medplum.graphql(\`
@@ -147,8 +147,8 @@ mutation {
 \`);
 `}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 > **Note:** The `value` field in the patch operation is always a string due to GraphQL input type limitations. For complex values, encode as JSON strings and decode server-side if needed.
 
@@ -173,15 +173,15 @@ mutation {
 
 ## Delete Mutation
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="MutationPatientDeleteGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="Typescript">
+  {{< /tab >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="MutationPatientDeleteTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}

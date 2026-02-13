@@ -63,23 +63,23 @@ The details of your request will be in the `entry` field of the `Bundle`, which 
 
 <details>
   <summary>Example: A simple batch request to simultaneously search for two patients</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="simpleBatchTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="simpleBatchCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="simpleBatchCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 <details>
@@ -108,18 +108,13 @@ it can receive status updates around the batch processing job.
 To opt into asynchronous handling of the batch request, add the `Prefer: respond-async` header to the HTTP request for
 the batch:
 
-<Tabs groupId="language">
-  {/* <TabItem value="ts" label="Typescript">
-    <MedplumCodeBlock language="ts" selectBlocks="asyncBatchTs">
-      {ExampleCode}
-    </MedplumCodeBlock>
-  </TabItem> */}
-  <TabItem value="curl" label="cURL">
+{{< tabs groupId="language" >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="asyncBatchCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 See the [FHIR Asynchronous Request pattern](http://hl7.org/fhir/R5/async-bundle.html) for more information.
 
@@ -248,13 +243,13 @@ When updating resources in a transaction bundle, you can prevent **lost updates*
 
 <details>
   <summary>Example: Version Checking in Transaction Bundle</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="transactionIfMatchTs">
         {UpdatingDataExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 If any resource in the transaction has been modified by another user (the version doesn't match), the transaction will fail with a `412 Precondition Failed` error, allowing you to retry after re-reading the current state.

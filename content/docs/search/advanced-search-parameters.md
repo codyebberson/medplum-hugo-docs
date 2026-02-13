@@ -31,23 +31,23 @@ The `_id` parameter allows you to search for any resource based on its `id` elem
 
 <details>
   <summary>Example: Searching for patients by _id</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="idTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="idCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="idCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_lastUpdated
@@ -58,23 +58,23 @@ This is especially useful when combined with [comparison operators](/docs/search
 
 <details>
   <summary>Example: Searching for only communications that have occurred since the beginning of October, 2023</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="lastUpdatedTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="lastUpdatedCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="lastUpdatedCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_summary
@@ -90,23 +90,23 @@ The `_summary` parameter can contain one of the following value set:
 
 <details>
   <summary>Example: Searching for a summary of a patient</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="summaryTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="summaryCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="summaryCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_elements
@@ -119,23 +119,23 @@ Note that any top-level mandatory or modifier elements should always be included
 
 <details>
   <summary>Example: Searching the subject and performers of observations</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="elementsTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="elementsCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="elementsCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_tag
@@ -144,23 +144,23 @@ The `_tag` parameter allows you to search on the `tag` field of the `meta` eleme
 
 <details>
   <summary>Example: Searching for observations that are tagged as critical</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="tagTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="tagCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="tagCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_compartment
@@ -171,23 +171,23 @@ Medplum allows you to easily search using compartments by providing the non-stan
 
 <details>
   <summary>Example: Find all communications for a patient</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="compartmentTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="compartmentCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="compartmentCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_total
@@ -202,23 +202,23 @@ The `_total=accurate` search parameter will only attempt to return the accurate 
 
 <details>
   <summary>Example: Search for all patients in your organization and get an estimate of the total number</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="totalTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="totalCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="totalCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_profile
@@ -229,23 +229,23 @@ The `_profile` parameter is a reference parameter, meaning you may provide a ref
 
 <details>
   <summary>Example: Search for observations that are part of the pediatric growth charts profile</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="profileTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="profileCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="profileCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_security
@@ -256,23 +256,23 @@ The [Confidentiality Level Code System](http://terminology.hl7.org/CodeSystem/v3
 
 <details>
   <summary>Example: Searching for patients that are of a **normal** confidentiality level.</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="securityTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="securityCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="securityCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_source
@@ -283,23 +283,23 @@ The `meta.source` field indicates the system or application that originally crea
 
 <details>
   <summary>Example: Searching for Patients sourced from `https://foomedical.com`</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="sourceTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="sourceCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="sourceCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_filter
@@ -322,23 +322,23 @@ Mixing `_deleted` with most other search parameters will not work as expected. T
 
 <details>
   <summary>Example: Searching for deleted patients</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="deletedTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="deletedCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="deletedCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_project
@@ -347,23 +347,23 @@ The `_project` parameter allows you to filter resources by their project ID. Thi
 
 <details>
   <summary>Example: Searching for patients in a specific project</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="projectTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="projectCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="projectCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_type
@@ -372,23 +372,23 @@ The `_type` parameter allows you to restrict the search to specific resource typ
 
 <details>
   <summary>Example: Searching for Patients and Observations</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="typeTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="typeCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="typeCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## \_cursor

@@ -20,23 +20,23 @@ A filter expression has three parts: a **parameter**, an **operator**, and a **v
 
 <details>
   <summary>Example: Filter syntax</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="syntaxTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="syntaxCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="syntaxCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 In this example, the filter expression is `name eq "simpson"`, where `name` is the **parameter**, `eq` is the **operator**, and `"simpson"` is the **value**.
@@ -65,46 +65,46 @@ This example will return all male patients that have the string "sim" somewhere 
 
 <details>
   <summary>Example: Filtering a search based on both name and gender</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="logicalAndTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="logicalAndCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="logicalAndCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 This example will return any patients that have an identifier of 12345 OR the phone number "555-6789". It is important to note that this is _impossible_ to do using standard search parameter syntax.
 
 <details>
   <summary>Example: Filtering a search based on either an identifier or phone number</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="logicalOrTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="logicalOrCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="logicalOrCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 ## Nested Filters
@@ -113,23 +113,23 @@ You can further refine your search by nesting filters using parentheses and logi
 
 <details>
   <summary>Example: Filtering a search based on gender and two potential names</summary>
-  <Tabs groupId="language">
-    <TabItem value="ts" label="Typescript">
+  {{< tabs groupId="language" >}}
+    {{< tab value="ts" label="Typescript" >}}
       <MedplumCodeBlock language="ts" selectBlocks="nestedTs">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="cli" label="CLI">
+    {{< /tab >}}
+    {{< tab value="cli" label="CLI" >}}
       <MedplumCodeBlock language="bash" selectBlocks="nestedCli">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-    <TabItem value="curl" label="cURL">
+    {{< /tab >}}
+    {{< tab value="curl" label="cURL" >}}
       <MedplumCodeBlock language="bash" selectBlocks="nestedCurl">
         {ExampleCode}
       </MedplumCodeBlock>
-    </TabItem>
-  </Tabs>
+    {{< /tab >}}
+  {{< /tabs >}}
 </details>
 
 This example initially filters for all male patients. It then filters those male patients for any names that contain either of the strings "sim" or "wigg".

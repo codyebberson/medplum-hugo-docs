@@ -14,23 +14,23 @@ To use the Connection API, append "Connection" to the resource type rather than 
 
 Here is an example of searching for a list of `Patient` resources using the Connection API:
 
-<Tabs groupId="language">
-  <TabItem value="graphql" label="GraphQL">
+{{< tabs groupId="language" >}}
+  {{< tab value="graphql" label="GraphQL" >}}
     <MedplumCodeBlock language="graphql" selectBlocks="ConnectionApiGraphQL">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="ts" label="TypeScript">
+  {{< /tab >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="ConnectionApiTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="ConnectionApiCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 <details>
   <summary>Example Response</summary>

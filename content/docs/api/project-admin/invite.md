@@ -62,8 +62,8 @@ Invite a new user to the project. This will perform the following actions:
 
 #### Inviting a Practitioner
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
 
 ```ts
 await medplum.post('admin/projects/:projectId/invite', {
@@ -75,8 +75,8 @@ await medplum.post('admin/projects/:projectId/invite', {
 });
 ```
 
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
 
 ```bash
 medplum post admin/projects/:projectId/invite \
@@ -91,8 +91,8 @@ medplum post admin/projects/:projectId/invite \
 }'
 ```
 
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
 
 ```bash
 curl https://api.medplum.com/admin/projects/:projectId/invite \
@@ -109,8 +109,8 @@ curl https://api.medplum.com/admin/projects/:projectId/invite \
 }'
 ```
 
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 Example Response:
 
@@ -137,8 +137,8 @@ Returns the [`ProjectMembership`](/docs/api/fhir/medplum/projectmembership) asso
 
 #### Inviting a Patient
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
 
 ```ts
 await medplum.post('admin/projects/:projectId/invite', {
@@ -150,8 +150,8 @@ await medplum.post('admin/projects/:projectId/invite', {
 });
 ```
 
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
 
 ```bash
 medplum post admin/projects/:projectId/invite \
@@ -164,8 +164,8 @@ medplum post admin/projects/:projectId/invite \
 }'
 ```
 
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
 
 ```bash
 curl https://api.medplum.com/admin/projects/:projectId/invite \
@@ -180,8 +180,8 @@ curl https://api.medplum.com/admin/projects/:projectId/invite \
 }'
 ```
 
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 Example Response:
 
@@ -208,8 +208,8 @@ Returns the [`ProjectMembership`](/docs/api/fhir/medplum/projectmembership) asso
 
 #### Inviting a User with MFA Required
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
 
 ```ts
 await medplum.post('admin/projects/:projectId/invite', {
@@ -221,8 +221,8 @@ await medplum.post('admin/projects/:projectId/invite', {
 });
 ```
 
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
 
 ```bash
 medplum post admin/projects/:projectId/invite \
@@ -235,8 +235,8 @@ medplum post admin/projects/:projectId/invite \
 }'
 ```
 
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
 
 ```bash
 curl https://api.medplum.com/admin/projects/:projectId/invite \
@@ -251,8 +251,8 @@ curl https://api.medplum.com/admin/projects/:projectId/invite \
 }'
 ```
 
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 When `mfaRequired: true` is set, the user will be required to enroll in Multi-Factor Authentication during their first login. See [MFA documentation](/docs/auth/mfa) for more details.
 

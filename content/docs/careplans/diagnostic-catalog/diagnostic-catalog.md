@@ -255,60 +255,60 @@ These advanced scenarios are out of scope for this guide, but you can check out 
 
 You can query all [`PlanDefinitions`](/docs/api/fhir/resources/plandefinition) that represent a laboratory procedure using the and the associated [`ActivityDefinitions`](/docs/api/fhir/resources/activitydefinition) with this query:
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchPdsTS">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchPdsCLI">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchPdsCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 Another common query is to get all the [`ObservationDefinition`](/docs/api/fhir/resources/observationdefinition) and [`SpecimenDefinitions`](/docs/api/fhir/resources/specimendefinition) in a single service. Unfortunately, there is currently no way to do this using a single query. However, this can be done in two parts:
 
 1. Query all ActivityDefinitions for a given PlanDefinition using [`_include`](/docs/search/includes#_include-and-_revinclude) directive
 
-   <Tabs groupId="language">
-     <TabItem value="ts" label="Typescript">
+   {{< tabs groupId="language" >}}
+     {{< tab value="ts" label="Typescript" >}}
        <MedplumCodeBlock language="ts" selectBlocks="searchActivitiesTS">
          {ExampleCode}
        </MedplumCodeBlock>
-     </TabItem>
-     <TabItem value="cli" label="CLI">
+     {{< /tab >}}
+     {{< tab value="cli" label="CLI" >}}
        <MedplumCodeBlock language="bash" selectBlocks="searchActivitiesCLI">
          {ExampleCode}
        </MedplumCodeBlock>
-     </TabItem>
-     <TabItem value="curl" label="cURL">
+     {{< /tab >}}
+     {{< tab value="curl" label="cURL" >}}
        <MedplumCodeBlock language="bash" selectBlocks="searchActivitiesCurl">
          {ExampleCode}
        </MedplumCodeBlock>
-     </TabItem>
-   </Tabs>
+     {{< /tab >}}
+   {{< /tabs >}}
 
 2. For each resulting [`ActivityDefinition`](/docs/api/fhir/resources/activitydefinition), read each [`ObservationDefinition`](/docs/api/fhir/resources/observationdefinition) and [`SpecimenDefinition`](/docs/api/fhir/resources/specimendefinition). This operation is well suited to [GraphQL](https://www.medplum.com/docs/graphql)
 
-   <Tabs groupId="language">
-     <TabItem value="graphql" label="GraphQL">
+   {{< tabs groupId="language" >}}
+     {{< tab value="graphql" label="GraphQL" >}}
        <MedplumCodeBlock language="graphql" selectBlocks="getODsandSDs">
          {ExampleCode}
        </MedplumCodeBlock>
-     </TabItem>
-     <TabItem value="ts" label="TypeScript">
+     {{< /tab >}}
+     {{< tab value="ts" label="TypeScript" >}}
        <MedplumCodeBlock language="ts" selectBlocks="getODsandSDsTS">
          {ExampleCode}
        </MedplumCodeBlock>
-     </TabItem>
-   </Tabs>
+     {{< /tab >}}
+   {{< /tabs >}}
 
 ## Putting it all together
 

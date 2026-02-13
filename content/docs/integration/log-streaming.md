@@ -52,8 +52,8 @@ Clients can pass in their own trace id in their request headers. Medplum support
   Example: Adding a trace id to a medplum GET request
 </summary>
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
 
 ```ts
 await medplum.readResource('Patient', 'homer-simpson', {
@@ -63,9 +63,9 @@ await medplum.readResource('Patient', 'homer-simpson', {
 });
 ```
 
-  </TabItem>
+  {{< /tab >}}
 
-  <TabItem value="curl" label="cURL">
+  {{< tab value="curl" label="cURL" >}}
 
 ```bash
 curl https://api.medplum.com/fhir/R4/Patient/homer-simpson \
@@ -74,6 +74,6 @@ curl https://api.medplum.com/fhir/R4/Patient/homer-simpson \
   -H "X-TRACE-ID: "MY-TRACE-ID
 ```
 
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 </details>

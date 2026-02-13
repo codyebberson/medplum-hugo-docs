@@ -125,23 +125,23 @@ Alternatively, you can have threads that have just one `category` that combines 
 
 To search for all threads in the system, we need to find the thread header [`Communication`](/docs/api/fhir/resources/communication) resource. One of the factors that differentiates a thread header resource from a "message-level", or child, resource is that thread header resources do not have a value in the `partOf` field.
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchParentThreadsTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchParentThreadsCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchParentThreadsCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 In this example, we use the `:missing` search modifier to search for any [`Communication`](/docs/api/fhir/resources/communication) resources that do not reference another resource in their `partOf` field. This gives us all of the thread header [`Communication`](/docs/api/fhir/resources/communication) resources in the system.
 
@@ -149,23 +149,23 @@ In this example, we use the `:missing` search modifier to search for any [`Commu
 
 Once you have found the thread you want, you may want to retrieve the messages from only that specific thread, in the correct order.
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchSpecificThreadTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchSpecificThreadCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchSpecificThreadCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 In the above example, we search for [`Communication`](/docs/api/fhir/resources/communication) resources that reference our thread header in the `partOf` field. This will retrieve all the messages, but there is no guarantee they will be in the correct order, so we use the `sort` search parameter to sort by the `sent` field. For more details on using the search functionality, see the [Search docs](/docs/search/basic-search).
 
@@ -173,44 +173,44 @@ In the above example, we search for [`Communication`](/docs/api/fhir/resources/c
 
 To put this all together, we can also search for all threads and return their messages with them.
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchThreadsWithMessagesTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchThreadsWithMessagesCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchThreadsWithMessagesCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 Here we are using the same initial search to return all of the thread headers in the system. However, we use the `_revinclude` parameter, allowing us to also search for all [`Communication`](/docs/api/fhir/resources/communication) resources that reference one of our search results in the `partOf` field. This allows us to return all of the child messages as well.
 
 You can also filter down your searches further by including additional parameters.
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="Typescript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="Typescript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchFilteredThreadsTs">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="cli" label="CLI">
+  {{< /tab >}}
+  {{< tab value="cli" label="CLI" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchFilteredThreadsCli">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchFilteredThreadsCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 Here we build upon our search by adding the `subject` parameter to search for all threads that are related to a given patient. For other items to filter your search on, see the [`Communication` Search Parameters](/docs/api/fhir/resources/communication#search-parameters).

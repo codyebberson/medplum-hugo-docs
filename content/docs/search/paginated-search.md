@@ -111,18 +111,18 @@ To set the number of items returned per page, use the `_count` query parameter. 
 
 Here's an example query that sets the page size to 50:
 
-<Tabs groupId="language">
-  <TabItem value="ts" label="TypeScript">
+{{< tabs groupId="language" >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchCount">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchCountCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 In this example, the search will return up to 50 Patient resources per page.
 
@@ -167,18 +167,18 @@ By default, the search responses do not include totals. Choosing between `accura
 Example Query
 Here is an example of how to use the `_total` parameter in a search query:
 
-<Tabs>
-  <TabItem value="ts" label="TypeScript">
+{{< tabs >}}
+  {{< tab value="ts" label="TypeScript" >}}
     <MedplumCodeBlock language="ts" selectBlocks="searchTotal">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-  <TabItem value="curl" label="cURL">
+  {{< /tab >}}
+  {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="searchTotalCurl">
       {ExampleCode}
     </MedplumCodeBlock>
-  </TabItem>
-</Tabs>
+  {{< /tab >}}
+{{< /tabs >}}
 
 This query will search for patients with the name "smith" and will return a Bundle with the accurate total number of matching resources included.
 

@@ -119,6 +119,20 @@ async function fixFile(sourceFilePath) {
     hasChanges = true;
   }
 
+  // Convert Docusaurus admonitions to Hugo shortcodes
+  const admonitionResult = fixAdmonitions(content);
+  if (admonitionResult.changed) {
+    content = admonitionResult.content;
+    hasChanges = true;
+  }
+
+  // Convert Docusaurus Tabs/TabItem to Hugo shortcodes
+  const tabsResult = fixTabs(content);
+  if (tabsResult.changed) {
+    content = tabsResult.content;
+    hasChanges = true;
+  }
+
   if (hasChanges || forceWrite) {
     const newFrontMatterStr = frontMatter.join("\n");
     const contentWithoutFrontMatter = frontMatterStr
@@ -139,6 +153,108 @@ async function fixFile(sourceFilePath) {
     fs.writeFileSync(destPath, newContent, "utf8");
     console.log(`Migrated file: ${sourceFilePath} to ${destPath}`);
   }
+}
+
+// Map Docusaurus admonition types to Hugo shortcode types
+const admonitionTypeMap = {
+  note: "note",
+  tip: "tip",
+  info: "info",
+  warning: "warning",
+  danger: "danger",
+  caution: "warning",
+};
+
+// Matches opening admonition lines:
+//   ::::note            ::::tip Some Title
+//   ::::warning[Title]  ::: caution (with space)
+const admonitionOpenPattern =
+  /^(\s*):{3,4}\s?(note|tip|info|warning|danger|caution)(?:\s+(.+?)|\[(.+?)\])?\s*$/;
+
+// Matches closing admonition lines: :::: or :::
+const admonitionClosePattern = /^(\s*):{3,4}\s*$/;
+
+function fixAdmonitions(content) {
+  const lines = content.split("\n");
+  const result = [];
+  const stack = [];
+  let changed = false;
+
+  for (const line of lines) {
+    const openMatch = line.match(admonitionOpenPattern);
+    if (openMatch) {
+      const indent = openMatch[1];
+      const rawType = openMatch[2];
+      const type = admonitionTypeMap[rawType];
+      const title = openMatch[3] || openMatch[4] || "";
+      const titleAttr = title ? ` title="${title}"` : "";
+      result.push(`${indent}{{< ${type}${titleAttr} >}}`);
+      stack.push({ type, indent });
+      changed = true;
+      continue;
+    }
+
+    const closeMatch = line.match(admonitionClosePattern);
+    if (closeMatch && stack.length > 0) {
+      const { type, indent } = stack.pop();
+      result.push(`${indent}{{< /${type} >}}`);
+      changed = true;
+      continue;
+    }
+
+    result.push(line);
+  }
+
+  return { content: result.join("\n"), changed };
+}
+
+// Convert <Tabs>/<TabItem> to {{< tabs >}}/{{< tab >}} shortcodes
+function fixTabs(content) {
+  let changed = false;
+
+  // Opening <Tabs ...> or <BrowserOnlyTabs ...>
+  content = content.replace(
+    /^(\s*)<(?:Tabs|BrowserOnlyTabs)(\s[^>]*)?\s*>/gm,
+    (match, indent, attrs) => {
+      changed = true;
+      const groupMatch = attrs?.match(/groupId="([^"]+)"/);
+      const groupAttr = groupMatch ? ` groupId="${groupMatch[1]}"` : "";
+      return `${indent}{{< tabs${groupAttr} >}}`;
+    }
+  );
+
+  // Closing </Tabs> or </BrowserOnlyTabs>
+  content = content.replace(
+    /^(\s*)<\/(?:Tabs|BrowserOnlyTabs)>/gm,
+    (match, indent) => {
+      changed = true;
+      return `${indent}{{< /tabs >}}`;
+    }
+  );
+
+  // Opening <TabItem value="..." label="...">
+  content = content.replace(
+    /^(\s*)<TabItem\s+([^>]+)>/gm,
+    (match, indent, attrs) => {
+      changed = true;
+      const valueMatch = attrs.match(/value="([^"]+)"/);
+      const labelMatch = attrs.match(/label="([^"]+)"/);
+      const value = valueMatch ? valueMatch[1] : "";
+      const label = labelMatch ? labelMatch[1] : value;
+      return `${indent}{{< tab value="${value}" label="${label}" >}}`;
+    }
+  );
+
+  // Closing </TabItem>
+  content = content.replace(
+    /^(\s*)<\/TabItem>/gm,
+    (match, indent) => {
+      changed = true;
+      return `${indent}{{< /tab >}}`;
+    }
+  );
+
+  return { content, changed };
 }
 
 function getFrontMatter(sourceFilePath, content) {
