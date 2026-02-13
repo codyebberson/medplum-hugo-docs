@@ -1,16 +1,16 @@
 <nav class="navbar">
   <div class="navbar-left">
-    <a class="navbar-link navbar-logo-link" href="/">
-      {{ partial "logo" (dict "width" "120" "height" "26" "class" "navbar-logo-image") }}
-    </a>
+    <a class="navbar-link navbar-logo-link" href="/"> {{ partial "logo" (dict "width" "120" "height" "26" "class" "navbar-logo-image") }} </a>
     <a class="navbar-link" href="/products">Products</a>
     <a class="navbar-link" href="/solutions">Solutions</a>
     <a class="navbar-link" href="/docs">Resources</a>
     <a class="navbar-link" href="/pricing">Pricing</a>
   </div>
   <div class="navbar-right">
-    <a class="navbar-link" href="https://app.medplum.com/" target="_blank">Sign In</a>
-    <a class="navbar-link" href="https://github.com/medplum/medplum" target="_blank">GitHub</a>
-    <a class="navbar-link" href="/search">Search</a>
+    <a class="navbar-icon-btn" href="https://github.com/medplum/medplum" target="_blank">{{ partial "icon" "outline/brand-github" }}</a>
+    <a class="navbar-icon-btn" href="/search">{{ partial "icon" "outline/search" }}</a>
+    <a class="navbar-icon-btn theme-toggle" href="#">{{ partial "icon" "outline/sun" }}</a>
+    <a class="navbar-text-btn" href="https://app.medplum.com/signin" target="_blank">Sign In</a>
+    <a class="navbar-text-btn navbar-primary-btn" href="https://app.medplum.com/" target="_blank">Book a demo</a>
   </div>
 </nav>

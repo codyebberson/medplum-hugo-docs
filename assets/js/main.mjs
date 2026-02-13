@@ -34,11 +34,10 @@ function updateActiveLinks() {
   });
 }
 
-document.body.addEventListener('click', (event) => {
-  const target = event.target;
+document.body.addEventListener('click', (e) => {
+  const target = e.target;
 
   if (target.matches('.sidebar-caret')) {
-    console.log('Toggle sidebar category:', target);
     const category = target.closest('.sidebar-category');
     if (category) {
       category.classList.toggle('expanded');
@@ -55,6 +54,16 @@ document.body.addEventListener('click', (event) => {
       }
     }
   }
+});
+
+document.querySelector('.theme-toggle').addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
 });
 
 export const swup = new Swup({
