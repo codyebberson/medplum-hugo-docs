@@ -1,7 +1,6 @@
 {
   "name": "medplum-hugo-docs",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "rimraf public && hugo --minify",
@@ -17,13 +16,13 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
+    "@mermaid-js/tiny": "11.12.2",
     "@tabler/icons": "3.36.1",
     "http-server": "14.1.1",
     "hugo-bin": "0.149.2",
+    "infima": "0.2.0-alpha.45",
     "mermaid": "11.12.2",
     "open-color": "1.9.1",
     "postcss": "^8.5.6",

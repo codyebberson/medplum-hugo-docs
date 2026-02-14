@@ -8,6 +8,8 @@
 }
 
 .hero {
+  flex-direction: column;
+  align-items: start;
   min-height: 300px;
 }
 

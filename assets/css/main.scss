@@ -1,4 +1,3 @@
-@import './open-color.scss';
 @import './fonts.scss';
 @import './components/alert.scss';
 @import './components/animated-circle.scss';
@@ -23,26 +22,6 @@
 @import './components/toc.scss';
 
 :root {
-  /* Docusaurus defaults */
-  --ifm-container-width: 1140px;
-  --ifm-spacing-horizontal: 16px;
-  --ifm-heading-margin-top: 0;
-  --ifm-heading-margin-bottom: 24px;
-  --ifm-heading-font-weight: 600;
-  --ifm-h1-font-size: 3rem;
-  --ifm-h2-font-size: 2rem;
-  --ifm-h3-font-size: 1.5rem;
-  --ifm-h4-font-size: 1.25rem;
-  --ifm-h5-font-size: 1rem;
-  --ifm-h6-font-size: 0.875rem;
-  --ifm-code-background: #f6f7f8;
-  --ifm-code-border-radius: 0.4rem;
-  --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  --ifm-code-font-size: 95%;
-  --ifm-code-padding-horizontal: 0.1rem;
-  --ifm-code-padding-vertical: 0.1rem;
-  --ifm-navbar-height: 60px;
-
   /* Medplum overrides */
   --ifm-font-size-base: 16px;
   --ifm-font-family-base: 'Poppins', sans-serif;
@@ -67,6 +46,7 @@
 }
 
 [data-theme='dark'] {
+  /* Medplum overrides */
   --ifm-color-primary: var(--oc-grape-5);
   --ifm-color-primary-dark: #6646af;
   --ifm-color-primary-darker: #402c6e;

@@ -14,11 +14,19 @@ title = 'Medplum'
   target = "assets"
 
 [[module.mounts]]
+  source = "node_modules/infima/dist/css/default/default.css"
+  target = "assets/infima.css"
+
+[[module.mounts]]
+  source = "node_modules/open-color/open-color.css"
+  target = "assets/open-color.css"
+
+[[module.mounts]]
   source = "node_modules/@tabler/icons/icons"
   target = "assets/icons/tabler"
 
 [[module.mounts]]
-  source = "node_modules/mermaid/dist"
+  source = "node_modules/@mermaid-js/tiny/dist"
   target = "assets/js/vendor/mermaid"
 
 [[module.mounts]]
