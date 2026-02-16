@@ -42,10 +42,11 @@
 }
 
 .sidebar-link {
-  color: rgb(96, 103, 112);
+  display: block;
+  color: var(--ifm-menu-color);
   cursor: pointer;
   padding: 6px 4px 6px 12px;
-  margin-top: 4px;
+  // margin-top: 4px;
   border-radius: 4px;
   font-weight: 500;
   line-height: 20px;
@@ -57,8 +58,10 @@
   border: 0;
   display: inline-block;
   padding: 0;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>')
-    50% / 2rem 2rem;
+  // background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>')
+  //   50% / 2rem 2rem;
+  background: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem;
+  filter: var(--ifm-menu-link-sublist-icon-filter);
   transform: rotate(90deg); /* Point right */
 }
 
@@ -66,15 +69,15 @@
   transform: rotate(180deg); /* Point down */
 }
 
-.sidebar-link {
-  color: rgb(96, 103, 112);
-  display: block;
-}
-
 .sidebar-link.active,
 .sidebar-link:hover {
-  background-color: #f0f0f0;
+  // background-color: var(--ifm-menu-color-background-active);
+  background: var(--ifm-menu-color-background-hover);
   text-decoration: none;
+}
+
+.sidebar-link:hover {
+  color: var(--ifm-menu-color);
 }
 
 .sidebar-category-header-wrapper {
@@ -103,10 +106,10 @@
 
   &.active,
   &:hover {
-    background-color: #f0f0f0;
+    background: var(--ifm-menu-color-background-hover);
   }
 }
 
 .sidebar-link.active {
-  color: #9c36b5; /* Medplum Purple */
+  color: var(--ifm-menu-color-active);
 }

@@ -1,14 +1,14 @@
 .navbar {
+  background-color: var(--ifm-navbar-background-color);
+  box-shadow: var(--ifm-navbar-shadow);
   position: sticky;
   display: flex;
   flex-direction: row;
-  background-color: white;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
   padding: 8px 16px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   z-index: 200;
 }
 
@@ -28,9 +28,9 @@
 
 .navbar-link {
   display: inline-block;
-  padding: 4px 12px;
+  padding: 0 12px;
   text-decoration: none;
-  color: var(--oc-gray-7);
+  color: var(--ifm-navbar-link-color);
   font-weight: 500;
   font-size: 16px;
 }
@@ -45,7 +45,7 @@
   align-items: center;
   height: 100%;
   padding-left: 0;
-  margin-right: 16px;
+  margin-right: 4px;
 }
 
 .navbar-logo-image {
@@ -63,7 +63,7 @@
 .navbar-icon-btn,
 .navbar-text-btn {
   border: 1px solid var(--oc-gray-3);
-  color: var(--oc-gray-8);
+  color: var(--ifm-navbar-link-color);
   cursor: pointer;
   height: 40px;
   transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
