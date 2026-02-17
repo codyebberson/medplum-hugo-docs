@@ -133,6 +133,13 @@ async function fixFile(sourceFilePath) {
     hasChanges = true;
   }
 
+  // Convert landing page React components to Hugo shortcodes
+  const landingResult = fixLandingComponents(content);
+  if (landingResult.changed) {
+    content = landingResult.content;
+    hasChanges = true;
+  }
+
   if (hasChanges || forceWrite) {
     const newFrontMatterStr = frontMatter.join('\n');
     const contentWithoutFrontMatter = frontMatterStr ? content.replace(frontMatterStr, '').trimStart() : content;
@@ -234,6 +241,57 @@ function fixTabs(content) {
     changed = true;
     return `${indent}{{< /tab >}}`;
   });
+
+  return { content, changed };
+}
+
+// Convert landing page React components (Section, FeatureGrid, Feature) to Hugo shortcodes
+function fixLandingComponents(content) {
+  let changed = false;
+
+  const componentMap = {
+    Section: 'section',
+    FeatureGrid: 'feature-grid',
+    Feature: 'feature',
+  };
+
+  for (const [jsx, shortcode] of Object.entries(componentMap)) {
+    // Opening tags: <Component ...>
+    const openRegex = new RegExp(`^(\\s*)<${jsx}\\b(\\s[^>]*)?>`, 'gm');
+    content = content.replace(openRegex, (match, indent, attrs) => {
+      changed = true;
+      // Convert JSX {value} attributes to "value"
+      const hugoAttrs = attrs ? attrs.replace(/\{([^}]+)\}/g, '"$1"') : '';
+      return `{{< ${shortcode}${hugoAttrs} >}}`;
+    });
+
+    // Closing tags: </Component>
+    const closeRegex = new RegExp(`^(\\s*)</${jsx}>`, 'gm');
+    content = content.replace(closeRegex, () => {
+      changed = true;
+      return `{{< /${shortcode} >}}`;
+    });
+  }
+
+  // Trim leading whitespace from content lines inside {{< section >}} blocks
+  if (changed) {
+    const lines = content.split('\n');
+    let inSection = false;
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i] === '{{< section >}}') {
+        inSection = true;
+        continue;
+      }
+      if (lines[i] === '{{< /section >}}') {
+        inSection = false;
+        continue;
+      }
+      if (inSection) {
+        lines[i] = lines[i].trimStart();
+      }
+    }
+    content = lines.join('\n');
+  }
 
   return { content, changed };
 }

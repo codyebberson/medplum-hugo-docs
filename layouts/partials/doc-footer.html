@@ -15,7 +15,7 @@
       {{ with $prev }}
       <a class="doc-footer-pagination-link" href="{{ .RelPermalink }}">
         <div class="doc-footer-pagination-sublabel">Previous</div>
-        <div class="doc-footer-pagination-label">← {{ .Title }}</div></a
+        <div class="doc-footer-pagination-label">« {{ .Title }}</div></a
       >
       {{ end }}
     </div>
@@ -23,7 +23,7 @@
       {{ with $next }}
       <a class="doc-footer-pagination-link" href="{{ .RelPermalink }}"
         ><div class="doc-footer-pagination-sublabel">Next</div>
-        <div class="doc-footer-pagination-label">{{ .Title }} →</div></a
+        <div class="doc-footer-pagination-label">{{ .Title }} »</div></a
       >
       {{ end }}
     </div>

@@ -6,23 +6,22 @@ weight: 1
 ---
 
 # Welcome to Medplum
-
-<Section>
-  <FeatureGrid columns={2}>
-    <Feature title="Get Started" linkText="Read more" linkRef="./docs#get-started">
-      Set up and run your medical application in 5 minutes
-    </Feature>
-    <Feature title="Plan your Workflows" linkText="Read more" linkRef="./docs#plan-your-workflows">
-      Learn FHIR and plan your workflows
-    </Feature>
-    <Feature title="Build in Medplum" linkText="Read more" linkRef="./docs#build-in-medplum">
-      Medplum tools for full-stack apps with authentication
-    </Feature>
-    <Feature title="Connect to the Ecosystem" linkText="Read more" linkRef="./docs#connect-to-the-healthcare-ecosystem">
-      Use HL7, FHIRcast, labs/prescribing, and beyond
-    </Feature>
-  </FeatureGrid>
-</Section>
+{{< section >}}
+{{< feature-grid columns="2" >}}
+{{< feature title="Get Started" linkText="Read more" linkRef="./docs#get-started" >}}
+Set up and run your medical application in 5 minutes
+{{< /feature >}}
+{{< feature title="Plan your Workflows" linkText="Read more" linkRef="./docs#plan-your-workflows" >}}
+Learn FHIR and plan your workflows
+{{< /feature >}}
+{{< feature title="Build in Medplum" linkText="Read more" linkRef="./docs#build-in-medplum" >}}
+Medplum tools for full-stack apps with authentication
+{{< /feature >}}
+{{< feature title="Connect to the Ecosystem" linkText="Read more" linkRef="./docs#connect-to-the-healthcare-ecosystem" >}}
+Use HL7, FHIRcast, labs/prescribing, and beyond
+{{< /feature >}}
+{{< /feature-grid >}}
+{{< /section >}}
 
 ## What is Medplum?
 
