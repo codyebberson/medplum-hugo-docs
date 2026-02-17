@@ -62,7 +62,7 @@
 
 .navbar-icon-btn,
 .navbar-text-btn {
-  border: 1px solid var(--oc-gray-3);
+  border: 1px solid var(--ifm-toc-border-color);
   color: var(--ifm-navbar-link-color);
   cursor: pointer;
   height: 40px;
@@ -95,12 +95,13 @@
 }
 
 .navbar-primary-btn {
+  border: 1px solid var(--oc-grape-8);
   background-color: var(--oc-grape-8);
   color: white;
 }
 
 .navbar-primary-btn:hover {
   background-color: var(--oc-grape-9);
-  border-color: white;
+  border-color: var(--oc-grape-9);
   color: white;
 }

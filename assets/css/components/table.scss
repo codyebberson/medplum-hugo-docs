@@ -6,25 +6,32 @@ table {
 }
 
 table thead {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: var(--ifm-table-stripe-background);
+}
+
+table thead tr {
+  border-bottom: 2px solid var(--ifm-table-border-color);
 }
 
 table tr {
-  border-top: 1px solid var(--oc-gray-3);
+  background-color: var(--ifm-table-background);
+  border-top: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
 table tr:nth-child(2n) {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: var(--ifm-table-stripe-background);
 }
 
 table th,
 table td {
-  border: 1px solid var(--oc-gray-3);
-  padding: 0.75rem;
+  border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+  padding: var(--ifm-table-cell-padding);
 }
 
 table th {
-  font-weight: 700;
+  background-color: var(--ifm-table-head-background);
+  color: var(--ifm-table-head-color);
+  font-weight: var(--ifm-table-head-font-weight);
 }
 
 table td {
