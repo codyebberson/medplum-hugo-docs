@@ -326,7 +326,9 @@ Orders progress through several states:
    - Set by the client application
 
 {{< warning >}}
+
 Important: Once an order becomes `active`, it cannot be modified in the lab's system, even if updated in Medplum.
+
 {{< /warning >}}
 
 ## Automation Bots

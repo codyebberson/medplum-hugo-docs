@@ -18,7 +18,7 @@ Workflow management is an essential part of healthcare, and healthcare operation
 
 The Medplum [Clinical Task Management Demo](https://github.com/medplum/medplum-task-demo) provides an in-depth reference implementation of a task management system that addresses these concerns.
 
-<div className="responsive-iframe-wrapper">
+<div class="responsive-iframe-wrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/xQH27B8sP9o?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
 </div>
 

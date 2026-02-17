@@ -19,7 +19,7 @@ Medplum provides the following functionality for C-CDA handling.
 
 To access the C-CDA viewer, upload a C-CDA file as a FHIR Binary.  The viewer will render the data for viewing in the application.
 
-<div className="responsive-iframe-wrapper">
+<div class="responsive-iframe-wrapper">
   <iframe src="https://www.youtube.com/embed/Eg0-mu-UYAQ?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -31,7 +31,7 @@ To export patient data as C-CDA, navigate to `https://app.medplum.com/Patient/<P
 
 Medplum enables sending C-CDA to other systems via Direct Message to support transitions of care.  To utilize the feature, implementors need to create a communication resource with the C-CDA attached as shown in the video.
 
-<div className="responsive-iframe-wrapper">
+<div class="responsive-iframe-wrapper">
   <iframe src="https://www.youtube.com/embed/Ijjtf0ClZDA?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -97,7 +97,7 @@ By aligning with these standards, this library ensures that C-CDA documents can 
 ## Related Reading
 
 * [Medplum C-CDA Library](https://github.com/medplum/medplum/tree/main/packages/ccda)
-* [Medplum FHIR Server Documentation](https://www.medplum.com/docs/api/fhir)
+* [Medplum FHIR Server Documentation](/docs/api/fhir)
 * [FHIR R4 Specification](https://hl7.org/fhir/R4/)
 * [US Core Implementation Guide](https://www.hl7.org/fhir/us/core/)
 * [USCDI Website](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi)

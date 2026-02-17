@@ -149,7 +149,7 @@ The example below shows a resource modeling a prescription (i.e. [`MedicationReq
 
 ## Querying Data: Search
 
-<div className="responsive-iframe-wrapper">
+<div class="responsive-iframe-wrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/PcZoZvfkmiQ?si=EQJtdbrBCiRh4dJP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
@@ -163,7 +163,7 @@ Refer to the [Medplum search documentation](/docs/search/basic-search) for a mor
 
 ## Standardizing Data: Codeable Concepts
 
-<div className="responsive-iframe-wrapper">
+<div class="responsive-iframe-wrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/tWW2_0lxNl4?si=bs4lD_2pm1HO0Ux2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
@@ -200,7 +200,7 @@ Below is an example [`CodeableConcept`][codeableconcept], that defines the medic
 
 ## Naming Data: Identifiers
 
-<div className="responsive-iframe-wrapper">
+<div class="responsive-iframe-wrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/NumGLpR9Q7w?si=EPkEYFI2_jkxdzPw"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
@@ -268,7 +268,7 @@ The example `Patient` below has three identifiers: **an SSN and two MRN identifi
 
 ## ValueSets
 
-<div className="responsive-iframe-wrapper">
+<div class="responsive-iframe-wrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/rUulfIWlckI?si=jy7BwirKmkGZAqi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 

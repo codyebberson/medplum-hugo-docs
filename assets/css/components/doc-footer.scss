@@ -8,9 +8,14 @@
   height: 16px;
 }
 
+.doc-footer-edit-row,
 .doc-footer-pagination-row {
   margin: 32px auto;
   gap: 16px;
+}
+
+.doc-footer-edit-cell {
+  padding: 0 4px 8px 4px;
 }
 
 .doc-footer-pagination-link {

@@ -1,6 +1,10 @@
 baseURL = 'https://www.medplum.com/'
 languageCode = 'en-us'
 title = 'Medplum'
+enableGitInfo = true
+
+[params]
+  editURL = 'https://github.com/medplum/medplum/edit/main/packages/docs/content/'
 
 [markup]
   [markup.goldmark]

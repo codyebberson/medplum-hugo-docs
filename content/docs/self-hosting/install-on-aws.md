@@ -48,7 +48,7 @@ The resulting AWS configuration will look like the following:
 _Diagram current as of 7/21/2025_
 
 <p>Use this video guide as you follow the instructions:</p>
-<div className="responsive-iframe-wrapper">
+<div class="responsive-iframe-wrapper">
    <iframe width="560" height="315" src="https://www.youtube.com/embed/_YCYbgb63Y0?si=AiOK7QkAor-FJBxt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
@@ -97,7 +97,7 @@ You will need permission to access the following AWS services:
 
 ### Configure your name servers
 
-Medplum strongly recommends configuring your domain to use [Amazon's Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/MigratingDNS.html) as your custom DNS name server. This will make it much easier to set up SSL certificates for the [Medplum App](https://www.medplum.com/docs/app) and [Medplum Binary Storage](/docs/fhir-datastore/binary-data).
+Medplum strongly recommends configuring your domain to use [Amazon's Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/MigratingDNS.html) as your custom DNS name server. This will make it much easier to set up SSL certificates for the [Medplum App](/docs/app) and [Medplum Binary Storage](/docs/fhir-datastore/binary-data).
 
 If you choose not to go this route, you will be responsible for setting up your own SSL certificates.
 

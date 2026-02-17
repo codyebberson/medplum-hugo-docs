@@ -9,7 +9,7 @@ toc_max_heading_level: 4
 
 Follow these instructions to get the complete Medplum stack running directly on your host machine.
 
-<div className="responsive-iframe-wrapper">
+<div class="responsive-iframe-wrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/nf6OElRWOJ4" title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

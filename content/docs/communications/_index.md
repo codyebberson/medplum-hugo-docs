@@ -17,8 +17,8 @@ These [Communications](/docs/api/fhir/resources/communication) can also be struc
 
 Check out our [Contact Center Demo](https://github.com/medplum/medplum-chat-demo) for an in-depth example of a provider messaging app.
 
-<div className="responsive-iframe-wrapper">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZrMKhl6-Co0?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="responsive-iframe-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZrMKhl6-Co0?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
 </div>
 
 ## Reference

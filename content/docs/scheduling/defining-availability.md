@@ -23,7 +23,10 @@ The following FHIR resources work together to define availability:
 The other key entity is the **Service Type**, which is a [codeable concept](/docs/api/fhir/datatypes/codeableconcept) that defines a specific service type (appointment type). Service types are used to group appointments into categories, such as `office visit`, `telephone visit`, and `emergency room visit`. FHIR's recommendation is to use codes from https://build.fhir.org/valueset-procedure-code.html.
 
 ### Appointment Booking FHIR Operations
-- `$find` - Find available appointment slots **[In Development - Coming Soon]**
+- `$find` - Find available appointment slots **[Alpha - January 2026]**
+{{< info >}}
+The `$find` operation is currently in alpha. It currently supports only a single Schedule, and does not use `ActivityDefinition` default service type parameters yet.
+{{< /info >}}
 - `$hold` - Temporarily hold a slot **[In Development - Coming Soon]**
 - `$book` - Book an appointment **[In Development - Coming Soon]**
 - `$cancel` - Cancel an appointment **[In Development - Coming Soon]**
@@ -44,7 +47,7 @@ This model expects a **one-to-one relationship** between actors and Schedules. W
 {{< /note >}}
 
 The system supports two levels of configuration:
-- **[Actor-level defined availability](#actor-level-availability)**: Defined directly on a Practitioner's or Location's [`Schedule`](/docs/api/fhir/resources/schedule) using the `scheduling-parameters` extension
+- **[Actor-level defined availability](#actor-level-availability)**: Defined directly on a Practitioner's or Location's [`Schedule`](/docs/api/fhir/resources/schedule) using the `SchedulingParameters` extension
 - **[Service type-level defined availability](#service-level-availability)**: Defined on [`ActivityDefinition`](/docs/api/fhir/resources/activitydefinition) and referenced by matching `Schedule.serviceType` codes
 
 ```mermaid
@@ -78,7 +81,7 @@ graph TD
 
 ### The Scheduling Parameters Extension
 
-All scheduling constraints are managed through a single consolidated extension: `scheduling-parameters`. This extension can appear on both [ActivityDefinition](/docs/api/fhir/resources/activitydefinition) (for defaults) and [Schedule](/docs/api/fhir/resources/schedule).
+All scheduling constraints are managed through a single consolidated extension: `SchedulingParameters`. This extension can appear on both [ActivityDefinition](/docs/api/fhir/resources/activitydefinition) (for defaults) and [Schedule](/docs/api/fhir/resources/schedule).
 
 #### Extension Fields Reference
 
@@ -87,6 +90,7 @@ All scheduling constraints are managed through a single consolidated extension: 
 | `serviceType` | [CodeableConcept](/docs/api/fhir/datatypes/codeableconcept) | Schedule only | Optional | Applies configuration only to the specified service type, overriding defaults for that service | Values apply as the default for all services |
 | `availability` | [Timing](/docs/api/fhir/datatypes/timing) | Schedule only | Optional | Bookings must fully fit within the recurring windows | Time is implicitly available by default (unless blocked by Slots or other constraints) |
 | `timezone` | Code | Schedule only | Optional | Specifies the timezone (IANA timezone identifier, e.g., `America/New_York`) for interpreting the `availability` timing. Falls back to the Schedule's actor timezone if not specified | Uses the timezone defined on the Schedule's actor reference |
+| `duration` | [Duration](/docs/api/fhir/datatypes/duration) | Both Schedule and ActivityDefinition | Required | Determines how long the time increments for a Slot are | N/A - must be specified |
 | `bufferBefore` | [Duration](/docs/api/fhir/datatypes/duration) | Both Schedule and ActivityDefinition | Optional | Requires prep time before start to also be free | No prep time required |
 | `bufferAfter` | [Duration](/docs/api/fhir/datatypes/duration) | Both Schedule and ActivityDefinition | Optional | Requires cleanup time after end to also be free | No cleanup time required |
 | `alignmentInterval` | [Duration](/docs/api/fhir/datatypes/duration) | Both Schedule and ActivityDefinition | Optional | Start times must align to the interval (e.g., every 15 minutes) | Start times are not constrained by an interval grid |
@@ -94,11 +98,11 @@ All scheduling constraints are managed through a single consolidated extension: 
 | `bookingLimit` | [Timing](/docs/api/fhir/datatypes/timing) | Both Schedule and ActivityDefinition | Optional | Caps number of appointments per period (multiple entries can stack) | No capacity cap for that period |
 
 <details>
-<summary>Example of the `scheduling-parameters` extension</summary>
+<summary>Example of the `SchedulingParameters` extension</summary>
 
 ```tsx
 {
-  "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
+  "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
   "extension": [
     // Optional: specify service type (omit for default configuration)
     {
@@ -113,6 +117,15 @@ All scheduling constraints are managed through a single consolidated extension: 
     {
       "url": "timezone",
       "valueCode": "America/Los_Angeles"
+    },
+    
+    // Required: duration determines how long the time increments for a Slot are
+    {
+      "url": "duration",
+      "valueDuration": {
+        "value": 1,
+        "unit": "h"
+      }
     },
     
     // Recurring availability (Schedule only)
@@ -211,18 +224,27 @@ Here is an example of a [Schedule](/docs/api/fhir/resources/schedule) resource t
   "id": "dr-smith-schedule",
   "actor": [{"reference": "Practitioner/dr-smith"}],
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
-    "extension": [{
-      "url": "availability",
-      "valueTiming": {
-        "repeat": {
-          "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
-          "timeOfDay": ["09:00:00"],
-          "duration": 8,
-          "durationUnit": "h"
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
+    "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
+      {
+        "url": "availability",
+        "valueTiming": {
+          "repeat": {
+            "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
+            "timeOfDay": ["09:00:00"],
+            "duration": 8,
+            "durationUnit": "h"
+          }
         }
       }
-    }]
+    ]
   }]
   //...
 }
@@ -248,18 +270,27 @@ To get the [Schedule](/docs/api/fhir/resources/schedule) to use the [ActivityDef
   },
   //...
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
-    "extension": [{
-      "url": "availability",
-      "valueTiming": {
-        "repeat": {
-          "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
-          "timeOfDay": ["09:00:00"],
-          "duration": 8,
-          "durationUnit": "h"
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
+    "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
+      {
+        "url": "availability",
+        "valueTiming": {
+          "repeat": {
+            "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
+            "timeOfDay": ["09:00:00"],
+            "duration": 8,
+            "durationUnit": "h"
+          }
         }
       }
-    }]
+    ]
   }]
 }
 ```
@@ -292,27 +323,43 @@ Here is an example Schedule that defines generic availability for all services a
   "extension": [
     // Practitioner level availability
     {
-      "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
-      "extension": [{
-        "url": "availability",
-        "valueTiming": {
-          "repeat": {
-            "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
-            "timeOfDay": ["09:00:00"],
-            "duration": 8,
-            "durationUnit": "h"
+      "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
+      "extension": [
+        {
+          "url": "duration",
+          "valueDuration": {
+            "value": 1,
+            "unit": "h"
+          }
+        },
+        {
+          "url": "availability",
+          "valueTiming": {
+            "repeat": {
+              "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
+              "timeOfDay": ["09:00:00"],
+              "duration": 8,
+              "durationUnit": "h"
+            }
           }
         }
-      }]
+      ]
     },
     // Service type level availability for this Practitioner - overrides any availability parameters specified elsewhere
     {
-      "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
+      "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
       "extension": [
         {
           "url": "serviceType",
           "valueCodeableConcept": {
             "coding": [{"code": "new-patient-visit"}]
+          }
+        },
+        {
+          "url": "duration",
+          "valueDuration": {
+            "value": 1,
+            "unit": "h"
           }
         },
         {
@@ -333,10 +380,10 @@ Here is an example Schedule that defines generic availability for all services a
 ```
 
 
-**All-or-nothing rule**: When a `scheduling-parameters` extension includes a `serviceType`, it **completely replaces** the default configuration for that service type. No attribute-level merging occurs.
+**All-or-nothing rule**: When a `SchedulingParameters` extension includes a `serviceType`, it **completely replaces** the default configuration for that service type. No attribute-level merging occurs.
 
 **Priority order** (highest to lowest):
-1. Schedule where `http://medplum.com/fhir/StructureDefinition/scheduling-parameters.serviceType` extension matches `service-type` param on `$find` request.
+1. Schedule where `https://medplum.com/fhir/StructureDefinition/SchedulingParameters.serviceType` extension matches `service-type` param on `$find` request.
 2. ActivityDefinition where `ActivityDefinition.code` matches `service-type` param on `$find` request. ActivityDefinition parameters are used.
 3. Use generic availability defined on the Schedule.
 
@@ -396,7 +443,7 @@ Here is an example of a Schedule with multiple service types, each with its own 
   "actor": [{"reference": "Practitioner/dr-smith"}],
   "extension": [
     {
-      "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
+      "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
       "extension": [
         {
           "url": "serviceType",
@@ -407,6 +454,13 @@ Here is an example of a Schedule with multiple service types, each with its own 
         {
           "url": "timezone",
           "valueCode": "America/Los_Angeles"
+        },
+        {
+          "url": "duration",
+          "valueDuration": {
+            "value": 1,
+            "unit": "h"
+          }
         },
         {
           "url": "availability",
@@ -422,7 +476,7 @@ Here is an example of a Schedule with multiple service types, each with its own 
       ]
     },
     {
-      "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
+      "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
       "extension": [
         {
           "url": "timezone",
@@ -432,6 +486,13 @@ Here is an example of a Schedule with multiple service types, each with its own 
           "url": "serviceType",
           "valueCodeableConcept": {
             "coding": [{"code": "call-center-availability"}]
+          }
+        },
+        {
+          "url": "duration",
+          "valueDuration": {
+            "value": 1,
+            "unit": "h"
           }
         },
         {
@@ -488,8 +549,15 @@ This ActivityDefinition defines default scheduling parameters for a 30-minute of
     "code": "min"
   },
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
     "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
       {
         "url": "bufferBefore",
         "valueDuration": {"value": 5, "unit": "min"}
@@ -532,18 +600,27 @@ This Schedule shows Dr. Johnson's availability (Mon-Fri 9am-5pm) that inherits a
     "end": "2025-12-31T23:59:59Z"
   },
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
-    "extension": [{
-      "url": "availability",
-      "valueTiming": {
-        "repeat": {
-          "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
-          "timeOfDay": ["09:00:00"],
-          "duration": 8,
-          "durationUnit": "h"
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
+    "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
+      {
+        "url": "availability",
+        "valueTiming": {
+          "repeat": {
+            "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
+            "timeOfDay": ["09:00:00"],
+            "duration": 8,
+            "durationUnit": "h"
+          }
         }
       }
-    }]
+    ]
   }]
 }
 ```
@@ -597,8 +674,15 @@ This ActivityDefinition defines a 60-minute new patient visit with 15-minute buf
   },
   "timingDuration": {"value": 60, "unit": "min"},
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
     "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
       {"url": "bufferBefore", "valueDuration": {"value": 15, "unit": "min"}},
       {"url": "bufferAfter", "valueDuration": {"value": 15, "unit": "min"}},
       {"url": "alignmentInterval", "valueDuration": {"value": 30, "unit": "min"}},
@@ -634,8 +718,15 @@ This ActivityDefinition defines a 20-minute follow-up visit with 5-minute buffer
   },
   "timingDuration": {"value": 20, "unit": "min"},
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
     "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
       {"url": "bufferBefore", "valueDuration": {"value": 5, "unit": "min"}},
       {"url": "bufferAfter", "valueDuration": {"value": 5, "unit": "min"}},
       {"url": "alignmentInterval", "valueDuration": {"value": 10, "unit": "min"}}
@@ -663,27 +754,43 @@ This Schedule shows how to configure default availability for all services (Mon-
   "extension": [
     // Default availability for all services
     {
-      "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
-      "extension": [{
-        "url": "availability",
-        "valueTiming": {
-          "repeat": {
-            "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
-            "timeOfDay": ["09:00:00"],
-            "duration": 8,
-            "durationUnit": "h"
+      "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
+      "extension": [
+        {
+          "url": "duration",
+          "valueDuration": {
+            "value": 1,
+            "unit": "h"
+          }
+        },
+        {
+          "url": "availability",
+          "valueTiming": {
+            "repeat": {
+              "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
+              "timeOfDay": ["09:00:00"],
+              "duration": 8,
+              "durationUnit": "h"
+            }
           }
         }
-      }]
+      ]
     },
     // New patient visits only on Tuesday and Thursday mornings
     {
-      "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
+      "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
       "extension": [
         {
           "url": "serviceType",
           "valueCodeableConcept": {
             "coding": [{"code": "new-patient-visit"}]
+          }
+        },
+        {
+          "url": "duration",
+          "valueDuration": {
+            "value": 1,
+            "unit": "h"
           }
         },
         {
@@ -785,8 +892,15 @@ This ActivityDefinition defines a 120-minute surgical procedure requiring coordi
     }
   ],
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
     "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
       {"url": "bufferBefore", "valueDuration": {"value": 45, "unit": "min"}},
       {"url": "bufferAfter", "valueDuration": {"value": 30, "unit": "min"}},
       {"url": "alignmentInterval", "valueDuration": {"value": 30, "unit": "min"}},
@@ -826,18 +940,27 @@ This Schedule shows Dr. Martinez's availability for bariatric surgeries, limited
     "display": "Dr. Maria Martinez - Bariatric Surgeon"
   }],
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
-    "extension": [{
-      "url": "availability",
-      "valueTiming": {
-        "repeat": {
-          "dayOfWeek": ["tue", "thu"],
-          "timeOfDay": ["08:00:00"],
-          "duration": 8,
-          "durationUnit": "h"
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
+    "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
+      {
+        "url": "availability",
+        "valueTiming": {
+          "repeat": {
+            "dayOfWeek": ["tue", "thu"],
+            "timeOfDay": ["08:00:00"],
+            "duration": 8,
+            "durationUnit": "h"
+          }
         }
       }
-    }]
+    ]
   }]
 }
 ```
@@ -858,18 +981,27 @@ This Schedule shows Operating Room 3's availability for surgical procedures, ava
     "display": "Operating Room 3"
   }],
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
-    "extension": [{
-      "url": "availability",
-      "valueTiming": {
-        "repeat": {
-          "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
-          "timeOfDay": ["07:00:00"],
-          "duration": 12,
-          "durationUnit": "h"
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
+    "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
+      {
+        "url": "availability",
+        "valueTiming": {
+          "repeat": {
+            "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
+            "timeOfDay": ["07:00:00"],
+            "duration": 12,
+            "durationUnit": "h"
+          }
         }
       }
-    }]
+    ]
   }]
 }
 ```
@@ -893,18 +1025,27 @@ This Schedule shows Dr. Kim's availability for surgical procedures, covering wee
     "display": "Dr. James Kim - Anesthesiologist"
   }],
   "extension": [{
-    "url": "http://medplum.com/fhir/StructureDefinition/scheduling-parameters",
-    "extension": [{
-      "url": "availability",
-      "valueTiming": {
-        "repeat": {
-          "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
-          "timeOfDay": ["07:00:00"],
-          "duration": 10,
-          "durationUnit": "h"
+    "url": "https://medplum.com/fhir/StructureDefinition/SchedulingParameters",
+    "extension": [
+      {
+        "url": "duration",
+        "valueDuration": {
+          "value": 1,
+          "unit": "h"
+        }
+      },
+      {
+        "url": "availability",
+        "valueTiming": {
+          "repeat": {
+            "dayOfWeek": ["mon", "tue", "wed", "thu", "fri"],
+            "timeOfDay": ["07:00:00"],
+            "duration": 10,
+            "durationUnit": "h"
+          }
         }
       }
-    }]
+    ]
   }]
 }
 ```

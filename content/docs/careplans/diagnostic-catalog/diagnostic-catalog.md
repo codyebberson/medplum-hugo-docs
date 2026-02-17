@@ -295,7 +295,7 @@ Another common query is to get all the [`ObservationDefinition`](/docs/api/fhir/
      {{< /tab >}}
    {{< /tabs >}}
 
-2. For each resulting [`ActivityDefinition`](/docs/api/fhir/resources/activitydefinition), read each [`ObservationDefinition`](/docs/api/fhir/resources/observationdefinition) and [`SpecimenDefinition`](/docs/api/fhir/resources/specimendefinition). This operation is well suited to [GraphQL](https://www.medplum.com/docs/graphql)
+2. For each resulting [`ActivityDefinition`](/docs/api/fhir/resources/activitydefinition), read each [`ObservationDefinition`](/docs/api/fhir/resources/observationdefinition) and [`SpecimenDefinition`](/docs/api/fhir/resources/specimendefinition). This operation is well suited to [GraphQL](/docs/graphql)
 
    {{< tabs groupId="language" >}}
      {{< tab value="graphql" label="GraphQL" >}}

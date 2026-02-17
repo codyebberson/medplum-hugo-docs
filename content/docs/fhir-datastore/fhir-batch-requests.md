@@ -109,11 +109,16 @@ To opt into asynchronous handling of the batch request, add the `Prefer: respond
 the batch:
 
 {{< tabs groupId="language" >}}
-  {{< tab value="curl" label="cURL" >}}
-    <MedplumCodeBlock language="bash" selectBlocks="asyncBatchCurl">
-      {ExampleCode}
-    </MedplumCodeBlock>
-  {{< /tab >}}
+{{< tab value="ts" label="Typescript" >}}
+<MedplumCodeBlock language="ts" selectBlocks="asyncBatchTs">
+{ExampleCode}
+</MedplumCodeBlock>
+{{< /tab >}}
+{{< tab value="curl" label="cURL" >}}
+<MedplumCodeBlock language="bash" selectBlocks="asyncBatchCurl">
+{ExampleCode}
+</MedplumCodeBlock>
+{{< /tab >}}
 {{< /tabs >}}
 
 See the [FHIR Asynchronous Request pattern](http://hl7.org/fhir/R5/async-bundle.html) for more information.
@@ -126,11 +131,11 @@ The response Bundle contains an `entry` array that corresponds one-to-one with t
 
 Each entry in the response Bundle contains a `response` element with the following fields:
 
-| Field | Description |
-| --- | --- |
-| `status` | The HTTP status code for the operation (e.g., "200", "201", "404"). |
-| `outcome` | An [OperationOutcome](/docs/api/fhir/resources/operationoutcome) resource containing details about the operation result. |
-| `location` | For successful create operations, the location of the created resource. |
+| Field      | Description                                                                                                              |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `status`   | The HTTP status code for the operation (e.g., "200", "201", "404").                                                      |
+| `outcome`  | An [OperationOutcome](/docs/api/fhir/resources/operationoutcome) resource containing details about the operation result. |
+| `location` | For successful create operations, the location of the created resource.                                                  |
 
 If the operation returned a resource (e.g., a `read` or `search` operation, or a `create` operation returning the created resource), it will be included in the `resource` field of the entry.
 
@@ -142,8 +147,8 @@ How errors are handled depends on whether the Bundle is a `batch` or a `transact
 
 In a batch request, operations are independent. If one operation fails, it does **not** stop the processing of other operations (unless a system limit like a Rate Limit is reached).
 
--   **Success**: The entry will have a `2xx` status code.
--   **Failure**: The entry will have a `4xx` or `5xx` status code. The `response.outcome` will contain an `OperationOutcome` describing the error.
+- **Success**: The entry will have a `2xx` status code.
+- **Failure**: The entry will have a `4xx` or `5xx` status code. The `response.outcome` will contain an `OperationOutcome` describing the error.
 
 Example of a batch response with one success and one failure:
 
@@ -186,8 +191,8 @@ Example of a batch response with one success and one failure:
 
 In a transaction request, operations are atomic. If **any** operation fails, the entire transaction is rolled back, and the server returns an error for the whole request.
 
--   **Success**: All operations succeeded. The response Bundle contains results for all entries.
--   **Failure**: The server returns an `OperationOutcome` describing the error that caused the transaction to fail. No partial results are returned.
+- **Success**: All operations succeeded. The response Bundle contains results for all entries.
+- **Failure**: The server returns an `OperationOutcome` describing the error that caused the transaction to fail. No partial results are returned.
 
 ## References in Bundles
 
