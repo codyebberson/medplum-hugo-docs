@@ -1,6 +1,7 @@
 ---
 id: pricing
 slug: /pricing
+layout: pricing
 ---
 
 # Pricing

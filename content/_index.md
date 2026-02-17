@@ -4,7 +4,6 @@ description: 'The best docs on the web.'
 ---
 
 {{< hero title="Build and run modern healthcare apps" >}}
-
 Medplum is the open source healthcare developer platform.
 
 Start with production-ready apps. Customize, extend, and integrate without rebuilding an EHR from scratch.
@@ -17,8 +16,6 @@ Start with production-ready apps. Customize, extend, and integrate without rebui
   Build on the Platform
 </a>
 </p>
-
-Built for teams shipping clinical software in production. Hosted or self-managed.
 
 <img src="/img/provider/medplum-provider-app-cover-image.webp" alt="Medplum Provider App screenshot" width="2608" height="1139">
 

@@ -1,6 +1,6 @@
 <div class="hero-section">
   <div class="hero">
     <h1>{{ .Get "title" }}</h1>
-    <p>{{ .Inner | markdownify }}</p>
+    {{ with .Inner | strings.TrimSpace }}{{ . | markdownify }}{{ end }}
   </div>
 </div>
