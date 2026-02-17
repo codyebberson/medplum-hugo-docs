@@ -153,7 +153,8 @@ main {
 
 .main-content {
   flex: 75%;
-  padding: 0 16px 0 0;
+  padding: 0 16px;
+  min-width: 0;
 }
 
 .main-toc {
@@ -199,6 +200,7 @@ h1 {
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
+  margin-bottom: 25px;
 }
 
 h2 {
@@ -251,8 +253,10 @@ li + li {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   color: rgb(57, 58, 52);
   font-family: var(--ifm-font-family-monospace);
-  font-size: var(--ifm-font-size-base);
+  font-size: 15px;
   padding: 16px;
+  min-width: 0;
+  overflow: auto;
 }
 
 .highlight pre code {
@@ -293,6 +297,8 @@ code {
 
 .column {
   flex-grow: 1;
+  min-width: 0;
+  max-width: 100%;
 }
 
 @media (max-width: 600px) {

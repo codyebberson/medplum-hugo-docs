@@ -1,7 +1,8 @@
 import mermaid from 'mermaid';
 import Swup from 'swup';
-import { initAnimatedCircles } from './components/animated-circle.mjs';
+import { destroyAnimatedCircles, initAnimatedCircles } from './components/animated-circle.mjs';
 import { initTabs } from './components/tabs.mjs';
+import { destroyToc, initToc } from './components/toc.mjs';
 
 mermaid.initialize({ startOnLoad: true });
 
@@ -74,14 +75,19 @@ export const swup = new Swup({
 
 swup.hooks.before('content:replace', (visit) => {
   updateAttributes(visit.to.url);
+  destroyAnimatedCircles();
+  destroyToc();
 });
 
 swup.hooks.on('content:replace', (visit) => {
   initAnimatedCircles();
   initTabs();
+  initToc();
   updateActiveLinks();
+  mermaid.run().catch(console.error);
 });
 
 updateAttributes(window.location.href);
 initAnimatedCircles();
 initTabs();
+initToc();

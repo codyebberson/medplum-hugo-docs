@@ -36,7 +36,7 @@
         {{ $isChildActive := in $context.RelPermalink $item.id }}
         {{ $isOpen := or $isCurrentPage $isChildActive }}
 
-        <div class="sidebar-category {{ if $isCurrentPage }}expanded{{ end }}">
+        <div class="sidebar-category {{ if $isOpen }}expanded{{ end }}">
           <div class="sidebar-category-header-wrapper {{ if $isCurrentPage }}active{{ end }}">
             {{ if $targetPage }}
               <a href="{{ $targetPage.RelPermalink }}" class="sidebar-link sidebar-category-link {{ if $isCurrentPage }}active{{ end }}">

@@ -37,14 +37,16 @@
           {{ partial "sidebar" . }}
         </aside>
         <main id="swup">
-          <div class="main-container container row">
-            <div class="main-content">
-              {{ partial "breadcrumbs" . }}
-              {{ block "main" . }}{{ end }}
-              {{ partial "doc-footer" . }}
-            </div>
-            <div class="main-toc">
-              {{ .TableOfContents }}
+          <div class="main-container container">
+            <div class="row">
+              <div class="main-content">
+                {{ partial "breadcrumbs" . }}
+                {{ block "main" . }}{{ end }}
+                {{ partial "doc-footer" . }}
+              </div>
+              <div class="main-toc">
+                {{ .TableOfContents }}
+              </div>
             </div>
           </div>
         </main>
