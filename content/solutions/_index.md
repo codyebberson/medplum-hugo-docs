@@ -3,59 +3,100 @@ title: "Solutions"
 description: "Solutions"
 ---
 
-{{< hero title="A Foundation for Growth" >}}
-Medplum provides a flexible, secure, and compliant foundation for building sophisticated healthcare applications. Whether you're creating a custom EHR, a patient portal, or a complex data integration hub, our platform gives you the power to innovate faster, meet market demands, and drive your business forward. Focus on your core mission while we handle the technical and regulatory complexities.
-{{< /hero >}}
+{{< jumbotron >}}
 
-{{< card >}}
-test
-{{< /card >}}
+# A Foundation for Growth
 
-{{< card-container >}}
-{{< card >}}
-{{< animated-circle value="75" suffix="%" >}}
-card 1
-{{< /card >}}
-{{< card >}}
-card 2
-{{< /card >}}
-{{< card >}}
-card 3
-{{< /card >}}
-{{< /card-container >}}
+Medplum provides a flexible, secure, and compliant foundation for building sophisticated healthcare
+applications. Whether you're creating a custom EHR, a patient portal, or a complex data integration hub,
+our platform gives you the power to innovate faster, meet market demands, and drive your business forward.
+Focus on your core mission while we handle the technical and regulatory complexities.
 
-## Animation Test
+{{< /jumbotron >}}
 
-{{< animated-circle value="75" suffix="%" >}}
+{{< jumbotron
+    src="/img/hero/hero-custom-apps-and-portals-square.webp"
+    alt="Robot working in a medical office"
+    width="450"
+    height="450"
+>}}
 
-## Admonitions Test
+## [Custom EHRs, Patient Portals, and Provider Dashboards](/solutions/custom-ehr)
 
-{{< note >}}
+Stop forcing your workflows into off-the-shelf software. With Medplum, you can build and host custom EHRs,
+patient portals, and provider dashboards that are designed exactly for your team and your patients. Our
+platform provides the infrastructure, compliance, and tools you need to create sophisticated applications
+quickly, without compromising on efficiency or design.
 
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+{{< /jumbotron >}}
 
-{{< /note >}}
+{{< jumbotron
+    src="/img/hero/hero-patient-allergies.webp"
+    alt="Robot working in a medical office"
+    width="450"
+    height="450"
+>}}
 
-{{< tip >}}
+## [Interoperability and Data Platform](/solutions/interoperability)
 
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+Healthcare data is fragmented and complex. Medplum acts as your central interoperability hub, allowing you
+to connect disparate systems and data sources with ease. Our platform provides{' '}
+<b>modern alternatives to legacy integration and automation engines</b>, so you can build scalable data
+pipelines, manage patient records, and ensure seamless communication across your entire health tech
+ecosystem.
 
-{{< /tip >}}
+* [Medplum Agent](/solutions/agent): A programmable alternative to legacy integration engines
+* Medplum Bots: serverless functions driving automation workflows and external API integrations
+* Terminology Services
 
-{{< info >}}
+{{< /jumbotron >}}
 
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+{{< jumbotron
+    src="/img/hero/hero-specialty-clinic-square.webp"
+    alt="Robot working in a medical office"
+    width="450"
+    height="450"
+>}}
 
-{{< /info >}}
+## Specialty Clinic and Health Tech Solutions
 
-{{< warning >}}
+From clinical research to pediatric care, Medplum provides a flexible foundation for niche healthcare
+applications. Our platform is built on FHIR, giving you the flexibility to develop solutions for any
+specialty, without starting from scratch. Whether you're building a LIMS for a lab network or a remote
+patient monitoring program, Medplum gives you the tools to innovate faster and more safely.
 
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+{{< /jumbotron >}}
 
-{{< /warning >}}
+{{< jumbotron
+    src="/img/hero/hero-empi-square.webp"
+    alt="Robot working in a medical office"
+    width="450"
+    height="450"
+>}}
 
-{{< danger >}}
+## Enterprise Master Patient Index (EMPI)
 
-Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
+Managing patient identity across fragmented systems is a major challenge. Medplum provides the tools to
+build a robust Enterprise Master Patient Index (EMPI), helping you unify patient records, improve data
+accuracy, and reduce manual workload. Our FHIR-native approach, coupled with powerful tooling for data
+accuracy scoring and human-in-the-loop merging, ensures you have a reliable and comprehensive view of
+every patient.
 
-{{< /danger >}}
+{{< /jumbotron >}}
+
+{{< jumbotron
+    src="/img/hero/hero-compliance-and-security-square.webp"
+    alt="Robot working in a medical office"
+    width="450"
+    height="450"
+>}}
+
+## Compliance and Security Platform
+
+Navigating healthcare compliance is complex and time-consuming. Medplum accelerates your development
+timeline by providing a secure, compliant infrastructure out of the box. Our platform is engineered to
+meet key regulatory requirements, including HIPAA, allowing you to focus on building your application, not
+on compliance audits. Build your next product knowing that data security and regulatory compliance are
+handled.
+
+{{< /jumbotron >}}
