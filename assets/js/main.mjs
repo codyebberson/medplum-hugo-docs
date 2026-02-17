@@ -14,8 +14,10 @@ function updateAttributes(newUrl) {
   const onDocsPage = newUrl.includes('/docs/');
   setAttribute('breadcrumbs', onDocsPage ? 'visible' : 'hidden');
   setAttribute('sidebar', onDocsPage ? 'open' : 'closed');
-  setAttribute('toc', onDocsPage ? 'visible' : 'hidden');
   setAttribute('docFooter', onDocsPage ? 'visible' : 'hidden');
+
+  const showToc = onDocsPage || newUrl.includes('/blog/') || newUrl.includes('/careers/') || newUrl.includes('/terms');
+  setAttribute('toc', showToc ? 'visible' : 'hidden');
 }
 
 function updateActiveLinks() {

@@ -1,5 +1,6 @@
 ---
 id: security
+title: Security
 slug: /security
 ---
 

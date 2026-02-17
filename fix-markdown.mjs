@@ -1,20 +1,32 @@
 import fs from 'node:fs';
 import path, { resolve } from 'node:path';
 
-// const sourceRoot = 'c:/Users/Cody/dev/medplum/packages/docs/docs';
-// const destRoot = 'c:/Users/Cody/dev/medplum-hugo-docs/content/docs';
-
-const sourceRoot = resolve('../medplum/packages/docs/docs');
-const destRoot = resolve('./content/docs');
 const forceWrite = true;
 
+const directories = [
+  {
+    sourceRoot: resolve('../medplum/packages/docs/blog'),
+    destRoot: resolve('./content/blog'),
+  },
+  {
+    sourceRoot: resolve('../medplum/packages/docs/docs'),
+    destRoot: resolve('./content/docs'),
+  },
+  {
+    sourceRoot: resolve('../medplum/packages/docs/src/pages'),
+    destRoot: resolve('./content'),
+  },
+];
+
 async function main() {
-  console.log('Source root: ' + sourceRoot);
-  console.log('Dest root: ' + destRoot);
-  await crawlDir(sourceRoot);
+  for (const { sourceRoot, destRoot } of directories) {
+    console.log('Source root: ' + sourceRoot);
+    console.log('Dest root: ' + destRoot);
+    await crawlDir(sourceRoot, destRoot, sourceRoot);
+  }
 }
 
-async function crawlDir(sourceDir) {
+async function crawlDir(sourceRoot, destRoot, sourceDir) {
   if (sourceDir.includes('docs\\sdk') || sourceDir.includes('docs/sdk') || sourceDir.includes('docs\\api\\fhir') || sourceDir.includes('docs/api/fhir')) {
     return;
   }
@@ -24,14 +36,14 @@ async function crawlDir(sourceDir) {
   for (const file of files) {
     const sourceFilePath = path.join(sourceDir, file.name);
     if (file.isDirectory()) {
-      await crawlDir(sourceFilePath);
+      await crawlDir(sourceRoot, destRoot, sourceFilePath);
     } else {
-      await fixFile(sourceFilePath);
+      await fixFile(sourceRoot, destRoot, sourceFilePath);
     }
   }
 }
 
-async function fixFile(sourceFilePath) {
+async function fixFile(sourceRoot, destRoot, sourceFilePath) {
   if (!sourceFilePath.endsWith('.md') && !sourceFilePath.endsWith('.mdx')) {
     return;
   }

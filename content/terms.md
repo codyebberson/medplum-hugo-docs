@@ -1,5 +1,6 @@
 ---
 id: terms
+title: Terms of Service
 slug: /terms
 ---
 
