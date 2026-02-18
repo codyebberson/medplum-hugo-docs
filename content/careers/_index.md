@@ -18,9 +18,9 @@ Medplum is a small team of industry veterans and repeat founders. Our team membe
 
 We're currently hiring for the following positions:
 
-- [Engineering Manager](./engineering-manager)
-- [Forward Deployed Engineer Lead](./forward-deployed-engineer-lead)
-- [Forward Deployed Engineer](./forward-deployed-engineer)
+- [Engineering Manager](./careers/engineering-manager)
+- [Forward Deployed Engineer Lead](./careers/forward-deployed-engineer-lead)
+- [Forward Deployed Engineer](./careers/forward-deployed-engineer)
 
 {{< info >}}
 

@@ -8,7 +8,7 @@ tags: [community]
 
 Medplum is a community, and advocacy for standards and open source implementations are core to our mission. I’m writing today to share **Medplum’s support for [Stanford Biodesign](https://biodesign.stanford.edu/) [OpenCareHub](https://opencarehub.com/)’s proposal for [ARPA-H PARADIGM](https://arpa-h.gov/research-and-funding/programs/paradigm)**.
 
-<!-- truncate -->
+<!--more-->
 
 There are three things that make this proposal noteworthy.
 

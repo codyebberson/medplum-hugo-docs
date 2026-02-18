@@ -1,6 +1,6 @@
 ---
 id: agent
-title: Medplum Agent
+title: "Medplum Agent: Secure Bridge for Legacy Healthcare Systems"
 ---
 
 # Medplum Agent: Secure Bridge for Legacy Healthcare Systems

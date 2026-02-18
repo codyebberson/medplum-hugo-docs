@@ -12,7 +12,7 @@ Thank you so much for joining us today for our FHIR and AI for Life Sciences web
 
 We wanted to share the recording for anyone who missed it or who would like to check it out again!
 
-<!-- truncate -->
+<!--more-->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/akAtxHFPrX8" title="FHIR + AI for Life Sciences Webinar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

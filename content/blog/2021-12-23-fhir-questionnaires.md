@@ -9,7 +9,7 @@ authors: reshma
 
 At Medplum we know that customizable forms are critical for any healthcare app. Is it even a healthcare app without tons of forms?
 
-<!-- truncate -->
+<!--more-->
 
 To serve that need, we have created a Form builder similar to common tools like [SurveyMonkey](https://www.surveymonkey.com/) or [Google Forms](https://docs.google.com/forms) but based on the [FHIR Questionnaires](https://www.hl7.org/fhir/questionnaire.html).
 

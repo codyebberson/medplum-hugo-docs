@@ -10,7 +10,7 @@ tags: [pediatrics, auth, case-study, ai]
 
 [Summer Health](https://www.summerhealth.com/) is an innovator in direct-to-patient pediatrics, with a focus on messaging and mobile access for parents via SMS. Their fast growing practice is available nationwide and is known for excellent patient engagement.
 
-<!-- truncate -->
+<!--more-->
 
 <div class="responsive-iframe-wrapper">
   <iframe src="https://www.youtube.com/embed/H2fJVYG8LvQ?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

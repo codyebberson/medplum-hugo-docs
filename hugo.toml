@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Medplum'
 enableGitInfo = true
 
+[frontmatter]
+  date = [':filename', 'date', 'publishDate', 'lastmod']
+
 [params]
   editURL = 'https://github.com/medplum/medplum/edit/main/packages/docs/content/'
 

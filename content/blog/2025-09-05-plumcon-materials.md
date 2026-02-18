@@ -14,7 +14,7 @@ Below you'll find slideshows and videos from each presentation, organized by tal
 
 We also want to thank everyone who donated demos and demo videos to this event - we are thankful for our community. 
 
-<!-- truncate -->
+<!--more-->
 
 ## Presentation Materials
 

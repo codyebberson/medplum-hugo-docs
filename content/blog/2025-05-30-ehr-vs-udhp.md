@@ -8,7 +8,7 @@ tags: [self-host, fhir-datastore, integration, compliance, auth, community]
 
 Healthcare technology relies on established systems like Electronic Health Records (EHRs) and is now incorporating concepts like Unified Digital Health Platforms (UDHPs). Understanding this evolution is key to navigating the industry's direction.
 
-<!-- truncate -->
+<!--more-->
 
 ### EHRs: The Foundation and Its Boundaries
 

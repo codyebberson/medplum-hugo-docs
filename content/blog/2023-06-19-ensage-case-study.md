@@ -14,7 +14,7 @@ tags: [interop, fhir-datastore, compliance, case-study, geriatrics]
 
 _(2 minute demo)_
 
-<!-- truncate -->
+<!--more-->
 
 ## Introduction
 

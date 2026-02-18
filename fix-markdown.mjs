@@ -124,6 +124,12 @@ async function fixFile(sourceRoot, destRoot, sourceFilePath) {
     hasChanges = true;
   }
 
+  // Replace Docusaurus "<!-- truncate -->" with Hugo "<!--more-->"
+  if (content.includes('<!-- truncate -->')) {
+    content = content.replaceAll('<!-- truncate -->', '<!--more-->');
+    hasChanges = true;
+  }
+
   // Replace React `className` with `class`
   // For example: `<div className="responsive-iframe-wrapper">`
   if (content.match(/className=/g)) {

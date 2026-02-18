@@ -12,7 +12,7 @@ If you've worked with FHIR before, you've probably noticed there are a lot of re
 
 Today, let's talk about one of FHIR's clever organizational tricks: the Workflow module. It's an pattern overlaid onto resource types that helps unlock how different healthcare activities relate to each other. Whether you're building a scheduling system, managing prescriptions, or handling lab orders, these patterns will come in handy.
 
-<!-- truncate -->
+<!--more-->
 
 ## The Three Resource Patterns: A Simple Framework
 

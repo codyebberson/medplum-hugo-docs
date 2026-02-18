@@ -109,11 +109,6 @@ To opt into asynchronous handling of the batch request, add the `Prefer: respond
 the batch:
 
 {{< tabs groupId="language" >}}
-  {{< tab value="ts" label="Typescript" >}}
-    <MedplumCodeBlock language="ts" selectBlocks="asyncBatchTs">
-      {ExampleCode}
-    </MedplumCodeBlock>
-  {{< /tab >}}
   {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="asyncBatchCurl">
       {ExampleCode}

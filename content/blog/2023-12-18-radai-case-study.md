@@ -10,7 +10,7 @@ tags: [ai, interop, radiology, case-study]
 
 Radiology is a bellwether for innovations in Healthcare IT due to the **time-sensitive** and **data-intensive workflow**. Naturally, radiology applications lead the way in adopting real-time functionality like [FHIRcast](https://fhircast.org/), a WebSockets-based protocol that enables development of highly interactive applications.
 
-<!-- truncate -->
+<!--more-->
 
 Today, we are showcasing the [Rad AI Omni Reporting](https://www.radai.com/omni-reporting) platform, with [FHIRcast support](/docs/fhircast) through Medplum’s open source FHIRcast hub.
 

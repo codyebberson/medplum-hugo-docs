@@ -9,7 +9,7 @@ authors: reshma
 
 As a long time YC community member (10+ years) and former [Visiting Group Partner](https://www.ycombinator.com/blog/welcome-s21-visiting-group-partners), I'm always excited by the great companies that release each Demo Day. For me, it's like the Superbowl 🏈.
 
-<!-- truncate -->
+<!--more-->
 
 > Read our coverage on [YC S23 Open Source Meetup](/blog/2023-08-17-yc-oss-faq.md) and [Medplum's YC Launch](/blog/2022-08-02-medplum-in-yc.md)
 

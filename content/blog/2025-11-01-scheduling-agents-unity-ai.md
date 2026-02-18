@@ -16,7 +16,7 @@ This is a transcript summary of the October 2025 webinar with Medplum and Unity 
 
 **Reshma:** We recently hosted a webinar exploring the intersection of AI, healthcare operations, and open-source infrastructure. I was joined by Cody Hall, CTO and Co-Founder of Unity AI, to discuss how his team is solving one of healthcare's **most persistent bottlenecks**: scheduling, using AI Agents.
 
-<!-- truncate -->
+<!--more-->
 
 **Reshma:** At Medplum, we often talk about the "terrible choice" healthcare developers face: invest heavily to build from scratch or fight with rigid, off-the-shelf software. Unity AI demonstrates **a third path**—building exceptional products on top of pre-built primitives. Here is a recap of how Unity AI is using Medplum and `FHIR` to coordinate scarce resources.
 

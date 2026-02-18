@@ -12,7 +12,7 @@ Medplum has become one of the first platforms to achieve certification for the *
 
 The IRA profile, published in October 2023 by Integrating the Healthcare Enterprise (IHE), represents a **transformative approach** to radiology interoperability. Built on [FHIRcast](/docs/fhircast) 3.0.0 and FHIR R5 standards, IRA enables different applications—from PACS systems to AI tools—to share context and content seamlessly during diagnostic reporting. For Medplum, certification as a FHIRcast Hub means our platform can now coordinate complex radiology workflows where multiple applications must work together in harmony.
 
-<!-- truncate -->
+<!--more-->
 
 ## The Radiology Workflow Challenge IRA Solves
 

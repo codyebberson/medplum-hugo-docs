@@ -10,7 +10,7 @@ As a founder, you wear a lot of hats. One of mine is handling the security repor
 
 Thanks to a strong security posture, including regular third-party pen tests, genuine vulnerability reports are rare. However, like any online business, we see a steady stream of security _inquiries_. These tend to fall into two distinct camps: the valuable, good-faith reports from legitimate researchers... and the noise.
 
-<!-- truncate -->
+<!--more-->
 
 The "noise" is what security expert Troy Hunt perfectly named **["Beg Bounties."](https://www.troyhunt.com/beg-bounties/)** These are the low-effort, templated emails fishing for a payout for a non-issue.
 

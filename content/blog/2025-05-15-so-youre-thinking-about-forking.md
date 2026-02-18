@@ -8,7 +8,7 @@ tags: [self-host, fhir-datastore, integration, compliance, auth, community]
 
 Forking can look like the fastest path to control, but it often becomes a long‑term maintenance tax. Here’s a pragmatic checklist to decide—and alternatives that usually win.
 
-<!-- truncate -->
+<!--more-->
 
 > **TL;DR** Forking feels like freedom; more often it is technical debt in disguise. Before you spin up a divergent codebase, walk through the checklist below and consider proven collaboration patterns that deliver 90 % of the control with 10 % of the cost.
 

@@ -10,7 +10,7 @@ tags: [react, self-host]
 
 NASA's [TRISH team](https://www.nasa.gov/hrp/tri) (Translational Research Institute for Space Health) recently issued an RFP for a healthcare tech platform designed for monitoring spaceflight participant health metrics during space missions. TRISH is a virtual consortium focused on applied research to ensure astronaut health during space exploration.
 
-<!-- truncate -->
+<!--more-->
 
 As avid space enthusiasts, and [NASA Space Camp](https://www.rocketcenter.com/SpaceCamp) alumni, we were eager to apply.
 

@@ -10,7 +10,7 @@ tags: [billing, fhir-datastore, self-host]
 
 Claims data is a uniquely rich source of financial and clinical data important to many healthcare workflows. The EDI 837 Health Care Claim transaction is one of the oldest forms of electronic data exchange, stemming from being defined as a required data transmission specification by HIPAA.
 
-<!-- truncate -->
+<!--more-->
 
 Today, we are showcasing [Flexpa](https://www.flexpa.com/) which connects applications to claims data via direct patient consent and a modern FHIR API powered by Medplum.
 

@@ -10,7 +10,7 @@ tags: [ai, interop, scheduling, case-study]
 
 Those who have experienced the wait and shuffle of a specialist referral will appreciate the thoughtful and futuristic approach of the team at [Titan Intake](https://www.titanintake.com/).
 
-<!-- truncate -->
+<!--more-->
 
 <div class="responsive-iframe-wrapper">
   <iframe src="https://www.youtube.com/embed/sy3YKRFyPII?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

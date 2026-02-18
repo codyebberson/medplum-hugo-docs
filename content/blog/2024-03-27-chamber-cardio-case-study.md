@@ -10,7 +10,7 @@ tags: [fhir-datastore, self-host, cardiology, case-study]
 
 [Chamber Cardio](https://www.chambercardio.com/), a technology-enabled cardiology solution, **helps enable and empower cardiologists and practices in their transition to value-based care**. With our cloud-based technology platform, we offer a suite of tools designed specifically for cardiovascular care. These tools provide **real-time insights, analytics and care coordination tools** focused on improving outcomes for patients with chronic cardiovascular conditions.
 
-<!-- truncate -->
+<!--more-->
 
 Chamber’s products serve as a compliment to a cardiology practice’s existing Electronic Health Records (EHR) and Practice Management Systems offering many powerful features, such as quality [measure](/docs/api/fhir/resources/measure) and care gap assessment, customizable population-level patient dashboards and hospital encounter notifications, clinical pathway workflows (including guideline-directed medication support), automated [risk assessments](/docs/api/fhir/resources/riskassessment) and care team collaboration through secure messaging and task management.
 

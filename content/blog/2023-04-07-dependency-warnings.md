@@ -10,7 +10,7 @@ tags: [self-host]
 
 Today, we received a thoughtful email from an engineering leader who installed Medplum for the first time:
 
-<!-- truncate -->
+<!--more-->
 
 <blockquote>
 Cody,

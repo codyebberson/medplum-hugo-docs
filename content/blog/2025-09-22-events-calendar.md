@@ -43,7 +43,7 @@ tags: [community]
   </tbody>
 </table>
 
-<!-- truncate -->
+<!--more-->
 
 ### Past Events
 

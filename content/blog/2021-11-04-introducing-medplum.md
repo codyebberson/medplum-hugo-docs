@@ -10,7 +10,7 @@ authors: cody
 
 Healthcare applications are famous for being complex, rigid and hideous, and we on the Medplum team have seen many up close and witnessed the problems firsthand. It's easy to dismiss the hideous phenomenon as lazy app developers or poor product management, but in reality, it's not that straightforward.
 
-<!-- truncate -->
+<!--more-->
 
 Delivering healthcare is very complicated - lives are at stake and tools and treatments are constantly evolving. Additionally, incentives and business models for patient care complex and heavily regulated. **Any app built for healthcare by default serves many stakeholders**.
 

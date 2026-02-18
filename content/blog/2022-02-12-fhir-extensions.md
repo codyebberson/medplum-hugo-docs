@@ -11,7 +11,7 @@ When working with customers to set up their apps and workflow we commonly get th
 
 **We need to track this extra data, but there is no field for it in the FHIR object. What should we do?**
 
-<!-- truncate -->
+<!--more-->
 
 FHIR Extensions are a relatively simple way to track extra fields associated with a FHIR objects, and Medplum supports versioning and API access for the extensions, just like we do for all FHIR objects.
 

@@ -10,7 +10,7 @@ tags: [integration, fhir-datastore]
 
 As we close out 2024, the Medplum team would love to thank our community and customers for joining us on this journey.
 
-<!-- truncate -->
+<!--more-->
 
 We wanted to highlight a few memorable moments and reflect on all that happened during the year. It was a lot of fun, and huge thank you to the team who pushed so hard to make all these things happen.
 

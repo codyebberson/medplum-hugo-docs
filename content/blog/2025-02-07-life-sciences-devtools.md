@@ -8,7 +8,7 @@ tags: [lifesciences]
 
 On January 15, 2025 Medplum & Flexpa held a [JPMorgan companion event](https://lu.ma/bonej6ih) for the community.  During the event, there were demos of many different open source tools that aid in development for life science workflows.
 
-<!-- truncate -->
+<!--more-->
 
 The **biopharmaceutical product lifecycle is full of repetitive workflows**, many of which are supported by custom software.  Open source is a natural solution for these workflows, and we have prepared this **list of resources and demo videos** showcased at the event for reference.
 

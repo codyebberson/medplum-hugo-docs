@@ -10,7 +10,7 @@ tags: [integration, fhir-datastore]
 
 An incredible year of growth, innovation, and community. From v5 release to expanding our developer ecosystem, 2025 marked several milestones for Medplum's open-source healthcare platform.
 
-<!-- truncate -->
+<!--more-->
 
 As we close out 2025, the Medplum team would love to thank our community and customers for joining us on this journey.
 

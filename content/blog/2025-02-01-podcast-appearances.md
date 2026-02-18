@@ -8,7 +8,7 @@ tags: [news, press]
 
 On occasion, the [Medplum team](/about) gives talks about our community, product and philosophy. You can find them here: 
 
-<!-- truncate -->
+<!--more-->
 
 * [Omar Mousa](https://www.linkedin.com/in/omarmousa/) and [Angela Suthrave](https://www.linkedin.com/in/angela-suthrave/) interview [Reshma Khilnani](https://www.linkedin.com/in/reshmakhilnani/) about the Medplum approach and product on the [Concept to Care Podcast](https://concepttocare.substack.com/p/6d5f8b3e-185d-4c7f-ad6f-dfca063dec81). 
 

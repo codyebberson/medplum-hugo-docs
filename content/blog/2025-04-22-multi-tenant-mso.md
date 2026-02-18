@@ -10,7 +10,7 @@ tags: [mso, tenant, access-control]
 
 In the Medplum community of implementors, a common use case is building an application that **serves multiple clinics** in the form of a Managed Service Organization (MSO). An MSO is a separate business entity that provides non-clinical services—e.g., revenue-cycle management, HR, IT, compliance, facilities, and purchasing—to physician groups or other provider organizations.
 
-<!-- truncate -->
+<!--more-->
 
 In this post, we'll focus on some key features of an MSO application using Medplum: [multi-tenancy](#tenant-management-with-organizations), [access control](#access-control), [patient consent management](#additional-access-control-patient-consent), and [project-scoped users](#user-management-strategy). The application also supports FHIR, C-CDA and HL7v2 interfacing making it well suited to interface with record-keeping solutions across multiple practices.
 

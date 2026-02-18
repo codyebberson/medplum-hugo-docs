@@ -16,7 +16,7 @@ tags: [self-host, integration, interop, community]
 
 This white paper aims to provide a **technical guide for software developers and healthcare IT professionals seeking to integrate their systems with the Trusted Exchange Framework** **and Common Agreement** (TEFCA). It delves into the technical aspects of TEFCA, including the various participation models, QHIN connectivity, data exchange methods, and security considerations. It also explores the incentives for TEFCA participation and how Medplum can help organizations achieve TEFCA compliance and leverage its benefits.
 
-<!-- truncate -->
+<!--more-->
 
 ## Background
 

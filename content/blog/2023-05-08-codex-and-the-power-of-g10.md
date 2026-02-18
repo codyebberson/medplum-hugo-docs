@@ -8,7 +8,7 @@ tags: [interop, fhir-datastore, compliance, case-study]
 
 [Codex Health](https://www.codex.health/) enables health systems manage their patient populations with effective remote patient monitoring (RPM) programs for diabetes, cardiovascular diseases and more.
 
-<!-- truncate -->
+<!--more-->
 
 Their offering has a **patient facing** experience, a **provider experience** and **EHR integrations** with Epic, Cerner and others.
 

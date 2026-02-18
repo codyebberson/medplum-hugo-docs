@@ -10,7 +10,7 @@ tags: [community, careplan]
 
 [Awell](https://www.awellhealth.com/?utm_medium=partners&utm_source=website&utm_campaign=medplum-profile) is a low-code platform designed to enable your clinical teams to design, operate and continuously improve your care flows with minimal engineering lift.
 
-<!-- truncate -->
+<!--more-->
 
 <div class="responsive-iframe-wrapper">
   <iframe src="https://www.youtube.com/embed/tjOZt4RzVic?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -11,7 +11,7 @@ keywords: ['digital health', 'healthcare operations', 'EHR']
 
 Digital health companies are at the forefront of revolutionizing patient experience by combining quality care, at lower costs, and at national scale. Typically, they target a specific healthcare niche, concentrating on _top-notch execution_. Their ultimate goal? To merge an exceptional patient experience with smooth operations behind the scenes.
 
-<!-- truncate -->
+<!--more-->
 
 When operations are executed right, patients have a seamless experience - everything Just Works <sup>TM</sup>. At Medplum, we've worked with many excellent digital health implementations, and there are four foundational elements that make their operations truly stand out:
 
