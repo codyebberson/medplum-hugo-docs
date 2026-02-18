@@ -1,9 +1,11 @@
 @import './fonts.scss';
+
 @import './components/alert.scss';
 @import './components/animated-circle.scss';
 @import './components/breadcrumbs.scss';
 @import './components/card.scss';
 @import './components/card-container.scss';
+@import './components/code.scss';
 @import './components/doc-footer.scss';
 @import './components/hero.scss';
 @import './components/hero-code.scss';
@@ -13,6 +15,7 @@
 @import './components/jumbotron.scss';
 @import './components/logo-scroller.scss';
 @import './components/navbar.scss';
+@import './components/responsive-iframe.scss';
 @import './components/section.scss';
 @import './components/section-header.scss';
 @import './components/sidebar.scss';
@@ -20,6 +23,8 @@
 @import './components/tabs.scss';
 @import './components/testimonial.scss';
 @import './components/toc.scss';
+
+@import './pages/pricing.scss';
 
 :root {
   /* Docusaurus overrides */
@@ -242,35 +247,6 @@ li + li {
   margin-top: var(--ifm-list-item-margin);
 }
 
-.highlight {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  margin-bottom: 50px;
-}
-
-.highlight pre {
-  background-color: rgb(246, 248, 250) !important;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  color: rgb(57, 58, 52);
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 15px;
-  padding: 16px;
-  min-width: 0;
-  overflow: auto;
-}
-
-.highlight pre code {
-  padding: 0;
-}
-
-code {
-  border-radius: var(--ifm-code-border-radius);
-  font-family: var(--ifm-font-family-monospace);
-  font-size: var(--ifm-code-font-size);
-  padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
-  vertical-align: middle;
-}
-
 .container {
   max-width: 1140px;
   padding-left: var(--ifm-spacing-horizontal);
@@ -318,30 +294,4 @@ code {
 
 .align-right {
   text-align: right;
-}
-
-.responsive-iframe-wrapper {
-  width: 100%;
-  padding-bottom: 56.25%;
-  position: relative;
-  overflow: hidden;
-}
-
-.responsive-iframe-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.pricing {
-  text-align: center;
-  margin: 50px auto 10px auto;
-  padding: 20px 20px 10px 20px;
-}
-
-.pricing h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
 }
