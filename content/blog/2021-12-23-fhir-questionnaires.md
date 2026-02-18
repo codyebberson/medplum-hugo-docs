@@ -5,8 +5,6 @@ title: Understanding FHIR Questionnaires
 authors: reshma
 ---
 
-# Easy Custom Forms for Your Healthcare App
-
 At Medplum we know that customizable forms are critical for any healthcare app. Is it even a healthcare app without tons of forms?
 
 <!--more-->

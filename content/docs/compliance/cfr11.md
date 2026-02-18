@@ -3,7 +3,6 @@ id: cfr11
 title: CFR Part 11 Certification
 ---
 
-# CFR Part 11 Certification
 
 {{< warning title="Note" >}}
 

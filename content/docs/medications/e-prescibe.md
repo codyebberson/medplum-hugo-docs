@@ -3,7 +3,6 @@ id: e-prescibe
 title: E-Prescribe (eRx)
 ---
 
-# E-Prescribe (eRx)
 
 Medplum allows enabling e-prescribe(eRx) functionality. Medplum's e-prescribe functionality is exclusively available to providers directly engaged in patient care as part of [Medplum EHR](/solutions/medplum-ehr).
 

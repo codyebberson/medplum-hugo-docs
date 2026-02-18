@@ -4,8 +4,6 @@ title: Adding Practitioners & Data
 weight: 100
 ---
 
-# Adding Practitioners & Data
-
 This section covers how to add practitioners and import existing data through the Medplum App ([app.medplum.com](https://app.medplum.com/)).
 
 ## Adding Practitioners

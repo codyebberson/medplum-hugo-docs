@@ -3,7 +3,6 @@ id: fhir-resource-examples
 title: FHIR Resource Examples
 ---
 
-# FHIR Resource Examples
 
 ## ServiceRequest Example
 

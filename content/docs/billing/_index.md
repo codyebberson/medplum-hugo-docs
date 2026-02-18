@@ -4,8 +4,6 @@ title: Billing
 weight: 1
 ---
 
-# Billing
-
 The FHIR spec supports [many resources](/products/billing#fhir-resources) related to billing and payments. These resources can be created programmatically to support billing and payments. Commonly as part of a billing implementation, FHIR resources are created by applications and synchronized to clearinghouses or billing providers using [subscriptions](/docs/subscriptions) and [bots](/docs/bots/).
 
 For example, after a lab test is completed, a [DiagnosticReport](/docs/api/fhir/resources/diagnosticreport.mdx) is created and it and related resources like are automatically sent to a billing system after the report is finalized.

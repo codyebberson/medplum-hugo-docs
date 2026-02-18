@@ -4,8 +4,6 @@ title: Contributing to Medplum
 weight: 1
 ---
 
-# Contributing to Medplum
-
 Medplum is an open-source project, and we love both code and non-code contributions! People with any level of experience
 can make an important impact on the project: you don't need to be a professional developer! You might have just:
 

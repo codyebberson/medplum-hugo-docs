@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <h1>Blog</h1>
+  {{ if not .Params.hideTitle }}<h1>{{ .Title }}</h1>{{ end }}
   {{ range (first 10 .Pages.ByDate.Reverse) }}
     <article class="blog-post-summary">
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>

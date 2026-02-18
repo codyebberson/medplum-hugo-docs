@@ -3,7 +3,6 @@ id: orders-and-results
 title: Orders and Results
 ---
 
-# Orders and Results
 
 A common use case for HL7 is to place orders for diagnostics (labs and imaging commonly), and receive diagnostic results.  There are two common message types, the ORM (order entry) and ORU (observation result).  
 

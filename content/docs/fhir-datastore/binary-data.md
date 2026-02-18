@@ -5,8 +5,6 @@ toc_max_heading_level: 4
 weight: 5
 ---
 
-# Binary Data
-
 Managing, storing, and retrieving binary files is a fundamental requirement in modern healthcare applications. Medplum, an open-source, API-first healthcare technology platform, provides a structured approach to this. This article dives into how to upload binary files to Medplum using the FHIR `Binary` resource type, detailing the process and Medplum's specific optimizations.
 
 ## Introduction to FHIR `Binary`

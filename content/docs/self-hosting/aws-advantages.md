@@ -4,8 +4,6 @@ title: AWS Advantages
 weight: 10
 ---
 
-# AWS Advantages
-
 Medplum provides a suite of digital healthcare services such as authentication, access controls, user management, FHIR server, automation, and more.
 
 Medplum's hosted offering runs on AWS, so naturally the AWS configuration is most full-featured and most battle-tested. This document describes which features are only available on AWS, and possible alternatives.

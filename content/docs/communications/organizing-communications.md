@@ -8,7 +8,6 @@ title: Organizing Communications Using Threads
 
 
 
-# Organizing Communications Using Threads
 
 ## Introduction
 

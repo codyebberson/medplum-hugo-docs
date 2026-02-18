@@ -6,8 +6,6 @@ authors: reshma
 tags: [ai, interop, scheduling, case-study]
 ---
 
-# Titan Intake: AI Driven Patient Intake and EMPI
-
 Those who have experienced the wait and shuffle of a specialist referral will appreciate the thoughtful and futuristic approach of the team at [Titan Intake](https://www.titanintake.com/).
 
 <!--more-->

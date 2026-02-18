@@ -12,8 +12,6 @@ keywords:
   - fhir
 ---
 
-# Representing Patient Insurance Coverage
-
 ## Introduction
 
 The [`Coverage`](/docs/api/fhir/resources/coverage) resource represents high-level insurance information for a patient, similar to what would be found on their insurance cards.

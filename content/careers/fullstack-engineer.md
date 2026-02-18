@@ -6,8 +6,6 @@ tags:
   - engineering
 ---
 
-# Full Stack Software Engineer
-
 ![Full Stack Software Engineer](/img/careers/fullstack-engineer.webp)
 
 ## About the Role

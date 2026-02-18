@@ -12,11 +12,6 @@ keywords:
   - identifier
 ---
 
-# FHIR Basics
-
-
-
-
 [patient]: /docs/api/fhir/resources/patient
 [practitioner]: /docs/api/fhir/resources/practitioner
 [medicationrequest]: /docs/api/fhir/resources/medicationrequest

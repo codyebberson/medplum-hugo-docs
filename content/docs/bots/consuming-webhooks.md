@@ -5,8 +5,6 @@ weight: 1000
 tags: [bots, subscriptions, auth, security]
 ---
 
-# Consuming Webhooks
-
 Many SaaS products including popular services like Stripe and Okta support Webhooks, allowing a web application to register a Medplum URL to receive notifications. When a certain event occurs in the source application, such as a new user signup or a change to a record, the source application sends an HTTP POST request to the URL registered by the destination application. This HTTP POST request contains information about the event that occurred.
 
 Medplum [bots](/docs/bots) can be used to listen for webhooks and so keep records synchronized between systems. When another application fires a webhook, it can trigger a Medplum bot using the [$execute](/docs/bots/bot-basics#using-the-execute-endpoint) endpoint.

@@ -4,8 +4,6 @@ title: Working with package.json
 weight: 60
 ---
 
-# Working with package.json
-
 The Medplum codebase uses NPM workspaces to manage approximately 50 packages in a single monorepo. This structure provides many benefits but can be confusing when it comes to dependency management. This guide explains best practices for working with dependencies in our monorepo.
 
 ## Key Concepts

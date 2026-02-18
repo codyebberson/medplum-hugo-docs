@@ -5,8 +5,6 @@ weight: 2
 tags: [integration]
 ---
 
-# Health Gorilla Lab Orders
-
 Health Gorilla is an interoperability service that enables healthcare providers to order lab tests and diagnostics through a unified API. Medplum provides a first-party integration with Health Gorilla in order to optimize this experience, minimizing errors and enhancing the patient experience. 
 
 {{< tip >}}

@@ -4,8 +4,6 @@ title: Agent Bulk Status
 weight: 11
 ---
 
-# Agent Bulk Status
-
 Gets the status of an agent or agents based on given search criteria. Useful for seeing whether agents are connected and listing their current software version.
 
 ## Invoke the `$bulk-status` operation

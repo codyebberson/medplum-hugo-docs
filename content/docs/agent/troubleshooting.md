@@ -4,8 +4,6 @@ title: Troubleshooting
 weight: 100
 ---
 
-# Troubleshooting
-
 ## Issue
 
 - Agent Logs display `Token Expired` and service will not run. The log will state `[DEBUG] stderr: "Error: Token expired"`

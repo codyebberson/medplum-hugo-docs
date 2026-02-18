@@ -3,7 +3,6 @@ id: medplum-ehr
 title: Medplum EHR
 ---
 
-# Medplum EHR
 
 A streamlined EHR that's easy to implement and supports core workflows. Chart efficiently, place orders and schedule with ease.  Medplum EHR features the following features.
 

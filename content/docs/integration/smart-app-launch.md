@@ -3,7 +3,6 @@ id: smart-app-launch
 title: SMART App Launch
 ---
 
-# SMART App Launch
 
 Medplum is an open source implementation of [SMART App Launch 2.0.0](https://www.hl7.org/fhir/smart-app-launch/). This guide will walk through how to set up and test your SMART App Launch links and test your application.
 

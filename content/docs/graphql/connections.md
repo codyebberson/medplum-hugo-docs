@@ -4,8 +4,6 @@ title: Connection API
 weight: 2
 ---
 
-# Connection API
-
 Using the normal "List" search (i.e., "PatientList") is the most common way to search for resources. However, the FHIR GraphQL specification also supports the [Connection API](https://hl7.org/fhir/graphql.html#searching), which is a more complex way to search for resources.
 
 The most immediate advantage of the Connection API is support for retrieving total counts. The Connection API also includes more features from FHIR Bundle such as `mode` and `score`.

@@ -3,7 +3,6 @@ id: custom-fhir-operations
 title: Custom FHIR Operations
 ---
 
-# Custom FHIR Operations
 
 Custom FHIR Operations is a powerful feature that allows you to extend the Medplum FHIR server with your own custom operations using the Medplum Bots framework. This feature enables you to create sophisticated business logic that integrates seamlessly with the FHIR API while leveraging the full power of JavaScript execution.
 

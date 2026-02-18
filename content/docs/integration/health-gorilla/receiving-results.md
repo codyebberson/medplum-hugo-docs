@@ -4,8 +4,6 @@ title: Receiving Results
 weight: 2
 ---
 
-# Receiving Results
-
 This guide explains how laboratory results are handled in the Medplum-Health Gorilla labs integration.
 
 When Health Gorilla receives results from performing laboratories (Quest, Labcorp, regional labs, etc.), they will be synchronized into your project as structured FHIR resources via the `receive-from-health-gorilla` Bot.

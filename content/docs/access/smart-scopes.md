@@ -5,8 +5,6 @@ weight: 8
 tags: [auth]
 ---
 
-# SMART Scopes
-
 SMART on FHIR’s authorization scheme uses [OAuth2 scopes](https://oauth.net/2/scope/) to communicate (and negotiate) access requirements.
 
 For those using scopes, we recommend reading [background information on HL7.org](http://hl7.org/fhir/smart-app-launch/scopes-and-launch-context.html). For background this documentation on [OAuth scopes](https://auth0.com/docs/get-started/apis/scopes) is also useful.

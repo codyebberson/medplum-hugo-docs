@@ -4,8 +4,6 @@ title: Install on AWS
 weight: 2
 ---
 
-# Install on AWS
-
 This guide will perform a complete production-ready installation in your AWS environment using [AWS CDK](https://aws.amazon.com/cdk/).
 
 {{< warning >}}

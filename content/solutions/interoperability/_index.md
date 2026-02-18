@@ -3,7 +3,6 @@ id: index
 title: Interoperability
 ---
 
-# Interoperability
 
 ## HL7 Connectivity 
 

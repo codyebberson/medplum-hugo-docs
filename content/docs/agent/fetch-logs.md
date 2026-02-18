@@ -4,8 +4,6 @@ title: Agent Fetch Logs
 weight: 12
 ---
 
-# Agent Fetch Logs
-
 Fetches log entries from a given agent or agents. Useful for debugging and monitoring agent behavior.
 
 ## Invoke the `$fetch-logs` operation

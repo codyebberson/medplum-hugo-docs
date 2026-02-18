@@ -9,7 +9,6 @@ title: Handling External Files
 
 
 
-# Handling External Files
 
 ## Introduction
 

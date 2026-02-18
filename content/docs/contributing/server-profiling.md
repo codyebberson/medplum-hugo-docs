@@ -4,8 +4,6 @@ title: Server Profiling
 weight: 202
 ---
 
-# Server Profiling
-
 Medplum is designed to be a critical component of system architecture. It is important that Medplum server is robust, performant, and scalable. Hand in hand with [Load Testing](/docs/self-hosting/load-testing), profiling the server is critical in understanding performance bottlenecks and scaling challenges.
 
 This document describes how the Medplum team uses the [Node.js Profiler](https://nodejs.org/en/docs/guides/simple-profiling) to analyze server performance.

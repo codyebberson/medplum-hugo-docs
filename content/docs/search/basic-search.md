@@ -4,8 +4,6 @@ title: Basic Search
 weight: 1
 ---
 
-# Basic Search
-
 ## Intro
 
 One of the most basic operations when working with the Medplum FHIR API is to query resources that fulfill certain criteria.

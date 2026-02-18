@@ -5,8 +5,6 @@ toc_max_heading_level: 5
 weight: 9
 ---
 
-# Profiles
-
 FHIR provides a broad variety of resources types to cover as many different types of healthcare data as possible, favoring generality over specificity. For example, the `Observation` resource type is used to record many different kinds of data: a patient's smoking status might be recorded using the `valueCodeableConcept` field, while the measurement data for blood pressure would exist as two separate entries under `component.valueQuantity`.
 
 To meet more specific use cases, FHIR allows developers to author [resource profiles][profiling] to layer additional validation rules onto the base specification for a resource type. This is similar to "subclassing" in object oriented programming languages.

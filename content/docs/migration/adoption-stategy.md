@@ -6,8 +6,6 @@ weight: 5
 pagination_next: null
 ---
 
-# Adoption Strategy
-
 When migrating existing provider/patient apps to Medplum, a phased approach allows for a smoother transition, minimizes risk, and provides opportunities for validation at each step. This section outlines the recommended phases for migration, along with their rationales and best practices.
 
 It's important to note that these phases don't necessarily need to be completed in strict sequence for your entire dataset. Instead, consider applying this phased approach to each data element type described individually as described in our [migration sequence guide](./migration-sequence). This approach allows for faster user feedback and more manageable chunks of work.

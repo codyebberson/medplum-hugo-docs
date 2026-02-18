@@ -6,7 +6,6 @@ title: Bot Endpoint
 
 
 
-# Bot Endpoint
 
 ## POST `/admin/projects/:projectId/bot`
 

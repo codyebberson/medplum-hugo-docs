@@ -3,7 +3,6 @@ id: billing
 title: Billing and Payments
 ---
 
-# Billing and Payments
 
 Send data to your billing provider of choice. Easily connect to physician groups or bill through multiple professional corporations. Capture financial data and drive automated data transfer to other systems, such as a clearinghouse, revenue-cycle-management tool, payment processor, eligibility checker or medical biller.
 

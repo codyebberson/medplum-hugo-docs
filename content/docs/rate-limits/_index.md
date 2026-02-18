@@ -4,8 +4,6 @@ title: Rate Limits
 weight: 2
 ---
 
-# Rate Limits
-
 The Medplum API uses a number of safeguards against bursts of incoming traffic to help maximize its stability. Users who
 send many requests in quick succession may receive HTTP error responses with status code `429 Too Many Requests`.
 

@@ -3,7 +3,6 @@ id: ingestion
 title: Ingestion
 ---
 
-# Ingestion
 
 ## Batch vs. Incremental Pipelines
 

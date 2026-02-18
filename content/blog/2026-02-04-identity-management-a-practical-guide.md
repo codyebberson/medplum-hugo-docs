@@ -5,8 +5,6 @@ title: Identity Management - A Practical Guide
 authors: everett
 ---
 
-# Identity Management: A Practical Guide
-
 Healthcare applications require careful decisions about user authentication and access control. Whether you're building an EHR, a clinical workflow tool, or a patient portal, getting identity management right from the start will save you from costly architectural mistakes down the road.
 
 This guide breaks down the key decisions you'll face when integrating with a FHIR-based platform like Medplum, explains the tradeoffs, and recommends approaches that work well for most healthcare organizations.

@@ -6,8 +6,6 @@ authors: ThatOneBro
 tags: [fhir-datastore, integration, auth, community, ai]
 ---
 
-# Medplum Achieves IRA Certification for Radiology Interoperability
-
 Medplum has become one of the first platforms to achieve certification for the **Hub role** in the Integrated Reporting Applications (IRA) IHE Profile, marking a milestone in radiology workflow interoperability. This certification positions Medplum as a central orchestrator for real-time synchronization between radiology applications, addressing one of healthcare's most persistent challenges: fragmented diagnostic workflows.
 
 The IRA profile, published in October 2023 by Integrating the Healthcare Enterprise (IHE), represents a **transformative approach** to radiology interoperability. Built on [FHIRcast](/docs/fhircast) 3.0.0 and FHIR R5 standards, IRA enables different applications—from PACS systems to AI tools—to share context and content seamlessly during diagnostic reporting. For Medplum, certification as a FHIRcast Hub means our platform can now coordinate complex radiology workflows where multiple applications must work together in harmony.

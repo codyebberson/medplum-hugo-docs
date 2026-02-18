@@ -5,8 +5,6 @@ weight: 5
 toc_max_heading_level: 2
 ---
 
-# Bot Secrets
-
 ## Introduction
 
 One of the use cases for Bots is to connect to 3rd-party APIs, which often involves using sensitive data, such as API keys. To avoid hard-coding these keys, Medplum provides the ability to store secrets in your Project.

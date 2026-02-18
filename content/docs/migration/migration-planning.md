@@ -5,8 +5,6 @@ toc_max_heading_level: 3
 weight: 1
 ---
 
-# Planning your Migration
-
 The key to success for any data migration is planning. It is critical to know the data, know the systems, and communication with all stakeholders. The planning process begins before you write a single line of code.
 
 **Key Questions**

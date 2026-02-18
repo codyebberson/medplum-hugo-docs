@@ -3,7 +3,6 @@ id: setting-up-cors
 title: Setting Up CORS
 ---
 
-# Setting Up CORS
 
 When self-hosting, you may run into a [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) error when trying to run your app on https://localhost:3000. If you do, you will need to ensure that you have set https://localhost:3000 as an allowed origin on your server.
 

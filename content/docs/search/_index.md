@@ -3,7 +3,6 @@ id: index
 title: Search
 ---
 
-# Search
 
 Search API and SDK supports searching and filtering FHIR resources.
 

@@ -4,8 +4,6 @@ title: FHIR Batch Requests
 weight: 7
 ---
 
-# FHIR Batch Requests
-
 FHIR allows users to create batch requests to bundle multiple API calls into a single HTTP request. Batch requests can improve speed and efficiency and can reduce HTTP traffic when working with many resources.
 
 {{< tip title="Cloning a project" >}}
@@ -109,6 +107,7 @@ To opt into asynchronous handling of the batch request, add the `Prefer: respond
 the batch:
 
 {{< tabs groupId="language" >}}
+  
   {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="asyncBatchCurl">
       {ExampleCode}

@@ -3,7 +3,6 @@ id: running-full-medplum-stack-in-docker
 title: Running the Full Medplum Stack in Docker
 ---
 
-# Running the Full Medplum Stack in Docker
 
 Medplum provides a Docker Compose file which comes with everything you need to get started in just two commands:
 

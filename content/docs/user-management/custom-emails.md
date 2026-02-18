@@ -5,8 +5,6 @@ weight: 10
 tags: [auth]
 ---
 
-# Custom Emails
-
 Some server actions send email messages to users. For example, when a user creates a new account, the server sends a "Welcome" email message. On Medplum's hosted environment, the email will include a link to "https://app.medplum.com/setpassword/...".
 
 The two main email messages are:

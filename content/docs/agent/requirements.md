@@ -4,8 +4,6 @@ title: System Requirements
 weight: 4
 ---
 
-# System Requirements
-
 Medplum publishes an official agent installer for Microsoft Windows.
 
 To install on a Windows Host, remote into the host and download the agent executable to the host filesystem. Double click on the MSI to start and go through the install screen, inputting the 4 pieces of information from the previous step into the screen.

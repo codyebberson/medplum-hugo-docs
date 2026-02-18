@@ -6,7 +6,6 @@ title: Client Application Endpoint
 
 
 
-# Client Application Endpoint
 
 ## POST `/admin/projects/:projectId/client`
 

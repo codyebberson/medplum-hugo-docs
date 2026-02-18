@@ -18,8 +18,6 @@ tags:
   - LIMS
 ---
 
-# Defining your Diagnostic Catalog
-
 A **diagnostic catalog** contains all the pertinent information about the diagnostic services you provide, including your analytes, reference ranges, panels, specimen requirements, and laboratory procedures.
 
 Having a well-defined, structured catalog enables:

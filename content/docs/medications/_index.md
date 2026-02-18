@@ -3,7 +3,6 @@ id: index
 title: Medications
 ---
 
-# Medications
 
 Representing medications in FHIR supports many common scenarios and can be used in concert with [Bots](/docs/bots/) to enable complex medication-related workflows. A common first step is constructing a [MedicationRequest](/docs/api/fhir/resources/medicationrequest.mdx) FHIR resource. Adherence to the spec, referring to other relevant FHIR resources, and tagging the resource with RxNorm or CPT codes can be useful here to aid in integration, analytics and billing.
 

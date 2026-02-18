@@ -4,8 +4,6 @@ title: Prescriber Enrollment
 weight: 4
 ---
 
-# Prescriber Enrollment
-
 This guide explains how to enroll a new prescriber in DoseSpot via the Medplum **Enroll Prescriber Bot**.
 
 Note: In order to process an invite, the User that executes the bot must be

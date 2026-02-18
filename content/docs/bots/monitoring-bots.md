@@ -3,7 +3,6 @@ id: monitoring-bots
 title: Monitoring Bots
 ---
 
-# Monitoring Bots
 
 Bots allow for powerful functionality in your app, so it is very important to track what exactly each bot has done. This is possible using a bot's `AuditEvent` resources, which track:
 

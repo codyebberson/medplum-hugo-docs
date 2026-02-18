@@ -1,6 +1,7 @@
 ---
 title: "Solutions"
 description: "Solutions"
+hideTitle: true
 ---
 
 {{< jumbotron >}}

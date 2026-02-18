@@ -3,7 +3,6 @@ id: index
 title: Scheduling
 ---
 
-# Scheduling
 
 Scheduling is a common workflow and correct use of the FHIR spec supports many complex scheduling workflows. The scheduling process involves three key steps:
 

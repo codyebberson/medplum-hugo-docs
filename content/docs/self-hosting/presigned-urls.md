@@ -3,7 +3,6 @@ id: presigned-urls
 title: Presigned URLs
 ---
 
-# Presigned URLs
 
 **Presigned URLs** are a secure mechanism Medplum uses to serve binary content (images, videos, documents). They grant **temporary, authenticated access**, allowing the content to be safely embedded in web applications using native HTML tags like `<img>` and `<video>` without requiring extra authentication headers.
 

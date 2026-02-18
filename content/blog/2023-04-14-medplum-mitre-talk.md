@@ -6,8 +6,6 @@ authors: reshma
 tags: [interop, fhir-datastore]
 ---
 
-# Medplum Talk at MITRE
-
 [MITRE](https://www.mitre.org/) Open Health Solutions is a leader in healthcare open source and are the makers of [Inferno](https://inferno.healthit.gov/), [Synthea](https://synthea.mitre.org/) and more - which are tools we use all the time here.
 
 <!--more-->

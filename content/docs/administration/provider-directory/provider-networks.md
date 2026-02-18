@@ -4,8 +4,6 @@ title: Modeling Provider Networks
 weight: 1
 ---
 
-# Modeling Provider Networks
-
 ## Introduction
 
 Understanding how to effectively track and manage physician networks is crucial for digital health companies aiming to offer affordable and convenient care. This guide will provide an in-depth explanation on:

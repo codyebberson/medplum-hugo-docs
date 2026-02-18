@@ -4,8 +4,6 @@ title: Token endpoint
 weight: 2
 ---
 
-# Token endpoint
-
 The `/oauth2/token` endpoint gets the user's tokens.
 
 ## POST `/oauth2/token`

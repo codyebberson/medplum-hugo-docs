@@ -8,7 +8,6 @@ title: Representing Prescriptions and Medication Orders
 
 
 
-# Representing Prescriptions and Medication Orders
 
 Prescriptions and medication orders are very common in healthcare settings and accuracy is vitally important. This guide will go over how to represent all aspects of a medication order, from the request to the administration instructions. Note that this is an _operational counterpart_ to the [Modeling A Formulary](/docs/medications/formulary) documentation.
 

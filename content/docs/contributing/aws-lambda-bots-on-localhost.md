@@ -4,8 +4,6 @@ title: Running AWS Lambda Bots with Localhost
 weight: 1000
 ---
 
-# Running AWS Lambda Bots with Localhost
-
 When developing for Medplum, you may want your **local Medplum Server** to trigger and execute **AWS Lambda-based Bots**. This setup allows you to test Lambda-specific behavior (like cold starts or resource limits) without deploying your entire server stack to the cloud.
 
 ### Architecture Overview

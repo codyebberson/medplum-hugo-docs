@@ -6,8 +6,6 @@ authors: cody
 tags: [self-host, fhir-datastore, integration, compliance, auth, community, ai]
 ---
 
-# Medplum Announces Initial Support for Anthropic's Model Context Protocol (MCP)
-
 Medplum is the platform of choice for technical leaders in healthcare, and that has given us a unique perspective into the transformative power of AI in healthcare - we get asked about it every single day.  
 
 We know that technical leaders feel the pressure to define and execute on an AI strategy, and to demonstrate tangible progress to teams and stakeholders, that's expected in times of rapid technical advances.  

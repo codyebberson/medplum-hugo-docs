@@ -1,6 +1,7 @@
 ---
 title: "Products"
 description: "Products"
+hideTitle: true
 ---
 
 {{< jumbotron >}}

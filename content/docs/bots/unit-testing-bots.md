@@ -5,8 +5,6 @@ weight: 2
 toc_max_heading_level: 3
 ---
 
-# Unit Testing Bots
-
 Unit testing your Bot code is crucial to ensuring accurate data and workflows. This guide will go over the most common unit testing patterns.
 
 Medplum provides the [`MockClient`](https://github.com/medplum/medplum/blob/main/packages/mock/src/client.ts#L68) class to help unit test Bots on your local machine. You can also see a reference implementation of simple bots _with tests_ in our [Medplum Demo Bots](https://github.com/medplum/medplum-demo-bots) repo.

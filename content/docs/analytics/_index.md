@@ -3,7 +3,6 @@ id: index
 title: Analytics
 ---
 
-# Analytics
 
 When designing a healthcare analytics program, data quality and integrity are critical. To create a robust analytics program, constant monitoring of data quality and can be enabled and will be required to ensure that reports are meaningful and accurate.
 

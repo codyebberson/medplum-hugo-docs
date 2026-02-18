@@ -4,8 +4,6 @@ title: Contact Us
 slug: /contact
 ---
 
-# Contact Us
-
 ## Need Support?
 
 If you have any questions or need assistance, please email [support@medplum.com](mailto:support@medplum.com).

@@ -6,8 +6,6 @@ authors: rahul
 tags: [fhir-datastore]
 ---
 
-# FHIR Workflow Patterns to Simplify Your Life
-
 If you've worked with FHIR before, you've probably noticed there are a lot of resources. And I mean a lot! At first glance, it might seem overwhelming to figure out how they all fit together. But here's the thing: once you understand a few core patterns, the whole system starts to make much more sense.
 
 Today, let's talk about one of FHIR's clever organizational tricks: the Workflow module. It's an pattern overlaid onto resource types that helps unlock how different healthcare activities relate to each other. Whether you're building a scheduling system, managing prescriptions, or handling lab orders, these patterns will come in handy.

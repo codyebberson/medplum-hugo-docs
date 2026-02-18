@@ -4,8 +4,6 @@ title: Users
 weight: 2
 ---
 
-# Users
-
 Medplum supports the standard SCIM `Users` API endpoints.
 
 ## Schemas

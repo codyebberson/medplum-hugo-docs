@@ -7,8 +7,6 @@ tags:
   - vitals
 ---
 
-# Capturing Vital Signs
-
 Vital signs are a group of important medical signs that measure the body's most vital (life-sustaining) functions, including blood pressure, pulse rate, respiration rate, and body temperature. Capturing these signs is a common part of many procedures, so it is important to ensure that they are being recorded and stored accurately.
 
 ## The `Observation` Resource

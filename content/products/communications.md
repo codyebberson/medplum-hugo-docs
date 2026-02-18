@@ -5,8 +5,6 @@ sidebar_label: Communications
 weight: 4
 ---
 
-# Communications and Messaging
-
 Communications platform that supports clinical workflows patient messaging a care team, communications regarding a care plan or appointment, sending messages to other EHRs, sending compliant emails, SMS notifications and video conferencing.
 
 ![Communications Art](../products/img/communications.png)

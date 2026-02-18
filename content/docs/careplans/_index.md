@@ -4,8 +4,6 @@ title: Care Plans
 weight: 0
 ---
 
-# Care Plans
-
 Care Plans are representations of protocols that patients are meant to follow. They exist in two modes:
 
 - **In abstract**, a protocol that could apply to a _hypothetical patient_, which is represented in FHIR as a [PlanDefinition](/docs/api/fhir/resources/plandefinition).

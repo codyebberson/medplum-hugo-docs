@@ -4,8 +4,6 @@ title: Agent Status
 weight: 10
 ---
 
-# Agent Status
-
 Gets the status of a given agent. Useful for seeing whether an agent is connected and listing its current software version.
 
 > For querying multiple agent statuses at once, or using `SearchParameters` to select agents to query, see [Bulk Status](./bulk-status.md).

@@ -5,8 +5,6 @@ toc_max_heading_level: 3
 weight: 3
 ---
 
-# Converting Data to FHIR
-
 [patient]: /docs/api/fhir/resources/patient
 [codeableconcept]: /docs/fhir-basics#standardizing-data-codeable-concepts
 [condition]: /docs/api/fhir/resources/condition

@@ -3,7 +3,6 @@ id: index
 title: HL7 Interfacing
 ---
 
-# HL7 Interfacing
 
 Medplum [Bots](/docs/bots) enables highly customizable HL7 interfacing engine that can be used as an alternative to Mirth or Corepoint.  Medplum allows developers to **produce and consume HL7 feeds from legacy healthcare applications**, such as EHRs, LIS, RIS/PACS, billing systems and more.
 

@@ -4,8 +4,6 @@ title: Setting Medplum Server Configuration
 weight: 2
 ---
 
-# Setting Medplum Server Configuration
-
 There are two primary ways to configure the Medplum server when self-hosting: through a JSON configuration file or by using environment variables. This guide will walk you through both methods.
 
 ## JSON Configuration File

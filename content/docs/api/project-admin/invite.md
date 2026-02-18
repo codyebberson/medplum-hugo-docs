@@ -6,7 +6,6 @@ title: Invite User Endpoint
 
 
 
-# Invite User Endpoint
 
 ## POST `/admin/projects/:projectId/invite`
 

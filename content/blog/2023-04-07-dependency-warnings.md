@@ -6,8 +6,6 @@ authors: cody
 tags: [self-host]
 ---
 
-# Dependency Warnings
-
 Today, we received a thoughtful email from an engineering leader who installed Medplum for the first time:
 
 <!--more-->

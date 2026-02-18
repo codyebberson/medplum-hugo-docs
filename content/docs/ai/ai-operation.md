@@ -4,8 +4,6 @@ title: Medplum $ai Operation
 weight: 5
 ---
 
-# Medplum `$ai` Operation
-
 Medplum's `$ai` operation enables integration with large language models (LLMs) through a FHIR-compliant interface. This operation allows you to leverage AI capabilities for conversational interactions and FHIR function calling within your healthcare applications.
 
 ## Overview

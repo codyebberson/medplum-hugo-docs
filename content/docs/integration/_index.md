@@ -3,7 +3,6 @@ id: index
 title: Integration
 ---
 
-# Integration
 
 Medplum's integrations the most commonly used features of the platform, and the tools can be used to build effective robust integrations. Medplum supports three types of integrations:
 

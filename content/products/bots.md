@@ -3,7 +3,6 @@ id: bots
 title: Automation through Bots
 ---
 
-# Automation through Bots
 
 Automation, and the ability to build highly automated, custom workflows is one of the primary use-cases of Medplum. Medplum automations are implemented via [bots](/docs/bots), which are lambdas that implement custom functions written by developers.
 

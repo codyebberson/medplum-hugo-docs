@@ -4,8 +4,6 @@ title: Security
 slug: /security
 ---
 
-# Security
-
 ## Security as a Company Value
 
 Medplum’s security & compliance principles guide how we deliver our products and services, enabling people to simply and securely access the digital world.

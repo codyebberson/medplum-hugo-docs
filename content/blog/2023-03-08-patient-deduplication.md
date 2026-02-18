@@ -6,8 +6,6 @@ authors: reshma
 tags: [bots]
 ---
 
-# Patient Deduplication
-
 Patient deduplication is a tough problem, and there are many approaches to implementing a deduplication program. We provide this guide and [sample code](https://github.com/medplum/medplum-demo-bots) as a resource to teams who want to run a continuous deduplication program that is powered by automation and highly auditable.
 
 <!--more-->

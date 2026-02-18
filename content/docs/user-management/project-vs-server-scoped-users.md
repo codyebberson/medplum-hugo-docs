@@ -5,9 +5,6 @@ weight: 11
 tags: [auth]
 ---
 
-# Project vs Server Scoped Users
-
-
 ### Server Scoped Users
 
 Server scoped [`Users`](/docs/api/fhir/medplum/user) can be used across multiple projects across the Medplum Server. Server scoped Users should be used for **developers and administrators** that need to interact with multiple projects (e.g. staging and production). By default, Practitioners are scoped to `server`.

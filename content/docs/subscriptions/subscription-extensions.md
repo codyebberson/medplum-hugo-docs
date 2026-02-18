@@ -6,8 +6,6 @@ tags:
   - subscription
 ---
 
-# Subscription Extensions
-
 Use the following FHIR extensions to customize the Subscription behavior. The behavior is non-standard, and will not necessarily work in other FHIR systems.
 
 ## Adding Extensions

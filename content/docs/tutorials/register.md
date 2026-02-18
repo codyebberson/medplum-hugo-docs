@@ -4,8 +4,6 @@ title: Register an Account
 weight: 2
 ---
 
-# Register an Account
-
 This guide explains how to register for a new Medplum account and create your first Medplum project.
 
 ## Register for a Medplum account

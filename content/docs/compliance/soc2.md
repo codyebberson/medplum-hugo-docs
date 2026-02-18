@@ -4,8 +4,6 @@ title: SOC2 Type II Certification
 weight: 5
 ---
 
-# SOC2 Type II Certification
-
 Medplum has achieved SOC2 Type II certification. Customers can request materials in this section to support their own business needs our audit.
 
 ## Materials and Usage

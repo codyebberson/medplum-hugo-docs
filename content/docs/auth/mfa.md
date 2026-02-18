@@ -5,8 +5,6 @@ weight: 6
 tags: [auth, security]
 ---
 
-# Multi-Factor Authentication (MFA)
-
 Multi-Factor Authentication (MFA) adds an extra layer of security to user accounts by requiring a second authentication factor beyond a password. Medplum supports Time-based One-Time Password (TOTP) authentication, which is compatible with authenticator apps like Google Authenticator, Microsoft Authenticator, Authy, and others.
 
 {{< note >}}

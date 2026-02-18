@@ -8,7 +8,6 @@ title: Matching {#matching-rules}
 
 
 
-# Matching {#matching-rules}
 
 The best deduplication systems use a library of matching rules with different strengths and weaknesses. While the effectiveness of different patient matching rules will vary depending on the clinical context, here we suggest some rules to get you started.
 

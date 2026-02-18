@@ -18,8 +18,6 @@ tags:
 weight: 6
 ---
 
-# LOINC Codes
-
 [LOINC](https://loinc.org) (Logical Observation Identifiers Names and Codes) was established with the intention of defining a universal standard for identifying clinical data in electronic reports. The overall scope of LOINC is anything you can **test**, **measure**, or **observe** about a patient.
 
 This guide aims to provide a basic understanding of LOINC codes and how they are applied in practice.

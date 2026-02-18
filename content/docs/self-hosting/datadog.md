@@ -4,8 +4,6 @@ title: Datadog Integration
 weight: 1000
 ---
 
-# Datadog Integration
-
 This page describes how to add the Datadog agent to your ECS Fargate tasks. Adding Datadog allows you to collect metrics from all containers.
 
 First, make sure you go through all steps in [Install on AWS](/docs/self-hosting/install-on-aws). You should have a Medplum CDK JSON config file and a running cluster.

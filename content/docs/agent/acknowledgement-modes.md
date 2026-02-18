@@ -4,8 +4,6 @@ title: Acknowledgement Modes
 weight: 20
 ---
 
-# Acknowledgement Modes
-
 HL7 Acknowledgement Modes define the handshaking protocol between systems exchanging messages over protocols like MLLP. The **Medplum Agent** supports both **Original** and **Enhanced** modes, allowing you to configure connections for optimal throughput and reliability.
 
 Support for Enhanced Acknowledgement Mode was added in **Medplum Server version 3.1.9** and **Medplum Agent version 4.1.8**.

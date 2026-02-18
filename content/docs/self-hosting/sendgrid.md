@@ -4,8 +4,6 @@ title: Send SMTP Emails with SendGrid
 weight: 1100
 ---
 
-# Send SMTP Emails with SendGrid
-
 This page describes how to use [SendGrid](https://app.sendgrid.com/) as an [SMTP Relay](https://sendgrid.com/blog/smtp-relay-service-basics/) to send emails from Medplum.
 
 {{< note >}}

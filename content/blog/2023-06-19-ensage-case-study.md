@@ -6,8 +6,6 @@ authors: reshma
 tags: [interop, fhir-datastore, compliance, case-study, geriatrics]
 ---
 
-# Ensage Case Study: Risk Management for Elderly Populations in Value-Based Care Settings
-
 <div class="responsive-iframe-wrapper">
   <iframe src="https://www.youtube.com/embed/GIlmd7OMZ5g?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

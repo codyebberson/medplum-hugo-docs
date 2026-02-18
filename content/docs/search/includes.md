@@ -4,8 +4,6 @@ title: Including Linked Resources
 weight: 5
 ---
 
-# Including Linked Resources
-
 In many cases, your application may need to search for not just one resource type, but also some of the related
 resources that those resources reference. For example, one might need to search for `Observation` resources with a
 certain code, but also the `Patient` resources on whom the observations were made, and the `Provenance` for the

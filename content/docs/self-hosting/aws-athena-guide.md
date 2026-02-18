@@ -3,7 +3,6 @@ id: aws-athena-guide
 title: AWS Athena Guide
 ---
 
-# AWS Athena Guide
 
 When self-hosting on AWS, you may need to perform data analytics on production traffic. AWS CloudWatch is usually the starting point for basic analytics. But sometimes you need more granular control over specific queries, such as filtering by IP address, HTTP verb, or HTTP status code.
 

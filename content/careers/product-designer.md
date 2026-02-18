@@ -6,8 +6,6 @@ tags:
   - design
 ---
 
-# Product Designer
-
 ![Product Designer](/img/careers/product-designer.webp)
 
 ## About the Role

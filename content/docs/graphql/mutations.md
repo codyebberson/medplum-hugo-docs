@@ -4,8 +4,6 @@ title: Mutations
 weight: 3
 ---
 
-# Mutations
-
 GraphQL mutations are operations that allow the client to create, update, or delete data on the server. Unlike queries, which are read-only operations and can be executed in parallel, mutations are write operations. For more information about GraphQL mutations, refer to the [GraphQL documentation](https://graphql.org/learn/queries/#mutations).
 
 Medplum implements the draft [FHIR GraphQL Mutation spec](https://hl7.org/fhir/R4/graphql.html#mutations). For the inputs, you would append the action (Create, Update, or Delete) to the resource type.

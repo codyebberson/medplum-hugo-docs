@@ -4,8 +4,6 @@ title: External Lambda Functions
 weight: 20
 ---
 
-# External Lambda Functions
-
 When running Medplum in AWS, Medplum uses AWS Lambdas to execute bot logic.
 
 By default, Medplum manages the full AWS Lambda life cycle of create, update, deploy, and execute using a predefined AWS Lambda naming convention.

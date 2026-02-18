@@ -4,8 +4,6 @@ title: Creating CMS 1500
 weight: 4
 ---
 
-# Creating CMS 1500
-
 Medplum supports customizable creation of CMS 1500 for use in billing.
 
 The CMS 1500 form is a standardized form used in the United States to submit healthcare claims to Medicare and other health insurance providers. It is widely used by non-institutional providers and suppliers, such as physicians and outpatient clinics, to bill Medicare Part B and other insurers for services provided to patients. The CMS 1500 requires information about the patient, the medical services provided, and their costs.

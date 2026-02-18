@@ -5,8 +5,6 @@ weight: 2
 tags: [integration]
 ---
 
-# Stedi Integration
-
 ## [Eligibility Checking](/docs/integration/stedi/eligibility-checks)
 
 Send real time eligibility checks to Stedi based on a [CoverageEligibilityRequest](/docs/api/fhir/resources/coverageeligibilityrequest) resources, and receive a [CoverageEligibilityResponse](/docs/api/fhir/resources/coverageeligibilityresponse) resource with the benefits information.

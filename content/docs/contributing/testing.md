@@ -4,8 +4,6 @@ title: Testing
 weight: 50
 ---
 
-# Testing
-
 Medplum strongly believes in the importance of testing.
 
 We use the following tools for testing:

@@ -5,8 +5,6 @@ weight: 7
 tags: [auth]
 ---
 
-# Access Token Management
-
 This guide explains how Medplum manages authentication tokens and how to implement secure token handling in your applications.
 
 ## Access Tokens vs Refresh Tokens

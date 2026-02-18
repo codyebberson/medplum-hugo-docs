@@ -3,7 +3,6 @@ id: lab
 title: Lab, LIS and Laboratory Networks
 ---
 
-# Lab, LIS and Laboratory Networks
 
 Support **a wide variety of lab use cases** on a unified service. Medplum implementations been cleared by CLIA/CAP as a primary LIS, enable FHIR API access, and help to quickly develop patient portals and provider portals.
 

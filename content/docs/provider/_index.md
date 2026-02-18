@@ -4,8 +4,6 @@ title: Medplum Provider
 weight: 1
 ---
 
-# Medplum Provider
-
 The Medplum Provider is a user-facing web application for clinical users and operations teams. In this section, you can learn about different features of the Provider App and the workflows they enable.
 
 ![Medplum Provider App screenshot](/img/provider/medplum-provider-app-cover-image.webp)

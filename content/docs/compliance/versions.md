@@ -4,8 +4,6 @@ title: Medplum Version Policy
 weight: 3
 ---
 
-# Medplum Version Policy
-
 ## Overview
 
 Medplum follows semantic versioning (semver) for all components of our healthcare developer platform. This document outlines our version release strategy, support timeline, and upgrade requirements to help organizations plan their deployment and maintenance schedules effectively.

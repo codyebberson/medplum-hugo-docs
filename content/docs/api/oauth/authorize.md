@@ -4,8 +4,6 @@ title: Authorize endpoint
 weight: 1
 ---
 
-# Authorize endpoint
-
 The `/oauth2/authorize` endpoint signs in the user.
 
 ## GET `/oauth2/authorize`

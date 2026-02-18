@@ -6,8 +6,6 @@ tags:
   - engineering
 ---
 
-# Senior Frontend Engineer
-
 ![Senior Frontend Engineer](/img/careers/frontend-engineer.webp)
 
 ## About the Role

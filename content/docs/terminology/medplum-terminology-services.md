@@ -6,7 +6,6 @@ title: Medplum Terminology Services
 
 
 
-# Medplum Terminology Services
 
 Medplum provides a layer of functionality to make working with coded values simple. Some of the most common use cases
 are detailed below to show how these components can fit together.

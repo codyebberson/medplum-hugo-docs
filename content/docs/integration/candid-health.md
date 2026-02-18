@@ -3,7 +3,6 @@ id: candid-health
 title: Candid Health
 ---
 
-# Candid Health
 
 {{< danger >}}
 

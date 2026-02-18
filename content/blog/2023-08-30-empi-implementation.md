@@ -5,11 +5,9 @@ title: EMPI Reference Implementation
 authors: rahul
 ---
 
-# Enterprise Master Patient Index (EMPI) Reference Implementation
-
 Patient record-keeping systems often have duplicate patient records, which can affect patient care and service delivery. One of the Medplum [use cases](/solutions) is the the Enterprise Mater Patient Index (EMPI), database used in healthcare settings to maintain accurate and consistent unique identifiers for patients across various departments and services. A great EMPI implementation will improve patient safety, enhance the quality of care, facilitate data sharing among disparate healthcare systems, AND speed payer contracting.
 
-{/* truncate */}
+
 
 The Medplum team has had experience with EMPIs across different practices, including telehealth practices, which especially thorny duplication and identity issues as patients may never meet providers in real life.
 

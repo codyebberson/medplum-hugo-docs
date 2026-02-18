@@ -5,8 +5,6 @@ weight: 30
 tags: [auth]
 ---
 
-# On-Behalf-Of
-
 The Medplum API supports an "On-Behalf-Of" feature to enable a Customer Server Side App to act on behalf of a Medplum user.
 
 This feature is designed to enable a common Medplum architectural pattern where the Customer Server Side App is the only system component that interacts with Medplum Server.

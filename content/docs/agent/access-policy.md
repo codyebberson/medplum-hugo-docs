@@ -4,8 +4,6 @@ title: Agent Access Policy
 weight: 5
 ---
 
-# Agent Access Policy
-
 This guide covers the minimal access policy configuration required for the Medplum Agent, including how to use parameterized policies for multi-organization deployments.
 
 ## Minimal Access Policy

@@ -4,8 +4,6 @@ title: Good Manufacturing Practices
 tags: [compliance]
 ---
 
-# Good Manufacturing Practices
-
 Good Manufacturing Practices (GMP) are a set of guidelines, regulations, and quality management systems designed to ensure that products, particularly pharmaceuticals, medical devices, and food products, are consistently manufactured, controlled, and tested according to established quality standards.
 
 The primary goal of GMP is to protect the consumer by minimizing risks associated with the manufacturing process, ensuring the safety, quality, and efficacy of products.

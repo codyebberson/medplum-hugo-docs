@@ -4,8 +4,6 @@ title: Modeling Provider Organizations
 weight: 0
 ---
 
-# Modeling Provider Organizations
-
 ## Introduction
 
 Large digital healthcare organizations frequently employ teams of physicians, organized by specialty, brand, and/or product offering. In this guide, we'll discuss how to model the structure of a large provider organization with multiple divisions and service lines.

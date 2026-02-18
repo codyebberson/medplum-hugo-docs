@@ -6,7 +6,6 @@ title: Structured Data Capture
 
 
 
-# Structured Data Capture
 
 After receiving a questionnaire response, many use cases require the response to be transformed into structured data,
 i.e. other FHIR resources such as `Patient` or `Observation`. Medplum provides an implementation of the draft

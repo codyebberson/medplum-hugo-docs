@@ -3,7 +3,6 @@ id: life-sciences
 title: Life Sciences
 ---
 
-# Life Sciences
 
 Highly customizable and integrated data management solution for clinical research and commercialization including:
 

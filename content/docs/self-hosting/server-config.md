@@ -4,8 +4,6 @@ title: Server Config
 weight: 50
 ---
 
-# Server Config
-
 When running Medplum server on a local developer machine, Medplum server typically loads config settings from a JSON config file. By default, it loads config settings from `medplum.config.json`.
 
 When running in AWS, Medplum server loads config settings from AWS Parameter Store, a feature of AWS Systems Manager (SSM).

@@ -6,8 +6,6 @@ authors: reshma
 tags: [pediatrics, fhir-datastore, self-host, ai]
 ---
 
-# Develo Pediatric EHR
-
 [Develo](https://getdevelo.com/) has built a **full-featured EHR and customer relationship management (CRM)** for pediatrics, encompassing core [scheduling](/docs/scheduling), [clinical](/docs/charting), and [billing](/docs/billing) workflows along with family engagement capabilities.
 
 <!--more-->

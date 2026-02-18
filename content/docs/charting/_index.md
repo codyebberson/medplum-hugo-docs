@@ -4,8 +4,6 @@ title: Charting
 weight: 0
 ---
 
-# Charting
-
 Building out a charting experience requires composing multiple FHIR resources into an experience that meets the requirements of practitioners. There are three primary interactions that developers should consider when building out a custom charting experience:
 
 - **Summarizing patient history** and status

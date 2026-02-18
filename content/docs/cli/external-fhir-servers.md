@@ -5,8 +5,6 @@ weight: 2
 tags: [integration]
 ---
 
-# Connecting to External FHIR Servers
-
 When building an application, you many need to query or write data to an external FHIR server as part of your application's workflow. For example:
 
 - When a new patient is created, see if that patient already exists in another server

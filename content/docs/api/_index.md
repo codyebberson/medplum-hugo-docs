@@ -4,8 +4,6 @@ title: API Overview
 weight: 0
 ---
 
-# API Overview
-
 Welcome to the Medplum API reference. This section is intended as reference material, overview and how-to guides can be found in the [Documentation](/docs) section. The base URL for hosted Medplum is https://api.medplum.com/fhir/R4.
 
 ## System Requirements

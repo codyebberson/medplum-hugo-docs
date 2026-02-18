@@ -3,7 +3,6 @@ id: local-codes
 title: Local Codes
 ---
 
-# Local Codes
 
 In addition to widely-used code systems like [LOINC](/docs/careplans/loinc), FHIR makes it possible to define and use
 your own codes and terminology.

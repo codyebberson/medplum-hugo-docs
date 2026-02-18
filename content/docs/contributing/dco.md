@@ -3,7 +3,6 @@ id: dco
 title: Developer Certificate of Origin
 ---
 
-# Developer Certificate of Origin
 
 At Medplum, we've enabled the Developer Certificate of Origin (DCO) for all contributions to our repositories. This means every commit to the Medplum codebase needs to be "signed off" by the author. We understand this might be a new process for some, and we're here to help you get started.
 

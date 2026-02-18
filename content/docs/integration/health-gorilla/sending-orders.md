@@ -4,8 +4,6 @@ title: Sending Orders
 weight: 1
 ---
 
-# Sending Orders
-
 This guide explains how laboratory orders work in the Medplum-Health Gorilla labs integration.
 
 The high-level workflow for sending laboratory & imaging orders is:

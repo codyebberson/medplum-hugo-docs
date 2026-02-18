@@ -3,7 +3,6 @@ id: apps-tab
 title: The Apps Tab
 ---
 
-# The `Apps` Tab
 
 The Medplum App allows for easy integration of workflows and third-party applications using the `Apps` tab. It is important to reiterate that the Medplum App is targeted towards developers and the `Apps` tab is primarily a tool to help with developer automation.
 

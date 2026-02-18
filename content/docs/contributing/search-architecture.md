@@ -4,8 +4,6 @@ title: Search Architecture
 weight: 205
 ---
 
-# Search Architecture
-
 {{< warning >}}
 
 This page documents internal Medplum implementation details, and refers to point-in-time code snapshots that may be

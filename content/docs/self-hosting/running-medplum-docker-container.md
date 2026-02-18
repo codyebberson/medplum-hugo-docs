@@ -3,7 +3,6 @@ id: running-medplum-docker-container
 title: Running the Medplum Docker Container
 ---
 
-# Running the Medplum Docker Container
 
 Medplum provides a Docker image, called [medplum/medplum-server](https://hub.docker.com/r/medplum/medplum-server). This image is mainly used to [install Medplum on AWS](/docs/self-hosting/install-on-aws), however it can also be run independently of AWS.
 

@@ -4,8 +4,6 @@ title: Resource History
 weight: 6
 ---
 
-# Resource History
-
 The Medplum backend stores every version of a resource, allowing you to easily track changes over time. Resource history can be viewed in the Medplum App or by accessing the `/_history` endpoint.
 
 ## Accessing History in the Medplum App

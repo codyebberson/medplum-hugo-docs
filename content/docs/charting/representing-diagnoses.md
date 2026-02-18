@@ -6,7 +6,6 @@ title: Representing Diagnoses
 
 
 
-# Representing Diagnoses
 
 Representing diagnoses accurately is crucial for all healthcare systems. There are generally two types of diagnoses:
 

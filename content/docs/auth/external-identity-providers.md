@@ -5,8 +5,6 @@ weight: 7
 tags: [auth]
 ---
 
-# External Identity Providers
-
 Along with [Google Authentication](/docs/auth/google-auth), Medplum supports other external identity providers using the OAuth2 protocol such as Auth0 and AWS Cognito for end user authentication. This is sometimes known as "Federated Identities".
 
 ## Auth flow

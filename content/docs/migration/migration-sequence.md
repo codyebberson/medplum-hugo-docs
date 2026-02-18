@@ -5,8 +5,6 @@ toc_max_heading_level: 3
 weight: 2
 ---
 
-# Sequencing Your Migration
-
 [resources]: /docs/fhir-basics#storing-data-resources
 [references]: /docs/fhir-basics#linking-data-references
 

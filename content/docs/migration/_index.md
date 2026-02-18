@@ -5,8 +5,6 @@ toc_max_heading_level: 3
 weight: 0
 ---
 
-# Migrating to Medplum
-
 Consider the following common scenario:
 
 - You have an existing digital healthcare platform running active operations

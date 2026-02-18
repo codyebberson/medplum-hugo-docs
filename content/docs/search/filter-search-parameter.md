@@ -4,8 +4,6 @@ title: The _filter Search Parameter
 weight: 3
 ---
 
-# The `_filter` Search Parameter
-
 The `_filter` parameter extends FHIR's search functionality by allowing you to narrow down your results using complex filter expressions. It is a useful way to filter resources in a way that may not be easily achievable using standard parameters.
 
 ## Filter Syntax

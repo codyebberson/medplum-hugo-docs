@@ -4,8 +4,6 @@ title: Upgrade RDS Database
 weight: 101
 ---
 
-# Upgrade RDS Database
-
 As your project grows, you may need to upgrade your RDS database instance size. This document describes how to perform this operation with zero downtime.
 
 {{< warning >}}

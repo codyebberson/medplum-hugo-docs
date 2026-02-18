@@ -6,8 +6,6 @@ tags:
   - engineering
 ---
 
-# Distributed Systems Engineer
-
 ![Distributed Systems Engineer](/img/careers/distributed-systems-engineer.webp)
 
 ## About the Role

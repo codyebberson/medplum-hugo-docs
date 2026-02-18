@@ -4,8 +4,6 @@ title: Medplum Brand Assets
 slug: /brand
 ---
 
-# Medplum Brand Assets
-
 ## Logo
 
 Feel free to use our logo in color, black or white.

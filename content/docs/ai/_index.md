@@ -4,8 +4,6 @@ title: Build with AI on Medplum
 weight: 0
 ---
 
-# Build with AI on Medplum
-
 ## The Reality of Healthcare AI
 
 > _The barrier to production isn’t the AI model; it’s the lack of a secure, auditable foundation for healthcare data._

@@ -4,8 +4,6 @@ title: Update RDS Parameters
 weight: 100
 ---
 
-# Update RDS Parameters
-
 Postgres exposes a wide variety of configuration settings that can be tuned to improve database performance. These
 settings can be changed via the CDK, which creates and associates the database cluster with an AWS Parameter Group
 containing the settings. This process requires a database restart to ensure all settings are applied, necessitating

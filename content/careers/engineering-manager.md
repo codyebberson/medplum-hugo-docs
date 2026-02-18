@@ -6,8 +6,6 @@ tags:
   - engineering
 ---
 
-# Engineering Manager
-
 ![Engineering Manager](/img/careers/engineering-manager.webp)
 
 ## About the Role

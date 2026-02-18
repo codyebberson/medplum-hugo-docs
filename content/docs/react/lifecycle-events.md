@@ -4,8 +4,6 @@ title: MedplumClient Lifecycle Events
 weight: 8
 ---
 
-# `MedplumClient` Lifecycle Events
-
 When authenticating to Medplum via `MedplumClient`, there are few things to consider in terms of the `MedplumClient` authentication lifecycle and how you should structure your app around it --
 especially in the context of building a React app.
 

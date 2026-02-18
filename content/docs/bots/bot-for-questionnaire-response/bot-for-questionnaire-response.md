@@ -4,8 +4,6 @@ title: Bot for QuestionnaireResponse
 weight: 4
 ---
 
-# Bot for QuestionnaireResponse
-
 Bots are an advanced Medplum feature that enable complex workflows.
 
 One of the most powerful uses is to combine Bots with [Questionnaires](/docs/api/fhir/resources/questionnaire)

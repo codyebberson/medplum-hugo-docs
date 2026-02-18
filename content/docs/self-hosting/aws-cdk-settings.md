@@ -4,8 +4,6 @@ title: AWS CDK Settings Reference
 weight: 2
 ---
 
-# AWS CDK Settings Reference
-
 When deploying Medplum on AWS using the provided CDK, you will need to create a configuration file to define your infrastructure settings. This is a JSON file that contains all of the custom infrastructure configuration settings for your environment.
 
 Here is a full example for the Medplum staging environment. See the detailed information for each setting below.

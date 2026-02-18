@@ -4,8 +4,6 @@ title: Patient Profile
 weight: 200
 ---
 
-# Patient Profile
-
 The Patient Profile section in the Medplum Provider app is your central hub for managing all patient-related information. This section covers how to register new patients, edit existing profiles, and maintain the [Patient Summary](https://storybook.medplum.com/?path=/story/medplum-patientsummary--patient) sidebar for quick access to key information.
 
 ## Registering Patients

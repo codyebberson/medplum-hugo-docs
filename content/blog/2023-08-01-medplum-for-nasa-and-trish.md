@@ -6,8 +6,6 @@ authors: cody
 tags: [react, self-host]
 ---
 
-# Medplum's Proposal for NASA's Health Tech RFP
-
 NASA's [TRISH team](https://www.nasa.gov/hrp/tri) (Translational Research Institute for Space Health) recently issued an RFP for a healthcare tech platform designed for monitoring spaceflight participant health metrics during space missions. TRISH is a virtual consortium focused on applied research to ensure astronaut health during space exploration.
 
 <!--more-->

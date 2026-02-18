@@ -5,8 +5,6 @@ weight: 20
 toc_max_heading_level: 4
 ---
 
-# Run the Stack
-
 Follow these instructions to get the complete Medplum stack running directly on your host machine.
 
 <div class="responsive-iframe-wrapper">

@@ -5,8 +5,6 @@ weight: 0
 tags: [auth]
 ---
 
-# Projects
-
 Medplum [`Projects`](/docs/api/fhir/medplum/project) are the primary mechanism of access control. [`Projects`](/docs/api/fhir/medplum/project) are isolated containers of FHIR resources that are administered separately, and which can have different settings.
 
 Medplum [`Projects`](/docs/api/fhir/medplum/project) enable the following use cases:

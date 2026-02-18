@@ -5,8 +5,6 @@ tags:
   - subscription
 ---
 
-# Subscriptions
-
 Subscriptions are event-driven notifications, like webhooks, and are commonly used for integrations and automations. Medplum supports subscribing to changes on FHIR resources. There is a description [FHIR Subscriptions](https://www.hl7.org/fhir/subscription.html) on HL7.org that describes the functionality in detail.
 
 - [Subscriptions](https://app.medplum.com/Subscription) can be created and updated on the [Medplum App](../app/index.md)

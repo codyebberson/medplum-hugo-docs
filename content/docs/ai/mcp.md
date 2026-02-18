@@ -4,8 +4,6 @@ title: Medplum MCP
 weight: 10
 ---
 
-# Medplum MCP
-
 Welcome to the official documentation for the Medplum MCP integration. This guide provides an in-depth look at how to set up and use the integration, detailing the available tools and providing practical examples to help you get started.
 
 Medplum is the open-source healthcare developer platform. Our MCP integration allows AI models to securely access, analyze, and interact with healthcare data (e.g., patient records, appointments, lab results) stored on a Medplum server, all powered by the FHIR standard.

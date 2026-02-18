@@ -3,7 +3,6 @@ id: open-patient-registration
 title: Open Patient Registration
 ---
 
-# Open Patient Registration
 
 ## Introduction
 

@@ -3,7 +3,6 @@ id: adt
 title: Admit, Discharge, Transfer (ADT)
 ---
 
-# Admit, Discharge, Transfer (ADT) 
 
 ADT stands for "Admit, Discharge, Transfer." It is a type of HL7 message used in electronic health records systems to communicate changes in a patient's demographic or visit status. This includes registration, admission, discharge, and transfer information about a patient. 
 

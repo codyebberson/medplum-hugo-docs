@@ -4,8 +4,6 @@ title: Create a PDF
 weight: 6
 ---
 
-# Create a PDF
-
 You can use Medplum Bots to create a PDF file as an attachment.
 
 There are always two steps:

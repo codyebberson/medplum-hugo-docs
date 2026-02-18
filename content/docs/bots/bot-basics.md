@@ -5,8 +5,6 @@ weight: 1
 toc_max_heading_level: 2
 ---
 
-# Bot Basics
-
 Bots are an advanced Medplum feature that enable complex workflows. A **Medplum Bot** is a snippet of JavaScript code that can run on any resource change (create or update). This JavaScript code has access to a [**Medplum client**](../sdk) , which itself can invoke FHIR operations.
 
 **Medplum Bots** are run as [AWS Lambdas](https://aws.amazon.com/lambda/) and in heavily sandboxed environments.

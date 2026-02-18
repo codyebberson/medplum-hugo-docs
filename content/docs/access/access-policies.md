@@ -5,8 +5,6 @@ weight: 1
 tags: [auth]
 ---
 
-# Access Policies
-
 ## Introduction
 
 This document describes the core concepts of Medplum Access Controls. Security and access controls are notoriously difficult. Complex business and regulatory requirements often lead to a mess of incomprehensible rules. Medplum strives to create a simple and understandable model, which is flexible enough to handle all unique security needs.

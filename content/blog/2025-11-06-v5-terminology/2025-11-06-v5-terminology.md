@@ -6,8 +6,6 @@ authors: mattwiller
 tags: [fhir-datastore]
 ---
 
-# Terminology Service Updates in Medplum v5
-
 As part of the [Medplum v5 release][v5], we've been hard at work delivering several key improvements to our
 [FHIR Terminology Services][fhir-terminology], which power Medplum's rich features for handling coded values:
 

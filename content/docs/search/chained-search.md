@@ -8,7 +8,6 @@ title: Chaining Searches
 
 
 
-# Chaining Searches
 
 Chaining search parameters allows you to filter your searches based on the parameters of another resource which is related to the target resource through one or more references. This can reduce what might otherwise be a series of searches into just a single action.
 

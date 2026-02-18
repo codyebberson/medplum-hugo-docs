@@ -6,8 +6,6 @@ authors: reshma
 tags: [community]
 ---
 
-# PlumCon 2025 Materials
-
 On August 28, 2025 Medplum hosted our first annual _developer conference_ PlumCon in San Francisco. Thank you to everyone who attended and made this inaugural event such a success!
 
 Below you'll find slideshows and videos from each presentation, organized by talk. Most sections includes the speakers presentation and slides.  We also have a [YouTube Playlist](https://youtube.com/playlist?list=PLPLQMmn1jgVktVYV7wOFyx0aOhh3vg66k&si=LDk7kKuEAnPQUOmX) available.

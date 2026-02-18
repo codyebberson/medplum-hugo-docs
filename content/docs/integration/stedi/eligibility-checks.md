@@ -3,7 +3,6 @@ id: eligibility-checks
 title: Insurance and Benefits Eligibility Checks
 ---
 
-# Insurance and Benefits Eligibility Checks
 
 This guide explains how to model your FHIR resources for the Stedi integration to send and receive eligibility and benefits checks.
 

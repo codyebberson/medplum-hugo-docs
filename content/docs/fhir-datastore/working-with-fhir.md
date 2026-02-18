@@ -5,8 +5,6 @@ weight: 8
 toc_max_heading_level: 4
 ---
 
-# Working with FHIR Data
-
 Now that we have gone through all CRUD operations, we can put them together to effectively work with FHIR data. This guide will go through a common healthcare workflow, creating an order for lab tests (a.k.a. [`ServiceRequest`](/docs/api/fhir/resources/servicerequest) in FHIR) for patients and when the lab test is complete, creating results (a.k.a. [`Observation`](/docs/api/fhir/resources/observation) and [`DiagnosticReport`](/docs/api/fhir/resources/diagnosticreport) in FHIR) that correspond to the original [`ServiceRequest`](/docs/api/fhir/resources/servicerequest).
 
 This example will illustrate how to create FHIR objects, how to update them, how to link them, and then how to read them back in bulk. Here is a breakdown of the workflow at a high level:

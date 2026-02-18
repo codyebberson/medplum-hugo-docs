@@ -6,8 +6,6 @@ tags:
   - engineering
 ---
 
-# VP of Engineering
-
 ![VP of Engineering](/img/careers/vp-engineering.webp)
 
 ## About the Role

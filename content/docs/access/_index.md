@@ -3,7 +3,6 @@ id: index
 title: Authorization and Access Control
 ---
 
-# Authorization and Access Control
 
 This section covers Medplum's _authorization_ tools. Medplum supports a rich set of primitives to provide fine grained control over what data users can access, and what operations the can perform.
 

@@ -4,8 +4,6 @@ title: Terms of Service
 slug: /terms
 ---
 
-# Terms of Service
-
 ## Introduction and Eligibility
 
 Please read these Terms of Service ("Terms") carefully before using the Medplum Service.

@@ -3,7 +3,6 @@ id: defining-availability
 title: Defining Availability
 ---
 
-# Defining Availability
 
 This guide explains how to define and find availability information at both the service level and actor level in Medplum using FHIR resources and Medplum's custom [extensions](/docs/api/fhir/datatypes/extension). You'll learn how to configure when services can be performed in time, how different scheduling constraints interact, and how to model complex multi-resource scheduling scenarios.
 

@@ -6,8 +6,6 @@ keywords: ['clinical decision support', 'onc']
 weight: 6
 ---
 
-# Clinical Decision Support
-
 Medplum enables building and delivering custom clinical decision support tools for a variety of applications. This guide focuses on the regulated ONC Criteria for Clinical Decision support which is criteria (a)(9) of the HTI criteria on predictive CDS.
 
 The guide will walk through the three major categories of Clinical Decision Support (CDS), as defined by the regulations, and how to enable said CDS on Medplum.

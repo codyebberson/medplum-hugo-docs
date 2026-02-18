@@ -4,8 +4,6 @@ title: Compliance
 weight: 1
 ---
 
-# Compliance
-
 As an Medplum customer, you will benefit from the compliance built into the platform. With Medplum, you can improve your ability to meet compliance requirements with our tools and automations.
 
 **Compliance is a shared responsibility**, and the content in this section will provide you with tools and resources to guide your compliance processes. If you are using Medplum hosted service, you'll take advantage of all of the features built into the platform and the certifications we have pursued. We attempt to make resources publicly available where possible, but in some cases our agreements with partners preclude us from doing so. For access related questions, contact us at hello@medplum.com.

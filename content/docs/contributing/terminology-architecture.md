@@ -4,8 +4,6 @@ title: Terminology Architecture
 weight: 206
 ---
 
-# Terminology Architecture
-
 {{< warning >}}
 
 This page documents internal Medplum implementation details, and refers to point-in-time code snapshots that may be

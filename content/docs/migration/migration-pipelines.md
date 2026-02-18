@@ -5,8 +5,6 @@ toc_max_heading_level: 3
 weight: 4
 ---
 
-# Building Migration Pipelines
-
 When migrating data to Medplum, it's crucial to build efficient and reliable data pipelines. This section covers key strategies and best practices for constructing pipelines to migration data _into_ Medplum.
 
 [patient]: /docs/api/fhir/resources/patient

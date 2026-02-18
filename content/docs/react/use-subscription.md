@@ -6,8 +6,6 @@ tags:
   - subscription
 ---
 
-# `useSubscription` Hook
-
 `useSubscription` creates an in-memory `Subscription` resource on the Medplum server with the given criteria and calls the
 given callback when an event notification is triggered.
 

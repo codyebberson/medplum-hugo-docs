@@ -4,8 +4,6 @@ title: Agent-Side Configuration
 weight: 3
 ---
 
-# Agent-Side Configuration
-
 This guide covers all local configuration options for the Medplum Agent, including how to configure the agent via command line arguments and the `agent.properties` file.
 
 ## Configuration Parameters

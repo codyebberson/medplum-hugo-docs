@@ -5,8 +5,6 @@ weight: 2000
 tags: [bots, self-host]
 ---
 
-# Medplum Bot Layers
-
 ## Overview of Medplum Bots
 
 Medplum Bots are functions that execute upon specific triggers. Think of them as AWS Lambda functions optimized for the Medplum environment. They are written, deployed, and triggered via FHIR Subscriptions, streamlining various integrations in Medplum.

@@ -6,7 +6,6 @@ title: Modeling Questionnaires and Responses
 
 
 
-# Modeling Questionnaires and Responses
 
 Questionnaires are used to organize a collection of questions to gather healthcare information and are modeled in FHIR as a [`Questionnaire`](/docs/api/fhir/resources/questionnaire) resource. The responses to these questions are modeled with the [`QuestionnaireResponse`](/docs/api/fhir/resources/questionnaireresponse) resource.
 

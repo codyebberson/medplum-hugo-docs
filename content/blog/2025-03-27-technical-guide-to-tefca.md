@@ -6,8 +6,6 @@ authors: andrei-zudin
 tags: [self-host, integration, interop, community]
 ---
 
-# A Technical Guide to TEFCA Integration for Software Developers and Health IT Professionals
-
 > [Andrei Zudin](https://www.linkedin.com/in/andrei-zudin-phd-1300021) is a healthcare interoperability expert and advisor to the Medplum community.  He is the former CTO and co-founder of [Health Gorilla](https://healthgorilla.com/).
 
 > A Technical Guide to TEFCA Integration for Software Developers and Health IT Professionals ([Download as PDF](https://drive.google.com/file/d/11xRALs60J-hwkdylll0biRMa63peYnFm/view?usp=sharing))

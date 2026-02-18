@@ -5,8 +5,6 @@ weight: 1
 tags: [auth]
 ---
 
-# Authentication
-
 This page helps you choose the correct authentication method for your application, whether it's a browser, a server, or a device. The primary goal is to guide you to the right documentation page based on your use case.
 
 For **user-facing applications (web or mobile apps)**, user [_browser-based authentication_](#browser-based-authentication). 

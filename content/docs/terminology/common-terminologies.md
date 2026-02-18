@@ -3,7 +3,6 @@ id: common-terminologies
 title: Commonly Used Terminologies
 ---
 
-# Commonly Used Terminologies
 
 This guide provides a comprehensive reference for the most commonly used code systems and valuesets in healthcare applications. Each section includes the FHIR `system` URLs needed for proper coding in FHIR resources.
 

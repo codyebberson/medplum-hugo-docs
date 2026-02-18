@@ -8,8 +8,6 @@ tags:
   - tasks
 ---
 
-# Using `Tasks` to Manage Clinical Workflow
-
 Workflow management is an essential part of healthcare, and healthcare operations requiring coordination of many manual steps physicians, patients, nurses, care coordinators, etc. Generally, our goals are to
 
 - **Top-of-License Care:** Ensure clinicians' time is being used efficiently.

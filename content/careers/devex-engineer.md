@@ -7,8 +7,6 @@ tags:
   - developer experience
 ---
 
-# Developer Experience Engineer
-
 ![Developer Experience](/img/careers/developer-experience.webp)
 
 ## About the Role

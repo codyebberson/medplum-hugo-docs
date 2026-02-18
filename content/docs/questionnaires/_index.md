@@ -3,7 +3,6 @@ id: index
 title: Questionnaires & Assessments
 ---
 
-# Questionnaires & Assessments
 
 Creating, updating and embedding FHIR Questionnaires for both patients and practitioners is a common use-case for Medplum.
 

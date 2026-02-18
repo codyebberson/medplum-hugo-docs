@@ -4,8 +4,6 @@ title: Testing emails with Mailtrap Email Sandbox
 weight: 1100
 ---
 
-# Testing emails with Mailtrap Email Sandbox
-
 [Mailtrap.io](https://mailtrap.io/)  is an email platform for developer and product teams who need high inboxing rates and fast email delivery. It offers a flexible email API and a reliable SMTP service for developers to send transactional and bulk emails.
 
 Also, Mailtrap provides a built-in Email Sandbox, which acts as a dummy SMTP server, capturing all outgoing emails. Teams can use it to catch test emails in an Email Sandbox, then inspect content, layout, HTML, and plain text versions. This way, they can make sure emails function correctly and fix any potential errors before messages reach real users.

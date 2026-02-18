@@ -6,8 +6,6 @@ authors: finnbergquist
 tags: [mso, tenant, access-control]
 ---
 
-# A step by step guide to building a Multi-Tenant Managed Service Organization with Medplum
-
 In the Medplum community of implementors, a common use case is building an application that **serves multiple clinics** in the form of a Managed Service Organization (MSO). An MSO is a separate business entity that provides non-clinical services—e.g., revenue-cycle management, HR, IT, compliance, facilities, and purchasing—to physician groups or other provider organizations.
 
 <!--more-->

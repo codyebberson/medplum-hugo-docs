@@ -4,8 +4,6 @@ title: ONC Certification
 weight: 4
 ---
 
-# ONC Certification
-
 Medplum is ONC Certified. Below are certification resources and documentation.
 
 ## Mandatory Disclosures

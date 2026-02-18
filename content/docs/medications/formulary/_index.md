@@ -12,8 +12,6 @@ tags:
   - pharmacy
 ---
 
-# Modeling a Formulary
-
 A "formulary" refers to a catalog of drugs offered by your organization. When implementing a custom EMR, Digital Health clinical administrators often curate a formulary of relevant drugs, along with relevant metadata, to assist prescribing physicians, pharmacists, and patients.
 
 This guide covers the basics of how to use the [`MedicationKnowledge`](/docs/api/fhir/resources/medicationknowledge) resource, which represents a type of medication that can be ordered. It will cover:

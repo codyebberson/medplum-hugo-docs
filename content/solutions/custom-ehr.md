@@ -3,7 +3,6 @@ id: custom-ehr
 title: Custom EHR
 ---
 
-# Custom EHR
 
 Medplum is a platform on which to build acompliant, custom electronic health record system.  Providers need an ergonomic and automatied software suite to smooth workflow, productivity and protocol compliance. Medplum provides the infrasturcture, integrations and compliance that reduce the time to build a custom solution by up to 80%.
 

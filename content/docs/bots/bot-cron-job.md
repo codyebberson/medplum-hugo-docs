@@ -4,8 +4,6 @@ title: Cron Jobs for Bots
 weight: 21
 ---
 
-# Cron Jobs for Bots
-
 You can add a cron job for your bot so it can automatically run from a schedule. This means you can set a repeatable time for the bot to automatically every minute, day, other month, etc.
 
 ## To add a scheduled timer for your Bot

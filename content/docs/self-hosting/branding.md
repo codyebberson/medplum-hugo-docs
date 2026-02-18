@@ -3,7 +3,6 @@ id: branding
 title: Branding and Customization
 ---
 
-# Branding and Customization
 
 When building an EHR, you often want to change the logo and name of your platform for clarity or branding. In Medplum, this is simple:
 

@@ -5,8 +5,6 @@ sidebar_label: Changelog
 weight: 99
 ---
 
-# HealthGorilla Integration Changelog
-
 This page tracks updates, improvements, and changes to the HealthGorilla integration in Medplum.
 
 ## [October 2025]

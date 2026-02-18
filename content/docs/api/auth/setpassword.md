@@ -3,7 +3,6 @@ id: setpassword
 title: Set Password Endpoint
 ---
 
-# Set Password Endpoint
 
 ## POST `/auth/setpassword`
 

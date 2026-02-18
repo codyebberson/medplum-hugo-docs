@@ -3,7 +3,6 @@ id: running-bots-on-fission
 title: Running Bots on Fission
 ---
 
-# Running Bots on Fission
 
 Medplum Bots provide powerful automation capabilities within your Medplum environment. While Medplum offers a built-in execution environment for bots, this page details how to deploy and manage your Medplum Bots using Fission, an open-source, Kubernetes-native serverless framework. This approach can be beneficial for organizations seeking advanced scalability, custom runtime environments, or deeper integration with existing Kubernetes infrastructure.
 

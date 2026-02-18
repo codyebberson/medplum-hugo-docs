@@ -5,7 +5,6 @@ slug: /
 weight: 1
 ---
 
-# Welcome to Medplum
 {{< section >}}
 {{< feature-grid columns="2" >}}
 {{< feature title="Get Started" linkText="Read more" linkRef="./docs#get-started" >}}

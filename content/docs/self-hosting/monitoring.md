@@ -4,8 +4,6 @@ title: Monitoring Your Self-Hosted Medplum Instance
 weight: 202
 ---
 
-# Monitoring Your Self-Hosted Medplum Instance
-
 When running a self-hosted Medplum instance, proper monitoring is essential for maintaining system health and performance. This guide covers the key metrics Medplum recommends self-hosting users to track and what information they surface about your deployment. 
 
 ## Overview

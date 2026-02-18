@@ -3,7 +3,6 @@ id: agent
 title: "Medplum Agent: Secure Bridge for Legacy Healthcare Systems"
 ---
 
-# Medplum Agent: Secure Bridge for Legacy Healthcare Systems
 
 Healthcare organizations need to integrate HL7, DICOM, and other legacy protocols that operate within closed networks—but maintaining site-to-site VPNs is complex and costly, and legacy integration engines may not be flexible and cloud-first in architecture. The Medplum Agent eliminates these issues while preserving security and compliance.
 

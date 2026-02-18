@@ -3,7 +3,6 @@ id: provider-portal
 title: Provider Portal
 ---
 
-# Provider Portal
 
 Allowing physicians who belong to multiple practices to have access to patient data as needed for care is a common scenario. Medplum provides **a starter kit to build a provider portal** with a custom experience. Practices and companies consider a custom portal when an off-the-shelf solution has low engagement because it is too confusing or complex for referring physicians or other stakeholders.
 

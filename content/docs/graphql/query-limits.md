@@ -4,8 +4,6 @@ title: Query Limits
 weight: 4
 ---
 
-# Query Limits
-
 Because complex GraphQL queries may be computationally expensive, the query is analyzed before execution,
 and may be rejected by the server if the query will be too expensive to perform all at once. The different checks
 performed to validate the query are detailed below.

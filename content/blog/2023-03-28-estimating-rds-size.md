@@ -6,8 +6,6 @@ authors: reshma
 tags: [fhir-datastore, self-host]
 ---
 
-# Estimating RDS Size
-
 Data privacy, locality, governance and [compliance](/docs/compliance) are huge issues in healthcare, and that's why we at Medplum support [self-hosting](/docs/self-hosting). For those running on AWS, we use Aurora RDS, which supports auto-scaling. A common question we get is - **how big is my database going to be?**
 
 <!--more-->

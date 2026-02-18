@@ -5,8 +5,6 @@ weight: 4
 toc_max_heading_level: 2
 ---
 
-# Uploading Files
-
 In digital health, a common requirement is to upload PDFs or other files from one system to another. Examples include:
 
 - Uploading pathology reports into a legacy EHR

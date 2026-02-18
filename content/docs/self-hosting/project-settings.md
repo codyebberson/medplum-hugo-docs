@@ -4,8 +4,6 @@ title: Project Settings
 weight: 60
 ---
 
-# Project Settings
-
 Many settings are also available at the Project level, allowing them to be configured for specific tenants on the server
 rather than globally. Only Super Admin users are allowed to edit Project settings.
 

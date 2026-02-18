@@ -6,8 +6,6 @@ authors: andrewdilling
 tags: [fhir-datastore, self-host, cardiology, case-study]
 ---
 
-# Case Study: Chamber Cardio
-
 [Chamber Cardio](https://www.chambercardio.com/), a technology-enabled cardiology solution, **helps enable and empower cardiologists and practices in their transition to value-based care**. With our cloud-based technology platform, we offer a suite of tools designed specifically for cardiovascular care. These tools provide **real-time insights, analytics and care coordination tools** focused on improving outcomes for patients with chronic cardiovascular conditions.
 
 <!--more-->

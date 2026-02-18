@@ -5,8 +5,6 @@ sidebar_label: Scheduling
 weight: 3
 ---
 
-# Scheduling
-
 Scheduling platform that supports clinical workflows such as clinician or location filtering, patient slot selection, custom notifications, pre-appointment forms and more. Medplum supports the full range of scheduling scenarios from very simple single schedule with slots, to a complex scheduling requirements with facilities, equipment and constraints requirements.
 
 ![Scheduling Art](../products/img/medplum-scheduling.png)

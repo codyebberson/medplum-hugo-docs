@@ -4,8 +4,6 @@ title: Install from scratch
 weight: 8
 ---
 
-# Install from scratch
-
 This guide provides comprehensive instructions for installing and configuring Medplum from scratch on Ubuntu 24.04. It covers all essential components including PostgreSQL database setup, Redis installation, Node.js configuration, and the core Medplum server and app deployment.
 
 The guide also includes optional but recommended steps for setting up Nginx as a reverse proxy with SSL/TLS support, enabling secure access through custom domains. While primarily written for Ubuntu 24.04, these instructions are compatible with most recent Ubuntu versions.

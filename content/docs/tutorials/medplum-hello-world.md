@@ -5,8 +5,6 @@ weight: 4
 sidebar_label: Medplum Hello World
 ---
 
-# Medplum Hello World
-
 Digital health companies often build custom UIs on top of the Medplum platform to design streamlined patient and physician experiences. This tutorial will cover to run the **Medplum "Hello World"** example, a simple [React](https://reactjs.org/) app that visualizes patient information.
 
 Hello World is built with Medplum's [React Component](https://storybook.medplum.com/?path=/docs/medplum-introduction--docs) library, which is a great resource for rapid prototyping and building internal tools.

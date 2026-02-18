@@ -5,8 +5,6 @@ weight: 3
 sidebar_label: Import Sample Data
 ---
 
-# Import Sample Data
-
 When starting development, it can be really useful to have some sample data to work with, and to test your application. This tutorial will walk you through importing sample FHIR data into your Medplum project to aid in building a realistic application.
 
 {{< tip title="The Medplum App" >}}

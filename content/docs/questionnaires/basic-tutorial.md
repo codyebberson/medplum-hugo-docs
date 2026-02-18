@@ -3,7 +3,6 @@ id: basic-tutorial
 title: Upload and Use Questionnaires
 ---
 
-# Upload and Use Questionnaires
 
 This tutorial will walk through how to create a [Questionnaire](https://app.medplum.com/Questionnaire?_count=20&_fields=id,_lastUpdated,name,subjectType&_offset=0&_sort=-_lastUpdated) and generate a [QuestionnaireResponse](https://app.medplum.com/QuestionnaireResponse?_count=20&_fields=id,_lastUpdated,author,subject&_offset=0&_sort=-_lastUpdated) using the Medplum console app. The `Questionnaire` and `QuestionnaireResponse` resources are very common in implementations and are used to drive patient-facing and provider-facing experiences.
 

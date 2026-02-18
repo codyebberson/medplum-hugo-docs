@@ -10,7 +10,7 @@ One of the main sources of confusion when starting an implementation is with FHI
 
 This field is ubiquitous across FHIR elements, but many developers who are new to healthcare don't understand its purpose or how to set it properly. They are used in even the most basic implementations, and even the [sample data](/docs/tutorials/importing-sample-data) we provide for prototyping has many `system` identifiers.
 
-{/* truncate */}
+
 
 So today, we're going to delve into `system` strings to understand what they're for and how to use them!
 

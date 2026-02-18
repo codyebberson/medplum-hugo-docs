@@ -1,6 +1,7 @@
 ---
 title: 'Medplum'
 description: 'The best docs on the web.'
+hideTitle: true
 ---
 
 {{< hero title="Build and run modern healthcare apps" >}}

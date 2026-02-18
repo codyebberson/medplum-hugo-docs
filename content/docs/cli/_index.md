@@ -3,7 +3,6 @@ id: index
 title: Intro
 ---
 
-# Intro
 
 The Medplum CLI (Command Line Interface) is a set of command line tools to quickly deploy Medplum web applications and Medplum bots.
 

@@ -4,8 +4,6 @@ title: HL7 to FHIR
 weight: 8
 ---
 
-# HL7 to FHIR
-
 HL7 interfaces are common in healthcare, and widely supported by legacy EHRs, RIS/PACS systems, lab machines and more. Medplum provides a [HL7 Interfacing engine](/docs/integration/hl7-interfacing) that supports consumption and production of HL7 feeds, and the [Medplum Agent](/docs/agent) supports connecting to systems on-premises.
 
 ## This guide will show you

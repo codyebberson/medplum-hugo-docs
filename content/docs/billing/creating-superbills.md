@@ -4,8 +4,6 @@ title: Creating Superbills
 weight: 5
 ---
 
-# Creating Superbills
-
 Medplum supports customizable creation of superbills. 
 
 A superbill is a detailed form used by healthcare providers that outlines the services provided to a patient. It is typically given to patients after their medical appointments so they can submit it to their insurance companies for reimbursement.  Superbills are important in settings where the provider does not directly bill the insurance company, such as in many out-of-network situations or when services are provided by a provider who operates on a cash-only basis.

@@ -3,7 +3,6 @@ id: c-cda
 title: C-CDA
 ---
 
-# C-CDA
 
 Medplum provides support for C-CDA (Consolidated Clinical Document Architecture) handling in accordance with the [ONC Certification](/docs/compliance/onc) criteria (g)(7), (g)(9) and (b)(1) as well as developer utilities for working with C-CDA documents in the context of FHIR.
 

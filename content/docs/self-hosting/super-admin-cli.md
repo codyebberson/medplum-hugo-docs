@@ -4,8 +4,6 @@ title: Super Admin CLI
 weight: 80
 ---
 
-# Super Admin CLI
-
 Medplum includes a CLI (Command Line Interface).
 
 The main docs for the CLI are available here: https://github.com/medplum/medplum/blob/main/packages/cli/README.md

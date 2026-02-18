@@ -6,7 +6,6 @@ weight: 12
 
 import { HomerSimpson, LisaSimpson, SimpsonsFamily, HomerLisaRelatedPerson } from '@medplum/mock';
 
-# Family Relationships
 
 ## Introduction
 

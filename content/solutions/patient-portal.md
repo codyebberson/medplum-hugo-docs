@@ -3,7 +3,6 @@ id: patient-portal
 title: Patient Portal
 ---
 
-# Patient Portal
 
 Build a patient facing application that allows users to view their records, fill out questionnaires, schedule appointments, message their provider, view care plans, manage coverage and more. Medplum provides a starter kit that accelerates development, is easy to customize and will scale with your organization.
 

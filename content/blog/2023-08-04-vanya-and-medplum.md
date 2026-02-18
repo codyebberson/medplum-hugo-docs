@@ -6,8 +6,6 @@ authors: cody
 tags: [auth, case-study]
 ---
 
-# Vanya for Browsing Data on Medplum's FHIR Server
-
 [Darren Devitt](https://www.linkedin.com/in/darrendevitt/), a respected FHIR expert, has recently released an alpha version of a new tool called [Vanya](https://vanyalabs.com/). Similar to how Postman functions for API requests, Vanya is designed specifically for browsing data on FHIR servers.
 
 <!--more-->

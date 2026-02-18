@@ -4,8 +4,6 @@ title: Push to Agent
 weight: 3
 ---
 
-# Push to Agent
-
 ## Introduction
 
 While the Medplum Agent traditionally connected healthcare facilities to cloud services by listening to legacy healthcare protocols and forwarding messages securely to the cloud, it also supports pushing messages from the cloud to on-prem devices.

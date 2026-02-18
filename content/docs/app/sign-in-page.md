@@ -3,7 +3,6 @@ id: sign-in-page
 title: The Sign In Page
 ---
 
-# The Sign In Page
 
 Once a [`User`](/docs/api/fhir/medplum/user) accepts your invite, they will be able to log in to the [Medplum App](https://app.medplum.com) at https://app.medplum.com/signin.
 

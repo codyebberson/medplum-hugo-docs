@@ -6,7 +6,6 @@ title: Binary Security Context
 
 
 
-# Binary Security Context
 
 FHIR Binary resources require special attention when implementing access controls in Medplum. Unlike other FHIR resources, Binary resources cannot use standard compartment-based access policies and must rely on the `securityContext` element for proper access control.
 

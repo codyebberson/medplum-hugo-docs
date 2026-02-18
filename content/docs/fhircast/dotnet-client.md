@@ -3,7 +3,6 @@ id: dotnet-client
 title: FHIRcast with .NET client
 ---
 
-# FHIRcast with .NET client
 
 This is a guide for using the official [FHIRcast .NET client](https://github.com/fhircast/.net) with the Medplum server.
 

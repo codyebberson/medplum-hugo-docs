@@ -5,8 +5,6 @@ weight: 9
 tags: [auth]
 ---
 
-# Logout
-
 There are two different methods to "logout" and revoke access tokens:
 
 1. Revoke current access token using `/oauth2/logout`

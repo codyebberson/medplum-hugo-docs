@@ -4,8 +4,6 @@ title: Learning FHIR Quickly
 authors: reshma
 ---
 
-# Learning FHIR Quickly
-
 You can use Medplum as a tool to help you learn FHIR quickly.
 
 Fast Healthcare Interoperability Resources (FHIR) specification is a data standard for healthcare that defines how information can be exchanged between systems. (Read more about what FHIR is and it's philosophy and history [here](http://www.hl7.org/fhir/overview.html))

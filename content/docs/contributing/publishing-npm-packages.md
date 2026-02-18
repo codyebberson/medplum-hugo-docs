@@ -4,8 +4,6 @@ title: Publishing NPM Packages
 weight: 101
 ---
 
-# Publishing NPM Packages
-
 This is the process we use to publish new versions of JavaScript NPM packages.
 
 Publishing NPM dependencies requires being a member of the [Medplum dev team](https://github.com/orgs/medplum/teams/dev).

@@ -4,8 +4,6 @@ title: Careers
 slug: /careers
 ---
 
-# Careers
-
 ![Medplum is hiring](/img/hiring.webp)
 
 <AboutMedplum />

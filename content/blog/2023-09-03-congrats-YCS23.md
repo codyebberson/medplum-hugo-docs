@@ -5,8 +5,6 @@ title: Congrats YC S23 Healthcare
 authors: reshma
 ---
 
-# Congrats to YC S23 Healthcare Companies
-
 As a long time YC community member (10+ years) and former [Visiting Group Partner](https://www.ycombinator.com/blog/welcome-s21-visiting-group-partners), I'm always excited by the great companies that release each Demo Day. For me, it's like the Superbowl 🏈.
 
 <!--more-->

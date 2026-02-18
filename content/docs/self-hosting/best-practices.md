@@ -4,8 +4,6 @@ title: Self-Hosting Best Practices
 weight: 2
 ---
 
-# Self-Hosting Best Practices
-
 You've decided to self-host Medplum — great. This guide covers operational practices that will help you run a stable, maintainable deployment and set yourself up for long-term success.
 
 These recommendations come from patterns we've seen across self-hosted deployments, both what works well and what causes pain down the road.

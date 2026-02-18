@@ -6,8 +6,6 @@ toc_max_heading_level: 2
 tags: [auth]
 ---
 
-# Using Medplum as IDP
-
 ## Introduction
 
 When building your own healthcare App, you can use Medplum as an **identity provider** using the OAuth2 Authorization Code flow. Medplum provides OAuth2 endpoints to authenticate Patients and Practitioners and share data with your application.

@@ -3,7 +3,6 @@ id: transmition-and-tracking
 title: Referral Transmission & Tracking
 ---
 
-# Referral Transmission & Tracking
 
 ## Transmitting Referrals
 

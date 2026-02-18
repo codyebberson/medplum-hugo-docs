@@ -5,8 +5,6 @@ sidebar_label: Care Plans
 weight: 5
 ---
 
-# Care Plans
-
 Medplum supports creating, managing and instantiating care plans for patients. Care plans go by many different names: care pathway, care journey, clinical protocol, onboarding or workflow. **In principle, care plans describe a set of actions required as part of a patient's care.**
 
 In practice, there are two parts to care plans, (1) designing them and (2) applying them to patients and tracking adherence to the plan.

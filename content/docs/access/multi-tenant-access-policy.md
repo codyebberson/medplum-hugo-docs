@@ -3,7 +3,6 @@ id: multi-tenant-access-policy
 title: Multi-Tenant Access Control
 ---
 
-# Multi-Tenant Access Control
 
 
 

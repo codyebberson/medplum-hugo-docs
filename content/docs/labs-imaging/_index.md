@@ -3,7 +3,6 @@ id: index
 title: Labs & Imaging
 ---
 
-# Labs & Imaging
 
 ```mermaid
 

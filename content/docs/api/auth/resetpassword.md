@@ -6,7 +6,6 @@ title: Reset Password Endpoint
 
 
 
-# Reset Password Endpoint
 
 ## POST `/auth/resetpassword`
 

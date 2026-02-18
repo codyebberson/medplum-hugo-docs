@@ -3,7 +3,6 @@ id: index
 title: FHIR Datastore
 ---
 
-# FHIR Datastore
 
 The Medplum FHIR Datastore supports all CRUD operations (creating, reading/searching, updating, and deleting) on FHIR resources. In addition it supports a large set of additional operations that can be used to validate and model data, execute bots, and more. If you are not familiar with FHIR, see the [FHIR Basics docs](/docs/fhir-basics.md).
 

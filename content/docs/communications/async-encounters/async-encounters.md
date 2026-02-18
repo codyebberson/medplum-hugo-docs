@@ -3,7 +3,6 @@ id: async-encounters
 title: Representing Asynchronous Encounters
 ---
 
-# Representing Asynchronous Encounters
 
 ## Intro
 

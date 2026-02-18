@@ -4,8 +4,6 @@ title: Modeling Provider Qualifications
 weight: 2
 ---
 
-# Modeling Provider Qualifications
-
 ## Introduction
 
 For providers that operate across multiple regions and specialties, properly representing provider credentials is critical for regulatory compliance, insurance billing, and referral management. In the U.S., virtual providers must ensure that physicians are licensed in the same state as their patients. Another important operational consideration is making sure that care coordinators, nurses, and doctors are practicing at the top of their license.

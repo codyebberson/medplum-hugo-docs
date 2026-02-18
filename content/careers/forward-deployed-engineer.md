@@ -7,8 +7,6 @@ tags:
   - developer relations
 ---
 
-# Forward Deployed Engineer
-
 ![Forward Deployed Engineer](/img/careers/forward-deployed-engineer.webp)
 
 ## About the Role

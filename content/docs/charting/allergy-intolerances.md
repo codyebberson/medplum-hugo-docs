@@ -3,7 +3,6 @@ id: allergy-intolerances
 title: Representing Allergies
 ---
 
-# Representing Allergies
 
 Allergies are recorded via [`AllergyIntolerance`](/docs/api/fhir/resources/allergyintolerance). Some relevant fields are described below: 
 

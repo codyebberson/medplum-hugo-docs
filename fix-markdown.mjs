@@ -65,7 +65,8 @@ async function fixFile(sourceRoot, destRoot, sourceFilePath) {
   // Make sure there is a "title"
   if (!frontMatter.some((line) => line.startsWith('title:'))) {
     const title = getTitle(sourceFilePath, content);
-    frontMatter.splice(2, 0, `title: ${title}`);
+    const safeTitle = title.includes(':') ? `"${title}"` : title;
+    frontMatter.splice(2, 0, `title: ${safeTitle}`);
     hasChanges = true;
   }
 
@@ -89,6 +90,12 @@ async function fixFile(sourceRoot, destRoot, sourceFilePath) {
   // I.e., `^import (\w)+ from `
   if (content.match(/^import (\w)+ from .+$/gm)) {
     content = content.replace(/^import (\w)+ from .+$/gm, '');
+    hasChanges = true;
+  }
+
+  // Remove the first H1 header (title is now rendered by the layout template from front matter)
+  if (content.match(/^# .+$/m)) {
+    content = content.replace(/^# .+\n?/m, '');
     hasChanges = true;
   }
 
@@ -127,6 +134,12 @@ async function fixFile(sourceRoot, destRoot, sourceFilePath) {
   // Replace Docusaurus "<!-- truncate -->" with Hugo "<!--more-->"
   if (content.includes('<!-- truncate -->')) {
     content = content.replaceAll('<!-- truncate -->', '<!--more-->');
+    hasChanges = true;
+  }
+
+  // Remove JSX comments {/* ... */} (can span multiple lines)
+  if (content.includes('{/*')) {
+    content = content.replace(/\{\/\*[\s\S]*?\*\/\}/g, '');
     hasChanges = true;
   }
 

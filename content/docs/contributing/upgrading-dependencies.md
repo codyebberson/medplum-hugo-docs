@@ -4,8 +4,6 @@ title: Upgrading Dependencies
 weight: 100
 ---
 
-# Upgrading Dependencies
-
 Medplum upgrades dependencies regularly to ensure we have the latest security patches and bug fixes. This document describes the process for upgrading dependencies.
 
 Every Monday at 9:00 AM UTC, the "Upgrade Dependencies" Github Action runs automatically (see `.github/workflows/upgrade-dependencies.yml`). This action does the following:

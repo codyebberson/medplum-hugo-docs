@@ -6,8 +6,6 @@ authors: reshma
 tags: [community]
 ---
 
-# Medplum Events Calendar
-
 ### Upcoming
 
 <table>

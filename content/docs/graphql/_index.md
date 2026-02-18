@@ -8,7 +8,6 @@ title: GraphQL
 
 
 
-# GraphQL
 
 Medplum supports the [FHIR GraphQL API](https://hl7.org/fhir/r4/graphql.html) for creating, updating and searching FHIR resources.
 

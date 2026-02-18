@@ -5,8 +5,6 @@ title: Extending Objects through FHIR Extensions
 authors: reshma
 ---
 
-# FHIR Extensions are a way to add fields to FHIR objects
-
 When working with customers to set up their apps and workflow we commonly get this request:
 
 **We need to track this extra data, but there is no field for it in the FHIR object. What should we do?**

@@ -6,8 +6,6 @@ authors: reshma
 tags: [react, fhir-datastore]
 ---
 
-# Task Management Apps
-
 Great workflow apps are core for us at Medplum, and we provide tools to build **highly ergonomic asynchronous task tracking systems providers**. Some examples of task management apps in the medical context are apps that:
 
 - Review and approve lab reports

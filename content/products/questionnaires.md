@@ -5,8 +5,6 @@ sidebar_label: Questionnaires
 weight: 2
 ---
 
-# Questionnaires
-
 Get data from patients, clinicians, staff and other stakeholders using custom forms. Forms go by many names, questionnaires, surveys, ePRO, and more, but they have the same function: to collect data from a user in a standard way.
 
 Medplum supports collecting form data in a standards compliant way and using it to drive automations, enforce QA or ensure conformance. Forms can be completed by patients, practitioners or others, depending on where they are embedded.

@@ -4,8 +4,6 @@ title: CLIA/CAP Certification
 weight: 5
 ---
 
-# CLIA/CAP Certification
-
 {{< warning title="Note" >}}
 
 This section is under construction.

@@ -4,8 +4,6 @@ title: Schedule
 weight: 300
 ---
 
-# Schedule
-
 Effective schedule management is crucial for optimizing patient care delivery and clinic operations. The Medplum Provider app provides comprehensive scheduling tools to manage appointments, coordinate care, and maintain provider availability. This section covers the essential scheduling functions.
 
 ## Scheduling a Visit
