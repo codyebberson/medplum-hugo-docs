@@ -1,0 +1,13 @@
+<div class="profile-card">
+  <div class="profile-card-image">
+    <img src="{{ .Get "imgUrl" | relURL }}" alt="{{ .Get "name" }}" loading="lazy" />
+  </div>
+  <h3>{{ .Get "name" }}</h3>
+  <p>{{ .Get "title" }}</p>
+  <div class="profile-card-links">
+    {{ with .Get "linkedInUrl" }}<a href="{{ . }}" rel="noreferrer" target="_blank">{{ partial "icon" "outline/brand-linkedin" }} LinkedIn</a>{{ end }}
+    {{ with .Get "githubUrl" }}<a href="{{ . }}" rel="noreferrer" target="_blank">{{ partial "icon" "outline/brand-github" }} GitHub</a>{{ end }}
+    {{ with .Get "webUrl" }}<a href="{{ . }}" rel="noreferrer" target="_blank">Web</a>{{ end }}
+    {{ with .Get "youtubeUrl" }}<a href="{{ . }}" rel="noreferrer" target="_blank">{{ partial "icon" "outline/brand-youtube" }} YouTube</a>{{ end }}
+  </div>
+</div>
