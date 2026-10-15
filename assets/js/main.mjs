@@ -47,6 +47,20 @@ function updateNavbarScroll() {
 
 window.addEventListener('scroll', updateNavbarScroll, { passive: true });
 
+// Navbar links are active on their own path and everything under it (see layouts/partials/navbar.html)
+function updateActiveNavbarLinks(url) {
+  const pathname = new URL(url, window.location.origin).pathname;
+  document.querySelectorAll('.navbar-link[data-active-base]').forEach((link) => {
+    const active = pathname.startsWith(link.dataset.activeBase);
+    link.classList.toggle('active', active);
+    if (active) {
+      link.setAttribute('aria-current', 'page');
+    } else {
+      link.removeAttribute('aria-current');
+    }
+  });
+}
+
 function updateActiveLinks() {
   document.querySelectorAll('.sidebar-category-header-wrapper.active').forEach((el) => {
     el.classList.remove('active');
@@ -104,6 +118,7 @@ export const swup = new Swup({
 
 swup.hooks.before('content:replace', (visit) => {
   updateAttributes(visit.to.url);
+  updateActiveNavbarLinks(visit.to.url);
   destroyAnimatedCircles();
   destroyCountUps();
   destroyProducts();

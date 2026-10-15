@@ -1,10 +1,12 @@
 <nav class="navbar">
   <div class="navbar-left">
     <a class="navbar-link navbar-logo-link" href="/"> {{ partial "logo" (dict "width" "120" "height" "26" "class" "navbar-logo-image") }} </a>
-    <a class="navbar-link" href="/products">Products</a>
-    <a class="navbar-link" href="/solutions">Solutions</a>
-    <a class="navbar-link" href="/docs">Resources</a>
-    <a class="navbar-link" href="/pricing">Pricing</a>
+    {{- /* As in Docusaurus, a link is active on its own path and everything under it. main.mjs re-applies this after Swup navigations. */ -}}
+    {{- $path := .RelPermalink -}}
+    {{- range slice (dict "href" "/products" "label" "Products") (dict "href" "/solutions" "label" "Solutions") (dict "href" "/docs" "label" "Resources") (dict "href" "/pricing" "label" "Pricing") }}
+    {{- $active := hasPrefix $path .href }}
+    <a class="navbar-link{{ if $active }} active{{ end }}" href="{{ .href }}" data-active-base="{{ .href }}"{{ if $active }} aria-current="page"{{ end }}>{{ .label }}</a>
+    {{- end }}
   </div>
   <div class="navbar-right">
     <a class="navbar-icon-btn" href="https://github.com/medplum/medplum" target="_blank">{{ partial "icon" "outline/brand-github" }}</a>
