@@ -1,6 +1,6 @@
 ---
 id: searching-and-querying-threads
-weight: 3
+weight: 40
 title: Searching and Querying Threads
 tags: [communications, messaging, search, Communication]
 keywords: [Communication, part-of, thread, search, subscription]

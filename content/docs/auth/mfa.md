@@ -1,7 +1,7 @@
 ---
 id: mfa
 title: Multi-Factor Authentication (MFA)
-weight: 6
+weight: 70
 tags: [auth, security]
 ---
 

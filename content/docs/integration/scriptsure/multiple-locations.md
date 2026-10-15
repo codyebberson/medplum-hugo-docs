@@ -1,7 +1,7 @@
 ---
 id: multiple-locations
 title: Multiple Practice Locations
-weight: 10
+weight: 110
 ---
 
 A single Medplum Project can serve many ScriptSure practice locations. This guide describes the data model and how prescribing resolves the correct practice per request.

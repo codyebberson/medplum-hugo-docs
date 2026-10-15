@@ -1,7 +1,7 @@
 ---
 id: patient-demographics
 title: Patient Demographics
-weight: 1
+weight: 20
 ---
 
 Capturing Patient Demographics is a core function of an Electronic Health Record system. Requirements for EHR demographic capture are described in the [ONC (a)(5) criteria](https://www.healthit.gov/test-method/demographics).

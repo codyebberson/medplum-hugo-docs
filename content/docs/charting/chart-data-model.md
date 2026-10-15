@@ -1,6 +1,6 @@
 ---
 id: chart-data-model
-weight: 3
+weight: 40
 title: Chart Data Model
 keywords:
   - charting

@@ -1,7 +1,7 @@
 ---
 id: domain-level-identity-providers
 title: Domain-level Identity Providers
-weight: 8
+weight: 90
 tags: [auth]
 ---
 

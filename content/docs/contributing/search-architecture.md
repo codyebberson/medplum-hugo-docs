@@ -1,7 +1,7 @@
 ---
 id: search-architecture
 title: Search Architecture
-weight: 205
+weight: 2060
 ---
 
 {{< warning >}}

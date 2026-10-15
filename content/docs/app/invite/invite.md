@@ -1,7 +1,7 @@
 ---
 id: invite
 title: Invite a user
-weight: 3
+weight: 40
 ---
 
 This guide explains how to invite another user to your Medplum project.

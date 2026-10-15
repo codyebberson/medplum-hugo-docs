@@ -2,7 +2,7 @@
 id: updating-data
 title: Updating Data
 toc_max_heading_level: 5
-weight: 3
+weight: 40
 ---
 
 Medplum offers three FHIR operations that can be used to update data:

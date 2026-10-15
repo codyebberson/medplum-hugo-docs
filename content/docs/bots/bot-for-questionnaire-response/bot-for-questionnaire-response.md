@@ -1,7 +1,7 @@
 ---
 id: bot-for-questionnaire-response
 title: Bot for QuestionnaireResponse
-weight: 4
+weight: 50
 ---
 
 Bots are an advanced Medplum feature that enable complex workflows.

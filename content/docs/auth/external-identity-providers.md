@@ -1,7 +1,7 @@
 ---
 id: external-identity-providers
 title: External Identity Providers
-weight: 7
+weight: 80
 tags: [auth]
 ---
 

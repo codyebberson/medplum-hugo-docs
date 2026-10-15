@@ -2,7 +2,7 @@
 id: testing-and-acceptance
 title: Testing and Accepting Migrated Data
 toc_max_heading_level: 3
-weight: 7
+weight: 80
 ---
 
 Use this guide after [validating and reconciling migrated data](/docs/migration/validation-and-reconciliation). It covers whole-chart review, files, production access and workflows, dress rehearsals, exceptions, and final readiness.

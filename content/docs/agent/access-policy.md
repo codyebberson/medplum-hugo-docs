@@ -1,7 +1,7 @@
 ---
 id: access-policy
 title: Agent Access Policy
-weight: 5
+weight: 60
 ---
 
 This guide covers the minimal access policy configuration required for the Medplum Agent, including how to use parameterized policies for multi-organization deployments.

@@ -2,7 +2,7 @@
 id: scheduling
 title: Scheduling Decision Guide
 sidebar_label: Scheduling
-weight: 2
+weight: 30
 download_slug: scheduling
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: session-management
 title: Access Token Management
-weight: 7
+weight: 80
 tags: [auth]
 ---
 

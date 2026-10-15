@@ -2,7 +2,7 @@
 id: referrals
 title: Referrals Decision Guide
 sidebar_label: Referrals
-weight: 5
+weight: 60
 download_slug: referrals
 ---
 

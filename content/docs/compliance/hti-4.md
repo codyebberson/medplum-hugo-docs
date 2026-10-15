@@ -1,7 +1,7 @@
 ---
 id: hti-4
 title: HTI-4 & CMS-0057-F
-weight: 8
+weight: 90
 ---
 
 The "Health Data, Technology, and Interoperability" (HTI-4) rule is a new ONC regulation finalized on July 31, 2025, becoming effective October 1, 2025. This rule modernizes the entire prescribing workflow by mandating new technical certifications across all certified health IT systems, shifting key interoperability functions from optional features to mandatory requirements for certification.

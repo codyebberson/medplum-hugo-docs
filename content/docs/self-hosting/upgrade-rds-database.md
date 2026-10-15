@@ -1,7 +1,7 @@
 ---
 id: upgrade-rds-database
 title: Upgrade RDS Database
-weight: 101
+weight: 1020
 ---
 
 As your project grows, you may need to upgrade your RDS database instance size. This document describes how to perform this operation with zero downtime.

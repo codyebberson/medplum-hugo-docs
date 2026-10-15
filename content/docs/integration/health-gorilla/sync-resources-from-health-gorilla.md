@@ -1,7 +1,7 @@
 ---
 id: sync-resources-from-health-gorilla
 title: Sync Resources from Health Gorilla
-weight: 3
+weight: 40
 ---
 
 This guide describes the `sync-resources-from-health-gorilla` bot, which fetches resources from Health Gorilla over a date range and synchronizes them into your Medplum project.

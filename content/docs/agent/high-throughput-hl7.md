@@ -1,7 +1,7 @@
 ---
 id: high-throughput-hl7
 title: High Throughput HL7 Channel Configuration
-weight: 21
+weight: 220
 ---
 
 This is the end-to-end guide to configuring a Medplum Agent HL7 channel for a high-volume feed: what actually limits throughput, which knob addresses which limit, and a reference configuration you can copy.

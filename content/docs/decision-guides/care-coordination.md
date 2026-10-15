@@ -2,7 +2,7 @@
 id: care-coordination
 title: Care Coordination Decision Guide
 sidebar_label: Care Coordination
-weight: 5.5
+weight: 65
 download_slug: care-coordination
 ---
 

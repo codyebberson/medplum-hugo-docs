@@ -1,7 +1,7 @@
 ---
 id: bot-secrets
 title: Bot Secrets
-weight: 5
+weight: 60
 toc_max_heading_level: 2
 ---
 

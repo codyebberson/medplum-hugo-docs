@@ -2,7 +2,7 @@
 id: appointment-book
 title: Appointment $book
 sidebar_label: Appointment $book
-weight: 3
+weight: 40
 ---
 
 {{< info title="Beta" >}}

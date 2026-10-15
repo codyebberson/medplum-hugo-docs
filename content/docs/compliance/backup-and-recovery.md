@@ -1,7 +1,7 @@
 ---
 id: backup-and-recovery
 title: High Availability, Backup, and Retention
-weight: 11
+weight: 120
 sidebar_label: Backup & Recovery
 keywords:
   - backup

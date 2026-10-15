@@ -1,7 +1,7 @@
 ---
 id: file-uploads
 title: Uploading Files
-weight: 4
+weight: 50
 toc_max_heading_level: 2
 ---
 

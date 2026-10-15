@@ -1,7 +1,7 @@
 ---
 id: index
 title: Modeling your Provider Directory
-weight: 7
+weight: 80
 ---
 
 Provider Directories are critical databases housing essential details about healthcare providers, from individual practitioners to entire organizations. Accurate and standardized modeling of these directories, ensures a better patient experience via improved coordination coordination of care and operational efficiency.

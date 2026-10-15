@@ -1,7 +1,7 @@
 ---
 id: install-on-kubernetes
 title: Install on Kubernetes
-weight: 4
+weight: 50
 ---
 
 This guide provides step-by-step instructions for deploying Medplum on any Kubernetes cluster using our official Helm chart. This approach is the recommended path for production deployments, as it leverages the full power of the Kubernetes ecosystem for scalability, high availability, and simplified management.

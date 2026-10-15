@@ -1,7 +1,7 @@
 ---
 id: external-documents
 title: External Files and Document References
-weight: 6
+weight: 70
 keywords:
   - DocumentReference
   - Binary

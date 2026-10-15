@@ -1,7 +1,7 @@
 ---
 id: server-config
 title: Server Config
-weight: 50
+weight: 510
 ---
 
 When running Medplum server on a local developer machine, Medplum server typically loads config settings from a JSON config file. By default, it loads config settings from `medplum.config.json`.

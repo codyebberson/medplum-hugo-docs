@@ -1,7 +1,7 @@
 ---
 id: reference-ranges
 title: Observation Reference Ranges
-weight: 2
+weight: 30
 keywords:
   - loinc
   - diagnostics

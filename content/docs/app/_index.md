@@ -1,7 +1,7 @@
 ---
 id: index
 title: Medplum App
-weight: 1
+weight: 20
 ---
 
 The Medplum App is a user-facing web application available at [https://app.medplum.com/](https://app.medplum.com/) targeted towards developers and project administrators. The app is a quick way to administer projects, manage users, and inspect resources.

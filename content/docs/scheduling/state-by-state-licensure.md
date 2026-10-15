@@ -2,7 +2,7 @@
 id: state-by-state-licensure
 title: Matching Patients to Providers by State-by-State Licensure
 sidebar_label: Matching Patients to Providers by State-by-State Licensure
-weight: 12
+weight: 130
 tags: [scheduling]
 ---
 

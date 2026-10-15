@@ -1,7 +1,7 @@
 ---
 id: local-dev-setup
 title: Local development setup
-weight: 10
+weight: 110
 ---
 
 Ready to get started developing Medplum on your local machine? Great! First, you'll need to set up your own copy of the

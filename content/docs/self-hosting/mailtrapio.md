@@ -1,7 +1,7 @@
 ---
 id: mailtrapio
 title: Testing emails with Mailtrap Email Sandbox
-weight: 1100
+weight: 11010
 ---
 
 [Mailtrap.io](https://mailtrap.io/)  is an email platform for developer and product teams who need high inboxing rates and fast email delivery. It offers a flexible email API and a reliable SMTP service for developers to send transactional and bulk emails.

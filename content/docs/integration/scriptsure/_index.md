@@ -1,7 +1,7 @@
 ---
 id: index
 title: ScriptSure
-weight: 0
+weight: 10
 ---
 
 {{< tip title="Planning this integration?" >}}

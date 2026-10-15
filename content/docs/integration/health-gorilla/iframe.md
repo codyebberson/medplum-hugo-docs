@@ -1,7 +1,7 @@
 ---
 id: iframe
 title: Lab Ordering iFrame
-weight: 4
+weight: 50
 ---
 
 {{< info title="Choose one ordering interface" >}}

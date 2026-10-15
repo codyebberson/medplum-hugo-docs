@@ -1,7 +1,7 @@
 ---
 id: basic-search
 title: Basic Search
-weight: 1
+weight: 20
 ---
 
 ## Intro

@@ -1,7 +1,7 @@
 ---
 id: patient-insurance
 title: Representing Patient Insurance Coverage
-weight: 2
+weight: 30
 tags:
   - billing
   - insurance

@@ -1,7 +1,7 @@
 ---
 id: server-profiling
 title: Server Profiling
-weight: 202
+weight: 2030
 ---
 
 Medplum is designed to be a critical component of system architecture. It is important that Medplum server is robust, performant, and scalable. Hand in hand with [Load Testing](/docs/self-hosting/load-testing), profiling the server is critical in understanding performance bottlenecks and scaling challenges.

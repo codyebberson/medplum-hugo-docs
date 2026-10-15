@@ -1,7 +1,7 @@
 ---
 id: publishing-npm-packages
 title: Publishing NPM Packages
-weight: 101
+weight: 1020
 ---
 
 This is the process we use to publish new versions of JavaScript NPM packages.

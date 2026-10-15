@@ -1,7 +1,7 @@
 ---
 id: project-scoped-urls
 title: Project-Scoped URLs
-weight: 3
+weight: 40
 tags: [auth]
 ---
 

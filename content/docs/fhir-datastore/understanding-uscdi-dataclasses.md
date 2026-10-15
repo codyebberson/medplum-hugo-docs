@@ -1,7 +1,7 @@
 ---
 id: understanding-uscdi-dataclasses
 title: Understanding USCDI Data Classes
-weight: 10
+weight: 110
 ---
 
 The United States Core Data for Interoperability (USCDI) is a standardized set of health data classes and constituent data elements for nationwide, interoperable health information exchange.

@@ -1,7 +1,7 @@
 ---
 id: bot-code-organization
 title: Bot Code Organization and Build Setup
-weight: 3
+weight: 40
 toc_max_heading_level: 3
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: multiple-locations
 title: Multiple Locations
-weight: 4
+weight: 50
 ---
 
 This guide describes how to work with multiple locations in Health Gorilla. This is especially relevant for Management Services Organizations (MSOs) or practices with multiple clinic locations where different practitioners are assigned to different locations.

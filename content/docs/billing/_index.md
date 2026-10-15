@@ -1,7 +1,7 @@
 ---
 id: index
 title: Billing
-weight: 1
+weight: 20
 ---
 
 {{< tip title="Planning this workflow?" >}}

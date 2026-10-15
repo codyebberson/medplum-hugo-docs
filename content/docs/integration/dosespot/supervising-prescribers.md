@@ -1,7 +1,7 @@
 ---
 id: supervising-prescribers
 title: Supervising Prescribers
-weight: 5
+weight: 60
 description: Configure supervising prescribers after DoseSpot enrollment so prescribing agents can prescribe on behalf of an eligible supervising clinician.
 ---
 

@@ -2,7 +2,7 @@
 id: index
 title: Designing Your Workflows
 sidebar_label: Designing Your Workflows
-weight: 3
+weight: 40
 ---
 
 Decision guides are companion documents to the Medplum docs. Each one walks through the requirements questions and FHIR modeling decisions for a specific workflow area – _who_ uses it, _what_ data flows through it, _how_ it integrates with other systems, and which Medplum primitives best fit each requirement.

@@ -1,7 +1,7 @@
 ---
 id: gin-index-performance
 title: GIN Index Performance
-weight: 101
+weight: 1020
 ---
 
 {{< warning >}}

@@ -1,7 +1,7 @@
 ---
 id: index
 title: Self-hosting Medplum
-weight: 1
+weight: 20
 ---
 
 Medplum is an open source healthcare development platform that you can deploy in your own environment. This guide provides detailed instructions for self-hosting Medplum across various infrastructure options.

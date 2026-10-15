@@ -1,7 +1,7 @@
 ---
 id: clinic-favorite-medications
 title: Clinic Favorite Medications
-weight: 3
+weight: 40
 ---
 
 The Medplum-DoseSpot integration allows you to configure **clinic favorite medications** which can significantly **reduce the number of clicks required for clinicians to prescribe common medications**. This allows your organization to:

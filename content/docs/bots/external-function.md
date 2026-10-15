@@ -1,7 +1,7 @@
 ---
 id: external-function
 title: External Lambda Functions
-weight: 20
+weight: 210
 ---
 
 When running Medplum in AWS, Medplum uses AWS Lambdas to execute bot logic.

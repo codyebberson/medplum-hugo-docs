@@ -1,7 +1,7 @@
 ---
 id: project-settings
 title: Project Settings
-weight: 60
+weight: 610
 ---
 
 Many settings are also available at the Project level, allowing them to be configured for specific tenants on the server

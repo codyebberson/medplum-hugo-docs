@@ -1,7 +1,7 @@
 ---
 id: subscription-extensions
 title: Subscription Extensions
-weight: 3
+weight: 40
 tags:
   - subscription
 ---

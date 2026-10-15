@@ -2,7 +2,7 @@
 id: home
 title: Welcome to Medplum
 slug: /
-weight: 1
+weight: 20
 ---
 
 {{< section >}}

@@ -1,7 +1,7 @@
 ---
 id: project-vs-server-scoped-users
 title: Project vs Server Scoped Users
-weight: 11
+weight: 120
 tags: [auth]
 ---
 

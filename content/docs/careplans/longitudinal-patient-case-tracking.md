@@ -1,6 +1,6 @@
 ---
 id: longitudinal-patient-case-tracking
-weight: 1
+weight: 20
 title: Longitudinal Patient Case Tracking
 tags: [care plans, episode of care, longitudinal tracking]
 ---

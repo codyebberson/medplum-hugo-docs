@@ -1,7 +1,7 @@
 ---
 id: index
 title: Build with AI on Medplum
-weight: 0
+weight: 10
 ---
 
 ## The Reality of Healthcare AI

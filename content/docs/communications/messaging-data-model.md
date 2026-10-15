@@ -1,6 +1,6 @@
 ---
 id: messaging-data-model
-weight: 1
+weight: 20
 title: Messaging Data Model
 tags: [communications, messaging, threads, Communication]
 keywords: [Communication, thread, partOf, topic, category, messaging]

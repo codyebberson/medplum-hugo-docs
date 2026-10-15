@@ -1,7 +1,7 @@
 ---
 id: setup
 title: Setup
-weight: 1
+weight: 20
 ---
 
 ## Step 1 — Install the integration

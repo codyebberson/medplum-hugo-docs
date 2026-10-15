@@ -1,7 +1,7 @@
 ---
 id: rds-parameters
 title: Update RDS Parameters
-weight: 100
+weight: 1010
 ---
 
 Postgres exposes a wide variety of configuration settings that can be tuned to improve database performance. These

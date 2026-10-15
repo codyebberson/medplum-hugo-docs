@@ -1,7 +1,7 @@
 ---
 id: ip-access-rules
 title: IP Access Rules
-weight: 2
+weight: 30
 tags: [auth]
 ---
 

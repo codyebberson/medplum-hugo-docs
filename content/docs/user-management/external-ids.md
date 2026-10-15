@@ -1,7 +1,7 @@
 ---
 id: external-ids
 title: Using External IDs
-weight: 8
+weight: 90
 tags: [auth]
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: ordering-labs-imaging
 title: Order Labs and Imaging
-weight: 3
+weight: 40
 ---
 
 Certified EHRs are required to support Computerized Physician Order Entry (CPOE) for Medications Labs and/or Imaging. These correspond to the ONC (a)(1), (a)(2) and (a)(3) criteria and which are described on [HealthIt.gov](https://www.healthit.gov/test-method/computerized-provider-order-entry-cpoe-medications).

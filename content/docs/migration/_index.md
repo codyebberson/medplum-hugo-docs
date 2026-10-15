@@ -2,7 +2,7 @@
 id: index
 title: Migrating to Medplum
 toc_max_heading_level: 3
-weight: 0
+weight: 10
 ---
 
 Consider the following common scenario:

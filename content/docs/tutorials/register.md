@@ -1,7 +1,7 @@
 ---
 id: register
 title: Register an Account
-weight: 2
+weight: 30
 ---
 
 This guide explains how to register for a new Medplum account and create your first Medplum project.

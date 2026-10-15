@@ -75,6 +75,10 @@ function updateActiveLinks() {
     if (link.href === window.location.href) {
       link.closest('.sidebar-category-header-wrapper')?.classList.add('active');
       link.classList.add('active');
+      // Open every category containing the page; the sidebar is outside #swup, so its server-rendered state goes stale
+      for (let c = link.closest('.sidebar-category'); c; c = c.parentElement.closest('.sidebar-category')) {
+        c.classList.add('expanded');
+      }
     }
   });
 }

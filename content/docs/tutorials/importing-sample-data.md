@@ -1,7 +1,7 @@
 ---
 id: importing-sample-data
 title: Import Sample Data
-weight: 3
+weight: 40
 sidebar_label: Import Sample Data
 ---
 

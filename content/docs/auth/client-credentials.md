@@ -1,7 +1,7 @@
 ---
 id: client-credentials
 title: Client Credentials
-weight: 3
+weight: 40
 tags: [auth]
 ---
 

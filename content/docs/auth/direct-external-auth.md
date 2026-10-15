@@ -1,7 +1,7 @@
 ---
 id: direct-external-auth
 title: Direct External Authentication
-weight: 10
+weight: 110
 tags: [auth]
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: dicomweb-api
 title: DICOMweb API
-weight: 3
+weight: 40
 ---
 
 Medplum serves [DICOMweb](https://www.dicomstandard.org/using/dicomweb) under `/dicomweb` on the same

@@ -1,7 +1,7 @@
 ---
 id: install-on-digital-ocean
 title: Install on DigitalOcean
-weight: 7
+weight: 80
 ---
 
 This guide covers the DigitalOcean-specific steps for running the Medplum API server. For production deployments, use DigitalOcean Managed PostgreSQL and Managed Redis rather than running databases inside the application container.

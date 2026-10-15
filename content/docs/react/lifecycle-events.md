@@ -1,7 +1,7 @@
 ---
 id: lifecycle-events
 title: MedplumClient Lifecycle Events
-weight: 8
+weight: 90
 ---
 
 When authenticating to Medplum via `MedplumClient`, there are few things to consider in terms of the `MedplumClient` authentication lifecycle and how you should structure your app around it --

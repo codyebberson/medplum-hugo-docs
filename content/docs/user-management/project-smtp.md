@@ -1,7 +1,7 @@
 ---
 id: project-smtp
 title: Project SMTP
-weight: 11
+weight: 120
 tags: [auth]
 ---
 

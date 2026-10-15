@@ -1,7 +1,7 @@
 ---
 id: hitrust
 title: HITRUST Certification
-weight: 3
+weight: 40
 ---
 
 Medplum has achieved HITRUST e1 certification for the Medplum Platform residing at Amazon Web Services (AWS). The HITRUST e1 Certification demonstrates that strong controls are in place to protect sensitive data and manage risk effectively, validated through independent third-party assessment under the HITRUST Assurance Program.

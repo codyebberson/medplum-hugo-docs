@@ -2,7 +2,7 @@
 id: data-migration
 title: Data Migration Decision Guide
 sidebar_label: Data Migration
-weight: 8
+weight: 90
 download_slug: data-migration
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: agent-cli-commands
 title: Agent CLI Commands
-weight: 7
+weight: 80
 ---
 
 The Medplum CLI provides several commands for managing and interacting with agents. This document describes the available commands and their usage. See more about installing and using the Medplum CLI [here](/docs/cli).

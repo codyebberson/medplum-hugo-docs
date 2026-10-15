@@ -1,6 +1,6 @@
 ---
 id: spaces
-weight: 500
+weight: 5010
 title: Spaces
 tags: [provider, ai, spaces, bots, communications]
 keywords: [Spaces, $ai, OpenAI, FHIR agent, AI assistant, Medplum Provider, ai-fhir-request-tools]

@@ -1,7 +1,7 @@
 ---
 id: fetch-logs
 title: Agent Fetch Logs
-weight: 12
+weight: 130
 ---
 
 Fetches log entries from a given agent or agents. Useful for debugging and monitoring agent behavior.

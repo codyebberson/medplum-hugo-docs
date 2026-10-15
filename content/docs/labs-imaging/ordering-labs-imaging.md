@@ -1,7 +1,7 @@
 ---
 id: ordering-labs-imaging
 title: Order Labs and Imaging
-weight: 1
+weight: 20
 tags:
   - labs
   - imaging

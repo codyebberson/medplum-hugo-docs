@@ -2,7 +2,7 @@
 id: migration-planning
 title: Planning Your Migration
 toc_max_heading_level: 3
-weight: 1
+weight: 20
 ---
 
 Successful migrations start by defining the source data, target model, operational constraints, and acceptance criteria before writing pipeline code.

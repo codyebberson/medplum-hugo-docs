@@ -1,7 +1,7 @@
 ---
 id: index
 title: Messaging & Communications
-weight: 0
+weight: 10
 ---
 
 {{< tip title="Planning this workflow?" >}}

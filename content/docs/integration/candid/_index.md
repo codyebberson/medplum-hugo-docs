@@ -1,7 +1,7 @@
 ---
 id: index
 title: Candid Health Integration
-weight: 3
+weight: 40
 tags: [integration]
 ---
 

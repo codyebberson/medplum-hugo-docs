@@ -1,7 +1,7 @@
 ---
 id: bulk-status
 title: Agent Bulk Status
-weight: 11
+weight: 120
 ---
 
 Gets the status of an agent or agents based on given search criteria. Useful for seeing whether agents are connected and listing their current software version.

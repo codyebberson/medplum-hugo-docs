@@ -15,7 +15,7 @@ tags:
   - care plans
   - LIS
   - LIMS
-weight: 6
+weight: 70
 ---
 
 [LOINC](https://loinc.org) (Logical Observation Identifiers Names and Codes) was established with the intention of defining a universal standard for identifying clinical data in electronic reports. The overall scope of LOINC is anything you can **test**, **measure**, or **observe** about a patient.

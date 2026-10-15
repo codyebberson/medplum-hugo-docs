@@ -1,7 +1,7 @@
 ---
 id: install-on-ubuntu
 title: Install on Ubuntu
-weight: 3
+weight: 40
 ---
 
 This guide provides step-by-step instructions for deploying Medplum on Ubuntu using our official APT repository. The installation process is streamlined through package management while maintaining the robustness and security required for production environments. This guide was tested on Ubuntu 24.04 but is compatible with most recent Ubuntu versions.

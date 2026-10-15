@@ -2,7 +2,7 @@
 id: profiles
 title: Profiles
 toc_max_heading_level: 5
-weight: 9
+weight: 100
 ---
 
 FHIR provides a broad variety of resources types to cover as many different types of healthcare data as possible, favoring generality over specificity. For example, the `Observation` resource type is used to record many different kinds of data: a patient's smoking status might be recorded using the `valueCodeableConcept` field, while the measurement data for blood pressure would exist as two separate entries under `component.valueQuantity`.

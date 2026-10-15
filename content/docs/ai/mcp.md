@@ -1,7 +1,7 @@
 ---
 id: mcp
 title: Medplum MCP
-weight: 10
+weight: 110
 ---
 
 Welcome to the official documentation for the Medplum MCP integration. This guide provides an in-depth look at how to set up and use the integration, detailing the available tools and providing practical examples to help you get started.

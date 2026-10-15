@@ -1,7 +1,7 @@
 ---
 id: bot-lambda-layer
 title: Medplum Bot Layers
-weight: 2000
+weight: 20010
 tags: [bots, self-host]
 ---
 

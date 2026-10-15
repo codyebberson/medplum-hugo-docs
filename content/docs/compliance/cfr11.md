@@ -1,7 +1,7 @@
 ---
 id: cfr11
 title: CFR Part 11 Certification
-weight: 9
+weight: 100
 ---
 
 {{< warning title="Note" >}}

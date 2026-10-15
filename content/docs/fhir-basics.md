@@ -2,7 +2,7 @@
 id: fhir-basics
 title: FHIR Basics
 toc_max_heading_level: 2
-weight: 2.1
+weight: 31
 keywords:
   - getting started
   - fhir

@@ -1,7 +1,7 @@
 ---
 id: processing-async-bundles
 title: Processing Asynchronous Bundles
-weight: 8
+weight: 90
 ---
 
 {{< note title="Feature flag required" >}}

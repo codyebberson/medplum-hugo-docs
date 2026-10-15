@@ -1,7 +1,7 @@
 ---
 id: features
 title: Agent Features
-weight: 2
+weight: 30
 ---
 
 Each feature that the Agent supports, such as the `Agent/$push` operation, `Agent/$status`, `Agent/$reload-config`, etc. all require minimum versions of both Medplum Server and Medplum Agent in order to work. The matrix of feature, Medplum Server version, and Medplum Agent version looks like this:

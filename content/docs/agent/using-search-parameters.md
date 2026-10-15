@@ -1,7 +1,7 @@
 ---
 id: using-search-parameters
 title: Using Agent Search Parameters in Bulk Operations
-weight: 9
+weight: 100
 ---
 
 Several of the Medplum Agent operations can act on more than one agent at a time. Instead of targeting a single agent by ID, you invoke the operation against the `Agent` _type_ endpoint and use `Agent` search parameters to select which agents the operation should run against.

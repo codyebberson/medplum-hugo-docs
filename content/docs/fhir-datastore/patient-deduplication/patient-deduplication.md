@@ -1,7 +1,7 @@
 ---
 id: patient-deduplication
 title: Patient Deduplication Architectures
-weight: 11
+weight: 120
 ---
 
 Deduplicating patient records from multiple sources is a nuanced workflow. We've put this guide together to go over the basics of merging patient records, and review some of the most important technical design considerations when building a patient deduplication pipeline. The pipeline described here is the basis of an [Enterprise Master Patient Index](https://en.wikipedia.org/wiki/Enterprise_master_patient_index) (EMPI).

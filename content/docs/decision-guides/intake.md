@@ -2,7 +2,7 @@
 id: intake
 title: Intake & Registration Decision Guide
 sidebar_label: Intake & Registration
-weight: 1
+weight: 20
 download_slug: intake
 ---
 

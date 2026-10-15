@@ -1,7 +1,7 @@
 ---
 id: considerations
 title: Should you Self-Host?
-weight: 1
+weight: 20
 ---
 
 Self-hosting is part of the beauty of open source, and self-hosting Medplum can be the right choice for some teams. However, successful self-hosters of Medplum have highly skilled in-house SRE resources and make significant operational investments in order to maintain their self-hosted clusters. This guide helps you evaluate whether self-hosting aligns with your goals and resources.

@@ -1,7 +1,7 @@
 ---
 id: super-admin-guide
 title: Super Admin Guide
-weight: 70
+weight: 710
 ---
 
 When self-hosting a Medplum server, you will have access to a "Super Admin" project. When you sign in as a member of the "Super Admin" project, you will have access to very powerful super admin privileges.

@@ -1,7 +1,7 @@
 ---
 id: account-setup
 title: Account Setup
-weight: 1
+weight: 20
 ---
 
 This guide walks through completing your ScriptSure account setup after Medplum has provisioned your organization.

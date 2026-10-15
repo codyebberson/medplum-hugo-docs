@@ -1,6 +1,6 @@
 ---
 id: index
-weight: 1
+weight: 20
 title: Consent and Signatures
 tags: [consent, signature, e-signature, intake, compliance, questionnaire]
 keywords: [Consent, Signature, QuestionnaireResponse, e-signature, consent capture, signatureRequired, SignatureInput, audit trail]

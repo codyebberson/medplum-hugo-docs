@@ -1,6 +1,6 @@
 ---
 id: visit-templates
-weight: 2
+weight: 30
 title: Visit Templates and the SOAP Approach
 keywords:
   - charting

@@ -1,7 +1,7 @@
 ---
 id: onc
 title: ONC Certification
-weight: 4
+weight: 50
 ---
 
 Medplum is ONC Certified. Below are certification resources and documentation.

@@ -1,7 +1,7 @@
 ---
 id: alpha-beta
 title: Alpha & Beta Features
-weight: 13
+weight: 140
 ---
 
 Some Medplum features are released before they reach general availability (GA). This page explains what the **Alpha** and **Beta** labels mean and what to expect when building on pre-GA features.

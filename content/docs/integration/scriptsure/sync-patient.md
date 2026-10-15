@@ -1,7 +1,7 @@
 ---
 id: sync-patient
 title: Sync a Patient
-weight: 3
+weight: 40
 ---
 
 **Bot:** `scriptsure-patient-sync-bot`

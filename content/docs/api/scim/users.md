@@ -1,7 +1,7 @@
 ---
 id: users
 title: Users
-weight: 2
+weight: 30
 ---
 
 Medplum supports the standard SCIM `Users` API endpoints.

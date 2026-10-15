@@ -1,7 +1,7 @@
 ---
 id: load-testing
 title: Load Testing
-weight: 201
+weight: 2020
 ---
 
 Medplum is designed to be a critical component of system architecture. It is important that Medplum server is robust, performant, and scalable. But no matter how well designed, the capacity of the server will eventually be limited by the hardware it runs on. Therefore, it is also important to understand how Medplum server responds under extreme load, such as how and when the server will break.

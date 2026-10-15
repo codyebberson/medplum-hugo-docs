@@ -2,7 +2,7 @@
 id: migration-pipelines
 title: Building Migration Pipelines
 toc_max_heading_level: 3
-weight: 5
+weight: 60
 ---
 
 This guide covers reliable, restartable pipelines for writing migrated data to Medplum. It focuses on idempotency, batch and transaction choices, asynchronous processing, recovery, throughput, and files.

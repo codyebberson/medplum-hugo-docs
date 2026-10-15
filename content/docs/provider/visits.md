@@ -1,7 +1,7 @@
 ---
 id: visits
 title: Visits
-weight: 400
+weight: 4010
 ---
 
 Visit management is at the heart of clinical documentation and patient care delivery. The Medplum Provider app provides comprehensive tools for documenting patient Visits, streamlining clinical workflows through Care Templates, and customizing documentation to meet specific practice needs. This section covers the essential Visit management functions.

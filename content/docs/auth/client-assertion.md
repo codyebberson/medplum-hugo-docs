@@ -1,7 +1,7 @@
 ---
 id: client-assertion
 title: Client Assertion (JWT Bearer)
-weight: 3.5
+weight: 45
 tags: [auth]
 ---
 

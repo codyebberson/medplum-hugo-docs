@@ -1,7 +1,7 @@
 ---
 id: family-relationships
 title: Family Relationships
-weight: 12
+weight: 130
 ---
 
 import { HomerSimpson, LisaSimpson, SimpsonsFamily, HomerLisaRelatedPerson } from '@medplum/mock';

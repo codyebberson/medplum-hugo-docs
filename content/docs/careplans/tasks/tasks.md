@@ -1,7 +1,7 @@
 ---
 id: tasks
 title: Tasks and Work Queues
-weight: 0
+weight: 10
 tags:
   - care plans
   - workflow

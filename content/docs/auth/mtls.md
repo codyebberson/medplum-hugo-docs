@@ -1,7 +1,7 @@
 ---
 id: mtls
 title: Mutual TLS (mTLS)
-weight: 4
+weight: 50
 tags: [auth]
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: datadog
 title: Datadog Integration
-weight: 1000
+weight: 10010
 ---
 
 This page describes how to add the Datadog agent to your ECS Fargate tasks. Adding Datadog allows you to collect metrics from all containers.

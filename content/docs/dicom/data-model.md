@@ -1,7 +1,7 @@
 ---
 id: data-model
 title: DICOM Data Model
-weight: 2
+weight: 30
 ---
 
 DICOM organizes imaging into a three-level hierarchy — **study**, **series**, **instance** — and

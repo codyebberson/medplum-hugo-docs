@@ -1,6 +1,6 @@
 ---
 id: creating-your-first-thread
-weight: 2
+weight: 30
 title: Creating Your First Thread
 tags: [communications, messaging, threads, Communication, tutorial]
 keywords: [Communication, thread, partOf, MedplumClient, tutorial]

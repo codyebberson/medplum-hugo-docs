@@ -1,7 +1,7 @@
 ---
 id: creating-cms1500
 title: Creating CMS 1500
-weight: 4
+weight: 50
 ---
 
 Medplum supports customizable creation of CMS 1500 for use in billing.

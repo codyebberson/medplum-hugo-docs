@@ -1,7 +1,7 @@
 ---
 id: query-limits
 title: Query Limits
-weight: 4
+weight: 50
 ---
 
 Because complex GraphQL queries may be computationally expensive, the query is analyzed before execution,

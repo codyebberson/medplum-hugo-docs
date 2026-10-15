@@ -1,7 +1,7 @@
 ---
 id: advanced-search-parameters
 title: Advanced Search Parameters
-weight: 2
+weight: 30
 ---
 
 The FHIR search framework allows for special search parameters that enable more complex searches to fine-tune your results. In this document, we will go over the following special parameters:

@@ -2,7 +2,7 @@
 id: mapping-governance
 title: Governing Data Mappings
 toc_max_heading_level: 3
-weight: 3
+weight: 40
 ---
 
 A data mapping defines how source data becomes FHIR R4 resources in Medplum. We recommend treating mappings as reviewed, versioned specifications, not implementation details hidden inside migration code. This gives everyone who understands the source data or depends on the result a place to review the decisions before they are buried in transformation logic.

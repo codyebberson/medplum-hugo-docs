@@ -1,7 +1,7 @@
 ---
 id: index
 title: Health Gorilla Lab Orders
-weight: 2
+weight: 30
 tags: [integration]
 ---
 

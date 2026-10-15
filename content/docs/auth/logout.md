@@ -1,7 +1,7 @@
 ---
 id: logout
 title: Logout
-weight: 9
+weight: 100
 tags: [auth]
 ---
 

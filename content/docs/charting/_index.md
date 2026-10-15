@@ -1,7 +1,7 @@
 ---
 id: index
 title: Charting
-weight: 0
+weight: 10
 keywords:
   - charting
   - EHR

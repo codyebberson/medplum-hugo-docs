@@ -1,7 +1,7 @@
 ---
 id: enroll-user
 title: Prescriber Enrollment
-weight: 4
+weight: 50
 ---
 
 This guide explains how to enroll a new prescriber in DoseSpot. Medplum provides two enrollment bots:

@@ -1,7 +1,7 @@
 ---
 id: creating-superbills
 title: Creating Superbills
-weight: 5
+weight: 60
 ---
 
 Medplum supports customizable creation of superbills.

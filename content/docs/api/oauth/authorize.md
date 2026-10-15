@@ -1,7 +1,7 @@
 ---
 id: authorize
 title: Authorize endpoint
-weight: 1
+weight: 20
 ---
 
 The `/oauth2/authorize` endpoint signs in the user.

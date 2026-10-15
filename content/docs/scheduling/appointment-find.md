@@ -2,7 +2,7 @@
 id: appointment-find
 title: Appointment $find
 sidebar_label: Appointment $find
-weight: 2
+weight: 30
 ---
 
 {{< info title="Beta" >}}

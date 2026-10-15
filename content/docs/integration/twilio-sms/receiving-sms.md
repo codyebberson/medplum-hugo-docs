@@ -1,7 +1,7 @@
 ---
 id: receiving-sms
 title: Receiving SMS
-weight: 3
+weight: 40
 ---
 
 When a patient sends a message to a registered Twilio number, the integration creates a `Communication` resource automatically. No application code is required.

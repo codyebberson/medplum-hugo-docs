@@ -1,6 +1,6 @@
 ---
 id: read-receipts-and-message-status
-weight: 6
+weight: 70
 title: Read Receipts and Message Status
 tags: [communications, messaging, read receipts, task, lifecycle]
 keywords: [read receipt, message status, sent, received, read, unread, Task, extension]

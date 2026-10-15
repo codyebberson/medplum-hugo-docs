@@ -1,7 +1,7 @@
 ---
 id: astm-channels
 title: ASTM Channels
-weight: 21
+weight: 220
 ---
 
 Clinical analyzers — Bio-Rad, Beckman, Roche, and many others — commonly speak **ASTM E1381** (the

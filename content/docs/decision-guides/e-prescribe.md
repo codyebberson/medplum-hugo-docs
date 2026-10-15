@@ -2,7 +2,7 @@
 id: e-prescribe
 title: E-Prescribe Decision Guide
 sidebar_label: E-Prescribe
-weight: 4
+weight: 50
 download_slug: e-prescribe
 ---
 

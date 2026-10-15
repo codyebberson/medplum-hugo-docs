@@ -1,6 +1,6 @@
 ---
 id: sending-messages-and-attachments
-weight: 5
+weight: 60
 title: Message Attachments
 tags: [communications, messaging, attachments]
 keywords: [payload, contentString, contentAttachment, contentReference, Binary, DocumentReference]

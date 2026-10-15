@@ -2,7 +2,7 @@
 id: convert-to-fhir
 title: Converting Data to FHIR
 toc_max_heading_level: 3
-weight: 4
+weight: 50
 ---
 
 [patient]: /docs/api/fhir/resources/patient

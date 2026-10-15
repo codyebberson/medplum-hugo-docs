@@ -1,7 +1,7 @@
 ---
 id: access-policies
 title: Access Policies
-weight: 1
+weight: 20
 tags: [auth]
 ---
 

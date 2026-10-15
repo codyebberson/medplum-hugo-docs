@@ -2,7 +2,7 @@
 id: hg-changelog
 title: HealthGorilla Integration Changelog
 sidebar_label: Changelog
-weight: 99
+weight: 1000
 ---
 
 This page tracks updates, improvements, and changes to the HealthGorilla integration in Medplum.

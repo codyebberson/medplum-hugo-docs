@@ -1,7 +1,7 @@
 ---
 id: agent-dimse
 title: DICOM with the Medplum Agent
-weight: 4
+weight: 50
 ---
 
 Imaging equipment does not speak DICOMweb. Modalities, workstations, and legacy PACS speak **DIMSE** —

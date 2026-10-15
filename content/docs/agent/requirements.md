@@ -1,7 +1,7 @@
 ---
 id: requirements
 title: System Requirements
-weight: 4
+weight: 50
 ---
 
 Medplum publishes an official agent installer for Microsoft Windows.

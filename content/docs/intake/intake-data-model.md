@@ -1,6 +1,6 @@
 ---
 id: intake-data-model
-weight: 1
+weight: 20
 title: Intake Data Model
 tags: [intake, registration, patient, questionnaire, FHIR]
 keywords: [Patient, QuestionnaireResponse, Coverage, Consent, intake, registration, data model]

@@ -1,7 +1,7 @@
 ---
 id: overview
 title: Overview
-weight: 1
+weight: 20
 ---
 
 Medplum user management supports [SCIM](https://www.simplecloud.info/) (System for Cross-domain Identity Management), the open API for managing identities.

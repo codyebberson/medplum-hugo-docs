@@ -1,7 +1,7 @@
 ---
 id: status
 title: Agent Status
-weight: 10
+weight: 110
 ---
 
 Gets the status of a given agent. Useful for seeing whether an agent is connected and listing its current software version.

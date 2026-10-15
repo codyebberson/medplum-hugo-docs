@@ -1,7 +1,7 @@
 ---
 id: upgrading-server
 title: Upgrading Medplum Server
-weight: 90
+weight: 910
 ---
 
 Keeping your Medplum server up-to-date ensures you get the latest security patches, new features, and performance improvements while maintaining compliance with healthcare regulations.

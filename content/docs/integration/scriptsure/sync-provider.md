@@ -1,7 +1,7 @@
 ---
 id: sync-provider
 title: Sync a Provider
-weight: 2
+weight: 30
 ---
 
 Before a prescriber can use ScriptSure, they must have a ScriptSure user account linked to their Medplum `ProjectMembership`. There are two ways to accomplish this:

@@ -1,7 +1,7 @@
 ---
 id: manual-uninstall
 title: Manual Uninstall
-weight: 200
+weight: 2010
 ---
 
 The official agent installer for Microsoft Windows includes an uninstaller. However, if you need to manually uninstall the agent, follow these steps.

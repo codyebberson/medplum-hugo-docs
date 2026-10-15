@@ -2,7 +2,7 @@
 id: charting
 title: Charting Decision Guide
 sidebar_label: Charting
-weight: 3
+weight: 40
 download_slug: charting
 ---
 

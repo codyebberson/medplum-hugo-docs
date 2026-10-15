@@ -1,7 +1,7 @@
 ---
 id: bot-basics
 title: Bot Basics
-weight: 1
+weight: 20
 toc_max_heading_level: 2
 ---
 

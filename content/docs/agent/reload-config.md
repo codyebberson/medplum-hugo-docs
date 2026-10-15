@@ -1,7 +1,7 @@
 ---
 id: reload-config
 title: Agent Reload Config
-weight: 15
+weight: 160
 ---
 
 Remotely reloads the configuration of a given agent or agents from the Medplum Server. Useful for pushing changes made to an `Agent` resource (such as adding, removing, or modifying channels) to a running agent without restarting the agent service.

@@ -1,7 +1,7 @@
 ---
 id: embedded-login
 title: Embedded Login
-weight: 2.5
+weight: 35
 tags: [auth]
 ---
 

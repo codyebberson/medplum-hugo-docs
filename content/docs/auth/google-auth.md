@@ -1,7 +1,7 @@
 ---
 id: google-auth
 title: Google Authentication
-weight: 5
+weight: 60
 tags: [auth]
 ---
 

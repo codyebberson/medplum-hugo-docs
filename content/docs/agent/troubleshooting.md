@@ -1,7 +1,7 @@
 ---
 id: troubleshooting
 title: Troubleshooting
-weight: 100
+weight: 1010
 ---
 
 ## Issue

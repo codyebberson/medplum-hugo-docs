@@ -1,7 +1,7 @@
 ---
 id: insurance-eligibility-checks
 title: Insurance Eligibility Checks
-weight: 3
+weight: 40
 ---
 
 Insurance eligibility checks determine whether a patient's insurance is active, in-network, and has applicable benefits. They ensure that the provider will ultimately get compensated by the patient's insurer for a specific product or service.

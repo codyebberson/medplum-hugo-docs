@@ -1,7 +1,7 @@
 ---
 id: index
 title: DICOM & DICOMweb
-weight: 1
+weight: 20
 ---
 
 Medplum stores medical imaging alongside the rest of the patient record. A modality or PACS sends

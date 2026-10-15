@@ -1,7 +1,7 @@
 ---
 id: electronic-prior-auth
 title: Electronic Prior Auth
-weight: 100
+weight: 1010
 ---
 
 {{< info title="Alpha" >}}

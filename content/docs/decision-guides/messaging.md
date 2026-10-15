@@ -2,7 +2,7 @@
 id: messaging
 title: Messaging & Communications Decision Guide
 sidebar_label: Messaging & Communications
-weight: 6
+weight: 70
 download_slug: messaging
 ---
 

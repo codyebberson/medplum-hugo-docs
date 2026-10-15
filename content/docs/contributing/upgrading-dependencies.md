@@ -1,7 +1,7 @@
 ---
 id: upgrading-dependencies
 title: Upgrading Dependencies
-weight: 100
+weight: 1010
 ---
 
 Medplum upgrades dependencies regularly to ensure we have the latest security patches and bug fixes. This document describes the process for upgrading dependencies.

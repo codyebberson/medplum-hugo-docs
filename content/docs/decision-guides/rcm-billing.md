@@ -2,7 +2,7 @@
 id: rcm-billing
 title: RCM & Billing Decision Guide
 sidebar_label: RCM & Billing
-weight: 7
+weight: 80
 download_slug: rcm-billing
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: how-mfa-works
 title: "MFA Under the Hood: Routes & User Flows"
-weight: 6.5
+weight: 75
 sidebar_label: How MFA Works
 tags: [auth, security]
 ---

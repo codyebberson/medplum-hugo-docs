@@ -1,6 +1,6 @@
 ---
 id: index
-weight: 0
+weight: 10
 title: Care Coordination
 ---
 

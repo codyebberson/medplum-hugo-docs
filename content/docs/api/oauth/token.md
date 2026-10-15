@@ -1,7 +1,7 @@
 ---
 id: token
 title: Token endpoint
-weight: 2
+weight: 30
 ---
 
 The `/oauth2/token` endpoint gets the user's tokens.

@@ -1,7 +1,7 @@
 ---
 id: diagnostic-catalog
 title: Defining your Diagnostic Catalog
-weight: 1
+weight: 20
 keywords:
   - loinc
   - diagnostics

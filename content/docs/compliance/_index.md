@@ -1,7 +1,7 @@
 ---
 id: index
 title: Compliance
-weight: 1
+weight: 20
 ---
 
 As an Medplum customer, you will benefit from the compliance built into the platform. With Medplum, you can improve your ability to meet compliance requirements with our tools and automations.

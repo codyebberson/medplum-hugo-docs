@@ -2,7 +2,7 @@
 id: access-control
 title: Access Control Decision Guide
 sidebar_label: Access Control
-weight: 9
+weight: 100
 download_slug: access-control
 ---
 

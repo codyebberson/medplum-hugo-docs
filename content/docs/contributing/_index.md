@@ -1,7 +1,7 @@
 ---
 id: index
 title: Contributing to Medplum
-weight: 1
+weight: 20
 ---
 
 Medplum is an open-source project, and we love both code and non-code contributions! People with any level of experience

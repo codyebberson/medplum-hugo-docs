@@ -1,7 +1,7 @@
 ---
 id: stats
 title: Agent Stats
-weight: 13
+weight: 140
 ---
 
 Fetches runtime statistics from a given agent or agents. Useful for monitoring connection counts, queue depths, RTT metrics, and overall agent health.

@@ -1,7 +1,7 @@
 ---
 id: provider-credentials
 title: Modeling Provider Qualifications
-weight: 2
+weight: 30
 ---
 
 ## Introduction

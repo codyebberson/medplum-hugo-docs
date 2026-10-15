@@ -1,7 +1,7 @@
 ---
 id: index
 title: User Management Guide
-weight: 1
+weight: 20
 tags: [auth]
 ---
 

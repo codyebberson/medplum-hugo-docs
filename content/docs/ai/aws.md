@@ -1,7 +1,7 @@
 ---
 id: aws
 title: AWS Textract/Comprehend
-weight: 20
+weight: 210
 ---
 
 This documentation explains how Medplum integrates with **AWS Textract** for optical character recognition (OCR) and **AWS Comprehend Medical** for extracting clinical entities from text. This powerful combination allows developers to process and analyze unstructured medical documents, such as scanned PDFs or images, directly within their Medplum projects.

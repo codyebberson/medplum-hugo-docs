@@ -1,7 +1,7 @@
 ---
 id: medplum-as-idp
 title: Using Medplum as IDP
-weight: 2
+weight: 30
 toc_max_heading_level: 2
 tags: [auth]
 ---

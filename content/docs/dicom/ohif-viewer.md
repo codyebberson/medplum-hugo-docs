@@ -1,7 +1,7 @@
 ---
 id: ohif-viewer
 title: OHIF Viewer
-weight: 6
+weight: 70
 ---
 
 [OHIF](https://ohif.org/) is an open source, zero-footprint DICOM viewer that reads studies over

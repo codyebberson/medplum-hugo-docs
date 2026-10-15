@@ -1,7 +1,7 @@
 ---
 id: threading
 title: Threading
-weight: 4
+weight: 50
 ---
 
 Threading is not handled automatically by the integration — messages arrive and are sent as standalone `Communication` resources. This is intentional: the right threading strategy depends on your application (patient+practitioner scope, phone-pair scope, a shared inbox, etc.).

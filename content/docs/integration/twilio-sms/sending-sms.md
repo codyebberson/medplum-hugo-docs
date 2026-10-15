@@ -1,7 +1,7 @@
 ---
 id: sending-sms
 title: Sending SMS
-weight: 2
+weight: 30
 ---
 
 ```

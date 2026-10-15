@@ -1,7 +1,7 @@
 ---
 id: index
 title: Introduction
-weight: 0
+weight: 10
 tags:
   - app
 ---

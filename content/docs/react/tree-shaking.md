@@ -1,7 +1,7 @@
 ---
 id: tree-shaking
 title: Tree Shaking
-weight: 10
+weight: 110
 ---
 
 Tree shaking, also known as dead code elimination, is a technique to keep JavaScript bundle sizes as small as possible.

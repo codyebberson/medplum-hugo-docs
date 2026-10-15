@@ -1,7 +1,7 @@
 ---
 id: mutations
 title: Mutations
-weight: 3
+weight: 40
 ---
 
 GraphQL mutations are operations that allow the client to create, update, or delete data on the server. Unlike queries, which are read-only operations and can be executed in parallel, mutations are write operations. For more information about GraphQL mutations, refer to the [GraphQL documentation](https://graphql.org/learn/queries/#mutations).

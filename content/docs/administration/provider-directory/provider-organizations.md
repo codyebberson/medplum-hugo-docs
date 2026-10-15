@@ -1,7 +1,7 @@
 ---
 id: provider-organizations
 title: Modeling Provider Organizations
-weight: 0
+weight: 10
 ---
 
 ## Introduction

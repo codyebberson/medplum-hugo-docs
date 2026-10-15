@@ -1,7 +1,7 @@
 ---
 id: index
 title: Intro to Medplum Agent
-weight: 1
+weight: 20
 ---
 
 The Medplum Agent is an application that runs inside your firewall and connects to devices over low level protocols such as HL7/MLLP, ASTM, and DICOM. These network protocols are commonly unencrypted, and therefore require an adapter to a secure transport. The Medplum Agent uses secure HTTPS WebSocket channels to stream messages between devices and a Medplum server cluster in the cloud.

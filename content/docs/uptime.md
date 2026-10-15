@@ -1,7 +1,7 @@
 ---
 id: uptime
 title: Uptime, Availability, and SLAs
-weight: 3
+weight: 40
 ---
 
 There are two separate questions about uptime. The first is what Medplum commits to in a contract. The second is what Medplum has actually delivered in production. These are different things, and this page covers them separately.

@@ -1,7 +1,7 @@
 ---
 id: testing
 title: Testing
-weight: 50
+weight: 510
 ---
 
 Medplum strongly believes in the importance of testing.

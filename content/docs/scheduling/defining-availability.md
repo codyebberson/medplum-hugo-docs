@@ -2,7 +2,7 @@
 id: defining-availability
 title: Defining Availability
 sidebar_label: Defining Availability (Beta)
-weight: 10
+weight: 110
 ---
 
 {{< info title="Beta" >}}

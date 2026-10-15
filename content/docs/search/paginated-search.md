@@ -1,7 +1,7 @@
 ---
 id: paginated-search
 title: Paginated Search
-weight: 4
+weight: 50
 ---
 
 Pagination is a crucial feature in any API that deals with large datasets, and our FHIR API is no exception. When querying resources, it's often impractical or unnecessary to return all matching results in a single response. Pagination allows clients to retrieve results in manageable chunks, improving performance and reducing network load.

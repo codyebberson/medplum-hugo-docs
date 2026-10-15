@@ -1,7 +1,7 @@
 ---
 id: cli
 title: DICOM with the Medplum CLI
-weight: 5
+weight: 60
 ---
 
 The [Medplum CLI](/docs/cli) can store a DICOM file through STOW-RS directly, which makes it the

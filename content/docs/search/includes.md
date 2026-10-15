@@ -1,7 +1,7 @@
 ---
 id: includes
 title: Including Linked Resources
-weight: 5
+weight: 60
 ---
 
 In many cases, your application may need to search for not just one resource type, but also some of the related

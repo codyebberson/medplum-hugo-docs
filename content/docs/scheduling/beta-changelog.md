@@ -2,7 +2,7 @@
 id: beta-changelog
 title: Beta Changelog
 sidebar_label: Beta Changelog
-weight: 21
+weight: 220
 ---
 
 {{< info title="Beta" >}}

@@ -1,6 +1,6 @@
 ---
 id: async-encounters
-weight: 10
+weight: 110
 title: Representing Asynchronous Encounters
 tags: [communications, messaging, Encounter, Communication, asynchronous]
 keywords: [Encounter, Communication, encounter, partOf, VR, virtual, session, thread]

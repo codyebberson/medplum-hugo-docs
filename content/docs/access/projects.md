@@ -1,7 +1,7 @@
 ---
 id: projects
 title: Projects
-weight: 0
+weight: 10
 tags: [auth]
 ---
 

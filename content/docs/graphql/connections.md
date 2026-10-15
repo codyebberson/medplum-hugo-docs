@@ -1,7 +1,7 @@
 ---
 id: connections
 title: Connection API
-weight: 2
+weight: 30
 ---
 
 Using the normal "List" search (i.e., "PatientList") is the most common way to search for resources. However, the FHIR GraphQL specification also supports the [Connection API](https://hl7.org/fhir/graphql.html#searching), which is a more complex way to search for resources.

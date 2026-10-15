@@ -1,7 +1,7 @@
 ---
 id: mantine-6x-to-7x
 title: Mantine 6.x to 7.x
-weight: 9
+weight: 100
 ---
 
 [Mantine 7.0](https://mantine.dev/changelog/7-0-0/) is a major release that introduces breaking changes. This guide will help you to migrate your application from Mantine 6.x to 7.x.

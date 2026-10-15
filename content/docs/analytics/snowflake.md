@@ -1,7 +1,7 @@
 ---
 id: snowflake
 title: Snowflake
-weight: 2
+weight: 30
 ---
 
 {{< info title="Enterprise feature" >}}

@@ -1,7 +1,7 @@
 ---
 id: redshift
 title: Amazon Redshift
-weight: 3
+weight: 40
 ---
 
 {{< info title="Enterprise feature" >}}

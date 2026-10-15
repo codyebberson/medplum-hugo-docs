@@ -1,7 +1,7 @@
 ---
 id: index
 title: Twilio SMS Integration
-weight: 0
+weight: 10
 tags: [integration, communications]
 ---
 

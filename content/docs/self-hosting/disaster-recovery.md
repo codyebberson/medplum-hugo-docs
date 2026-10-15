@@ -1,7 +1,7 @@
 ---
 id: disaster-recovery
 title: Disaster Recovery
-weight: 204
+weight: 2050
 ---
 
 This document outlines a high-level approach to disaster recovery for a self-hosted Medplum instance deployed across various infrastructure options, including cloud providers (AWS, GCP, Azure) and Kubernetes. It is intended as a foundational overview to facilitate discussions and planning, rather than a detailed step-by-step runbook.

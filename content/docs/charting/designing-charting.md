@@ -1,6 +1,6 @@
 ---
 id: designing-charting
-weight: 1
+weight: 20
 title: Designing Charting
 keywords:
   - charting

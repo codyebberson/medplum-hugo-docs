@@ -1,7 +1,7 @@
 ---
 id: implantable-devices
 title: Recording Implantable Devices
-weight: 4
+weight: 50
 ---
 
 Capturing a Patient's implanted devices is a core function of an Electronic Health Record system. Requirements for EHR Implantable Device list are described in the [ONC (a)(14) criteria](https://www.healthit.gov/test-method/implantable-device-list).

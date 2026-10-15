@@ -2,7 +2,7 @@
 id: validation-and-reconciliation
 title: Validating and Reconciling Migrated Data
 toc_max_heading_level: 3
-weight: 6
+weight: 70
 ---
 
 A migration is complete only when every in-scope source unit has an explained outcome, the resulting FHIR R4 data preserves the intended meaning, and users and integrations can perform their required workflows.

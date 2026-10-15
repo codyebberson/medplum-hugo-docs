@@ -2,7 +2,7 @@
 id: adoption-strategy
 title: Phased Adoption and Cutover
 toc_max_heading_level: 3
-weight: 8
+weight: 90
 pagination_next: null
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: sending-orders
 title: Sending Orders
-weight: 1
+weight: 20
 ---
 
 {{< info title="Prerequisites" >}}

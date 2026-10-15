@@ -1,7 +1,7 @@
 ---
 id: cds-hooks
 title: CDS Hooks
-weight: 11
+weight: 120
 description: CDS Hooks is a standard for surfacing clinical decision support at key points in a clinician's EHR workflow. The EHR fires a hook such as `patient-view` or `order-sign`, sends context to a CDS service, and receives cards with guidance, warnings, or suggested actions.
 ---
 

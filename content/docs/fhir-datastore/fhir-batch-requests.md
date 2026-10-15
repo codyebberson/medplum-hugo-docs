@@ -1,7 +1,7 @@
 ---
 id: fhir-batch-requests
 title: FHIR Batch Requests
-weight: 7
+weight: 80
 ---
 
 FHIR allows users to create batch requests to bundle multiple API calls into a single HTTP request. Batch requests can improve speed and efficiency and can reduce HTTP traffic when working with many resources.

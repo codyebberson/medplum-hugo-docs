@@ -1,7 +1,7 @@
 ---
 id: hipaa
 title: HIPAA Compliance
-weight: 2
+weight: 30
 ---
 
 Medplum is HIPAA Compliant. Customers can request materials in this section to support their own business or compliance needs.

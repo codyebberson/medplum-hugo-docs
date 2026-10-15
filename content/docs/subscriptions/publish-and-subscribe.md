@@ -1,7 +1,7 @@
 ---
 id: publish-and-subscribe
 title: Publish and Subscribe
-weight: 2
+weight: 30
 tags:
   - subscription
 ---

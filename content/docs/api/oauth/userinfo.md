@@ -1,7 +1,7 @@
 ---
 id: userinfo
 title: UserInfo endpoint
-weight: 3
+weight: 40
 ---
 
 The `/oauth2/userinfo` endpoint returns information about the authenticated user.

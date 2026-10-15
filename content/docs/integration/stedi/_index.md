@@ -1,7 +1,7 @@
 ---
 id: index
 title: Stedi Integration
-weight: 2
+weight: 30
 tags: [integration]
 ---
 

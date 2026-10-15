@@ -1,7 +1,7 @@
 ---
 id: receiving-results
 title: Receiving Results
-weight: 2
+weight: 30
 ---
 
 This guide explains how laboratory results are handled in the Medplum-Health Gorilla labs integration.

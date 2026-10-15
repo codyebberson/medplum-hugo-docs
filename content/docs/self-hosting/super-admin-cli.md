@@ -1,7 +1,7 @@
 ---
 id: super-admin-cli
 title: Super Admin CLI
-weight: 80
+weight: 810
 ---
 
 Medplum includes a CLI (Command Line Interface).

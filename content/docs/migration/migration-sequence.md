@@ -2,7 +2,7 @@
 id: migration-sequence
 title: Sequencing Your Migration
 toc_max_heading_level: 3
-weight: 2
+weight: 30
 ---
 
 [resources]: /docs/fhir-basics#storing-data-resources

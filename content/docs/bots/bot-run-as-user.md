@@ -1,7 +1,7 @@
 ---
 id: bot-run-as-user
 title: Run as User
-weight: 10
+weight: 110
 ---
 
 By default, the AccessPolicy that is applied to a Medplum Bot is defined by the Bot's [ProjectMembership](/docs/api/fhir/medplum/projectmembership). This can be useful for many cases where the Bot should have different access to resources than the user who triggered the Bot.

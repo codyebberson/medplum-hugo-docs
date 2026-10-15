@@ -1,7 +1,7 @@
 ---
 id: pre-authorized-code
 title: Pre-Authorized Code
-weight: 11
+weight: 120
 tags: [auth]
 ---
 

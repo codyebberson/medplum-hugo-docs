@@ -1,7 +1,7 @@
 ---
 id: use-subscription
 title: useSubscription Hook
-weight: 3
+weight: 40
 tags:
   - subscription
 ---

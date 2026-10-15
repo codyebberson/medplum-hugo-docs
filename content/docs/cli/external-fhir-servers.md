@@ -1,7 +1,7 @@
 ---
 id: external-fhir-servers
 title: Connecting to External FHIR Servers
-weight: 2
+weight: 30
 tags: [integration]
 ---
 

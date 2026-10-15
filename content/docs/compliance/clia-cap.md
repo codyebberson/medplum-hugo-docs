@@ -1,7 +1,7 @@
 ---
 id: clia-cap
 title: CLIA/CAP Certification
-weight: 6
+weight: 70
 ---
 
 {{< warning title="Note" >}}

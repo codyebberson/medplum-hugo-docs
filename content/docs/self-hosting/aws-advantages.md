@@ -1,7 +1,7 @@
 ---
 id: aws-advantages
 title: AWS Advantages
-weight: 10
+weight: 110
 ---
 
 Medplum provides a suite of digital healthcare services such as authentication, access controls, user management, FHIR server, automation, and more.

@@ -1,7 +1,7 @@
 ---
 id: upgrade
 title: Agent Upgrade
-weight: 14
+weight: 150
 ---
 
 Remotely upgrades the Medplum Agent software for a given agent or agents. Useful for rolling out new agent versions without needing physical or remote access to the host machine running the agent.

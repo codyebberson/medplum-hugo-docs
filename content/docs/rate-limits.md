@@ -1,7 +1,7 @@
 ---
 id: rate-limits
 title: Rate Limits
-weight: 2
+weight: 30
 ---
 
 The Medplum API uses a number of safeguards against bursts of incoming traffic to help maximize its stability. Users who

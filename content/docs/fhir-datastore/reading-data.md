@@ -2,7 +2,7 @@
 id: reading-data
 title: Reading Data
 toc_max_heading_level: 5
-weight: 2
+weight: 30
 ---
 
 A very common operation is reading the data of a specified resource given its `id`. The FHIR `read` operation is used by sending an HTTP `GET` request.

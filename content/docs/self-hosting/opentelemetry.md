@@ -1,7 +1,7 @@
 ---
 id: opentelemetry
 title: OpenTelemetry
-weight: 900
+weight: 9010
 ---
 
 This page describes Medplum's optional OpenTelemetry support, and how to integrate with AWS CloudWatch.

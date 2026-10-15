@@ -2,7 +2,7 @@
 id: timezones
 title: Time Zones and Timestamps
 sidebar_label: Time Zones and Timestamps
-weight: 20
+weight: 210
 ---
 
 Handling time correctly in distributed systems can be surprisingly complex. Differences in time zones, daylight saving time transitions, and system clock configuration can introduce subtle bugs if timestamps are not handled consistently.
