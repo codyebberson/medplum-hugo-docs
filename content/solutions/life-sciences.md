@@ -3,7 +3,6 @@ id: life-sciences
 title: Life Sciences
 ---
 
-
 Highly customizable and integrated data management solution for clinical research and commercialization including:
 
 * Digital portal for patients to sign documents, import historical records and do assessments

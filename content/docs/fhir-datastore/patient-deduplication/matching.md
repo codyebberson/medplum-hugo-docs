@@ -1,15 +1,14 @@
 ---
 id: matching
-title: Matching {#matching-rules}
+title: Matching
+sidebar_label: Matching
 ---
 
-
-
-
-
-
-
 The best deduplication systems use a library of matching rules with different strengths and weaknesses. While the effectiveness of different patient matching rules will vary depending on the clinical context, here we suggest some rules to get you started.
+
+{{< tip title="Built-in matching" >}}
+Medplum provides a built-in [Patient $match](/docs/api/fhir/operations/patient-match) operation based on the **CMS Patient Matching framework**. Rather than an ad-hoc weighted heuristic, it compares a fixed set of identity factors (name, birth date, phone, email, SSN/ITIN, and identifiers) against approved attribute combinations. It's a good starting point before building custom matching rules.
+{{< /tip >}}
 
 These have been trialed in previous deduplication projects, and are rated by their false positive rates (i.e. incorrect matches) and false negative rates (i.e. missed matches). Note that three matching identifiers is the standard.
 

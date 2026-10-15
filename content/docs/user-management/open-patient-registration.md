@@ -3,7 +3,6 @@ id: open-patient-registration
 title: Open Patient Registration
 ---
 
-
 ## Introduction
 
 Most patient facing healthcare apps ask patients to self-enroll through a registration flow.

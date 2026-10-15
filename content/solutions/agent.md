@@ -3,12 +3,11 @@ id: agent
 title: "Medplum Agent: Secure Bridge for Legacy Healthcare Systems"
 ---
 
-
 Healthcare organizations need to integrate HL7, DICOM, and other legacy protocols that operate within closed networks—but maintaining site-to-site VPNs is complex and costly, and legacy integration engines may not be flexible and cloud-first in architecture. The Medplum Agent eliminates these issues while preserving security and compliance.
 
 ## How It Works
 
-The Medplum Agent is a lightweight, open-source service that runs in your local network and converts legacy protocols into secure, encrypted websockets. Your transformation logic runs in Medplum's cloud using modern TypeScript/JavaScript Bots, while the Agent handles the protocol translation locally. The Medplum platform also supports [remote monitoring and upgrade features](/docs/agent/features). 
+The Medplum Agent is a lightweight, open-source service that runs in your local network and converts legacy protocols into secure, encrypted websockets. Your transformation logic runs in Medplum's cloud using modern TypeScript/JavaScript Bots, while the Agent handles the protocol translation locally. The Medplum platform also supports [remote monitoring and upgrade features](/docs/agent/features).
 
 **Supported protocols:**
 - HL7v2
@@ -28,7 +27,7 @@ Yes. All code contributed to Medplum—whether from employees, customers, or com
 
 The Agent maintains:
 - **End-to-end encryption** using TLS/SSL protocols (HTTPS to WSS)
-- **HIPAA and SOC2 Type 2 compliance** 
+- **HIPAA and SOC2 Type 2 compliance**
 - **Modern security practices** through continuous updates
 
 Our Apache 2 license means no vendor lock-in and full transparency into how your infrastructure operates.

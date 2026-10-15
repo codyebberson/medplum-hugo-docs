@@ -40,10 +40,21 @@ const transactionBundle = {
 ```
 
 {{< warning title="Transaction Support" >}}
-Transaction support requires the `transaction-bundles` feature flag to be enabled on your project. Contact Medplum to enable this feature.
+Transaction bundles are generally available and production-ready, but they require the `transaction-bundles` feature flag to be enabled on your Medplum `Project`.
 
-The transaction feature is currently in beta. You may experience `409 conflict` errors when attempting transactions. If this occurs, implement retry logic in your client to handle these errors and retry the transaction until it succeeds.
+A Medplum super administrator must enable the feature flag for each `Project`. For Medplum-hosted environments, contact Medplum support because Medplum manages super administrator access. For self-hosted environments, ask one of your internal Medplum super administrators to enable the feature flag.
+
+If the feature flag is not enabled, a bundle with `type: "transaction"` is processed as a `batch`. Entries execute independently with no atomicity guarantee, and the server does not return an error or warning. Verify the flag is enabled on your project before relying on transaction semantics.
 {{< /warning >}}
+
+### Transaction Limits
+
+Transactions are subject to the following limits. Exceeding either limit causes the entire transaction to be rejected with a `400 Bad Request` error.
+
+- A transaction may contain at most **50 update operations**.
+- A transaction that contains conditional operations (a conditional create using `ifNoneExist`, a conditional update, or a conditional delete) runs under serializable database isolation and is limited to **8 entries**.
+
+To keep a larger transaction out of serializable mode, resolve conditional lookups before submitting it: search for the target resources first, then use plain creates and updates with known IDs inside the transaction.
 
 ## How to Perform a Batch Request
 
@@ -54,7 +65,7 @@ The details of your request will be in the `entry` field of the `Bundle`, which 
 | Element               | Description                                                                                                                                                                                                                       |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `request.url`         | The URL to send your request to. This is relative to the base R4 FHIR URL (e.g. https://api.medplum.com/fhir/R4).                                                                                                                 |
-| `request.method`      | The type of HTTP request you are making. Can be one of the following: <ul><li>GET: Read a resource or perform a search</li><li>POST: Create a resource</li><li>PUT: Update a resource</li><li>DELETE: Delete a resource</li></ul> |
+| `request.method`      | The type of HTTP request: **GET** (read a resource or perform a search), **POST** (create), **PUT** (update), **DELETE** (delete). |
 | `request.ifNoneExist` | [See below](#conditional-batch-actions)                                                                                                                                                                                           |
 | `resource`            | The details of the FHIR resource that is being created/updated.                                                                                                                                                                   |
 | `fullUrl`             | [See below](#internal-references)                                                                                                                                                                                                 |
@@ -96,18 +107,34 @@ The details of your request will be in the `entry` field of the `Bundle`, which 
 
 ### Asynchronous Batch Requests
 
-Processing very large batches (for example, a `Bundle` over 5 MB in size) can take a significant amount of time, often
-longer than the default request timeout of one minute. This causes issues with processing the batch, since an error is
-returned to the client before they can access the actual results of the batch request. To resolve this problem, Medplum
-offers the ability to process the batch asynchronously: a large `Bundle` (to to 50 MB by default) can be sent to the
-server, where it will be enqueued for processing, and a response is sent back to the client immediately with a URL where
-it can receive status updates around the batch processing job.
+Synchronous batch requests are subject to an 8 MB request size limit (Medplum-hosted) and a 60 second timeout. If your use case exceeds these constraints, Medplum offers asynchronous batch requests. There are two main reasons you may want to process a batch asynchronously:
+
+1. **Large or slow bundles** — Bundles that exceed the 8 MB size limit or take more than 15 seconds to process may fail mid-request due to the request timeout. Async processing raises the size limit to 50 MB and removes the timeout by enqueuing the bundle for background processing.
+2. **FHIR quota avoidance** — Asynchronous batch requests do not count against a user's [FHIR interaction quota](/docs/rate-limits#fhir-interaction-load-rate-limit). This makes async the preferred approach for large data seeding or import jobs where quota limits would otherwise be a concern.
+
+In both cases, the `Bundle` is enqueued on the server and a response is sent back to the client immediately with a URL where it can receive status updates around the batch processing job. All resources are written to the FHIR store upon job completion — no additional step is required to apply the results.
+
+{{< warning title="Data availability" >}}
+Because async batches are processed in the background, data is not immediately available after the request returns. Poll the `AsyncJob` status URL and wait for `completed` status before assuming data is ready. This makes async batches best suited for scheduled or pre-planned jobs rather than last-minute operations where changes are needed immediately.
+{{< /warning >}}
+
+#### When to use async vs. sync
+
+| Scenario | Recommendation |
+| --- | --- |
+| Bundle is small and inexpensive | Sync (default) |
+| Bundle is large (approaching 5 MB+) or risks timeout | Async |
+| Seeding demo or test data ahead of time | Async (avoids quota, schedule in advance) |
+| Data must be available immediately | Sync (ensure quota headroom or raise [`userFhirQuota`](/docs/rate-limits#how-to-view-and-configure-fhir-quota-rate-limits)) |
+| High-volume import where quota is the bottleneck | Async |
+
+For a full, step-by-step guide detailing how to submit and poll for the results of asynchronous operations, see **[Processing asynchronous bundles](/docs/fhir-datastore/processing-async-bundles)**.
 
 To opt into asynchronous handling of the batch request, add the `Prefer: respond-async` header to the HTTP request for
 the batch:
 
 {{< tabs groupId="language" >}}
-  
+
   {{< tab value="curl" label="cURL" >}}
     <MedplumCodeBlock language="bash" selectBlocks="asyncBatchCurl">
       {ExampleCode}
@@ -253,6 +280,8 @@ When updating resources in a transaction bundle, you can prevent **lost updates*
 
 If any resource in the transaction has been modified by another user (the version doesn't match), the transaction will fail with a `412 Precondition Failed` error, allowing you to retry after re-reading the current state.
 
+`ifMatch` works the same way on `DELETE` entries, so a delete only succeeds if the resource is still at the version you read.
+
 ## Performing Upserts
 
 Previously, performing an "upsert" (i.e. either creating or updating a resource based on whether it already exists)
@@ -357,7 +386,7 @@ and represent it as a [Binary](/docs/api/fhir/resources/binary) resource:
     "method": "PATCH",
     "url": "Patient/6ffaaab4-ff7e-4416-80c7-8fce95c3e31c"
   },
-  "resource": "resource": {
+  "resource": {
     "resourceType": "Binary",
     "contentType": "application/json-patch+json",
     // Encoded: [{"op":"test","path":"/active","value":false}]
@@ -419,12 +448,15 @@ Autobatching works by creating a queue of `Promises` issued within the `autoBatc
 Instead you should create the queue of `Promise` requests and then use `Promise.all()` to resolve all of them at once.
 
 <details>
-  <summary>Resolving Promises with autobatching</summary>❌ WRONG
+  <summary>Resolving Promises with autobatching</summary>
+
+  **❌ WRONG**
+
   <MedplumCodeBlock language="ts" selectBlocks="autobatchingWrong">
     {ExampleCode}
   </MedplumCodeBlock>
 
-✅ CORRECT
+  **✅ CORRECT**
 
   <MedplumCodeBlock language="ts" selectBlocks="autobatchingCorrect">
     {ExampleCode}

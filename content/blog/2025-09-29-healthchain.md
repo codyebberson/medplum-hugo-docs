@@ -10,7 +10,7 @@ We're excited to share a new open-source project from the community that address
 
 This project is a perfect example of how the open-source community is tackling real-world problems. It was created by [Jennifer Jiang-Kells](https://jenniferjiangkells.com/), an honorary researcher at the [University College London Hospitals](https://www.uclhospitals.brc.nihr.ac.uk/) (UCLH) NHS Foundation Trust, highlighting its roots in a premier healthcare institution.
 
-<!--truncate-->
+<!--more-->
 
 ### Connecting Epic to Medplum
 

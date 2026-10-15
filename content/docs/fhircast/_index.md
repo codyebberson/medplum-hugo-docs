@@ -3,7 +3,6 @@ id: index
 title: FHIRcast
 ---
 
-
 Medplum supports [FHIRcast STU3](https://build.fhir.org/ig/HL7/fhircast-docs/).
 
 ## Overview

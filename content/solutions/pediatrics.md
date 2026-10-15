@@ -3,7 +3,6 @@ id: pediatrics
 title: Pediatrics
 ---
 
-
 Pediatrics implementations have unique characteristics that can make traditional EHRs challenging to use. Traditional EHRs have many assumptions built into them that assume an adult patient, which can make an existing interface confusing for practitioners, making visual customizations important.
 
 There are also three common workflow challenges are prominent in pediatrics.

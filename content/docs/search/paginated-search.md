@@ -69,7 +69,7 @@ GET /Patient?_cursor=abc123xyz
 {{< warning title="Limitations" >}}
 - Currently only supported for searches that are sorted on `_lastUpdated` in ascending order.
 - The cursor values are opaque and should be treated as black boxes by clients.
-- Requires a minimum `_count` value of 20 
+- Requires a minimum `_count` value of 20
 {{< /warning >}}
 
 #### Advantages:
@@ -77,7 +77,6 @@ GET /Patient?_cursor=abc123xyz
 - Supports pagination through very large datasets (millions of resources)
 - More performant than offset-based pagination for large offsets
 - Provides consistent results even if the underlying data changes between requests
-
 
 #### Implementation Details:
 

@@ -3,7 +3,6 @@ id: monitoring-bots
 title: Monitoring Bots
 ---
 
-
 Bots allow for powerful functionality in your app, so it is very important to track what exactly each bot has done. This is possible using a bot's `AuditEvent` resources, which track:
 
 - Each time the Bot runs
@@ -16,7 +15,7 @@ To monitor your bots, navigate to the Bot resource page at https://app.medplum.c
 
 From this page, navigate to the `Event` tab, or https://app.medplum.com/Bot/:id/event. This tab will display all of the `AuditEvent` resources associated with the current bot. These events represent every time the bot has been triggered. This page displays the outcomes from the bot being run, including anything that is printed to the console as part of the bot's functionality.
 
-On the Event tab, there are four fields: ID, Outcome, Outcome Desc, and Last Updated. 
+On the Event tab, there are four fields: ID, Outcome, Outcome Desc, and Last Updated.
 
 | Field          | Description                                                                                                             |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -40,6 +39,6 @@ The Outcome Desc is a description of the results of the bot, including anything 
 
 ### Audit Events Missing
 
-It is possible that on the `Event` tab, there will not be any `AuditEvent` resources stored in the database. This is likely because the bot is configured to only write to the logs, which allows for large-scale bot execution. 
+It is possible that on the `Event` tab, there will not be any `AuditEvent` resources stored in the database. This is likely because the bot is configured to only write to the logs, which allows for large-scale bot execution.
 
 To ensure that your bot is writing to your app, you can configure your bot using the `Bot.auditEventDestination` field. Setting this field to `resource` will update it so that all events executed by your bot appear in your console. For more details see the [Configuring Bot Logging docs](/docs/bots/bots-in-production#configuring-bot-logging).

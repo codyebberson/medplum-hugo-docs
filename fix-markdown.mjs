@@ -131,9 +131,17 @@ async function fixFile(sourceRoot, destRoot, sourceFilePath) {
     hasChanges = true;
   }
 
-  // Replace Docusaurus "<!-- truncate -->" with Hugo "<!--more-->"
-  if (content.includes('<!-- truncate -->')) {
-    content = content.replaceAll('<!-- truncate -->', '<!--more-->');
+  // Convert Docusaurus line highlighting to Hugo "hl_lines"
+  // For example: "```js {6,7,12-13}" becomes "```js {hl_lines=[6,7,"12-13"]}"
+  const highlightResult = fixHighlightLines(content);
+  if (highlightResult.changed) {
+    content = highlightResult.content;
+    hasChanges = true;
+  }
+
+  // Replace Docusaurus "{/* truncate */}" with Hugo "<!--more-->"
+  if (content.includes('{/* truncate */}')) {
+    content = content.replaceAll('{/* truncate */}', '<!--more-->');
     hasChanges = true;
   }
 
@@ -175,7 +183,7 @@ async function fixFile(sourceRoot, destRoot, sourceFilePath) {
     const newFrontMatterStr = frontMatter.join('\n');
     const contentWithoutFrontMatter = frontMatterStr ? content.replace(frontMatterStr, '').trimStart() : content;
 
-    const newContent = newFrontMatterStr + '\n\n' + contentWithoutFrontMatter;
+    const newContent = cleanupWhitespace(newFrontMatterStr + '\n\n' + contentWithoutFrontMatter);
 
     const destPath = sourceFilePath.replace(sourceRoot, destRoot).replace('.mdx', '.md').replace('index.md', '_index.md').replace('home.md', '_index.md');
 
@@ -200,7 +208,7 @@ const admonitionTypeMap = {
 // Matches opening admonition lines:
 //   ::::note            ::::tip Some Title
 //   ::::warning[Title]  ::: caution (with space)
-const admonitionOpenPattern = /^(\s*):{3,4}\s?(note|tip|info|warning|danger|caution)(?:\s+(.+?)|\[(.+?)\])?\s*$/;
+const admonitionOpenPattern = /^(\s*):{3,4}\s?(note|tip|info|warning|danger|caution)(?:\s+(.+?)|\[(.*?)\])?\s*$/;
 
 // Matches closing admonition lines: :::: or :::
 const admonitionClosePattern = /^(\s*):{3,4}\s*$/;
@@ -237,6 +245,69 @@ function fixAdmonitions(content) {
   }
 
   return { content: result.join('\n'), changed };
+}
+
+// Final cleanup pass:
+//   - Collapse multiple blank lines into a single blank line
+//   - Remove trailing whitespace, except Markdown hard line breaks (2+ trailing spaces before a non-blank line)
+//   - End the file with exactly one newline
+// Lines inside fenced code blocks are left untouched.
+function cleanupWhitespace(content) {
+  const lines = content.split('\n');
+  const result = [];
+  let fence = undefined;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const fenceMatch = line.match(/^\s*(`{3,}|~{3,})/);
+
+    if (fence) {
+      result.push(line);
+      if (fenceMatch && fenceMatch[1][0] === fence[0] && fenceMatch[1].length >= fence.length && line.trim() === fenceMatch[1]) {
+        fence = undefined;
+      }
+      continue;
+    }
+
+    if (fenceMatch) {
+      fence = fenceMatch[1];
+      result.push(line.trimEnd());
+      continue;
+    }
+
+    const trimmed = line.trimEnd();
+    if (trimmed === '') {
+      if (result.length > 0 && result[result.length - 1] !== '') {
+        result.push('');
+      }
+      continue;
+    }
+
+    const nextLine = lines[i + 1];
+    const isHardBreak = / {2,}$/.test(line) && nextLine !== undefined && nextLine.trim() !== '';
+    result.push(isHardBreak ? trimmed + '  ' : trimmed);
+  }
+
+  return result.join('\n').trimEnd() + '\n';
+}
+
+// Convert Docusaurus code fence line highlighting to Hugo "hl_lines" attributes
+// Docusaurus: ```js {1,4-6}
+// Hugo:       ```js {hl_lines=[1,"4-6"]}
+function fixHighlightLines(content) {
+  let changed = false;
+
+  content = content.replace(/^(\s*```[\w+-]*[^\S\n]+.*?)\{([\d\s,-]+)\}/gm, (match, prefix, lines) => {
+    changed = true;
+    const items = lines
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean)
+      .map((s) => (s.includes('-') ? `"${s}"` : s));
+    return `${prefix}{hl_lines=[${items.join(',')}]}`;
+  });
+
+  return { content, changed };
 }
 
 // Convert <Tabs>/<TabItem> to {{< tabs >}}/{{< tab >}} shortcodes

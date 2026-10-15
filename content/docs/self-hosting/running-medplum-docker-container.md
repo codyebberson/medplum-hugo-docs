@@ -3,7 +3,6 @@ id: running-medplum-docker-container
 title: Running the Medplum Docker Container
 ---
 
-
 Medplum provides a Docker image, called [medplum/medplum-server](https://hub.docker.com/r/medplum/medplum-server). This image is mainly used to [install Medplum on AWS](/docs/self-hosting/install-on-aws), however it can also be run independently of AWS.
 
 Prior to using this container, you will need to ensure that Docker is installed and running on your machine.
@@ -28,6 +27,6 @@ The container takes only one argument, the path to the config settings. The pref
 {{< info title="Full-stack Docker setup" >}}
 
 If you are looking to get started fast or want to develop against a local copy of Medplum without downloading the repo,
-we also have a [full-stack Docker setup](/docs/self-hosting/running-full-medplum-stack-in-docker.md) that you can start up with just two commands!
+we also have a [full-stack Docker setup](/docs/self-hosting/running-full-medplum-stack-in-docker) that you can start up with just two commands!
 
 {{< /info >}}

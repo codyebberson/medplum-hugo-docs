@@ -1,7 +1,7 @@
 ---
 id: versions
-title: Medplum Version Policy
-weight: 3
+title: Version Policy
+weight: 10
 ---
 
 ## Overview
@@ -44,7 +44,6 @@ Medplum follows semantic versioning (semver) for all components of our healthcar
   <text x="901" y="306.5" text-anchor="start" font-size="22" font-weight="700" fill="#fff">ACTIVE</text>
 </svg>
 
-
 ## Component Versioning
 
 All Medplum components are released in lockstep with the same version number:
@@ -79,12 +78,14 @@ All Medplum components are released in lockstep with the same version number:
 - Must be deployed sequentially (cannot skip minor versions)
 - Include backwards-compatible feature additions and improvements
 - _The `medplum upgrade` / `medplum aws upgrade` tool automatically chains sequential minors (e.g., 5.0 → 5.3) and supports transactional rollback._
+- May include breaking changes in [features tagged as Alpha or Beta](./alpha-beta)
 
 ### Patch Versions (X.Y.Z)
 
 - Released approximately weekly
 - Include bug fixes and non-breaking feature additions
 - Can be deployed directly without intermediate steps
+- May include breaking changes in [features tagged as Alpha](./alpha-beta)
 
 ### Security Patch SLA
 
@@ -101,7 +102,7 @@ All Medplum components are released in lockstep with the same version number:
 
 - Supports current "Active" and "Maintenance" [LTS Node.js versions](https://nodejs.org/en/about/previous-releases)
 - All unit and integration tests are run against supported versions
-- Follows Node.js even-numbered LTS release schedule (20.x, 22.x, 24.x, etc.)
+- Follows Node.js even-numbered LTS release schedule (22.x, 24.x, etc.)
 
 #### PostgreSQL
 

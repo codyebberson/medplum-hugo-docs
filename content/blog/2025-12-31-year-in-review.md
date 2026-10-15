@@ -32,6 +32,4 @@ We wanted to highlight a few memorable moments and reflect on all that happened 
 
 ✅ Organized **[several events](/blog/events-calendar)** throughout this year, including [FHIR + AI for Life Sciences](/blog/fhir-ai-for-life-sciences), [Scheduling Agents for Healthcare Operations](/blog/scheduling-agents-unity-ai), and [Visualizing Patient Flow](https://youtu.be/QvC093fAGGU), building our community of healthcare developers
 
-
 Thank you, dear reader, for being part of our community. See you [on Discord](https://discord.gg/medplum).
-

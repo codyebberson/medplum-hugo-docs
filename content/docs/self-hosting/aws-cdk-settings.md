@@ -119,6 +119,10 @@ The contents of the public key file that you created before. By default, the fil
 
 Optional ARN of the WAF IP Set to use for the storage CloudFront Distribution. When set, the WAF will use the IP Set as an "allow" list, and default to "block". The IP Set must be in the special "Global (CloudFront)" region.
 
+### storageBotInputExpirationDays
+
+Optional number of days after which bot inputs written by the server [`storeBotInput`](/docs/self-hosting/server-config#storebotinput) setting are deleted. When set, the storage bucket gets lifecycle rules scoped to the `bot/` prefix; other objects, such as Binary content, are unaffected. Because the bucket is versioned, the expired version is permanently removed one day after expiration. By default, bot inputs are kept indefinitely.
+
 ### maxAzs
 
 The maximum number of availability zones to use. If you want to use all availability zones, choose a large number such as 99. If you want to restrict the number, for example to manage EIP limits, then choose a small number such as 1 or 2.
@@ -153,7 +157,7 @@ Number of database connections per API server instance
 
 ### cacheNodeType
 
-Optional [Elasticache Node Type](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/CacheNodes.SupportedTypes.html). Default value is `cache.t2.medium`.
+Optional [Elasticache Node Type](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/CacheNodes.SupportedTypes.html). Default value is `cache.t4g.medium`.
 
 ### cacheSecurityGroupId
 
@@ -253,12 +257,3 @@ memory resources; instead of increasing these settings further, adding more inst
 recommended way to improve performance if the server CPU is a performance bottleneck.
 
 For more information, see the [AWS task size documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#task_size).
-
-
-
-
-
-
-
-
-

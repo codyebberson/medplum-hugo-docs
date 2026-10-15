@@ -185,7 +185,7 @@ medplum.searchResources('Patient', 'identifier=http://hl7.org/fhir/sid/us-ssn|')
 
 {{< /tip >}}
 
-## Search Modifiers {#search-modifiers}
+## Search Modifiers
 
 The FHIR spec includes a set of **modifiers** to change the way a specific search parameters behave. They are used by appending the string `:<modifier-name>` to the search parameter. While the [FHIR search specification](http://hl7.org/fhir/R4/search.html) details all the available modifiers, we'll describe some of the most common modifiers here.
 

@@ -3,10 +3,6 @@ id: questionnaires-and-responses
 title: Modeling Questionnaires and Responses
 ---
 
-
-
-
-
 Questionnaires are used to organize a collection of questions to gather healthcare information and are modeled in FHIR as a [`Questionnaire`](/docs/api/fhir/resources/questionnaire) resource. The responses to these questions are modeled with the [`QuestionnaireResponse`](/docs/api/fhir/resources/questionnaireresponse) resource.
 
 ## Creating a Questionnaire
@@ -171,3 +167,5 @@ To require a signature for a Questionnaire, add the following extension to the Q
 The `QuestionnaireForm` component will automatically render a signature input field when the signature extension is present in the Questionnaire. The signature input field will be required and will validate that a signature is provided before submission.
 
 See the [Storybook](https://storybook.medplum.com/?path=/story/medplum-questionnaireform--signature-required) for an example.
+
+For where the captured signature is stored on the [`QuestionnaireResponse`](/docs/api/fhir/resources/questionnaireresponse) and how to attach it to a consent record, see [Consent and Signatures](/docs/consent).

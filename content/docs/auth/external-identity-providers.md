@@ -7,6 +7,26 @@ tags: [auth]
 
 Along with [Google Authentication](/docs/auth/google-auth), Medplum supports other external identity providers using the OAuth2 protocol such as Auth0 and AWS Cognito for end user authentication. This is sometimes known as "Federated Identities".
 
+## IDP Routing Strategies
+
+When using external identity providers, you need to decide how to route users to the correct IDP. Medplum supports two primary strategies:
+
+### 1. App-based Routing (Client ID)
+
+In this model, the Identity Provider is determined by the application the user is logging into. This is configured on the `ClientApplication` resource.
+
+- **How it works:** You configure specific IDP details (Authorize URL, Client ID, etc.) on your Medplum `ClientApplication`.
+- **Use Case:** You have a "Patient App" that uses Auth0 for all users, and a separate "Provider App" that uses Okta.
+- **Setup:** Follow the [Setup](#setup) instructions below to configure the IDP on your `ClientApplication`.
+
+### 2. Domain-based Routing (Email Domain)
+
+In this model, the Identity Provider is determined by the user's email address. This is configured using [Domain Configuration](/docs/auth/domain-level-identity-providers).
+
+- **How it works:** You map an email domain (e.g., `hospital.com`) to an IDP. When a user enters their email, Medplum routes them to that IDP.
+- **Use Case:** You have enterprise customers who want their employees to log in with their corporate credentials (SSO), regardless of which app they are using.
+- **Setup:** See the [Domain-level Identity Providers](/docs/auth/domain-level-identity-providers) guide.
+
 ## Auth flow
 
 When an end user authenticates with your client-side web application, we will use the following authentication flow:
@@ -41,6 +61,12 @@ Setup your Medplum account:
 - Create a `ClientApplication`
 - Set the "Redirect URI" to "http://localhost:8000/"
 - Add an external identity provider with the details from above
+
+{{< info title="Self-hosted server-scoped identity providers" >}}
+
+The `IdentityProvider` resource is server-scoped. On self-hosted deployments, creating or editing server-scoped identity provider configuration requires super admin context. Project administrators can configure identity provider settings on project `ClientApplication` resources, but they cannot create server-scoped `IdentityProvider` resources unless they are operating as super admin.
+
+{{< /info >}}
 
 ## Start the flow
 
@@ -83,4 +109,5 @@ After the code is processed, the Medplum access token will be stored in the brow
     false,
   ),
   ```
+
   - In the Medplum App, navigate to your [ClientApplication](https://app.medplum.com/ClientApplication) > Edit and set "PKCE Optional" to `true`

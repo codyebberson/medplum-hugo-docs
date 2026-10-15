@@ -24,7 +24,6 @@ The healthcare industry has long struggled with **fragmented data**, leading to 
 
 TEFCA, enacted through the 21st Century Cures Act, aims to establish a **universal policy** and **technical floor** for nationwide interoperability[^3]. It seeks to simplify connectivity for organizations to securely exchange information to improve patient care, enhance the welfare of populations, and generate healthcare value[^3]. TEFCA operates as a "network of networks," connecting various Health Information Networks (HINs) across the country[^1]. These HINs, upon meeting specific criteria and undergoing a vetting process, are designated as Qualified Health Information Networks (QHINs)[^4].
 
-
 ### TEFCA Goals
 
 TEFCA has three primary goals:
@@ -63,7 +62,7 @@ The following table illustrates the different ways an organization can participa
 | Participant | An organization that connects to a QHIN to engage in TEFCA exchange, typically a healthcare individual patient, provider, health system, government agency or payer. |
 | Subparticipant | An organization that connects to a QHIN through a Participant, often a member of the Participant's organization. |
 
-### 
+###
 
 ![QHIN](/img/blog/qhin.png)
 
@@ -277,7 +276,6 @@ We encourage healthcare organizations and developers to embrace TEFCA and contri
 | **QHIN Query** | The act of a QHIN Querying information from one or more other QHINs[^25]. |
 | **QHIN Technical Framework (QTF)** | The most recent effective version of the document that outlines the technical specifications and other technical requirements necessary for QHINs to exchange information[^25]. |
 
-
 #### Works cited
 
 1\. TEFCA | HealthIT.gov, accessed February 16, 2025, [https://www.healthit.gov/topic/interoperability/policy/trusted-exchange-framework-and-common-agreement-tefca](https://www.healthit.gov/topic/interoperability/policy/trusted-exchange-framework-and-common-agreement-tefca)  
@@ -350,16 +348,10 @@ We encourage healthcare organizations and developers to embrace TEFCA and contri
 
 [^21]: TEFCA: A Framework for Public Health Interoperability - Version 2.1 Published. NACCHO. (n.d.). Retrieved February 16, 2025, from https://www.naccho.org/blog/articles/tefca-ver-2.1-published ↩ ↩2
 
-
 [^22]: Updated TEFCA SOPs for Health Care Operations. NCQA. (n.d.). Retrieved February 16, 2025, from https://www.ncqa.org/blog/updated-tefca-sops-for-health-care-operations/ ↩
-
 
 [^23]: The Impact of TEFCA & HITRUST on Patient Privacy and Security. A-LIGN. (n.d.). Retrieved February 16, 2025, from https://www.a-lign.com/articles/the-impact-of-tefca-hitrust-on-patient-privacy-and-security ↩ ↩2 ↩3 ↩4 ↩5
 
-
 [^24]: TEFCA Glossary. The Sequoia Project. (2024, July). Retrieved February 16, 2025, from https://rce.sequoiaproject.org/wp-content/uploads/2024/07/TEFCA-Glossary_508-1.pdf ↩ ↩2 ↩3 ↩4 ↩5 ↩6 ↩7 ↩8 ↩9 ↩10 ↩11 ↩12 ↩13
 
-
 [^25]: QHIN Technical Framework (QTF) Version 2.0. The Sequoia Project. (2024, July). Retrieved February 16, 2025, from https://rce.sequoiaproject.org/wp-content/uploads/2024/07/QTF-v2.0_508.pdf ↩ ↩2 ↩3 ↩4 ↩5 ↩6 ↩7 ↩8 ↩9 ↩10
-
-

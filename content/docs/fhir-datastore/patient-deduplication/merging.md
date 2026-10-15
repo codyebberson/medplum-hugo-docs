@@ -1,11 +1,8 @@
 ---
 id: merging
-title: Merging {#merge-rules}
+title: Merging
+sidebar_label: Merging
 ---
-
-
-
-
 
 The merge step of the deduplication pipeline typically contains the most complexity. The merge operation will depend on your clinical and business context, your downstream application, and how frequently you will _unmerge_ records.
 

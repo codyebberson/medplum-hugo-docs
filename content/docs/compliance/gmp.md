@@ -1,6 +1,7 @@
 ---
 id: gmp
 title: Good Manufacturing Practices
+weight: 12
 tags: [compliance]
 ---
 

@@ -12,7 +12,7 @@ Healthcare APIs need flexibility. While FHIR's standard CRUD operations (create,
 
 FHIR operations are the "dollar sign things" – endpoints like `$validate`, `$expand`, or `$match` that perform specialized functions beyond standard CRUD operations. These are technically called "operations" in FHIR terminology, distinct from the basic "interactions" used for everyday data management.
 
-<!--truncate-->
+<!--more-->
 
 Until now, Medplum supported built-in FHIR operations like `$validate` and custom logic through our Bot framework using `$execute`. But there was a gap: customers wanted more natural, domain-specific endpoints that felt like proper FHIR operations.
 

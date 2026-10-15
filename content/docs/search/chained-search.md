@@ -3,12 +3,6 @@ id: chained-search
 title: Chaining Searches
 ---
 
-
-
-
-
-
-
 Chaining search parameters allows you to filter your searches based on the parameters of another resource which is related to the target resource through one or more references. This can reduce what might otherwise be a series of searches into just a single action.
 
 Chained searches are similar to using [`_include` or `_revinclude` parameters](/docs/search/includes), but it will not return the referenced resources, only filter based on their parameters. The primary benefit of this is it allows for easy pagination since you know you will only receive results of one resource type. See the [paginated search docs](/docs/search/paginated-search) for more details.
@@ -131,7 +125,7 @@ As another example, you may want to search for any [`Patient`](/docs/api/fhir/re
   {{< /tabs >}}
 </details>
 
-In the above example `_has:Observation` filters for [`Patient`](/docs/api/fhir/resources/patient) resources that have an [`Observation`](/docs/api/fhir/resources/observation). The `:subject` filters for [`Observation`](/docs/api/fhir/resources/observation) resources that reference a [`Patient`](/docs/api/fhir/resources/patient) in the subject field. This is based on our initial search for a [`Patient`](/docs/api/fhir/resources/patient). Finally, `:code=11557-6` filters for that specific code on the [`Observation`](/docs/api/fhir/resources/observation).
+In the above example `_has:Observation` filters for [`Patient`](/docs/api/fhir/resources/patient) resources that have an [`Observation`](/docs/api/fhir/resources/observation). The `:subject` filters for [`Observation`](/docs/api/fhir/resources/observation) resources that reference a [`Patient`](/docs/api/fhir/resources/patient) in the subject field. This is based on our initial search for a [`Patient`](/docs/api/fhir/resources/patient). Finally, `:code=8867-4` filters for that specific code on the [`Observation`](/docs/api/fhir/resources/observation).
 
 ### Nesting reverse chained searches
 

@@ -3,9 +3,6 @@ id: user-configuration
 title: User Configuration
 ---
 
-
-
-
 The [UserConfiguration](/docs/api/fhir/medplum/userconfiguration) resource is used to configure user-specific settings or settings that you want a group of users to share. To do this, you need to create a UserConfiguration resource and reference it in each of the Users's [ProjectMembership](/docs/api/fhir/medplum/projectmembership) resources that you want to apply the settings to.
 
 For example:
@@ -73,4 +70,3 @@ For example:
   //...
 }
 ```
-

@@ -10,7 +10,7 @@ On August 28, 2025 Medplum hosted our first annual _developer conference_ PlumCo
 
 Below you'll find slideshows and videos from each presentation, organized by talk. Most sections includes the speakers presentation and slides.  We also have a [YouTube Playlist](https://youtube.com/playlist?list=PLPLQMmn1jgVktVYV7wOFyx0aOhh3vg66k&si=LDk7kKuEAnPQUOmX) available.
 
-We also want to thank everyone who donated demos and demo videos to this event - we are thankful for our community. 
+We also want to thank everyone who donated demos and demo videos to this event - we are thankful for our community.
 
 <!--more-->
 
@@ -174,7 +174,7 @@ AI-powered EHR system built with Medplum, featuring intelligent automation and e
   <iframe src="https://www.youtube.com/embed/aZudzbHNmIE?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
---- 
+---
 
 ## PlumCon 2025 Photos
 

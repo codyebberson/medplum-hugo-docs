@@ -52,7 +52,6 @@ The NIH provides a free forms library, these are tagged with standard ontologies
   <iframe src="https://www.youtube.com/embed/E5gttZwr2mk?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-
 This demo shows embedded FHIR questionnaires in a patient-facing application, enabling standard data capture.  The sample application shown here is [Foomedical](https://foomedical.com/), the source code for which can be found [on Github](https://github.com/medplum/medplum/tree/main/examples/foomedical).
 
 <div class="responsive-iframe-wrapper">
@@ -67,12 +66,8 @@ This Flexpa demo shows the process of adding Flexpa data to your application.
   <iframe src="https://www.youtube.com/embed/3Kb1UP510KQ?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-
 This demo shows the Medplum/Flexpa integration to load consented patient data into the datastore for use in research or other workflows.
 
 <div class="responsive-iframe-wrapper">
   <iframe src="https://www.youtube.com/embed/7yZzEneJsAA?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-
-

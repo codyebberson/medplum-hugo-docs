@@ -3,10 +3,6 @@ id: invite
 title: Invite User Endpoint
 ---
 
-
-
-
-
 ## POST `/admin/projects/:projectId/invite`
 
 Invite a new user to the project. This will perform the following actions:

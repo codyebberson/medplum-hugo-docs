@@ -3,7 +3,6 @@ id: c-cda
 title: C-CDA
 ---
 
-
 Medplum provides support for C-CDA (Consolidated Clinical Document Architecture) handling in accordance with the [ONC Certification](/docs/compliance/onc) criteria (g)(7), (g)(9) and (b)(1) as well as developer utilities for working with C-CDA documents in the context of FHIR.
 
 ## Overview
@@ -14,7 +13,7 @@ Medplum provides the following functionality for C-CDA handling.
 * The ability to Export C-CDA in the Medplum app or via API
 * An SDK for FHIR to C-CDA conversion.
 
-## C-CDA Viewer 
+## C-CDA Viewer
 
 To access the C-CDA viewer, upload a C-CDA file as a FHIR Binary.  The viewer will render the data for viewing in the application.
 
@@ -102,5 +101,3 @@ By aligning with these standards, this library ensures that C-CDA documents can 
 * [USCDI Website](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi)
 * [International Patient Summary Implementation Guide](https://build.fhir.org/ig/HL7/fhir-ips/)
 * [HL7 C-CDA Standard](https://hl7.org/cda/us/ccda/3.0.0/)
-
-

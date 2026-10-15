@@ -11,7 +11,7 @@ Server scoped [`Users`](/docs/api/fhir/medplum/user) can be used across multiple
 
 ### Project Scoped Users
 
-Project scoped [`Users`](/docs/api/fhir/medplum/user) exist inside a single [`Project`](/docs/api/fhir/medplum/project). Project scoped Users should be used for **real practicing clinicians and patients** that will primarily interact with a single production project. By default, Patients are scoped to `project`. If you want to include a project scoped User in multiple projects, you will need to invite them to each [`Project`](/docs/api/fhir/medplum/project) separately. 
+Project scoped [`Users`](/docs/api/fhir/medplum/user) exist inside a single [`Project`](/docs/api/fhir/medplum/project). Project scoped Users should be used for **real practicing clinicians and patients** that will primarily interact with a single production project. By default, Patients are scoped to `project`. If you want to include a project scoped User in multiple projects, you will need to invite them to each [`Project`](/docs/api/fhir/medplum/project) separately.
 
 You can specify the scope of a [User](/docs/api/fhir/medplum/user) by adding the `scope` parameter to the [Invite User](/docs/api/project-admin/invite) endpoint.
 
@@ -25,9 +25,9 @@ const response = await medplum.post('/admin/projects/:projectId/invite', {
 })
 ```
 
-```mermaid  
+```mermaid
 flowchart TD
-    subgraph MedplumServer["<div style='font-size:25px; font-weight:bold;'>Medplum Server</div>"]
+    subgraph MedplumServer[" "]
         %% Server‑Scoped User
         SS1[<div style="text-align: center;">User<br><strong>Company Dev/Admin</strong><br><small><em style='color:gray;'>Server Scoped</em></small></div>]
         SS1 --> PM1_SS1

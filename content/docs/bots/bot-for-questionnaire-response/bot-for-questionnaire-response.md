@@ -30,8 +30,6 @@ Let's create a simple example Patient Registration form to see how this works. W
 
 ### 1. Create the Questionnaire
 
-
-
 Our first step will be to create the questionnaire in the Medplum App
 
 1. Log into the [Medplum App](https://app.medplum.com)
@@ -78,8 +76,6 @@ Click on your form, fill it out, and click “Submit”.
 
 Now we’ll inspect the data. Click on the “Review your Answers” link.
 
-
-
 <img src={reviewAnswersUrl} style={{maxHeight:'250px', width:'auto'}}/>
 
 Let’s take a look at the resource that is created:
@@ -91,7 +87,7 @@ Let’s take a look at the resource that is created:
 
 ### 4. Write the Bot
 
-Next, we'll write a Bot that creates a [Patient](/docs/api/fhir/resources/patient) and [ServiceRequest](/docs/api/fhir/resources/servicerequest) based on the the user's response. To learn how to set up a new Bot, see the [Bot Basics tutorial](./bot-basics)
+Next, we'll write a Bot that creates a [Patient](/docs/api/fhir/resources/patient) and [ServiceRequest](/docs/api/fhir/resources/servicerequest) based on the user's response. To learn how to set up a new Bot, see the [Bot Basics tutorial](./bot-basics)
 
 To parse out the answers in the '[QuestionnaireResponse](/docs/api/fhir/resources/questionnaireresponse), we'll use the [`getQuestionnaireAnswers`](/docs/sdk/core.getquestionnaireanswers) utility function. This function returns a map from the question's `linkId` to the response.
 
@@ -101,7 +97,7 @@ To parse out the answers in the '[QuestionnaireResponse](/docs/api/fhir/resource
 const response = event.input as QuestionnaireResponse;
 const answers = getQuestionnaireAnswers(response);
 
-// Read out the the user's answers into separate variables
+// Read out the user's answers into separate variables
 // Here we provide default answers if the user's answer is 'undefined'
 const firstName = answers['firstName']?.valueString || '';
 const lastName = answers['lastName']?.valueString || '';
@@ -123,7 +119,7 @@ export async function handler(medplum: MedplumClient, event: BotEvent): Promise<
   // a map of [linkId, answer] pairs.
   const answers = getQuestionnaireAnswers(response);
 
-  // Read out the the user's answers into separate variables
+  // Read out the user's answers into separate variables
   // Here we provide default answers if the user's answer is 'undefined'
   const firstName = answers['firstName']?.valueString || '';
   const lastName = answers['lastName']?.valueString || '';
@@ -178,8 +174,6 @@ The last step is to have your Bot listen to your Questionnaire responses.
 2. Click on the the "Bots" tab
 3. Start typing the name of your Bot.
 4. When your Bot appears in the type ahead, select it and click "Connect"
-
-
 
 <img alt='Connect Bot to Questionnaire' src={connectBotUrl} style={{maxHeight:'500px', width:'auto'}}/>
 

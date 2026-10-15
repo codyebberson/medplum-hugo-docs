@@ -3,7 +3,6 @@ id: admin-page
 title: The Admin Page
 ---
 
-
 The [Admin Page](https://app.medplum.com/admin/project) of the Medplum App allows admin users to view and edit details of their project that normal users do not have access to.
 
 At the top of the page, there is an array of tabs as shown below. In this guide, we will briefly go over the content of each tab as well as any functionality they provide.

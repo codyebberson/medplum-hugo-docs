@@ -3,8 +3,7 @@ id: orders-and-results
 title: Orders and Results
 ---
 
-
-A common use case for HL7 is to place orders for diagnostics (labs and imaging commonly), and receive diagnostic results.  There are two common message types, the ORM (order entry) and ORU (observation result).  
+A common use case for HL7 is to place orders for diagnostics (labs and imaging commonly), and receive diagnostic results.  There are two common message types, the ORM (order entry) and ORU (observation result).
 
 This guide assumes you have already set up a Medplum [agent](/docs/agent) or otherwise [connected to the legacy healthcare application](/docs/integration/hl7-interfacing/#connecting-to-legacy-systems) (LIS, PACS, EHR, pharmacy or other system) that you want to interface with and are able to receive the feed.
 
@@ -59,7 +58,7 @@ TODO: Create an example Bot creates the ORM~001 method based off of `ServiceRequ
 
 ## Receiving Results
 
-Receiving results involves consuming an `ORU` message, which contains Observation Results, which roughly map to [Observations](/docs/api/fhir/resources/observation) in FHIR.  Below is an example: 
+Receiving results involves consuming an `ORU` message, which contains Observation Results, which roughly map to [Observations](/docs/api/fhir/resources/observation) in FHIR.  Below is an example:
 
 ```
 MSH|^~\&|LAB|1234^LAB^DNS|EHR|5678^EHR^DNS|202404221430||ORU^R01|123456|P|2.5.1
@@ -80,7 +79,6 @@ The bot below parses an `ORU^R01` and creates a corresponding `Observation.`
 ```
 TODO: Create an example Bot parses the `ORU^R01` message type only and ignores others.  Creates the corresponding Patient and Observation.  Should conditionally create the Patient to demonstrate how to prevent duplicates
 ```
-
 
 ## Related Reading
 

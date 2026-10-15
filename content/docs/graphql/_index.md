@@ -3,12 +3,6 @@ id: index
 title: GraphQL
 ---
 
-
-
-
-
-
-
 Medplum supports the [FHIR GraphQL API](https://hl7.org/fhir/r4/graphql.html) for creating, updating and searching FHIR resources.
 
 Clinical data is often comprised of multiple FHIR resources, and the FHIR GraphQL API makes it easy to query multiple linked resources in a single request.

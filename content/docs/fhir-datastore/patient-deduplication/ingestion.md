@@ -3,7 +3,6 @@ id: ingestion
 title: Ingestion
 ---
 
-
 ## Batch vs. Incremental Pipelines
 
 Your deduplication pipeline can be implemented in either _batch_ or _incremental_ versions. These are not mutually exclusive options, and many organizations will end up building both.

@@ -3,7 +3,6 @@ id: integration
 title: Integrations and Interoperability Engine
 ---
 
-
 Medplum offers **a powerful integration and interoperability engine** that speaks common healthcare "languages" (FHIR, HL7, SFTP, CCD-A and more). This is **the most commonly used feature of Medplum**. It can be used to receive data from and send data to other systems - medical or cloud based.
 
 Medplum integrations and interoperability is an **event-driven** service. It listens to notifications from medical systems like a laboratory information system or EHRs. The service logs data and supports persistence to a FHIR datastore as needed. It is [open source](https://github.com/medplum/medplum).

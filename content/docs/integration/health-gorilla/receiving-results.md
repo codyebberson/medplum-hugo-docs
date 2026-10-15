@@ -6,7 +6,18 @@ weight: 2
 
 This guide explains how laboratory results are handled in the Medplum-Health Gorilla labs integration.
 
-When Health Gorilla receives results from performing laboratories (Quest, Labcorp, regional labs, etc.), they will be synchronized into your project as structured FHIR resources via the `receive-from-health-gorilla` Bot.
+When Health Gorilla receives results from performing laboratories (Quest, Labcorp, regional labs, etc.), they are synchronized into your Medplum project as structured FHIR resources. The sections below describe the resulting data model and how results are matched to orders and patients.
+
+Orders placed through the [Lab Ordering iFrame](./iframe.md) also require this results integration. The iframe is for ordering only, and its browser callback does not deliver results. The iframe bot does not create Medplum orders or sync patient identifiers, so verify [order and patient matching](#resolving-orders-with-results) when setting up this flow.
+
+## How results arrive in Medplum
+
+There are two ways results and related resources get into your project:
+
+| Mechanism | Bot | When to use |
+| --------- | --- | ----------- |
+| **Real-time (webhooks)** | `receive-from-health-gorilla` | Default path. Health Gorilla notifies Medplum when `DiagnosticReport`, `ServiceRequest`, or `RequestGroup` resources change. Configure subscriptions with `setup-subscriptions`. |
+| **Manual backfill** | `sync-resources-from-health-gorilla` | Pull resources from Health Gorilla for a `_lastUpdated` date range. Use after webhook failures, for historical imports, or to verify parity with Health Gorilla. |
 
 ## Key Concepts
 
@@ -74,7 +85,7 @@ The `DiagnosticReport` serves as the primary container for all results related t
 | Field                                | Description                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `DiagnosticReport.basedOn`           | References the original [order `ServiceRequest`](./sending-orders#order-structure) that generated this result                                                                                                                                                                                                                                                |
-| `DiagnosticReport.identifier`        | Contains multiple identifiers: <ul><li>Health Gorilla's unique identifier for the report</li><li>**Placer ID**: This is the _performing lab's_ order identifier. Also known as the "Lab reference id."</li><li>**Lab's accession number**: A unique identifier assigned by the performing laboratory to the specific _specimen_ when it is opened.</li></ul> |
+| `DiagnosticReport.identifier`        | Contains multiple identifiers: <ul><li>Health Gorilla's unique identifier for the report</li><li>**Placer ID**: The order identifier assigned by the _ordering system_ (e.g., your EMR).</li><li>**Filler ID**: The order identifier assigned by the _performing lab_.</li><li>**Lab's accession number**: A unique identifier assigned by the performing laboratory to the specific _specimen_ when it is received.</li></ul> |
 | `DiagnosticReport.result`            | Array of references to individual `Observation` resources containing lab values                                                                                                                                                                                                                                                                              |
 | `DiagnosticReport.presentedForm`     | References to PDF reports from Health Gorilla                                                                                                                                                                                                                                                                                                                |
 | `DiagnosticReport.status`            | Result status (`preliminary`, `final`, `amended`, `corrected`)                                                                                                                                                                                                                                                                                               |
@@ -434,25 +445,34 @@ Health Gorilla returns detailed information about the performing laboratory for 
 }
 ```
 
+## Resolving Orders with Results
+
+When a result is received, Medplum attempts to match it to an existing order (`ServiceRequest`).
+
+**Processing Logic:**
+
+1. `receive-from-health-gorilla` first attempts to match the incoming result to an existing order by checking:
+   - `basedOn` references (which contain the requisition ID)
+   - **Accession number (`ACSN` identifier)**: A unique identifier assigned by the _performing laboratory_ (e.g., Quest, Labcorp) to the specific specimen(s) when they are received and logged into their system.
+   - **Placer number (`PLAC` identifier)**: The order ID assigned by the _ordering system_ (e.g., your EMR, Medplum, or the clinic) that placed the order.
+   - **Filler number (`FILL` identifier)**: The order ID assigned by the _fulfilling system_ (the performing laboratory) that carries out the order.
+2. If a matching order is found, the result is linked to that order. The patient associated with that order is used, preventing duplicate patients or `unknown-patient` issues.
+3. If no matching order is found, the result is considered "unsolicited". The bot then attempts to match the result to a patient using the patient's Health Gorilla identifier.
+4. If a matching patient exists, the result is imported normally, but without a `DiagnosticReport.basedOn` reference, and a `DetectedIssue` with code `unsolicited-diagnostic-report` is created.
+5. If no patient match is found, a new `Patient` resource is created using the demographic information provided by the lab, and a `DetectedIssue` with code `unknown-patient` is created.
+
+## Backfilling missed results
+
+If results are missing in Medplum but visible in the Health Gorilla portal, check that subscriptions are active (`setup-subscriptions`) and that the callback bot URL is current. When webhooks were down or never configured for a period, use [`sync-resources-from-health-gorilla`](./sync-resources-from-health-gorilla) to backfill:
+
+1. Choose a `startDate` and `endDate` that bracket the gap (based on `_lastUpdated` in Health Gorilla).
+2. Run a `DiagnosticReport` sync with `syncOnlyMissing: true` to avoid re-processing resources already in Medplum.
+3. Review `DetectedIssue` resources for any remaining [unsolicited or unknown-patient](#resolving-orders-with-results) cases, especially in receive-only migrations without placeholder orders.
+
+For receive-only migrations, syncing placeholder `ServiceRequest` orders with matching Placer or Accession identifiers before backfilling results reduces unsolicited reports.
+
 ## Lab-specific Behavior
 
 ### Quest
 
-- **Preliminary Results**: Quest sends preliminary results on a rolling basis, and will send the same report multiple times, updating Medplum's `DiagnosticReport` resource _in-place_. Monitor the value of `DiagnosticReport.status` to see when the report has been finalized.
-
-## Special Workflows
-
-### Unsolicited Reports
-
-Occasionally, laboratories send results without a corresponding order in the system. This typically occurs when:
-
-- Providers order tests directly through lab websites or phone calls
-- Reflex testing triggers additional tests beyond the original order
-
-**Processing Logic:**
-
-1. `receive-from-health-gorilla` attempts to match the result to a patient using the patient's Health Gorilla identifier
-2. If a matching patient exists, the result is imported normally, but without a `DiagnosticReport.basedOn` reference
-3. A `DetectedIssue` with code `unsolicited-diagnostic-report` is created
-4. If no patient match is found, a new `Patient` resource is created using the demographic information provided by the lab
-5. A `DetectedIssue` with code `unknown-patient` is created
+- **Preliminary Results**: Quest sends preliminary results on a rolling basis, and will send the same report multiple times, updating Medplum's `DiagnosticReport` resource *in-place*. Monitor the value of `DiagnosticReport.status` to see when the report has been finalized. The same in-place updates apply when the report is imported via manual sync.

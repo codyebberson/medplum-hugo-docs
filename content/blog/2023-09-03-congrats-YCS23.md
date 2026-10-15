@@ -9,7 +9,7 @@ As a long time YC community member (10+ years) and former [Visiting Group Partne
 
 <!--more-->
 
-> Read our coverage on [YC S23 Open Source Meetup](/blog/2023-08-17-yc-oss-faq.md) and [Medplum's YC Launch](/blog/2022-08-02-medplum-in-yc.md)
+> Read our coverage on [YC S23 Open Source Meetup](/blog/yc-oss-faq) and [Medplum's YC Launch](/blog/medplum-in-yc)
 
 YC Alumni Demo Day was this Saturday September 2, and I thought the presentations were particularly good. Here's some exciting nuggets we saw in the presentations in the _Healthcare and Life Sciences_ category.
 

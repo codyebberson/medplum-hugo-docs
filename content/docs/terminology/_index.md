@@ -3,7 +3,6 @@ id: index
 title: Terminologies and Coded Values
 ---
 
-
 Many FHIR resources use different types of coded values to unambiguously represent different concepts from healthcare
 and related domains. These coded values enjoy rich support in FHIR, with both a standardized data format for
 representing values in FHIR resources, and a rich set of operations to support their effective use.

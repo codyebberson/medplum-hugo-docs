@@ -3,10 +3,6 @@ id: client
 title: Client Application Endpoint
 ---
 
-
-
-
-
 ## POST `/admin/projects/:projectId/client`
 
 Creates a new [ClientApplication](/docs/api/fhir/medplum/clientapplication). Posting to this endpoint creates a [`ClientApplication`](/docs/api/fhir/medplum/clientapplication) resource and a corresponding [`ProjectMembership`](/docs/api/fhir/medplum/projectmembership) resource.

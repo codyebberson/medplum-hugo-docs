@@ -31,7 +31,7 @@ Medplum's Terminology Services today.
 [pr-perf3]: https://github.com/medplum/medplum/pull/7571
 [pr-validation]: https://github.com/medplum/medplum/pull/7666
 
-<!--truncate-->
+<!--more-->
 
 ## Coding Synonyms
 

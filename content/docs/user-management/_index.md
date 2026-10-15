@@ -59,10 +59,9 @@ The [User](/docs/api/fhir/medplum/user) resource is the main resource that repre
 
 See our guide on [Project vs Server Scoped Users](/docs/user-management/project-vs-server-scoped-users) for more details.
 
-
 ### Profiles
 
-_Within_ each project, a project member is represented by a specific FHIR resource, known as their **profile**. The `ProjectMembership.profile` element links the [` ProjectMembership`](/docs/api/fhir/medplum/projectmembership) to the profile resource.
+_Within_ each project, a project member is represented by a specific FHIR resource, known as their **profile**. The `ProjectMembership.profile` element links the [`ProjectMembership`](/docs/api/fhir/medplum/projectmembership) to the profile resource.
 
 A user's profile can be one of the three resource types in the table below. Incorporating the resources in the table below into ProjectMembership enable sophisticated access controls, as [Access Policies](/docs/access/access-policies) can access the profile of the current user ([read more](/docs/access/access-policies#patient-access))
 
@@ -177,7 +176,7 @@ This is the preferred method for removing user access for several reasons:
 
 To remove users from the existing project navigate to your [Project settings](https://app.medplum.com/admin/project) and to the Users and Patient tabs respectively. Click on a specific users or patients and click **Remove User**.
 
-We highly recommend leaving the associated FHIR resource (Patient, Practitioner, etc.) in place for audibility, record keeping and in case the membership needs to be reconstructed for some reason.
+We highly recommend leaving the associated FHIR resource (Patient, Practitioner, etc.) in place for auditability, record keeping and in case the membership needs to be reconstructed for some reason.
 
 ### Searching for Project Members
 
@@ -378,4 +377,4 @@ There are four major stages in the login flow: **Domain**, **Credentials**, **Pr
 - [Medplum resources](./api/fhir/medplum) related to authentication and authorization
 - [User registration](https://storybook.medplum.com/?path=/docs/medplum-registerform--basic) react component
 - [Sign in form](https://storybook.medplum.com/?path=/docs/medplum-signinform--basic) react component
-- [Auth Features and Fixes](https://github.com/medplum/medplum/pulls?q=is%3Apr+label%3Aauth) on Github
+- [Auth Features and Fixes](https://github.com/medplum/medplum/pulls?q=is%3Apr+label%3Aauth) on GitHub

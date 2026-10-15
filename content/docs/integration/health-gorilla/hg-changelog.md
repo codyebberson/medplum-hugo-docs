@@ -7,6 +7,47 @@ weight: 99
 
 This page tracks updates, improvements, and changes to the HealthGorilla integration in Medplum.
 
+## [September 2026]
+
+- Physician-Level Lab Account Number Override: Added `setPerformingLabPhysicianAccountNumber` to `useHealthGorillaLabOrder`, letting a practitioner select between multiple physician-level accounts with the same lab (e.g. different clinic locations) at order time, mirroring the existing practice-level `setPerformingLabAccountNumber` override.
+
+## [August 2026]
+
+- Order Update Reliability: Fixed `If-Match` version conflicts in `send-to-health-gorilla` when stamping requisition and identifiers after submit. AOE `QuestionnaireResponse` entries are now included in the optimistic locking version list, and conflicted PATCH entries are retried without re-sending already applied updates.
+
+## [July 2026]
+
+- Installation Hardening: Improved Health Gorilla install and tenant-creation scripts, including clearer organization upsert flows and install documentation.
+
+## [June 2026]
+
+- Practice-Level Lab Account Numbers: `send-to-health-gorilla` now resolves organization/practice-level lab account numbers (AN) from the Practitioner lab-org-account extension when building orders.
+
+## [May 2026]
+
+- Order Splitting Extension: When Health Gorilla requires order splitting, `send-to-health-gorilla` copies the `operationoutcome-order-splitting` extension onto the lab-order `ServiceRequest` while setting status to `on-hold`. The `split-order` bot behavior is unchanged and still accepts groups via `Parameters`.
+- Installation Tooling: Added organization upsert support and clarified shared-project vs legacy per-customer bot deploy flows.
+
+## [April 2026]
+
+- Security Enhancement: Removed email sync to Health Gorilla in the `sync-practitioner` bot to prevent self-service password reset attacks.
+- Shared Project Deployment: Health Gorilla bots and OperationDefinitions can now be deployed from a shared Medplum project, streamlining customer installations.
+- Subscription Management: The integration now automatically recreates Health Gorilla subscriptions when the webhook URL becomes stale.
+- Physician-Level Lab Account Numbers: `sync-practitioner` now syncs physician-level lab account numbers (AN identifiers) to Health Gorilla `PractitionerRole` resources.
+- Practice Location Assignment: Practitioners can be enrolled into specific Health Gorilla practice locations at creation time.
+
+## [March 2026]
+
+- OAuth Token Caching: Improved the Health Gorilla OAuth integration by caching the access token across bot invocations, reducing frequent token requests.
+- Order Sync Reliability: Refactored the `send-to-health-gorilla` bot to always read the latest `ServiceRequest` to prevent syncing outdated orders.
+- Async Batch Upload: Switched to asynchronous batch uploads for Health Gorilla organization resources during sync to mitigate rate-limiting issues.
+- Identifier Merging: Enhanced organization syncing to preserve existing payor identifiers when syncing the Health Gorilla ID back to the Medplum organization.
+- Address Syncing: The `send-to-health-gorilla` bot now includes default address fields if none exist, ensuring full address structure is sent.
+
+## [February 2026]
+
+- Resource Sync Logic: Enhanced the `receive-from-health-gorilla` bot to use safe update operations for modifying the status and supporting info of lab orders, ensuring data integrity.
+
 ## [October 2025]
 
 - Atomic ServiceRequest Updates: Switched to batched PATCH operations to sync HealthGorilla order identifiers, preventing race conditions.
@@ -52,5 +93,3 @@ This page tracks updates, improvements, and changes to the HealthGorilla integra
 1. Created Detected Issues for unsolicited reports with unknown patients.
 2. Improved resource sync and subscription logic.
 3. Practitioner sync supports multiple names and new order of operations.
-
-<!-- Add new entries below as changes are made -->

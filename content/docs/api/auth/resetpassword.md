@@ -3,10 +3,6 @@ id: resetpassword
 title: Reset Password Endpoint
 ---
 
-
-
-
-
 ## POST `/auth/resetpassword`
 
 Initiates a password reset for a user. If successful, sends a password reset email to the user (unless `sendEmail` is set to false which is recommended for custom reset password flows). Then, the redirectUri in the email sent to the user will bring the user to a page that calls the [/auth/setpassword](/docs/api/auth/setpassword) endpoint after the user enters their new password.
@@ -51,6 +47,8 @@ await medplum.post('auth/resetpassword', {
 
 ### Notes
 
+- Reset links expire one hour after they are issued
+- Requesting a new reset invalidates any earlier reset link for that user
 - When resetting password for project-scoped users, `projectId` must be provided
 - Omit `projectId` when resetting password for system-level users
 - If you are building a custom reset password email, set sendEmail to false

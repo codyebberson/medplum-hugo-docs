@@ -3,12 +3,6 @@ id: representing-prescriptions-and-medication-orders
 title: Representing Prescriptions and Medication Orders
 ---
 
-
-
-
-
-
-
 Prescriptions and medication orders are very common in healthcare settings and accuracy is vitally important. This guide will go over how to represent all aspects of a medication order, from the request to the administration instructions. Note that this is an _operational counterpart_ to the [Modeling A Formulary](/docs/medications/formulary) documentation.
 
 ## The `MedicationRequest` Resource
@@ -196,7 +190,7 @@ The instructions to the pharmacy on how the order should be dispensed should be 
 
 ### Representing Dispense Fulfillments
 
-The information related to fulfillment of a `MedicationRequest` should be stored on the [`MedicationDispense`](/docs/api/fhir/resources/medicationdispense) resource. If a `MedicationRequest` is refilled, there should be one `MedicationDispense` resource associated with the initial fill, and a MedicationDispense associated per each refill. 
+The information related to fulfillment of a `MedicationRequest` should be stored on the [`MedicationDispense`](/docs/api/fhir/resources/medicationdispense) resource. If a `MedicationRequest` is refilled, there should be one `MedicationDispense` resource associated with the initial fill, and a MedicationDispense associated per each refill.
 
 | Element                  | Description                                                                                                                                                                                              |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

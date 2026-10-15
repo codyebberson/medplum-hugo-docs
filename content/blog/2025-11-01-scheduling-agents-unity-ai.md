@@ -32,7 +32,6 @@ This is a transcript summary of the October 2025 webinar with Medplum and Unity 
 
 **Cody:** Our thesis is that voice agents represent a solution to this communication constraint. Unlike humans, AI agents are **infinitely scalable**. They can react instantly to cancellations, reach more people simultaneously, and continuously work to fill schedule gaps.
 
-
 ## The Role of Data Standardization (FHIR)
 
 <div class="responsive-iframe-wrapper">
@@ -67,7 +66,6 @@ This is a transcript summary of the October 2025 webinar with Medplum and Unity 
 
 **Reshma:** We agree completely. We believe customization is required to be successful, and monolithic systems often fail to yield to specific workflows like infusion or complex radiology. The composability of this architecture allows for **"best-of-breed" solutions** to work together seamlessly through standard APIs.
 
-
 ## Community Q&A Highlights
 
 <div class="responsive-iframe-wrapper">
@@ -83,5 +81,3 @@ This is a transcript summary of the October 2025 webinar with Medplum and Unity 
 ---
 
 *To learn more about Unity AI, visit [UnityAI.com](https://unityai.com).*
-
-

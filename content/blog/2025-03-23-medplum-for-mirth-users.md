@@ -31,7 +31,6 @@ Mirth's on-premise model required maintaining local servers with all business lo
   <iframe src="https://www.youtube.com/embed/MmE3Dn939B4?start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-
 ### Modern Technology Stack
 
 One of Mirth's challenges has been its reliance on aging Java versions and custom Rhino JavaScript implementations. Medplum is built on a continuously maintained modern tech stack:
@@ -66,7 +65,6 @@ In the meantime, we invite you to:
 
 ## We're Here to Help
 As [fellow healthcare interoperability enthusiasts](/about), we understand the challenges you're facing. Whether you ultimately choose Medplum or another path forward, we're committed to supporting the healthcare integration community through this transition.
-
 
 Look for our comprehensive Mirth to Medplum comparison guide in the coming days, and please reach out if we can assist with your evaluation process.
 

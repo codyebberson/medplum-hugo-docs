@@ -19,7 +19,7 @@ This guide covers the basics of how to use the [`MedicationKnowledge`](/docs/api
 - How to annotate medications with the proper codes.
 - How to represent physical characteristics about the medication and its package.
 - How to categorize medications in the formulary.
-- How to represent compounded medications, including dose variations. 
+- How to represent compounded medications, including dose variations.
 - How to represent relationships between medications.
 
 This guide is informed by the [DaVinci Payer Data Exchange (PDex) US Drug Formulary](https://build.fhir.org/ig/HL7/davinci-pdex-formulary/index.html) implementation guide, which was authored by industry leaders, including Humana, Cigna, and Optum.
@@ -29,7 +29,7 @@ You can download the examples in this guide [here](./formulary-examples.json), a
 {{< /tip >}}
 
 {{< warning title="A note on the Medication resource" >}}
-You might be asking yourself, what is the difference between the `Medication` and `MedicationKnowledge` resources? Both resources hold information like medication manufacturer and ingredients, but `MedicationKnowledge` holds potentially critical information beyond that, like regulatory information related to controlled substances, packaging descriptions used by pharmacists, and administrative guidelines for both clinicians and patients. In general, we encourage the use of `MedicationKnowledge` rather than `Medication`. 
+You might be asking yourself, what is the difference between the `Medication` and `MedicationKnowledge` resources? Both resources hold information like medication manufacturer and ingredients, but `MedicationKnowledge` holds potentially critical information beyond that, like regulatory information related to controlled substances, packaging descriptions used by pharmacists, and administrative guidelines for both clinicians and patients. In general, we encourage the use of `MedicationKnowledge` rather than `Medication`.
 {{< /warning >}}
 
 ## Medication Code
@@ -616,7 +616,7 @@ Refer to the [RxNORM relationship codes](https://www.nlm.nih.gov/research/umls/r
 
 Supplemental images and documentation should be referenced from `MedicationKnowledge.monograph`. This can include images, label information, supplemental patient instructions, etc.
 
-For these external files, implementers should create a [`DocumentReference`](/docs/api/fhir/resources/documentreference) resource, and reference it from `MedicationKnowledge.monograph`. For more information on handling external files, consult our guide on [Handling External Files](/docs/charting/external-documents).
+For these external files, implementers should create a [`DocumentReference`](/docs/api/fhir/resources/documentreference) resource, and reference it from `MedicationKnowledge.monograph`. For more information on handling external files, consult [External files and Document references](/docs/fhir-datastore/external-documents).
 
 ## See Also
 

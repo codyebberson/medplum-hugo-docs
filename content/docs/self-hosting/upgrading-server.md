@@ -22,7 +22,7 @@ You cannot skip minor versions when upgrading. Attempting to jump ahead (e.g., f
 
 For each minor version between your current version and target version, you must:
 - Deploy the latest patch version (Z.Y.X where X is the highest available)
-    - Post-deploy migrations will run automatically 
+    - Post-deploy migrations will run automatically
 - Wait for all database migrations to complete successfully
 - Only then proceed to the next minor version
 

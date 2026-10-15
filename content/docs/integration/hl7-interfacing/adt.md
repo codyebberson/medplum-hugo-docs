@@ -3,8 +3,7 @@ id: adt
 title: Admit, Discharge, Transfer (ADT)
 ---
 
-
-ADT stands for "Admit, Discharge, Transfer." It is a type of HL7 message used in electronic health records systems to communicate changes in a patient's demographic or visit status. This includes registration, admission, discharge, and transfer information about a patient. 
+ADT stands for "Admit, Discharge, Transfer." It is a type of HL7 message used in electronic health records systems to communicate changes in a patient's demographic or visit status. This includes registration, admission, discharge, and transfer information about a patient.
 
 This guide assumes you have already set up a Medplum [agent](/docs/agent) or aggregator equivalent to connect to the legacy healthcare application that you want to interface with and are able to receive the feed.
 

@@ -32,13 +32,13 @@ Medplum stores healthcare data using the FHIR standard. Storing data according t
 - **Interoperability**: Increasingly, healthcare partners are exposing their data via FHIR APIs. Storing your data according to FHIR spec smooths the path to interoperating with multiple partners
 - **Future Proofing**: The healthcare ecosystem is complex and fragmented. As they encounter these complexities, many digital health companies end up performing costly data migrations. The FHIR spec anticipates many of the complexities that arise in the healthcare domain, helping teams avoid these backend rewrites.
 
-While FHIR is quite powerful, it can have a bit of a learning curve. The page will go over the basic concepts for understanding FHIR data in Medplum. For more information, you can check out the [official FHIR documentation](http://hl7.org/fhir/).
+While FHIR is quite powerful, it can have a bit of a learning curve. This page covers the basic concepts for understanding FHIR data in Medplum. For more information, you can check out the [official FHIR documentation](http://hl7.org/fhir/).
 
 ## Storing Data: Resources
 
 A core data object in FHIR is called a [**Resource**](https://www.hl7.org/fhir/resource.html). You can think of Resources as **objects** in object oriented languages.
 
-The FHIR standard defines over 150 [**Resource Types**](./api/fhir/resources) that model broad range of healthcare-specific concepts. These include **concrete entities** ([`Patient`][patient], [`Medication`][medication], [`Device`][device]) as well as **abstract concepts** ([`Procedure`][procedure], [`CarePlan`][careplan], [`Encounter`][encounter]).
+The FHIR standard defines over 150 [**Resource Types**](./api/fhir/resources) that model a broad range of healthcare-specific concepts. These include **concrete entities** ([`Patient`][patient], [`Medication`][medication], [`Device`][device]) as well as **abstract concepts** ([`Procedure`][procedure], [`CarePlan`][careplan], [`Encounter`][encounter]).
 
 Each field in a resource is called an [**Element**](https://hl7.org/fhir/R4/element.html), each of which can be a **primitive type** (e.g. `string`, `number`, `date`) or a **complex type** (e.g. [`HumanName`](/docs/api/fhir/datatypes/humanname)).
 
@@ -164,7 +164,7 @@ Refer to the [Medplum search documentation](/docs/search/basic-search) for a mor
 
 <br/>
 
-The healthcare system commonly uses standardized coding systems to describe healthcare share information between organizations about **diagnoses**, **procedures**, **clinical outcomes**, **billing**. See our summary on [Common Terminologies](/docs/terminology/common-terminologies) for an overview of the most frequently used codes in healthcare.
+The healthcare system commonly uses standardized coding systems to share information between organizations about **diagnoses**, **procedures**, **clinical outcomes**, and **billing**. See our summary on [Common Terminologies](/docs/terminology/common-terminologies) for an overview of the most frequently used codes in healthcare.
 
 Because there are multiple code systems for many domains, the same _concept_ can be defined in _multiple code systems_. To handle this mapping from concept to system, the FHIR defines the [`CodeableConcept`][codeableconcept] element type.
 
@@ -216,6 +216,8 @@ Refer to [this blog post](/blog/demystifying-fhir-systems#identifiers-1) for bes
 
 Using the identifier system allows you to simplify your healthcare applications by consolidating data in a single resource, while allowing different systems to access the data by different ID schemes.
 
+When generating MRNs for new patients, store the value in `Patient.identifier` with a stable `system` URL for the assigning authority. You can use an MRN from a source system during migration, use the Medplum `Patient.id` as the durable patient number for new applications, or assign an MRN from a bot or backend workflow when the `Patient` is created. If you generate MRNs automatically, make the workflow idempotent: if the patient already has an identifier for your MRN system, do not create a second one.
+
 <details>
 <summary>
 Example: [`Patient`][patient] with two medical record numbers (MRNs)
@@ -258,9 +260,6 @@ The example `Patient` below has three identifiers: **an SSN and two MRN identifi
 
 </details>
 
-
-
-
 ## ValueSets
 
 <div class="responsive-iframe-wrapper">
@@ -269,9 +268,7 @@ The example `Patient` below has three identifiers: **an SSN and two MRN identifi
 
 <br/>
 
-
 ValueSets are a collection of codes that are used to represent a concept. They act as filters or subsets of larger terminology systems (like SNOMED CT, LOINC, or ICD-10) to specify exactly which codes are appropriate for a specific use case. They are defined by a `system` and a `concept` array. The `concept` array contains the codes that are part of the ValueSet.
-
 
 ```json
 {
@@ -304,6 +301,6 @@ ValueSets are a collection of codes that are used to represent a concept. They a
 - **criteria**: This is a string expression that defines _which_ resources to listen to, specified in [FHIRPath](https://hl7.org/fhirpath/) format. This subscription is invoked whenever a resource that matches the criteria is created or updated.
 - **channel**: this describes the kind of action that the `Subscription` will take when it sees a matching resource. Currently, the possible values are `rest-hook`, `websocket`, `email`, and `message`.
 
-In Medplum, a powerful feature is to to **use a [Medplum Bot](./bots)** as the endpoint of the `rest-hook` channel. This allows you to run an arbitrary piece of code in response to data changes and automate your medical workflows. See our [Bot-Subscription tutorial](./bots/bot-for-questionnaire-response) for more information.
+In Medplum, a powerful feature is to **use a [Medplum Bot](./bots)** as the endpoint of the `rest-hook` channel. This allows you to run an arbitrary piece of code in response to data changes and automate your medical workflows. See our [Bot-Subscription tutorial](./bots/bot-for-questionnaire-response) for more information.
 
 <br/>

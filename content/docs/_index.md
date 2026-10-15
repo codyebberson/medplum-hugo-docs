@@ -26,7 +26,7 @@ Use HL7, FHIRcast, labs/prescribing, and beyond
 
 Medplum is a **headless EHR**. Using [Medplum products](./products) you can build many [types of healthcare applications](./solutions). The diagram below is a system overview:
 
-![Medplum system overview](/img/medplum-overview.svg)
+![Medplum system overview](/img/medplum-architecture-overview.png)
 
 ## Get Started
 
@@ -39,18 +39,20 @@ Medplum is a **headless EHR**. Using [Medplum products](./products) you can buil
 
 1. [Learn FHIR basics](./docs/fhir-basics) to understand the structure of FHIR resources, the healthcare standard on which Medplum is built.
 2. [Learn workflow patterns](./blog/fhir-workflow-patterns-to-simplify-your-life) to understand how resources are used to place requests, record events, and store information.
-3. Explore our docs on workflows under "Model in FHIR"! Popular workflows are included below. Step through specific use cases. Don't see a how-to guide you need? Reach out on our [Discord](https://discord.gg/medplum) or send us an email at [support@medplum.com](mailto:support@medplum.com).
+3. [Design your workflows](./docs/decision-guides) using our decision guides to scope intake, charting, referrals, messaging, access control, billing, e-prescribing, and data migration before you build.
+4. Explore our clinical workflow guides! Popular workflows are included below. Step through specific use cases. Don't see a how-to guide you need? Reach out on our [Discord](https://discord.gg/medplum) or send us an email at [support@medplum.com](mailto:support@medplum.com).
    1. [Charting patient data](./docs/charting)
    2. [Creating and automating clinical operations](/docs/careplans/tasks)
    3. [Recording asynchronous encounters and messaging](./docs/communications/async-encounters)
    4. [Billing your services](./docs/billing)
-4. [Migrate your data](./docs/migration) to Medplum.
+5. [Plan your data migration](./docs/decision-guides/data-migration), then use the [migration implementation guides](./docs/migration) to move your data to Medplum.
 
 ## Build in Medplum
 
 1. [CRUD using our FHIR datastore](./docs/fhir-datastore), and learn to [search your data](./docs/search).
 2. Explore our [React components](./docs/api/react), pre-built to support Medplum data.
 3. [Run the Medplum stack locally](./docs/self-hosting/running-full-medplum-stack-in-docker) to set up your developer environment.
+4. Plan your [self-hosted deployment](./docs/self-hosting) on AWS, GCP, Azure, or Docker.
 
 ## Connect to the Healthcare Ecosystem
 
@@ -61,10 +63,10 @@ Medplum is a **headless EHR**. Using [Medplum products](./products) you can buil
 
 ## Reference Material
 
-Medplum is [open source](https://github.com/medplum/medplum), [reference material](/docs/api/index.md) and [sample applications](https://github.com/medplum) are available for browsing unauthenticated.
+Medplum is [open source](https://github.com/medplum/medplum). [Reference material](/docs/api/) and [sample applications](https://github.com/medplum) are available for browsing without authentication.
 
 ## Community
 
 - **Contributing** - Medplum is open source because we believe that streamlining healthcare is based on _transparency_ and _collaboration_. If you are interested in contributing to Medplum, check out our [Contributors](./docs/contributing) page
 - **Discord** - Join the conversation by checking us out on [Discord](https://discord.gg/medplum)
-- **Youtube** - Our [Youtube Channel](https://www.youtube.com/channel/UCu_sS6aXEHz3GPk2NTugtJA) includes content that aids in app development
+- **YouTube** — Our [YouTube channel](https://www.youtube.com/channel/UCu_sS6aXEHz3GPk2NTugtJA) includes content that aids in app development

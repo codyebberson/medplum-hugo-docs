@@ -11,7 +11,7 @@ Medplum provides the [`MockClient`](https://github.com/medplum/medplum/blob/main
 
 ## Set up your test framework
 
-The first step is to set up your test framework in your Bots package. Medplum Bots will should work with any typescript/javascript test runner, and the Medplum team has tested our bots with [jest](https://jestjs.io/) and [vitest](https://vitest.dev/). Follow the instructions for your favorite framework to set up you package.
+The first step is to set up your test framework in your Bots package. Medplum Bots should work with any TypeScript/JavaScript test runner, and the Medplum team has tested our bots with [Jest](https://jestjs.io/) and [Vitest](https://vitest.dev/). Follow the instructions for your favorite framework to set up your package.
 
 Next you'll want to index the FHIR schema definitions. To keep the client small, the `MockClient` class only ships with a subset of the FHIR schema. Index the full schema as shown below, either in a [`beforeAll` function](https://vitest.dev/api/#beforeall) or [setup file](https://vitest.dev/config/#setupfiles), to make sure your [test queries](#query-the-results) work.
 
@@ -60,16 +60,16 @@ The MockClient does not yet perfectly replicate all functionality of the `Medplu
 - Search `_include` and `_revinclude` parameters
 - Full compliance for token search parameters
 - More accurate schema validation
-- **Authentication** 
-- **Most FHIR $ operations** 
-- **`$validate`** 
-- **`Bot/$execute`** 
+- **Authentication**
+- **Most FHIR $ operations**
+- **`$validate`**
+- **`Bot/$execute`**
 - **Terminology service** (e.g., `ValueSet/$expand`)
 - **FHIRcast**
 - **Websocket subscriptions**
 - **Project admin calls** (new project, invite user, create client application, etc.)
 
-The Medplum team is working on bringing these features to parity as soon as possible. For related discussion, see [related GitHub issue](https://github.com/medplum/medplum/issues/6889). 
+The Medplum team is working on bringing these features to parity as soon as possible. For related discussion, see [related GitHub issue](https://github.com/medplum/medplum/issues/6889).
 
 {{< /warning >}}
 

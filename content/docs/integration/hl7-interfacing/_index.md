@@ -3,7 +3,6 @@ id: index
 title: HL7 Interfacing
 ---
 
-
 Medplum [Bots](/docs/bots) enables highly customizable HL7 interfacing engine that can be used as an alternative to Mirth or Corepoint.  Medplum allows developers to **produce and consume HL7 feeds from legacy healthcare applications**, such as EHRs, LIS, RIS/PACS, billing systems and more.
 
 ## Overview
@@ -35,10 +34,9 @@ There are infinitely many use cases for consuming and publishing HL7 messages fr
 
 | Use case               | HL7 Message Type | Description                                                                      |
 |------------------------|------------------|----------------------------------------------------------------------------------|
-| Identity management    | ADT              | When a new message is received - check to see if the [patient demographic](/docs/charting/patient-demographics) exists and if not create a new record.                                                 |
+| Identity management    | ADT              | When a new message is received - check to see if the [patient demographic](/docs/charting/chart-data-model#patient-demographics) exists and if not create a new record.                                                 |
 | Diagnostics results    | ORU              | When a new lab test result is completed, store the result in the datastore.      |
 | Schedule-driven workflow | SIU            | When a new appointment is scheduled, prompt the patient to complete their onboarding. |
-
 
 - Publishing Feeds
 
@@ -72,7 +70,7 @@ To get started do the following.
 
 - [ ] Identify the HL7 feeds you would like to publish/consume
 - [ ] Identify what method you want to use to connect to the legacy application
-- [ ] Write the [bot](/docs/bots) and create the [subscriptions](/docs/subscriptions) needed to set up your workflow 
+- [ ] Write the [bot](/docs/bots) and create the [subscriptions](/docs/subscriptions) needed to set up your workflow
 
 After all the primitives are in place, test your implementation and ensure that dataflow is as expected.
 
