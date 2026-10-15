@@ -35,3 +35,55 @@
   color: var(--ifm-color-primary);
   text-decoration: none;
 }
+
+/* Mobile "On this page" dropdown (shown below 997px; see main.scss) */
+.toc-mobile {
+  margin: 1rem 0;
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-menu-color-background-active);
+
+  summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      width: 0.6rem;
+      height: 0.6rem;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: translateY(-25%) rotate(45deg);
+      transition: transform var(--ifm-transition-fast);
+    }
+  }
+
+  &[open] summary::after {
+    transform: translateY(25%) rotate(-135deg);
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: none;
+  }
+
+  .toc-mobile-nav > ul {
+    padding: 0.2rem 0.8rem 0.8rem;
+    border-top: 1px solid var(--ifm-toc-border-color);
+  }
+
+  a {
+    display: block;
+    padding: 0.2rem 0;
+    color: var(--ifm-toc-link-color);
+    font-size: 0.875rem;
+  }
+}

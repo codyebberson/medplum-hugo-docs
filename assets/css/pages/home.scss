@@ -557,6 +557,11 @@ body[data-page] .footer {
     width: 100%;
   }
 
+  // Covers a caller-supplied trigger class too (e.g. the products CTA), as in BuildDropdown.module.css
+  .build-dropdown > .build-dropdown-trigger {
+    width: 100%;
+  }
+
   .build-dropdown-menu {
     width: 100%;
     max-width: calc(100vw - 2rem);

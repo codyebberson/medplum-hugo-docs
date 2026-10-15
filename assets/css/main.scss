@@ -155,6 +155,30 @@ body[data-sidebar='open'] main#swup {
   max-width: calc(100% - 300px);
 }
 
+/* Below 997px (Docusaurus's breakpoint) the docs sidebar moves into the navbar drawer and the
+   table of contents collapses into an "On this page" dropdown above the content */
+.toc-mobile {
+  display: none;
+}
+
+@media (max-width: 996px) {
+  body[data-sidebar='open'] aside {
+    display: none;
+  }
+
+  body[data-sidebar='open'] main#swup {
+    max-width: 100%;
+  }
+
+  body[data-toc='visible'] .main-toc {
+    display: none;
+  }
+
+  body[data-toc='visible'] .toc-mobile {
+    display: block;
+  }
+}
+
 .main-container {
   padding-top: 1rem !important;
   padding-bottom: 2rem !important;
