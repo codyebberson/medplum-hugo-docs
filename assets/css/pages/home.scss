@@ -7,6 +7,8 @@
   --layout-padding: 2rem;
   --layout-padding-md: 1.5rem;
   --layout-padding-sm: 1rem;
+  // The gutter for the current viewport, resolved from the three widths above (as in Docusaurus custom.css)
+  --layout-gutter: var(--layout-padding);
 
   --landing-font-display: 'Poppins', sans-serif;
   --landing-color-heading: var(--oc-gray-8);
@@ -21,6 +23,18 @@
   --landing-color-heading: var(--oc-gray-0);
   --landing-surface-elevated: #1b1b1d;
   --landing-shadow-cta-white: 0px 8px 16px rgba(var(--oc-grape-8-rgb), 0.25), 0px -1px 16px rgba(var(--oc-grape-8-rgb), 0.5);
+}
+
+@media screen and (max-width: 996px) {
+  :root {
+    --layout-gutter: var(--layout-padding-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --layout-gutter: var(--layout-padding-sm);
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -46,18 +60,20 @@
 }
 
 /* Page frame for the full-width marketing pages (data-page is set in baseof.html and main.mjs) */
-body[data-page] main {
+body[data-page] main#swup {
   max-width: 100%;
 }
 
-/* As in Docusaurus, the navbar is fixed over the hero, transparent at the top of the page,
-   and gains its background once scrolled (main.mjs) */
-body[data-page] .navbar {
+/* As in Docusaurus, the home and products pages fix the navbar over the hero, transparent at the
+   top of the page, gaining its background once scrolled (main.mjs). Solutions keeps the normal navbar. */
+body[data-page='home'] .navbar,
+body[data-page='products'] .navbar {
   position: fixed;
   transition: all var(--landing-transition);
 }
 
-body[data-page] .navbar:not(.on-scroll) {
+body[data-page='home'] .navbar:not(.on-scroll),
+body[data-page='products'] .navbar:not(.on-scroll) {
   background-color: transparent;
   box-shadow: none;
 }

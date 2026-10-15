@@ -4,6 +4,7 @@ import { destroyAnimatedCircles, initAnimatedCircles } from './components/animat
 import { initBuildDropdowns } from './components/build-dropdown.mjs';
 import { destroyCountUps, initCountUps } from './components/count-up.mjs';
 import { destroyProducts, initProducts } from './components/products/index.mjs';
+import { destroySolutions, initSolutions } from './components/solutions/index.mjs';
 import { initTabs } from './components/tabs.mjs';
 import { destroyToc, initToc } from './components/toc.mjs';
 
@@ -18,6 +19,8 @@ const landingPages = {
   '/': 'home',
   '/products/': 'products',
   '/products': 'products',
+  '/solutions/': 'solutions',
+  '/solutions': 'solutions',
 };
 
 function updateAttributes(newUrl) {
@@ -104,6 +107,7 @@ swup.hooks.before('content:replace', (visit) => {
   destroyAnimatedCircles();
   destroyCountUps();
   destroyProducts();
+  destroySolutions();
   destroyToc();
 });
 
@@ -111,6 +115,7 @@ swup.hooks.on('content:replace', (visit) => {
   initAnimatedCircles();
   initCountUps();
   initProducts();
+  initSolutions();
   updateNavbarScroll();
   initTabs();
   initToc();
@@ -124,5 +129,6 @@ initBuildDropdowns();
 initAnimatedCircles();
 initCountUps();
 initProducts();
+initSolutions();
 initTabs();
 initToc();

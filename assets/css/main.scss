@@ -146,7 +146,8 @@ body[data-doc-footer='visible'] .doc-footer {
   display: block;
 }
 
-main {
+/* The page shell only: exported landing pages contain their own <main> elements */
+main#swup {
   display: flex;
   flex-grow: 1;
   max-width: calc(100% - 300px);
