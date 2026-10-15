@@ -3,6 +3,7 @@ import Swup from 'swup';
 import { destroyAnimatedCircles, initAnimatedCircles } from './components/animated-circle.mjs';
 import { initBuildDropdowns } from './components/build-dropdown.mjs';
 import { destroyCountUps, initCountUps } from './components/count-up.mjs';
+import { destroyProducts, initProducts } from './components/products/index.mjs';
 import { initTabs } from './components/tabs.mjs';
 import { destroyToc, initToc } from './components/toc.mjs';
 
@@ -11,6 +12,13 @@ mermaid.initialize({ startOnLoad: true });
 function setAttribute(key, value) {
   document.body.dataset[key] = value;
 }
+
+// Full-width marketing pages, keyed by path (see data-page in layouts/_default/baseof.html)
+const landingPages = {
+  '/': 'home',
+  '/products/': 'products',
+  '/products': 'products',
+};
 
 function updateAttributes(newUrl) {
   const onDocsPage = newUrl.includes('/docs/');
@@ -21,8 +29,9 @@ function updateAttributes(newUrl) {
   const showToc = onDocsPage || newUrl.includes('/blog/') || newUrl.includes('/careers/') || newUrl.includes('/terms');
   setAttribute('toc', showToc ? 'visible' : 'hidden');
 
-  if (new URL(newUrl, window.location.origin).pathname === '/') {
-    setAttribute('page', 'home');
+  const page = landingPages[new URL(newUrl, window.location.origin).pathname];
+  if (page) {
+    setAttribute('page', page);
   } else {
     delete document.body.dataset.page;
   }
@@ -94,12 +103,14 @@ swup.hooks.before('content:replace', (visit) => {
   updateAttributes(visit.to.url);
   destroyAnimatedCircles();
   destroyCountUps();
+  destroyProducts();
   destroyToc();
 });
 
 swup.hooks.on('content:replace', (visit) => {
   initAnimatedCircles();
   initCountUps();
+  initProducts();
   updateNavbarScroll();
   initTabs();
   initToc();
@@ -112,5 +123,6 @@ updateNavbarScroll();
 initBuildDropdowns();
 initAnimatedCircles();
 initCountUps();
+initProducts();
 initTabs();
 initToc();

@@ -45,23 +45,25 @@
   }
 }
 
-/* Page frame: the home page has no sidebar, so let it use the full width */
-body[data-page='home'] main {
+/* Page frame for the full-width marketing pages (data-page is set in baseof.html and main.mjs) */
+body[data-page] main {
   max-width: 100%;
 }
 
-/* Navbar is transparent at the top of the home page and gains its background once scrolled (main.mjs) */
-body[data-page='home'] .navbar {
+/* As in Docusaurus, the navbar is fixed over the hero, transparent at the top of the page,
+   and gains its background once scrolled (main.mjs) */
+body[data-page] .navbar {
+  position: fixed;
   transition: all var(--landing-transition);
 }
 
-body[data-page='home'] .navbar:not(.on-scroll) {
+body[data-page] .navbar:not(.on-scroll) {
   background-color: transparent;
   box-shadow: none;
 }
 
-/* The CTA banner sits flush against the footer */
-body[data-page='home'] .footer {
+/* The closing CTA band sits flush against the footer */
+body[data-page] .footer {
   margin-top: 0;
 }
 
@@ -99,8 +101,7 @@ body[data-page='home'] .footer {
   min-height: 480px;
   flex-direction: column;
   justify-content: center;
-  // Docusaurus uses 10rem with a fixed navbar overlapping the hero; ours is sticky and takes its own 60px
-  padding: calc(10rem - 60px) 0 8rem 0;
+  padding: 10rem 0 8rem 0;
 }
 
 .landing-hero-content {
