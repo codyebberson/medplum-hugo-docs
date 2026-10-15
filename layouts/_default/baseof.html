@@ -29,6 +29,7 @@
     {{ else }}
       data-sidebar="closed"
     {{ end }}
+    {{ if .IsHome }}data-page="home"{{ end }}
   >
     {{ partial "navbar" . }}
     <div class="doc-wrapper">
@@ -37,18 +38,20 @@
           {{ partial "sidebar" . }}
         </aside>
         <main id="swup">
-          <div class="main-container container">
-            <div class="row">
-              <div class="main-content">
-                {{ partial "breadcrumbs" . }}
-                {{ block "main" . }}{{ end }}
-                {{ partial "doc-footer" . }}
-              </div>
-              <div class="main-toc">
-                {{ .TableOfContents }}
+          {{ block "page" . }}
+            <div class="main-container container">
+              <div class="row">
+                <div class="main-content">
+                  {{ partial "breadcrumbs" . }}
+                  {{ block "main" . }}{{ end }}
+                  {{ partial "doc-footer" . }}
+                </div>
+                <div class="main-toc">
+                  {{ .TableOfContents }}
+                </div>
               </div>
             </div>
-          </div>
+          {{ end }}
         </main>
       </div>
     </div>

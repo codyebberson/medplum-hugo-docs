@@ -1,0 +1,10 @@
+{{- /* Compliance badge row. Params: badges (defaults to data/compliance.yml), variant ("products" for the products page) */ -}}
+{{- $badges := .badges | default site.Data.compliance -}}
+<div class="compliance-badges{{ with .variant }} compliance-badges-{{ . }}{{ end }}" style="--compliance-cols: {{ len $badges }}">
+  {{ range $badges }}
+    <div class="compliance-badge">
+      <div class="compliance-badge-logo"><img src="{{ .image }}" alt="{{ .label }}" loading="lazy" /></div>
+      <span class="compliance-badge-label">{{ .label }}</span>
+    </div>
+  {{ end }}
+</div>

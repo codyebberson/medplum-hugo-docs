@@ -1,6 +1,8 @@
 import mermaid from 'mermaid';
 import Swup from 'swup';
 import { destroyAnimatedCircles, initAnimatedCircles } from './components/animated-circle.mjs';
+import { initBuildDropdowns } from './components/build-dropdown.mjs';
+import { destroyCountUps, initCountUps } from './components/count-up.mjs';
 import { initTabs } from './components/tabs.mjs';
 import { destroyToc, initToc } from './components/toc.mjs';
 
@@ -18,7 +20,20 @@ function updateAttributes(newUrl) {
 
   const showToc = onDocsPage || newUrl.includes('/blog/') || newUrl.includes('/careers/') || newUrl.includes('/terms');
   setAttribute('toc', showToc ? 'visible' : 'hidden');
+
+  if (new URL(newUrl, window.location.origin).pathname === '/') {
+    setAttribute('page', 'home');
+  } else {
+    delete document.body.dataset.page;
+  }
 }
+
+// The home page navbar is transparent until the page is scrolled (see pages/home.scss)
+function updateNavbarScroll() {
+  document.querySelector('.navbar')?.classList.toggle('on-scroll', window.scrollY > 0);
+}
+
+window.addEventListener('scroll', updateNavbarScroll, { passive: true });
 
 function updateActiveLinks() {
   document.querySelectorAll('.sidebar-category-header-wrapper.active').forEach((el) => {
@@ -78,11 +93,14 @@ export const swup = new Swup({
 swup.hooks.before('content:replace', (visit) => {
   updateAttributes(visit.to.url);
   destroyAnimatedCircles();
+  destroyCountUps();
   destroyToc();
 });
 
 swup.hooks.on('content:replace', (visit) => {
   initAnimatedCircles();
+  initCountUps();
+  updateNavbarScroll();
   initTabs();
   initToc();
   updateActiveLinks();
@@ -90,6 +108,9 @@ swup.hooks.on('content:replace', (visit) => {
 });
 
 updateAttributes(window.location.href);
+updateNavbarScroll();
+initBuildDropdowns();
 initAnimatedCircles();
+initCountUps();
 initTabs();
 initToc();
