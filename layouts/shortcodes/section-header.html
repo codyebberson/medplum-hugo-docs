@@ -1,4 +1,5 @@
-<div class="section-header">
+{{- /* Port of SectionHeader (src/components/landing/SectionHeader.tsx): a title with an optional lead paragraph */ -}}
+<div class="landing-section-header">
   <h2>{{ .Get "title" }}</h2>
-  <p class="feature-content">{{ .Inner | markdownify }}</p>
+  {{ with .Inner | strings.TrimSpace }}<p>{{ . | markdownify }}</p>{{ end }}
 </div>

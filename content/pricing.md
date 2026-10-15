@@ -2,6 +2,7 @@
 id: pricing
 slug: /pricing
 layout: pricing
+standalone: true
 ---
 
 # Pricing

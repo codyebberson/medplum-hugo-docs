@@ -2,6 +2,7 @@
 title: "Medplum Enterprise"
 description: "Medplum Enterprise"
 hideTitle: true
+standalone: true
 ---
 
 {{< jumbotron

@@ -9,8 +9,6 @@
 @import './components/doc-footer.scss';
 @import './components/hero.scss';
 @import './components/hero-code.scss';
-@import './components/feature.scss';
-@import './components/feature-grid.scss';
 @import './components/footer.scss';
 @import './components/jumbotron.scss';
 @import './components/logo-scroller.scss';
@@ -18,7 +16,6 @@
 @import './components/profile-card.scss';
 @import './components/responsive-iframe.scss';
 @import './components/section.scss';
-@import './components/section-header.scss';
 @import './components/sidebar.scss';
 @import './components/table.scss';
 @import './components/tabs.scss';
@@ -150,13 +147,28 @@ body[data-doc-footer='visible'] .doc-footer {
 main#swup {
   display: flex;
   flex-grow: 1;
-  max-width: calc(100% - 300px);
   margin: 0 auto;
+}
+
+/* Leave room for the docs sidebar only when it's shown */
+body[data-sidebar='open'] main#swup {
+  max-width: calc(100% - 300px);
 }
 
 .main-container {
   padding-top: 1rem !important;
   padding-bottom: 2rem !important;
+}
+
+/* Standalone pages (front matter `standalone: true`) correspond to Docusaurus src/pages, which render
+   in a bare container: no vertical padding and no gap above the footer */
+.main-container-standalone {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+body:has(.main-container-standalone) .footer {
+  margin-top: 0;
 }
 
 .main-content {

@@ -12,6 +12,8 @@ Medplum documentation site built with Hugo, migrated from Docusaurus. Healthcare
 - **Production build**: `npm run build` (cleans `public/`, builds with minification)
 - **Preview build**: `npm run preview` (serves `public/` via http-server)
 - **px→rem conversion**: `npm run pxtorem` (converts px to rem in SCSS files via PostCSS)
+- **Docusaurus markdown migration**: `node fix-markdown.mjs` (copies docs/blog/pages from `../medplum/packages/docs`; force-writes every file under `content/`, so commit or stash local edits first)
+- **Landing page export**: `node port-landing.mjs` (server-renders the React products/solutions pages from `../medplum` into `layouts/partials/*/generated/` and `assets/css/generated/landing.css`; never hand-edit those outputs)
 
 No test or lint commands are configured.
 
@@ -31,6 +33,7 @@ No test or lint commands are configured.
 - `content/posts/`, `content/products/`, `content/solutions/` — Blog, product, and solution pages.
 - Front matter uses YAML with `id`, `title`, `weight` (for ordering), and optional `slug`.
 - `_index.md` files are required for Hugo section pages (not `index.md`).
+- `standalone: true` marks pages that correspond to Docusaurus `src/pages` (about, enterprise, pricing, case-studies): they render with no container padding and no gap above the footer, as on Docusaurus.
 
 ### Sidebar Navigation
 
@@ -54,3 +57,10 @@ Hugo mounts specific node_modules into the asset pipeline (configured in `hugo.t
 ### Prettier Config
 
 Configured in `package.json`: `printWidth: 160`, `singleQuote: true`, `trailingComma: "es5"`.
+
+## Deployment and URLs
+
+Public URLs have no trailing slash. Hugo builds `/case-studies/` as `public/case-studies/index.html`; the deployment scripts rewrite that to `public/case-studies.html`, and a Lambda@Edge function serves it at `/case-studies`. So:
+
+- Code that matches on paths (e.g. `landingPages` and navbar highlighting in `assets/js/main.mjs`) must accept both `/x` and `/x/`; locally (`npm run dev`, `npm run preview`) URLs have the trailing slash.
+- Relative links resolve differently locally (`/case-studies/` + `blog/x` → `/case-studies/blog/x`) than in production (`/case-studies` + `blog/x` → `/blog/x`). Use root-relative links (`/blog/x`).

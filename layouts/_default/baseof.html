@@ -40,7 +40,7 @@
         </aside>
         <main id="swup">
           {{ block "page" . }}
-            <div class="main-container container">
+            <div class="main-container container{{ if .Params.standalone }} main-container-standalone{{ end }}">
               <div class="row">
                 <div class="main-content">
                   {{ partial "breadcrumbs" . }}

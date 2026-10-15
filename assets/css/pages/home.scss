@@ -773,6 +773,24 @@ body[data-page] .footer {
   color: var(--oc-orange-3);
 }
 
+// Feature "Read more" link (actionButton in FeatureGrid.module.css), used by the docs home
+.landing-feature-action-button {
+  display: flex;
+  margin-top: 0.25rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--oc-indigo-1);
+  transition: all 200ms ease;
+  font-size: 1.125rem;
+  align-items: center;
+  border-radius: 16px;
+  text-align: center;
+  justify-content: center;
+}
+
+[data-theme='dark'] .landing-feature-action-button {
+  background: var(--oc-gray-9);
+}
+
 /* Solution accordion: native <details name> exclusive accordion */
 
 .solution-accordion {

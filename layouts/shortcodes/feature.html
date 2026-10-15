@@ -1,19 +1,9 @@
-<div class="feature">
-  {{ with .Get "icon" }}
-    <div class="feature-icon">
-      {{ partial "icon" . }}
-    </div>
-  {{ end }}
-
+{{- /* Port of Feature (src/components/landing/FeatureGrid.tsx). Params: title, icon, linkRef + linkText for an action link */ -}}
+<div class="landing-feature">
+  {{ with .Get "icon" }}<div class="landing-feature-icon">{{ partial "icon" . }}</div>{{ end }}
   <h3>{{ .Get "title" }}</h3>
-
-  <p class="feature-content">
-    {{ .Inner | markdownify }}
-  </p>
-
+  <p>{{ .Inner | markdownify }}</p>
   {{ if and (.Get "linkRef") (.Get "linkText") }}
-    <a href="{{ .Get "linkRef" }}" class="action-button">
-      {{ .Get "linkText" }}
-    </a>
+    <a href="{{ .Get "linkRef" }}" class="landing-feature-action-button">{{ .Get "linkText" }}</a>
   {{ end }}
 </div>
